@@ -48,4 +48,5 @@ jlceda-plugin-builder/
 ## Demo Video
 
 Based on OpenCode:  
+
 https://github.com/user-attachments/assets/742954b8-9527-43ad-ae08-3f08ec083fa2
