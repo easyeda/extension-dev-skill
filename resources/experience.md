@@ -108,8 +108,11 @@ await eda.sys_Storage.getExtensionUserConfig(); // undefined
 
 ## 14. headerMenus id Must Be Globally Unique
 
-- The ids for home/sch/pcb menus cannot be the same; otherwise only the first one is displayed
-- Recommended: Add a prefix to differentiate (e.g., `sdk-home`, `sdk-sch`, `sdk-pcb`)
+- All `headerMenus[].id` values must be unique across ALL editor pages (home/sch/pcb/footprint/panel etc.)
+- Duplicate IDs — even across different editor pages — cause only the first menu to render
+- Always add a plugin-specific prefix to differentiate (e.g., `myplugin-home`, `myplugin-sch`, `myplugin-pcb`)
+- Nested `menuItems` IDs must also be globally unique
+- Before finalizing `extension.json`, scan every ID and reject duplicates
 
 ## 15. Prefer Built-in Dialogs
 
