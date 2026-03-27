@@ -72,11 +72,13 @@ Skill 定义了一套工作流，AI Agent 在生成插件代码时会遵循：
 
 ## 已测试的平台
   
-✅OpenClaw  MiniMax-2.7  
-✅OpenCode  MiMo V2 PRO Free/MiniMax-2.5 Free  
-✅QwenCode  Qwen3-Coder  
-✅Kiro      Claude Opus4.6  
-✅Trae      Kimi-K2/Deepseek-V3/Doubao  
+| 平台 | 模型 |
+|------|------|
+| OpenClaw | MiniMax-2.7 |
+| OpenCode | MiMo V2 Pro Free|
+| QwenCode | Qwen3-Coder |
+| Kiro | Claude Opus4.6 |
+| Trae | Kimi-K2 / Deepseek-V3|
 
 ## MCP 调试工具（可选）
 

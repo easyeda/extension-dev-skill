@@ -68,11 +68,13 @@ Actual results depend on model capability. It is recommended to use models with 
 
 ## Tested Platforms
 
-✅ OpenClaw  MiniMax-2.7  
-✅ OpenCode  MiMo V2 PRO Free / MiniMax-2.5 Free  
-✅ QwenCode  Qwen3-Coder  
-✅ Kiro      Claude Opus4.6  
-✅ Trae      Kimi-K2 / Deepseek-V3 / Doubao  
+| Platform | Model |
+|----------|-------|
+| OpenClaw | MiniMax-2.7 |
+| OpenCode | MiMo V2 Pro Free / MiniMax-2.5 Free |
+| QwenCode | Qwen3-Coder |
+| Kiro | Claude Opus4.6 |
+| Trae | Kimi-K2 / Deepseek-V3 / Doubao |
 
 ## MCP Debugging Tools (Optional)
 
