@@ -2,7 +2,7 @@ English | **[中文](README.md)**
 
 # extension-dev-skill
 
-An AI Skill for JLCEDA / EasyEDA Pro extension plugin development. Enables AI Agents to automatically query APIs, generate code, and build plugins.
+An AI Skill for [JLCEDA & EasyEDA Pro](https://pro.easyeda.com/) extension plugin development. Enables AI Agents to automatically query APIs, generate code, and build plugins.
 
 ## Features
 
@@ -10,38 +10,47 @@ An AI Skill for JLCEDA / EasyEDA Pro extension plugin development. Enables AI Ag
 - Documentation-driven code generation based on easyeda-api-skill
 - MCP debugging toolchain support for automated build → import → log monitoring
 
-## Quick Start
+## Installation
 
-### 1. Locate or Create the Skills Directory
+### 1. Clone the Repository to the Skills Directory
 
-Follow your AI Agent's documentation to find or create the skills directory:
-
-| Agent Scope | Directory |
-|------------|-----------|
-| Project-level | `.agents/skills/` |
-| Global-level | `~/.agents/skills/` |
-
-### 2. Clone the Repository
+Find or create the skills directory according to your AI Agent's documentation:
 
 ```bash
 git clone https://github.com/easyeda/extension-dev-skill
 ```
 
-### 3. Verify
+For example:
 
-Confirm the skill is loaded in your AI Agent.
+> **QwenCode**
+> **Project scope**: `.qwen/skills` under the project root  
+> **User scope**: `~/.qwen/skills`, applies to all projects on this machine  
+> Navigate to the corresponding skills folder and run `git clone https://github.com/easyeda/extension-dev-skill`  
 
-For example in OpenCode: run `/skills` and check that `extension-dev-skill` is listed.
+> **OpenCode**
+> **Project scope**: `.opencode/skills` under the project root  
+> **User scope**: `~/.config/opencode/skills`, applies to all projects on this machine  
+> Navigate to the corresponding skills folder and run `git clone https://github.com/easyeda/extension-dev-skill`  
+
+### 2. Use the Skill
+
+Confirm the skill is loaded in your AI Agent, then specify it via command.
+
+For example:
+
+> **QwenCode**
+> **1. Open terminal**: Type `qwen` and press Enter  
+> **2. Specify skill and send request**: Type `/skills` in the QwenCode CLI and press Enter  
+> Select `extension-dev-skill`, press Enter, then type your request  
+
+> **OpenCode**
+> **1. Open terminal**: Type `opencode` and press Enter  
+> **2. Specify skill and send request**: Type `/skills` in the OpenCode CLI and press Enter  
+> Select `extension-dev-skill`, press Enter, then type your request  
 
 ## How It Works
 
 The Skill defines a workflow that AI Agents follow when generating plugin code:
-
-```
-Plan → Init → API Query → Signature Validation → Confirm → Code Generation → Constraint Check → Doc → Deploy
-```
-
-### Execution Workflow
 
 | Step | Name | Description |
 |------|------|-------------|
@@ -49,46 +58,27 @@ Plan → Init → API Query → Signature Validation → Confirm → Code Genera
 | 2 | Init | Initialize project if workspace is not set up |
 | 3 | Query | Four-step API lookup; every API must be verified against docs |
 | 4 | Validate | Confirm all type signatures are complete; go back to Query if uncertain |
-| 5 | Confirm | Present implementation plan to user and wait for confirmation |
+| 5 | Confirm | Present implementation plan to user |
 | 6 | Execute | Generate code with try/catch wrapped API calls |
 | 7 | Check | Runtime constraint check, menu ID uniqueness validation |
 | 8 | Doc | Generate/update README.md and CHANGELOG.md |
 | 9 | Deploy | Build and import the plugin |
 
-### API Query Flow
+Actual results depend on model capability. It is recommended to use models with strong coding and comprehension abilities.
 
-1. Find the target class in `resources/references/classes/`
-2. Verify the class mount path on the `eda` object via `EDA.md`
-3. Confirm method signatures, parameter types, and return types
-4. Recursively query return interface methods
+## Tested Platforms
+
+✅ OpenClaw  MiniMax-2.7  
+✅ OpenCode  MiMo V2 PRO Free / MiniMax-2.5 Free  
+✅ QwenCode  Qwen3-Coder  
+✅ Kiro      Claude Opus4.6  
+✅ Trae      Kimi-K2 / Deepseek-V3 / Doubao  
 
 ## MCP Debugging Tools (Optional)
 
 [extension-dev-mcp-tools](https://github.com/easyeda/extension-dev-mcp-tools)
 
 With MCP installed, the AI Agent supports: build `.eext` → import to browser → retrieve console logs.
-
-## Directory Structure
-
-```
-extension-dev-skill/
-├── SKILL.md                # Core skill definition (workflow, runtime constraints, error handling)
-├── AGENTS.md               # Supplementary agent guide (search standards, recursive queries, conventions)
-├── CHANGELOG.md            # Changelog
-├── README.md               # Project description (Chinese)
-├── README_EN.md            # Project description (English, this file)
-└── resources/
-    ├── api-reference.md    # API module overview, eda property list, MCP tool docs
-    ├── experience.md       # Common pitfalls and lessons learned
-    ├── guide/              # Developer guide (concepts, how-to, best practices)
-    └── references/         # Complete API reference
-        ├── _index.md       # Master index of all API entities
-        ├── _quick-reference.md  # Method signature quick reference
-        ├── classes/        # 120 class docs
-        ├── enums/          # 62 enum docs
-        ├── interfaces/     # 70 interface docs
-        └── types/          # 19 type alias docs
-```
 
 ## Demo Video
 
