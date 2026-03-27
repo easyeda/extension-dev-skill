@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_RightClickMenu 
+declare class SYS_RightClickMenu
 ```
 
 ## 备注
@@ -13,37 +13,9 @@ declare class SYS_RightClickMenu
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[changeMenu(menuId, menuItems)](./SYS_RightClickMenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改右键菜单
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                      | 修饰符 | 描述                  |
+| -------------------------------------------------------- | --- | ------------------- |
+| [changeMenu(menuId, menuItems)](./SYS_RightClickMenu.md) |     | **_(BETA)_** 修改右键菜单 |
 
 ---
 
@@ -65,55 +37,10 @@ changeMenu(menuId: string, menuItems: Array<ISYS_RightClickMenuItem | null>): Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-menuId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-菜单 ID
-
-
-</td></tr>
-<tr><td>
-
-menuItems
-
-
-</td><td>
-
-Array&lt;[ISYS\_RightClickMenuItem](../interfaces/ISYS_RightClickMenuItem.md) \| null&gt;
-
-
-</td><td>
-
-菜单项，`null` 代表分隔符
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                        | 描述               |
+| --------- | ----------------------------------------------------------------------------------------- | ---------------- |
+| menuId    | string                                                                                    | 菜单 ID            |
+| menuItems | Array&lt;[ISYS\_RightClickMenuItem](../interfaces/ISYS_RightClickMenuItem.md) \| null&gt; | 菜单项，`null` 代表分隔符 |
 
 
 
@@ -129,7 +56,7 @@ Promise&lt;void&gt;
 
 如若需要注册新的右键菜单，需要传入完整的 [ISYS\_RightClickMenuItem](../interfaces/ISYS_RightClickMenuItem.md) 数据
 
-本接口将会强制新建的右键菜单的 ID 包含扩展 UUID，例如输入的 `id = 'example'`<!-- -->，将会被自动重写为 `e143d88179874e7f851cc890cd22fc71|example`
+本接口将会强制新建的右键菜单的 ID 包含扩展 UUID，例如输入的 `id = 'example'`，将会被自动重写为 `e143d88179874e7f851cc890cd22fc71|example`
 
 注意：本接口需要使用者启用扩展的外部交互权限，如若未启用将始终 `throw Error`
 

@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveRegion implements IPCB_Primitive 
+declare class IPCB_PrimitiveRegion implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,331 +14,30 @@ declare class IPCB_PrimitiveRegion implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[convertToFill()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：填充图元
-
-
-</td></tr>
-<tr><td>
-
-[convertToPolyline()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：折线图元
-
-
-</td></tr>
-<tr><td>
-
-[convertToPour()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：覆铜边框图元
-
-
-</td></tr>
-<tr><td>
-
-[done()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ComplexPolygon()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_RegionName()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：区域名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_RuleType()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：区域规则类型
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_RegionName(regionName)](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：区域名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_RuleType(ruleType)](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：区域规则类型
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                   | 修饰符 | 描述                          |
+| --------------------------------------------------------------------- | --- | --------------------------- |
+| [convertToFill()](./IPCB_PrimitiveRegion.md)                          |     | **_(BETA)_** 转换到：填充图元       |
+| [convertToPolyline()](./IPCB_PrimitiveRegion.md)                      |     | **_(BETA)_** 转换到：折线图元       |
+| [convertToPour()](./IPCB_PrimitiveRegion.md)                          |     | **_(BETA)_** 转换到：覆铜边框图元     |
+| [done()](./IPCB_PrimitiveRegion.md)                                   |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_ComplexPolygon()](./IPCB_PrimitiveRegion.md)               |     | 获取属性状态：复杂多边形                |
+| [getState\_Layer()](./IPCB_PrimitiveRegion.md)                        |     | 获取属性状态：层                    |
+| [getState\_LineWidth()](./IPCB_PrimitiveRegion.md)                    |     | 获取属性状态：线宽                   |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveRegion.md)                  |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveRegion.md)                |     | 获取属性状态：是否锁定                 |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveRegion.md)                |     | 获取属性状态：图元类型                 |
+| [getState\_RegionName()](./IPCB_PrimitiveRegion.md)                   |     | 获取属性状态：区域名称                 |
+| [getState\_RuleType()](./IPCB_PrimitiveRegion.md)                     |     | 获取属性状态：区域规则类型               |
+| [isAsync()](./IPCB_PrimitiveRegion.md)                                |     | 查询图元是否为异步图元                 |
+| [reset()](./IPCB_PrimitiveRegion.md)                                  |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitiveRegion.md) |     | **_(BETA)_** 设置属性状态：复杂多边形   |
+| [setState\_Layer(layer)](./IPCB_PrimitiveRegion.md)                   |     | **_(BETA)_** 设置属性状态：层       |
+| [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveRegion.md)           |     | **_(BETA)_** 设置属性状态：线宽      |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveRegion.md)   |     | **_(BETA)_** 设置属性状态：是否锁定    |
+| [setState\_RegionName(regionName)](./IPCB_PrimitiveRegion.md)         |     | **_(BETA)_** 设置属性状态：区域名称    |
+| [setState\_RuleType(ruleType)](./IPCB_PrimitiveRegion.md)             |     | **_(BETA)_** 设置属性状态：区域规则类型  |
+| [toAsync()](./IPCB_PrimitiveRegion.md)                                |     | 将图元转换为异步图元                  |
+| [toSync()](./IPCB_PrimitiveRegion.md)                                 |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -361,7 +60,7 @@ convertToFill(): Promise<IPCB_PrimitiveFill>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt;
 
 填充图元对象
 
@@ -382,7 +81,7 @@ convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)&gt;
 
 折线图元对象
 
@@ -403,7 +102,7 @@ convertToPour(): Promise<IPCB_PrimitivePour>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt;
 
 覆铜边框图元对象
 
@@ -424,7 +123,7 @@ done(): Promise<IPCB_PrimitiveRegion>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt;
 
 区域图元对象
 
@@ -576,7 +275,7 @@ getState_RuleType(): Array<EPCB_PrimitiveRegionRuleType>;
 
 ## 返回值
 
-Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;
+Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)&gt;
 
 区域规则类型
 
@@ -616,7 +315,7 @@ reset(): Promise<IPCB_PrimitiveRegion>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt;
 
 区域图元对象
 
@@ -636,39 +335,9 @@ setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveRegion;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-复杂多边形
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                 | 描述    |
+| -------------- | ---------------------------------- | ----- |
+| complexPolygon | [IPCB\_Polygon](./IPCB_Polygon.md) | 复杂多边形 |
 
 
 
@@ -694,39 +363,9 @@ setState_Layer(layer: TPCB_LayersOfRegion): IPCB_PrimitiveRegion;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                      | 描述  |
+| ----- | ------------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md) | 层   |
 
 
 
@@ -752,39 +391,9 @@ setState_LineWidth(lineWidth: number): IPCB_PrimitiveRegion;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| lineWidth | number | 线宽  |
 
 
 
@@ -810,39 +419,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveRegion;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -868,39 +447,9 @@ setState_RegionName(regionName?: string): IPCB_PrimitiveRegion;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-regionName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 区域名称
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型     | 描述          |
+| ---------- | ------ | ----------- |
+| regionName | string | _（可选）_ 区域名称 |
 
 
 
@@ -932,39 +481,9 @@ setState_RuleType(ruleType: Array<EPCB_PrimitiveRegionRuleType>): IPCB_Primitive
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-ruleType
-
-
-</td><td>
-
-Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;
-
-
-</td><td>
-
-区域规则类型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                                     | 描述     |
+| -------- | -------------------------------------------------------------------------------------- | ------ |
+| ruleType | Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)&gt; | 区域规则类型 |
 
 
 

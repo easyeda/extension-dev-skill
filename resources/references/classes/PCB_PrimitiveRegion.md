@@ -5,127 +5,21 @@ PCB &amp; 封装 / 禁止区域和约束区域图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitiveRegion implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitiveRegion implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(layer, complexPolygon, ruleType, regionName, lineWidth, primitiveLock)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建区域
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除区域
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取区域
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取区域
-
-
-</td></tr>
-<tr><td>
-
-[getAll(layer, ruleType, primitiveLock)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有区域
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(layer, ruleType, primitiveLock)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有区域的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改区域
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                       | 修饰符 | 描述                        |
+| --------------------------------------------------------------------------------------------------------- | --- | ------------------------- |
+| [create(layer, complexPolygon, ruleType, regionName, lineWidth, primitiveLock)](./PCB_PrimitiveRegion.md) |     | **_(BETA)_** 创建区域         |
+| [delete(primitiveIds)](./PCB_PrimitiveRegion.md)                                                          |     | **_(BETA)_** 删除区域         |
+| [get(primitiveIds)](./PCB_PrimitiveRegion.md)                                                             |     | **_(BETA)_** 获取区域         |
+| [get(primitiveIds)](./PCB_PrimitiveRegion.md)                                                             |     | **_(BETA)_** 获取区域         |
+| [getAll(layer, ruleType, primitiveLock)](./PCB_PrimitiveRegion.md)                                        |     | **_(BETA)_** 获取所有区域       |
+| [getAllPrimitiveId(layer, ruleType, primitiveLock)](./PCB_PrimitiveRegion.md)                             |     | **_(BETA)_** 获取所有区域的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitiveRegion.md)                                                 |     | **_(BETA)_** 修改区域         |
 
 ---
 
@@ -147,119 +41,14 @@ create(layer: TPCB_LayersOfRegion, complexPolygon: IPCB_Polygon, ruleType?: Arra
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-复杂多边形对象
-
-
-</td></tr>
-<tr><td>
-
-ruleType
-
-
-</td><td>
-
-Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 区域规则类型
-
-
-</td></tr>
-<tr><td>
-
-regionName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 区域名称
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                     | 描述            |
+| -------------- | -------------------------------------------------------------------------------------- | ------------- |
+| layer          | [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)                                | 层             |
+| complexPolygon | [IPCB\_Polygon](./IPCB_Polygon.md)                                                     | 复杂多边形对象       |
+| ruleType       | Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)&gt; | _（可选）_ 区域规则类型 |
+| regionName     | string                                                                                 | _（可选）_ 区域名称   |
+| lineWidth      | number                                                                                 | _（可选）_ 线宽     |
+| primitiveLock  | boolean                                                                                | _（可选）_ 是否锁定   |
 
 
 
@@ -285,39 +74,9 @@ delete(primitiveIds: string | IPCB_PrimitiveRegion | Array<string> | Array<IPCB_
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
-
-
-</td><td>
-
-区域的图元 ID 或区域图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                     | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| [IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt; | 区域的图元 ID 或区域图元对象 |
 
 
 
@@ -343,39 +102,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitiveRegion | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-区域的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 区域的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -401,45 +130,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveRegion>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-区域的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 区域的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt;&gt;
 
 区域图元对象，空数组表示获取失败
 
@@ -463,77 +162,17 @@ getAll(layer?: TPCB_LayersOfRegion, ruleType?: Array<EPCB_PrimitiveRegionRuleTyp
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-ruleType
-
-
-</td><td>
-
-Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 区域规则类型，只会匹配所有规则类型均一致的图元
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                     | 描述                             |
+| ------------- | -------------------------------------------------------------------------------------- | ------------------------------ |
+| layer         | [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)                                | _（可选）_ 层                       |
+| ruleType      | Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)&gt; | _（可选）_ 区域规则类型，只会匹配所有规则类型均一致的图元 |
+| primitiveLock | boolean                                                                                | _（可选）_ 是否锁定                    |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt;&gt;
 
 区域图元对象数组
 
@@ -553,71 +192,11 @@ getAllPrimitiveId(layer?: TPCB_LayersOfRegion, ruleType?: Array<EPCB_PrimitiveRe
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-ruleType
-
-
-</td><td>
-
-Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 区域规则类型，只会匹配所有规则类型均一致的图元
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                     | 描述                             |
+| ------------- | -------------------------------------------------------------------------------------- | ------------------------------ |
+| layer         | [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)                                | _（可选）_ 层                       |
+| ruleType      | Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)&gt; | _（可选）_ 区域规则类型，只会匹配所有规则类型均一致的图元 |
+| primitiveLock | boolean                                                                                | _（可选）_ 是否锁定                    |
 
 
 
@@ -650,55 +229,10 @@ modify(primitiveId: string | IPCB_PrimitiveRegion, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ layer?: [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)<!-- -->; complexPolygon?: [IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->; ruleType?: Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;; regionName?: string; lineWidth?: number; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                             | 描述    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)                                                                                                                                                                                                                                   | 图元 ID |
+| property    | { layer?: [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md); complexPolygon?: [IPCB\_Polygon](./IPCB_Polygon.md); ruleType?: Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)&gt;; regionName?: string; lineWidth?: number; primitiveLock?: boolean; } | 修改参数  |
 
 
 

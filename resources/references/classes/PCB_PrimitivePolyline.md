@@ -5,127 +5,21 @@ PCB &amp; 封装 / 折线图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitivePolyline implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitivePolyline implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(net, layer, polygon, lineWidth, primitiveLock)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建折线
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除折线
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取折线
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取折线
-
-
-</td></tr>
-<tr><td>
-
-[getAll(net, layer, primitiveLock)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有折线
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(net, layer, primitiveLock)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有折线的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改折线
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                 | 修饰符 | 描述                        |
+| ----------------------------------------------------------------------------------- | --- | ------------------------- |
+| [create(net, layer, polygon, lineWidth, primitiveLock)](./PCB_PrimitivePolyline.md) |     | 创建折线                      |
+| [delete(primitiveIds)](./PCB_PrimitivePolyline.md)                                  |     | **_(BETA)_** 删除折线         |
+| [get(primitiveIds)](./PCB_PrimitivePolyline.md)                                     |     | **_(BETA)_** 获取折线         |
+| [get(primitiveIds)](./PCB_PrimitivePolyline.md)                                     |     | **_(BETA)_** 获取折线         |
+| [getAll(net, layer, primitiveLock)](./PCB_PrimitivePolyline.md)                     |     | **_(BETA)_** 获取所有折线       |
+| [getAllPrimitiveId(net, layer, primitiveLock)](./PCB_PrimitivePolyline.md)          |     | **_(BETA)_** 获取所有折线的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitivePolyline.md)                         |     | **_(BETA)_** 修改折线         |
 
 ---
 
@@ -145,103 +39,13 @@ create(net: string, layer: TPCB_LayersOfLine, polygon: IPCB_Polygon, lineWidth?:
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-polygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-单多边形对象
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| net           | string                                              | 网络名称        |
+| layer         | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md) | 层           |
+| polygon       | [IPCB\_Polygon](./IPCB_Polygon.md)                  | 单多边形对象      |
+| lineWidth     | number                                              | _（可选）_ 线宽   |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
@@ -267,39 +71,9 @@ delete(primitiveIds: string | IPCB_PrimitivePolyline | Array<string> | Array<IPC
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;
-
-
-</td><td>
-
-折线的图元 ID 或折线图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                             | 描述               |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| primitiveIds | string \| [IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)&gt; | 折线的图元 ID 或折线图元对象 |
 
 
 
@@ -325,39 +99,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitivePolyline | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-折线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 折线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -383,45 +127,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePolyline>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-折线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 折线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)&gt;&gt;
 
 折线图元对象，空数组表示获取失败
 
@@ -445,77 +159,17 @@ getAll(net?: string, layer?: TPCB_LayersOfLine, primitiveLock?: boolean): Promis
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| net           | string                                              | _（可选）_ 网络名称 |
+| layer         | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)&gt;&gt;
 
 折线图元对象数组
 
@@ -535,71 +189,11 @@ getAllPrimitiveId(net?: string, layer?: TPCB_LayersOfLine, primitiveLock?: boole
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| net           | string                                              | _（可选）_ 网络名称 |
+| layer         | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
@@ -631,55 +225,10 @@ modify(primitiveId: string | IPCB_PrimitivePolyline, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ net?: string; layer?: [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)<!-- -->; polygon?: [IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->; lineWidth?: number; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                        | 描述    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)                                                                                                          | 图元 ID |
+| property    | { net?: string; layer?: [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md); polygon?: [IPCB\_Polygon](./IPCB_Polygon.md); lineWidth?: number; primitiveLock?: boolean; } | 修改参数  |
 
 
 

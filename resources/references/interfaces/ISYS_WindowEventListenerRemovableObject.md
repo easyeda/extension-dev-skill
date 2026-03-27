@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface ISYS_WindowEventListenerRemovableObject 
+interface ISYS_WindowEventListenerRemovableObject
 ```
 
 ## 备注
@@ -14,81 +14,11 @@ interface ISYS_WindowEventListenerRemovableObject
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[listener](./ISYS_WindowEventListenerRemovableObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(ev: any) =&gt; any
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[options?](./ISYS_WindowEventListenerRemovableObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-\{ capture?: boolean; \}
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[type](./ISYS_WindowEventListenerRemovableObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ESYS\_WindowEventType](../enums/ESYS_WindowEventType.md)
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                      | 修饰符 | 类型                                                        | 描述           |
+| -------------------------------------------------------- | --- | --------------------------------------------------------- | ------------ |
+| [listener](./ISYS_WindowEventListenerRemovableObject.md) |     | (ev: any) =&gt; any                                       |              |
+| [options?](./ISYS_WindowEventListenerRemovableObject.md) |     | \{ capture?: boolean; \}                                  | _(Optional)_ |
+| [type](./ISYS_WindowEventListenerRemovableObject.md)     |     | [ESYS\_WindowEventType](../enums/ESYS_WindowEventType.md) |              |
 
 ---
 

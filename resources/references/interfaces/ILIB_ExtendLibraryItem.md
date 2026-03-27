@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface ILIB_ExtendLibraryItem extends ILIB_ExtendLibraryItemIndex 
+interface ILIB_ExtendLibraryItem extends ILIB_ExtendLibraryItemIndex
 ```
 **扩展自：**[ILIB\_ExtendLibraryItemIndex](./ILIB_ExtendLibraryItemIndex.md)
 
@@ -19,66 +19,10 @@ interface ILIB_ExtendLibraryItem extends ILIB_ExtendLibraryItemIndex
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[data?](./ILIB_ExtendLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string \| Blob
-
-
-</td><td>
-
-_（可选）_ 库文件数据
-
-
-</td></tr>
-<tr><td>
-
-[url?](./ILIB_ExtendLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库文件地址
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                  | 修饰符 | 类型             | 描述           |
+| ------------------------------------ | --- | -------------- | ------------ |
+| [data?](./ILIB_ExtendLibraryItem.md) |     | string \| Blob | _（可选）_ 库文件数据 |
+| [url?](./ILIB_ExtendLibraryItem.md)  |     | string         | _（可选）_ 库文件地址 |
 
 ---
 

@@ -5,127 +5,21 @@ PCB &amp; 封装 / 过孔图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitiveVia implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitiveVia implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(net, x, y, holeDiameter, diameter, viaType, designRuleBlindViaName, solderMaskExpansion, primitiveLock)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建过孔
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除过孔
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取过孔
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取过孔
-
-
-</td></tr>
-<tr><td>
-
-[getAll(net, primitiveLock)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有过孔
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(net, primitiveLock)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有过孔图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改过孔
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                                     | 修饰符 | 描述                       |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------ |
+| [create(net, x, y, holeDiameter, diameter, viaType, designRuleBlindViaName, solderMaskExpansion, primitiveLock)](./PCB_PrimitiveVia.md) |     | 创建过孔                     |
+| [delete(primitiveIds)](./PCB_PrimitiveVia.md)                                                                                           |     | **_(BETA)_** 删除过孔        |
+| [get(primitiveIds)](./PCB_PrimitiveVia.md)                                                                                              |     | **_(BETA)_** 获取过孔        |
+| [get(primitiveIds)](./PCB_PrimitiveVia.md)                                                                                              |     | **_(BETA)_** 获取过孔        |
+| [getAll(net, primitiveLock)](./PCB_PrimitiveVia.md)                                                                                     |     | **_(BETA)_** 获取所有过孔      |
+| [getAllPrimitiveId(net, primitiveLock)](./PCB_PrimitiveVia.md)                                                                          |     | **_(BETA)_** 获取所有过孔图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitiveVia.md)                                                                                  |     | **_(BETA)_** 修改过孔        |
 
 ---
 
@@ -145,167 +39,17 @@ create(net: string, x: number, y: number, holeDiameter: number, diameter: number
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-holeDiameter
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-孔径
-
-
-</td></tr>
-<tr><td>
-
-diameter
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-外径
-
-
-</td></tr>
-<tr><td>
-
-viaType
-
-
-</td><td>
-
-[EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md)
-
-
-</td><td>
-
-_（可选）_ 过孔类型
-
-
-</td></tr>
-<tr><td>
-
-designRuleBlindViaName
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 盲埋孔设计规则项名称，定义过孔的开始层与结束层，`null` 表示非盲埋孔
-
-
-</td></tr>
-<tr><td>
-
-solderMaskExpansion
-
-
-</td><td>
-
-[IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
-
-
-</td><td>
-
-_（可选）_ 阻焊/助焊扩展，`null` 表示跟随规则
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数                     | 类型                                                                                                                       | 描述                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| net                    | string                                                                                                                   | 网络名称                                         |
+| x                      | number                                                                                                                   | 坐标 X                                         |
+| y                      | number                                                                                                                   | 坐标 Y                                         |
+| holeDiameter           | number                                                                                                                   | 孔径                                           |
+| diameter               | number                                                                                                                   | 外径                                           |
+| viaType                | [EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md)                                                              | _（可选）_ 过孔类型                                  |
+| designRuleBlindViaName | string \| null                                                                                                           | _（可选）_ 盲埋孔设计规则项名称，定义过孔的开始层与结束层，`null` 表示非盲埋孔 |
+| solderMaskExpansion    | [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null | _（可选）_ 阻焊/助焊扩展，`null` 表示跟随规则                 |
+| primitiveLock          | boolean                                                                                                                  | _（可选）_ 是否锁定                                  |
 
 
 
@@ -331,39 +75,9 @@ delete(primitiveIds: string | IPCB_PrimitiveVia | Array<string> | Array<IPCB_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;
-
-
-</td><td>
-
-过孔的图元 ID 或过孔图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                         | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)&gt; | 过孔的图元 ID 或过孔图元对象 |
 
 
 
@@ -389,39 +103,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitiveVia | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-过孔的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 过孔的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -447,45 +131,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveVia>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-过孔的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 过孔的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)&gt;&gt;
 
 过孔图元对象，空数组表示获取失败
 
@@ -509,61 +163,16 @@ getAll(net?: string, primitiveLock?: boolean): Promise<Array<IPCB_PrimitiveVia>>
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述          |
+| ------------- | ------- | ----------- |
+| net           | string  | _（可选）_ 网络名称 |
+| primitiveLock | boolean | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)&gt;&gt;
 
 过孔图元对象数组
 
@@ -583,55 +192,10 @@ getAllPrimitiveId(net?: string, primitiveLock?: boolean): Promise<Array<string>>
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述          |
+| ------------- | ------- | ----------- |
+| net           | string  | _（可选）_ 网络名称 |
+| primitiveLock | boolean | _（可选）_ 是否锁定 |
 
 
 
@@ -667,55 +231,10 @@ modify(primitiveId: string | IPCB_PrimitiveVia, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ net?: string; x?: number; y?: number; holeDiameter?: number; diameter?: number; viaType?: [EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md)<!-- -->; designRuleBlindViaName?: string \| null; solderMaskExpansion?: [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                                           | 描述    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)                                                                                                                                                                                                                                                                                                                       | 图元 ID |
+| property    | { net?: string; x?: number; y?: number; holeDiameter?: number; diameter?: number; viaType?: [EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md); designRuleBlindViaName?: string \| null; solderMaskExpansion?: [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null; primitiveLock?: boolean; } | 修改参数  |
 
 
 

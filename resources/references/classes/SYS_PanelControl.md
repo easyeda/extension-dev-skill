@@ -5,196 +5,25 @@
 ## 签名
 
 ```typescript
-declare class SYS_PanelControl 
+declare class SYS_PanelControl
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[closeBottomPanel()](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-关闭底部面板
-
-
-</td></tr>
-<tr><td>
-
-[closeLeftPanel()](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-关闭左侧面板
-
-
-</td></tr>
-<tr><td>
-
-[closeRightPanel()](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-关闭右侧面板
-
-
-</td></tr>
-<tr><td>
-
-[isBottomPanelLocked()](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询底部面板是否已锁定
-
-
-</td></tr>
-<tr><td>
-
-[isLeftPanelLocked()](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询左侧面板是否已锁定
-
-
-</td></tr>
-<tr><td>
-
-[isRightPanelLocked()](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询右侧面板是否已锁定
-
-
-</td></tr>
-<tr><td>
-
-[openBottomPanel(tab)](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开底部面板
-
-
-</td></tr>
-<tr><td>
-
-[openLeftPanel(tab)](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开左侧面板
-
-
-</td></tr>
-<tr><td>
-
-[openRightPanel(tab)](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开右侧面板
-
-
-</td></tr>
-<tr><td>
-
-[toggleBottomPanelLockState(state)](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-切换底部面板锁定状态
-
-
-</td></tr>
-<tr><td>
-
-[toggleLeftPanelLockState(state)](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-切换左侧面板锁定状态
-
-
-</td></tr>
-<tr><td>
-
-[toggleRightPanelLockState(state)](./SYS_PanelControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-切换右侧面板锁定状态
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                        | 修饰符 | 描述          |
+| ---------------------------------------------------------- | --- | ----------- |
+| [closeBottomPanel()](./SYS_PanelControl.md)                |     | 关闭底部面板      |
+| [closeLeftPanel()](./SYS_PanelControl.md)                  |     | 关闭左侧面板      |
+| [closeRightPanel()](./SYS_PanelControl.md)                 |     | 关闭右侧面板      |
+| [isBottomPanelLocked()](./SYS_PanelControl.md)             |     | 查询底部面板是否已锁定 |
+| [isLeftPanelLocked()](./SYS_PanelControl.md)               |     | 查询左侧面板是否已锁定 |
+| [isRightPanelLocked()](./SYS_PanelControl.md)              |     | 查询右侧面板是否已锁定 |
+| [openBottomPanel(tab)](./SYS_PanelControl.md)              |     | 打开底部面板      |
+| [openLeftPanel(tab)](./SYS_PanelControl.md)                |     | 打开左侧面板      |
+| [openRightPanel(tab)](./SYS_PanelControl.md)               |     | 打开右侧面板      |
+| [toggleBottomPanelLockState(state)](./SYS_PanelControl.md) |     | 切换底部面板锁定状态  |
+| [toggleLeftPanelLockState(state)](./SYS_PanelControl.md)   |     | 切换左侧面板锁定状态  |
+| [toggleRightPanelLockState(state)](./SYS_PanelControl.md)  |     | 切换右侧面板锁定状态  |
 
 ---
 
@@ -322,39 +151,9 @@ openBottomPanel(tab?: ESYS_BottomPanelTab): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tab
-
-
-</td><td>
-
-[ESYS\_BottomPanelTab](../enums/ESYS_BottomPanelTab.md)
-
-
-</td><td>
-
-_（可选）_ 标签页，如若不指定则不切换标签页
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型                                                      | 描述                      |
+| --- | ------------------------------------------------------- | ----------------------- |
+| tab | [ESYS\_BottomPanelTab](../enums/ESYS_BottomPanelTab.md) | _（可选）_ 标签页，如若不指定则不切换标签页 |
 
 
 
@@ -376,39 +175,9 @@ openLeftPanel(tab?: ESYS_LeftPanelTab): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tab
-
-
-</td><td>
-
-[ESYS\_LeftPanelTab](../enums/ESYS_LeftPanelTab.md)
-
-
-</td><td>
-
-_（可选）_ 标签页，如若不指定则不切换标签页
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型                                                  | 描述                      |
+| --- | --------------------------------------------------- | ----------------------- |
+| tab | [ESYS\_LeftPanelTab](../enums/ESYS_LeftPanelTab.md) | _（可选）_ 标签页，如若不指定则不切换标签页 |
 
 
 
@@ -430,39 +199,9 @@ openRightPanel(tab?: ESYS_RightPanelTab): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tab
-
-
-</td><td>
-
-[ESYS\_RightPanelTab](../enums/ESYS_RightPanelTab.md)
-
-
-</td><td>
-
-_（可选）_ 标签页，如若不指定则不切换标签页
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型                                                    | 描述                      |
+| --- | ----------------------------------------------------- | ----------------------- |
+| tab | [ESYS\_RightPanelTab](../enums/ESYS_RightPanelTab.md) | _（可选）_ 标签页，如若不指定则不切换标签页 |
 
 
 
@@ -484,39 +223,9 @@ toggleBottomPanelLockState(state?: boolean): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-state
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定，如若不指定则反置当前状态
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型      | 描述                       |
+| ----- | ------- | ------------------------ |
+| state | boolean | _（可选）_ 是否锁定，如若不指定则反置当前状态 |
 
 
 
@@ -538,39 +247,9 @@ toggleLeftPanelLockState(state?: boolean): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-state
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定，如若不指定则反置当前状态
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型      | 描述                       |
+| ----- | ------- | ------------------------ |
+| state | boolean | _（可选）_ 是否锁定，如若不指定则反置当前状态 |
 
 
 
@@ -592,39 +271,9 @@ toggleRightPanelLockState(state?: boolean): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-state
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定，如若不指定则反置当前状态
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型      | 描述                       |
+| ----- | ------- | ------------------------ |
+| state | boolean | _（可选）_ 是否锁定，如若不指定则反置当前状态 |
 
 
 

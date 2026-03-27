@@ -5,149 +5,19 @@
 ## 签名
 
 ```typescript
-interface ILIB_3DModelItem 
+interface ILIB_3DModelItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[classification?](./ILIB_3DModelItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-[description?](./ILIB_3DModelItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-<tr><td>
-
-[libraryType](./ILIB_3DModelItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[ELIB\_LibraryType.MODEL](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-[libraryUuid](./ILIB_3DModelItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[name](./ILIB_3DModelItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-3D 模型名称
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./ILIB_3DModelItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-3D 模型 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                      | 修饰符        | 类型                                                                                | 描述         |
+| ---------------------------------------- | ---------- | --------------------------------------------------------------------------------- | ---------- |
+| [classification?](./ILIB_3DModelItem.md) |            | [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 分类  |
+| [description?](./ILIB_3DModelItem.md)    |            | string                                                                            | _（可选）_ 描述  |
+| [libraryType](./ILIB_3DModelItem.md)     | `readonly` | [ELIB\_LibraryType.MODEL](../enums/ELIB_LibraryType.md)                           | 库类型        |
+| [libraryUuid](./ILIB_3DModelItem.md)     |            | string                                                                            | 所属库 UUID   |
+| [name](./ILIB_3DModelItem.md)            |            | string                                                                            | 3D 模型名称    |
+| [uuid](./ILIB_3DModelItem.md)            |            | string                                                                            | 3D 模型 UUID |
 
 ---
 

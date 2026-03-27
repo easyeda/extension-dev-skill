@@ -10,11 +10,11 @@ type TPCB_PrimitivePadHole = [EPCB_PrimitivePadHoleType.ROUND, number] | [EPCB_P
 ## 引用
 
 
-[EPCB\_PrimitivePadHoleType.ROUND](../enums/EPCB_PrimitivePadHoleType.md)<!-- -->, [EPCB\_PrimitivePadHoleType.SLOT](../enums/EPCB_PrimitivePadHoleType.md)
+[EPCB\_PrimitivePadHoleType.ROUND](../enums/EPCB_PrimitivePadHoleType.md), [EPCB\_PrimitivePadHoleType.SLOT](../enums/EPCB_PrimitivePadHoleType.md)
 
 ## 备注
 
-焊盘钻孔当前存在以下两种 [类型](../enums/EPCB_PrimitivePadHoleType.md)<!-- -->：
+焊盘钻孔当前存在以下两种 [类型](../enums/EPCB_PrimitivePadHoleType.md)：
 
 ① 圆形
 

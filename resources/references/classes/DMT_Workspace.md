@@ -5,70 +5,16 @@
 ## 签名
 
 ```typescript
-declare class DMT_Workspace 
+declare class DMT_Workspace
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getAllWorkspacesInfo()](./DMT_Workspace.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有工作区的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentWorkspaceInfo()](./DMT_Workspace.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前工作区的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[toggleToWorkspace(workspaceUuid)](./DMT_Workspace.md)
-
-
-</td><td>
-
-
-</td><td>
-
-切换到工作区
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                    | 修饰符 | 描述           |
+| ------------------------------------------------------ | --- | ------------ |
+| [getAllWorkspacesInfo()](./DMT_Workspace.md)           |     | 获取所有工作区的详细属性 |
+| [getCurrentWorkspaceInfo()](./DMT_Workspace.md)        |     | 获取当前工作区的详细属性 |
+| [toggleToWorkspace(workspaceUuid)](./DMT_Workspace.md) |     | 切换到工作区       |
 
 ---
 
@@ -89,7 +35,7 @@ getAllWorkspacesInfo(): Promise<Array<IDMT_WorkspaceItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_WorkspaceItem](../interfaces/IDMT_WorkspaceItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_WorkspaceItem](../interfaces/IDMT_WorkspaceItem.md)&gt;&gt;
 
 所有工作区的详细属性
 
@@ -130,39 +76,9 @@ toggleToWorkspace(workspaceUuid?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-workspaceUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 工作区 UUID，如若不指定，则将切换到个人工作区
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                               |
+| ------------- | ------ | -------------------------------- |
+| workspaceUuid | string | _（可选）_ 工作区 UUID，如若不指定，则将切换到个人工作区 |
 
 
 

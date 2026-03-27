@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveImage implements IPCB_Primitive 
+declare class IPCB_PrimitiveImage implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,359 +14,32 @@ declare class IPCB_PrimitiveImage implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ComplexPolygon()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图像源数据（复杂多边形）
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Height()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：高
-
-
-</td></tr>
-<tr><td>
-
-[getState\_HorizonMirror()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否水平镜像
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Rotation()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Width()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_X()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：BBox 左上点坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Y()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：BBox 左上点坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Height(height)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：高
-
-
-</td></tr>
-<tr><td>
-
-[setState\_HorizonMirror(horizonMirror)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否水平镜像
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Rotation(rotation)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Width(width)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_X(x)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：BBox 左上点坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Y(y)](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：BBox 左上点坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveImage.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                | 修饰符 | 描述                               |
+| ------------------------------------------------------------------ | --- | -------------------------------- |
+| [done()](./IPCB_PrimitiveImage.md)                                 |     | **_(BETA)_** 将对图元的更改应用到画布        |
+| [getState\_ComplexPolygon()](./IPCB_PrimitiveImage.md)             |     | 获取属性状态：图像源数据（复杂多边形）              |
+| [getState\_Height()](./IPCB_PrimitiveImage.md)                     |     | 获取属性状态：高                         |
+| [getState\_HorizonMirror()](./IPCB_PrimitiveImage.md)              |     | 获取属性状态：是否水平镜像                    |
+| [getState\_Layer()](./IPCB_PrimitiveImage.md)                      |     | 获取属性状态：层                         |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveImage.md)                |     | 获取属性状态：图元 ID                     |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveImage.md)              |     | 获取属性状态：是否锁定                      |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveImage.md)              |     | 获取属性状态：图元类型                      |
+| [getState\_Rotation()](./IPCB_PrimitiveImage.md)                   |     | 获取属性状态：旋转角度                      |
+| [getState\_Width()](./IPCB_PrimitiveImage.md)                      |     | 获取属性状态：宽                         |
+| [getState\_X()](./IPCB_PrimitiveImage.md)                          |     | 获取属性状态：BBox 左上点坐标 X              |
+| [getState\_Y()](./IPCB_PrimitiveImage.md)                          |     | 获取属性状态：BBox 左上点坐标 Y              |
+| [isAsync()](./IPCB_PrimitiveImage.md)                              |     | 查询图元是否为异步图元                      |
+| [reset()](./IPCB_PrimitiveImage.md)                                |     | **_(BETA)_** 将异步图元重置为当前画布状态      |
+| [setState\_Height(height)](./IPCB_PrimitiveImage.md)               |     | **_(BETA)_** 设置属性状态：高            |
+| [setState\_HorizonMirror(horizonMirror)](./IPCB_PrimitiveImage.md) |     | **_(BETA)_** 设置属性状态：是否水平镜像       |
+| [setState\_Layer(layer)](./IPCB_PrimitiveImage.md)                 |     | **_(BETA)_** 设置属性状态：层            |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveImage.md) |     | **_(BETA)_** 设置属性状态：是否锁定         |
+| [setState\_Rotation(rotation)](./IPCB_PrimitiveImage.md)           |     | **_(BETA)_** 设置属性状态：旋转角度         |
+| [setState\_Width(width)](./IPCB_PrimitiveImage.md)                 |     | **_(BETA)_** 设置属性状态：宽            |
+| [setState\_X(x)](./IPCB_PrimitiveImage.md)                         |     | **_(BETA)_** 设置属性状态：BBox 左上点坐标 X |
+| [setState\_Y(y)](./IPCB_PrimitiveImage.md)                         |     | **_(BETA)_** 设置属性状态：BBox 左上点坐标 Y |
+| [toAsync()](./IPCB_PrimitiveImage.md)                              |     | 将图元转换为异步图元                       |
+| [toSync()](./IPCB_PrimitiveImage.md)                               |     | 将图元转换为同步图元                       |
 
 ---
 
@@ -389,7 +62,7 @@ done(): Promise<IPCB_PrimitiveImage>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveImage](./IPCB_PrimitiveImage.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveImage](./IPCB_PrimitiveImage.md)&gt;
 
 图像图元对象
 
@@ -408,7 +81,7 @@ getState_ComplexPolygon(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArr
 
 ## 返回值
 
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt;
+[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt;
 
 图像源数据（复杂多边形）
 
@@ -638,7 +311,7 @@ reset(): Promise<IPCB_PrimitiveImage>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveImage](./IPCB_PrimitiveImage.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveImage](./IPCB_PrimitiveImage.md)&gt;
 
 图像图元对象
 
@@ -658,39 +331,9 @@ setState_Height(height: number): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-height
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-高
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述  |
+| ------ | ------ | --- |
+| height | number | 高   |
 
 
 
@@ -716,39 +359,9 @@ setState_HorizonMirror(horizonMirror: boolean): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-horizonMirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否水平镜像
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述     |
+| ------------- | ------- | ------ |
+| horizonMirror | boolean | 是否水平镜像 |
 
 
 
@@ -774,39 +387,9 @@ setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                    | 描述  |
+| ----- | ----------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md) | 层   |
 
 
 
@@ -832,39 +415,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -890,39 +443,9 @@ setState_Rotation(rotation: number): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| rotation | number | 旋转角度 |
 
 
 
@@ -948,39 +471,9 @@ setState_Width(width: number): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-width
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-宽
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述  |
+| ----- | ------ | --- |
+| width | number | 宽   |
 
 
 
@@ -1006,39 +499,9 @@ setState_X(x: number): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-BBox 左上点坐标 X
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述           |
+| --- | ------ | ------------ |
+| x   | number | BBox 左上点坐标 X |
 
 
 
@@ -1064,39 +527,9 @@ setState_Y(y: number): IPCB_PrimitiveImage;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-BBox 左上点坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述           |
+| --- | ------ | ------------ |
+| y   | number | BBox 左上点坐标 Y |
 
 
 

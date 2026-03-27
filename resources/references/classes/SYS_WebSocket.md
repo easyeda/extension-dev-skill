@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_WebSocket 
+declare class SYS_WebSocket
 ```
 
 ## 备注
@@ -15,65 +15,11 @@ declare class SYS_WebSocket
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[close(id, code, reason, extensionUuid)](./SYS_WebSocket.md)
-
-
-</td><td>
-
-
-</td><td>
-
-关闭 WebSocket 连接
-
-
-</td></tr>
-<tr><td>
-
-[register(id, serviceUri, receiveMessageCallFn, connectedCallFn, protocols)](./SYS_WebSocket.md)
-
-
-</td><td>
-
-
-</td><td>
-
-注册 WebSocket 连接
-
-
-</td></tr>
-<tr><td>
-
-[send(id, data, extensionUuid)](./SYS_WebSocket.md)
-
-
-</td><td>
-
-
-</td><td>
-
-向 WebSocket 服务器发送数据
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                              | 修饰符 | 描述                  |
+| ------------------------------------------------------------------------------------------------ | --- | ------------------- |
+| [close(id, code, reason, extensionUuid)](./SYS_WebSocket.md)                                     |     | 关闭 WebSocket 连接     |
+| [register(id, serviceUri, receiveMessageCallFn, connectedCallFn, protocols)](./SYS_WebSocket.md) |     | 注册 WebSocket 连接     |
+| [send(id, data, extensionUuid)](./SYS_WebSocket.md)                                              |     | 向 WebSocket 服务器发送数据 |
 
 ---
 
@@ -93,87 +39,12 @@ close(id: string, code?: number, reason?: string, extensionUuid?: string): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-自定义的 WebSocket ID
-
-
-</td></tr>
-<tr><td>
-
-code
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 数字状态码，对应 [WebSocket.CloseEvent](https://developer.mozilla.org/docs/Web/API/CloseEvent/code) 内允许的状态码
-
-
-</td></tr>
-<tr><td>
-
-reason
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 一个人类可读的字符串，解释连接关闭的原因
-
-
-</td></tr>
-<tr><td>
-
-extensionUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 扩展 UUID，一般不需要指定，仅当需要操作其它扩展建立的 WebSocket 连接时才需要指定为其它扩展的 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                                                                                         |
+| ------------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| id            | string | 自定义的 WebSocket ID                                                                                          |
+| code          | number | _（可选）_ 数字状态码，对应 [WebSocket.CloseEvent](https://developer.mozilla.org/docs/Web/API/CloseEvent/code) 内允许的状态码 |
+| reason        | string | _（可选）_ 一个人类可读的字符串，解释连接关闭的原因                                                                                |
+| extensionUuid | string | _（可选）_ 扩展 UUID，一般不需要指定，仅当需要操作其它扩展建立的 WebSocket 连接时才需要指定为其它扩展的 UUID                                         |
 
 
 
@@ -199,103 +70,13 @@ register(id: string, serviceUri: string, receiveMessageCallFn?: (event: MessageE
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-自定义 WebSocket ID
-
-
-</td></tr>
-<tr><td>
-
-serviceUri
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-WebSocket 服务地址
-
-
-</td></tr>
-<tr><td>
-
-receiveMessageCallFn
-
-
-</td><td>
-
-(event: MessageEvent&lt;any&gt;) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-_（可选）_ 接收到消息时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-connectedCallFn
-
-
-</td><td>
-
-() =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-_（可选）_ 连接建立时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-protocols
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 子协议
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型                                                                 | 描述                 |
+| -------------------- | ------------------------------------------------------------------ | ------------------ |
+| id                   | string                                                             | 自定义 WebSocket ID   |
+| serviceUri           | string                                                             | WebSocket 服务地址     |
+| receiveMessageCallFn | (event: MessageEvent&lt;any&gt;) =&gt; void \| Promise&lt;void&gt; | _（可选）_ 接收到消息时的回调函数 |
+| connectedCallFn      | () =&gt; void \| Promise&lt;void&gt;                               | _（可选）_ 连接建立时的回调函数  |
+| protocols            | string \| Array&lt;string&gt;                                      | _（可选）_ 子协议         |
 
 
 
@@ -323,71 +104,11 @@ send(id: string, data: string | ArrayBuffer | Blob | ArrayBufferView, extensionU
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-自定义的 WebSocket ID
-
-
-</td></tr>
-<tr><td>
-
-data
-
-
-</td><td>
-
-string \| ArrayBuffer \| Blob \| ArrayBufferView
-
-
-</td><td>
-
-发送的数据
-
-
-</td></tr>
-<tr><td>
-
-extensionUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 扩展 UUID，一般不需要指定，仅当需要操作其它扩展建立的 WebSocket 连接时才需要指定为其它扩展的 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                               | 描述                                                                 |
+| ------------- | ------------------------------------------------ | ------------------------------------------------------------------ |
+| id            | string                                           | 自定义的 WebSocket ID                                                  |
+| data          | string \| ArrayBuffer \| Blob \| ArrayBufferView | 发送的数据                                                              |
+| extensionUuid | string                                           | _（可选）_ 扩展 UUID，一般不需要指定，仅当需要操作其它扩展建立的 WebSocket 连接时才需要指定为其它扩展的 UUID |
 
 
 

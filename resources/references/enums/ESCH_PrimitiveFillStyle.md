@@ -5,153 +5,18 @@
 ## 签名
 
 ```typescript
-declare enum ESCH_PrimitiveFillStyle 
+declare enum ESCH_PrimitiveFillStyle
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-GRID
-
-
-</td><td>
-
-`"Grid"`
-
-
-</td><td>
-
-网格
-
-
-</td></tr>
-<tr><td>
-
-HORIZONTAL\_LINE
-
-
-</td><td>
-
-`"Horizontal Line"`
-
-
-</td><td>
-
-横线
-
-
-</td></tr>
-<tr><td>
-
-LEFT\_SLASH\_LINE
-
-
-</td><td>
-
-`"Left Slash Line"`
-
-
-</td><td>
-
-左斜线
-
-
-</td></tr>
-<tr><td>
-
-NONE
-
-
-</td><td>
-
-`"None"`
-
-
-</td><td>
-
-无
-
-
-</td></tr>
-<tr><td>
-
-RHOMBIC\_GRID
-
-
-</td><td>
-
-`"Rhombic Grid"`
-
-
-</td><td>
-
-菱形网格
-
-
-</td></tr>
-<tr><td>
-
-RIGHT\_SLASH\_LINE
-
-
-</td><td>
-
-`"Right Slash Line"`
-
-
-</td><td>
-
-右斜线
-
-
-</td></tr>
-<tr><td>
-
-SOLID
-
-
-</td><td>
-
-`"Solid"`
-
-
-</td><td>
-
-实心
-
-
-</td></tr>
-<tr><td>
-
-VERTICAL\_LINE
-
-
-</td><td>
-
-`"Vertical Line"`
-
-
-</td><td>
-
-竖线
-
-
-</td></tr>
-</tbody></table>
+| 成员                 | 值                    | 描述   |
+| ------------------ | -------------------- | ---- |
+| GRID               | `"Grid"`             | 网格   |
+| HORIZONTAL\_LINE   | `"Horizontal Line"`  | 横线   |
+| LEFT\_SLASH\_LINE  | `"Left Slash Line"`  | 左斜线  |
+| NONE               | `"None"`             | 无    |
+| RHOMBIC\_GRID      | `"Rhombic Grid"`     | 菱形网格 |
+| RIGHT\_SLASH\_LINE | `"Right Slash Line"` | 右斜线  |
+| SOLID              | `"Solid"`            | 实心   |
+| VERTICAL\_LINE     | `"Vertical Line"`    | 竖线   |

@@ -9,7 +9,7 @@
 ## 签名
 
 ```typescript
-interface ILIB_ExtendLibraryClassificationIndex 
+interface ILIB_ExtendLibraryClassificationIndex
 ```
 
 ## 备注
@@ -18,104 +18,12 @@ interface ILIB_ExtendLibraryClassificationIndex
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[primaryClassificationName?](./ILIB_ExtendLibraryClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 一级分类名称
-
-
-</td></tr>
-<tr><td>
-
-[primaryClassificationUuid?](./ILIB_ExtendLibraryClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 一级分类 UUID
-
-
-</td></tr>
-<tr><td>
-
-[secondaryClassificationName?](./ILIB_ExtendLibraryClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 二级分类名称
-
-
-</td></tr>
-<tr><td>
-
-[secondaryClassificationUuid?](./ILIB_ExtendLibraryClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 二级分类 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                                        | 修饰符 | 类型     | 描述               |
+| -------------------------------------------------------------------------- | --- | ------ | ---------------- |
+| [primaryClassificationName?](./ILIB_ExtendLibraryClassificationIndex.md)   |     | string | _（可选）_ 一级分类名称    |
+| [primaryClassificationUuid?](./ILIB_ExtendLibraryClassificationIndex.md)   |     | string | _（可选）_ 一级分类 UUID |
+| [secondaryClassificationName?](./ILIB_ExtendLibraryClassificationIndex.md) |     | string | _（可选）_ 二级分类名称    |
+| [secondaryClassificationUuid?](./ILIB_ExtendLibraryClassificationIndex.md) |     | string | _（可选）_ 二级分类 UUID |
 
 ---
 

@@ -5,497 +5,51 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveString implements IPCB_Primitive 
+declare class IPCB_PrimitiveString implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Constructors
 
-<table><thead><tr><th>
-
-Constructor
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[(constructor)(layer, x, y, text, fontFamily, fontSize, lineWidth, alignMode, rotation, reverse, expansion, mirror, primitiveLock, primitiveId)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Constructs a new instance of the `IPCB_PrimitiveString` class
-
-
-</td></tr>
-</tbody></table>
+| Constructor                                                                                                                                                                 | 修饰符 | 描述                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------- |
+| [(constructor)(layer, x, y, text, fontFamily, fontSize, lineWidth, alignMode, rotation, reverse, expansion, mirror, primitiveLock, primitiveId)](./IPCB_PrimitiveString.md) |     | Constructs a new instance of the `IPCB_PrimitiveString` class |
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getState\_AlignMode()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：对齐模式
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Expansion()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：反相扩展
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FontFamily()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：字体
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FontSize()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：字号
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Mirror()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否镜像
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Reverse()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否反相
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Rotation()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Text()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：文本内容
-
-
-</td></tr>
-<tr><td>
-
-[getState\_X()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Y()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[setState\_AlignMode(alignMode)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：对齐模式
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Expansion(expansion)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：反相扩展
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FontFamily(fontFamily)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：字体
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FontSize(fontSize)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：字号
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Mirror(mirror)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否镜像
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Reverse(reverse)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否反相
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Rotation(rotation)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Text(text)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：文本内容
-
-
-</td></tr>
-<tr><td>
-
-[setState\_X(x)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Y(y)](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveString.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                 | 修饰符 | 描述                       |
+| ------------------------------------------------------------------- | --- | ------------------------ |
+| [getState\_AlignMode()](./IPCB_PrimitiveString.md)                  |     | 获取属性状态：对齐模式              |
+| [getState\_Expansion()](./IPCB_PrimitiveString.md)                  |     | 获取属性状态：反相扩展              |
+| [getState\_FontFamily()](./IPCB_PrimitiveString.md)                 |     | 获取属性状态：字体                |
+| [getState\_FontSize()](./IPCB_PrimitiveString.md)                   |     | 获取属性状态：字号                |
+| [getState\_Layer()](./IPCB_PrimitiveString.md)                      |     | 获取属性状态：层                 |
+| [getState\_LineWidth()](./IPCB_PrimitiveString.md)                  |     | 获取属性状态：线宽                |
+| [getState\_Mirror()](./IPCB_PrimitiveString.md)                     |     | 获取属性状态：是否镜像              |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveString.md)                |     | 获取属性状态：图元 ID             |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveString.md)              |     | 获取属性状态：是否锁定              |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveString.md)              |     | 获取属性状态：图元类型              |
+| [getState\_Reverse()](./IPCB_PrimitiveString.md)                    |     | 获取属性状态：是否反相              |
+| [getState\_Rotation()](./IPCB_PrimitiveString.md)                   |     | 获取属性状态：旋转角度              |
+| [getState\_Text()](./IPCB_PrimitiveString.md)                       |     | 获取属性状态：文本内容              |
+| [getState\_X()](./IPCB_PrimitiveString.md)                          |     | 获取属性状态：坐标 X              |
+| [getState\_Y()](./IPCB_PrimitiveString.md)                          |     | 获取属性状态：坐标 Y              |
+| [isAsync()](./IPCB_PrimitiveString.md)                              |     | 查询图元是否为异步图元              |
+| [setState\_AlignMode(alignMode)](./IPCB_PrimitiveString.md)         |     | **_(BETA)_** 设置属性状态：对齐模式 |
+| [setState\_Expansion(expansion)](./IPCB_PrimitiveString.md)         |     | **_(BETA)_** 设置属性状态：反相扩展 |
+| [setState\_FontFamily(fontFamily)](./IPCB_PrimitiveString.md)       |     | **_(BETA)_** 设置属性状态：字体   |
+| [setState\_FontSize(fontSize)](./IPCB_PrimitiveString.md)           |     | **_(BETA)_** 设置属性状态：字号   |
+| [setState\_Layer(layer)](./IPCB_PrimitiveString.md)                 |     | **_(BETA)_** 设置属性状态：层    |
+| [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveString.md)         |     | **_(BETA)_** 设置属性状态：线宽   |
+| [setState\_Mirror(mirror)](./IPCB_PrimitiveString.md)               |     | **_(BETA)_** 设置属性状态：是否镜像 |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveString.md) |     | **_(BETA)_** 设置属性状态：是否锁定 |
+| [setState\_Reverse(reverse)](./IPCB_PrimitiveString.md)             |     | **_(BETA)_** 设置属性状态：是否反相 |
+| [setState\_Rotation(rotation)](./IPCB_PrimitiveString.md)           |     | **_(BETA)_** 设置属性状态：旋转角度 |
+| [setState\_Text(text)](./IPCB_PrimitiveString.md)                   |     | **_(BETA)_** 设置属性状态：文本内容 |
+| [setState\_X(x)](./IPCB_PrimitiveString.md)                         |     | **_(BETA)_** 设置属性状态：坐标 X |
+| [setState\_Y(y)](./IPCB_PrimitiveString.md)                         |     | **_(BETA)_** 设置属性状态：坐标 Y |
+| [toAsync()](./IPCB_PrimitiveString.md)                              |     | 将图元转换为异步图元               |
+| [toSync()](./IPCB_PrimitiveString.md)                               |     | 将图元转换为同步图元               |
 
 ---
 
@@ -515,239 +69,22 @@ constructor(layer: TPCB_LayersOfImage, x: number, y: number, text: string, fontF
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-text
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-fontFamily
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-fontSize
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-alignMode
-
-
-</td><td>
-
-[EPCB\_PrimitiveStringAlignMode](../enums/EPCB_PrimitiveStringAlignMode.md)
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-reverse
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-expansion
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                          | 描述           |
+| ------------- | --------------------------------------------------------------------------- | ------------ |
+| layer         | [TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)                       |              |
+| x             | number                                                                      |              |
+| y             | number                                                                      |              |
+| text          | string                                                                      |              |
+| fontFamily    | string                                                                      | _(Optional)_ |
+| fontSize      | number                                                                      | _(Optional)_ |
+| lineWidth     | number                                                                      | _(Optional)_ |
+| alignMode     | [EPCB\_PrimitiveStringAlignMode](../enums/EPCB_PrimitiveStringAlignMode.md) | _(Optional)_ |
+| rotation      | number                                                                      | _(Optional)_ |
+| reverse       | boolean                                                                     | _(Optional)_ |
+| expansion     | number                                                                      | _(Optional)_ |
+| mirror        | boolean                                                                     | _(Optional)_ |
+| primitiveLock | boolean                                                                     | _(Optional)_ |
+| primitiveId   | string                                                                      | _(Optional)_ |
 
 
 ---
@@ -1074,39 +411,9 @@ setState_AlignMode(alignMode: EPCB_PrimitiveStringAlignMode): IPCB_PrimitiveStri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-alignMode
-
-
-</td><td>
-
-[EPCB\_PrimitiveStringAlignMode](../enums/EPCB_PrimitiveStringAlignMode.md)
-
-
-</td><td>
-
-对齐模式
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                          | 描述   |
+| --------- | --------------------------------------------------------------------------- | ---- |
+| alignMode | [EPCB\_PrimitiveStringAlignMode](../enums/EPCB_PrimitiveStringAlignMode.md) | 对齐模式 |
 
 
 
@@ -1132,39 +439,9 @@ setState_Expansion(expansion: number): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-expansion
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-反相扩展
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述   |
+| --------- | ------ | ---- |
+| expansion | number | 反相扩展 |
 
 
 
@@ -1190,39 +467,9 @@ setState_FontFamily(fontFamily: string): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fontFamily
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-字体
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型     | 描述  |
+| ---------- | ------ | --- |
+| fontFamily | string | 字体  |
 
 
 
@@ -1248,39 +495,9 @@ setState_FontSize(fontSize: number): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fontSize
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-字号
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述  |
+| -------- | ------ | --- |
+| fontSize | number | 字号  |
 
 
 
@@ -1306,39 +523,9 @@ setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                    | 描述  |
+| ----- | ----------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md) | 层   |
 
 
 
@@ -1364,39 +551,9 @@ setState_LineWidth(lineWidth: number): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| lineWidth | number | 线宽  |
 
 
 
@@ -1422,39 +579,9 @@ setState_Mirror(mirror: boolean): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否镜像
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型      | 描述   |
+| ------ | ------- | ---- |
+| mirror | boolean | 是否镜像 |
 
 
 
@@ -1480,39 +607,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -1538,39 +635,9 @@ setState_Reverse(reverse: boolean): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-reverse
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否反相
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型      | 描述   |
+| ------- | ------- | ---- |
+| reverse | boolean | 是否反相 |
 
 
 
@@ -1596,39 +663,9 @@ setState_Rotation(rotation: number): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| rotation | number | 旋转角度 |
 
 
 
@@ -1654,39 +691,9 @@ setState_Text(text: string): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-text
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文本内容
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述   |
+| ---- | ------ | ---- |
+| text | string | 文本内容 |
 
 
 
@@ -1712,39 +719,9 @@ setState_X(x: number): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| x   | number | 坐标 X |
 
 
 
@@ -1770,39 +747,9 @@ setState_Y(y: number): IPCB_PrimitiveString;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| y   | number | 坐标 Y |
 
 
 

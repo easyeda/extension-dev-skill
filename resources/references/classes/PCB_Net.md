@@ -5,154 +5,22 @@ PCB &amp; 封装 / 网络类
 ## 签名
 
 ```typescript
-declare class PCB_Net 
+declare class PCB_Net
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getAllNetName()](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有网络的网络名称
-
-
-</td></tr>
-<tr><td>
-
-[getAllNetsName()](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有网络的网络名称
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitivesByNet(net, primitiveTypes)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取关联指定网络的所有图元
-
-
-</td></tr>
-<tr><td>
-
-[getNetLength(net)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取指定网络的长度
-
-
-</td></tr>
-<tr><td>
-
-[getNetlist(type)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取网表
-
-
-</td></tr>
-<tr><td>
-
-[highlightNet(net)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 高亮网络
-
-
-</td></tr>
-<tr><td>
-
-[selectNet(net)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 选中网络
-
-
-</td></tr>
-<tr><td>
-
-[setNetlist(type, netlist)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-更新网表
-
-
-</td></tr>
-<tr><td>
-
-[unhighlightNet(net)](./PCB_Net.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 取消高亮网络
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                        | 修饰符 | 描述                         |
+| ---------------------------------------------------------- | --- | -------------------------- |
+| [getAllNetName()](./PCB_Net.md)                            |     | 获取所有网络的网络名称                |
+| [getAllNetsName()](./PCB_Net.md)                           |     | 获取所有网络的网络名称                |
+| [getAllPrimitivesByNet(net, primitiveTypes)](./PCB_Net.md) |     | **_(BETA)_** 获取关联指定网络的所有图元 |
+| [getNetLength(net)](./PCB_Net.md)                          |     | 获取指定网络的长度                  |
+| [getNetlist(type)](./PCB_Net.md)                           |     | 获取网表                       |
+| [highlightNet(net)](./PCB_Net.md)                          |     | **_(BETA)_** 高亮网络          |
+| [selectNet(net)](./PCB_Net.md)                             |     | **_(BETA)_** 选中网络          |
+| [setNetlist(type, netlist)](./PCB_Net.md)                  |     | 更新网表                       |
+| [unhighlightNet(net)](./PCB_Net.md)                        |     | **_(BETA)_** 取消高亮网络        |
 
 ---
 
@@ -216,61 +84,16 @@ getAllPrimitivesByNet(net: string, primitiveTypes?: Array<EPCB_PrimitiveType>): 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveTypes
-
-
-</td><td>
-
-Array&lt;[EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 图元类型数组，如若指定图元类型不存在网络属性，返回的数据将恒为空
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                 | 描述                                      |
+| -------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| net            | string                                                             | 网络名称                                    |
+| primitiveTypes | Array&lt;[EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)&gt; | _（可选）_ 图元类型数组，如若指定图元类型不存在网络属性，返回的数据将恒为空 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)&gt;&gt;
 
 图元对象数组
 
@@ -288,39 +111,9 @@ getNetLength(net: string): Promise<number | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -344,39 +137,9 @@ getNetlist(type?: ESYS_NetlistType): Promise<string>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-type
-
-
-</td><td>
-
-[ESYS\_NetlistType](../enums/ESYS_NetlistType.md)
-
-
-</td><td>
-
-_（可选）_ 网表格式
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                                                | 描述          |
+| ---- | ------------------------------------------------- | ----------- |
+| type | [ESYS\_NetlistType](../enums/ESYS_NetlistType.md) | _（可选）_ 网表格式 |
 
 
 
@@ -402,39 +165,9 @@ highlightNet(net: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -464,39 +197,9 @@ selectNet(net: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -520,55 +223,10 @@ setNetlist(type: ESYS_NetlistType | undefined, netlist: string): Promise<boolean
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-type
-
-
-</td><td>
-
-[ESYS\_NetlistType](../enums/ESYS_NetlistType.md) \| undefined
-
-
-</td><td>
-
-网表格式
-
-
-</td></tr>
-<tr><td>
-
-netlist
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网表数据
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型                                                             | 描述   |
+| ------- | -------------------------------------------------------------- | ---- |
+| type    | [ESYS\_NetlistType](../enums/ESYS_NetlistType.md) \| undefined | 网表格式 |
+| netlist | string                                                         | 网表数据 |
 
 
 
@@ -592,39 +250,9 @@ unhighlightNet(net: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 

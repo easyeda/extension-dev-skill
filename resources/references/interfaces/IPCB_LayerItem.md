@@ -5,204 +5,22 @@
 ## 签名
 
 ```typescript
-interface IPCB_LayerItem 
+interface IPCB_LayerItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[color](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-颜色（RGB HEX 格式）
-
-
-</td></tr>
-<tr><td>
-
-[id](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[EPCB\_LayerId](../enums/EPCB_LayerId.md)
-
-
-</td><td>
-
-图层 ID
-
-
-</td></tr>
-<tr><td>
-
-[inactiveColor](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-非激活颜色（RGB HEX 格式）
-
-
-</td></tr>
-<tr><td>
-
-[inactiveTransparency](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-非激活透明度（%）
-
-
-</td></tr>
-<tr><td>
-
-[layerStatus](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[EPCB\_LayerStatus](../enums/EPCB_LayerStatus.md)
-
-
-</td><td>
-
-层状态
-
-
-</td></tr>
-<tr><td>
-
-[locked](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[name](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-名称
-
-
-</td></tr>
-<tr><td>
-
-[transparency](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-透明度（%）
-
-
-</td></tr>
-<tr><td>
-
-[type](./IPCB_LayerItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[EPCB\_LayerType](../enums/EPCB_LayerType.md)
-
-
-</td><td>
-
-类型
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                         | 修饰符 | 类型                                                | 描述                |
+| ------------------------------------------- | --- | ------------------------------------------------- | ----------------- |
+| [color](./IPCB_LayerItem.md)                |     | string                                            | 颜色（RGB HEX 格式）    |
+| [id](./IPCB_LayerItem.md)                   |     | [EPCB\_LayerId](../enums/EPCB_LayerId.md)         | 图层 ID             |
+| [inactiveColor](./IPCB_LayerItem.md)        |     | string                                            | 非激活颜色（RGB HEX 格式） |
+| [inactiveTransparency](./IPCB_LayerItem.md) |     | number                                            | 非激活透明度（%）         |
+| [layerStatus](./IPCB_LayerItem.md)          |     | [EPCB\_LayerStatus](../enums/EPCB_LayerStatus.md) | 层状态               |
+| [locked](./IPCB_LayerItem.md)               |     | boolean                                           | 是否锁定              |
+| [name](./IPCB_LayerItem.md)                 |     | string                                            | 名称                |
+| [transparency](./IPCB_LayerItem.md)         |     | number                                            | 透明度（%）            |
+| [type](./IPCB_LayerItem.md)                 |     | [EPCB\_LayerType](../enums/EPCB_LayerType.md)     | 类型                |
 
 ---
 

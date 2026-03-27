@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveFill implements IPCB_Primitive 
+declare class IPCB_PrimitiveFill implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,331 +14,30 @@ declare class IPCB_PrimitiveFill implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[convertToPolyline()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：折线图元
-
-
-</td></tr>
-<tr><td>
-
-[convertToPour()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：覆铜边框图元
-
-
-</td></tr>
-<tr><td>
-
-[convertToRegion()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：区域图元(默认是禁止区域)
-
-
-</td></tr>
-<tr><td>
-
-[done()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ComplexPolygon()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillMode()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充模式
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Net()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillMode(fillMode)](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充模式
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Net(net)](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                 | 修饰符 | 描述                             |
+| ------------------------------------------------------------------- | --- | ------------------------------ |
+| [convertToPolyline()](./IPCB_PrimitiveFill.md)                      |     | **_(BETA)_** 转换到：折线图元          |
+| [convertToPour()](./IPCB_PrimitiveFill.md)                          |     | **_(BETA)_** 转换到：覆铜边框图元        |
+| [convertToRegion()](./IPCB_PrimitiveFill.md)                        |     | **_(BETA)_** 转换到：区域图元(默认是禁止区域) |
+| [done()](./IPCB_PrimitiveFill.md)                                   |     | **_(BETA)_** 将对图元的更改应用到画布      |
+| [getState\_ComplexPolygon()](./IPCB_PrimitiveFill.md)               |     | 获取属性状态：复杂多边形                   |
+| [getState\_FillMode()](./IPCB_PrimitiveFill.md)                     |     | 获取属性状态：填充模式                    |
+| [getState\_Layer()](./IPCB_PrimitiveFill.md)                        |     | 获取属性状态：层                       |
+| [getState\_LineWidth()](./IPCB_PrimitiveFill.md)                    |     | 获取属性状态：线宽                      |
+| [getState\_Net()](./IPCB_PrimitiveFill.md)                          |     | 获取属性状态：网络名称                    |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveFill.md)                  |     | 获取属性状态：图元 ID                   |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveFill.md)                |     | 获取属性状态：是否锁定                    |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveFill.md)                |     | 获取属性状态：图元类型                    |
+| [isAsync()](./IPCB_PrimitiveFill.md)                                |     | 查询图元是否为异步图元                    |
+| [reset()](./IPCB_PrimitiveFill.md)                                  |     | **_(BETA)_** 将异步图元重置为当前画布状态    |
+| [setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitiveFill.md) |     | **_(BETA)_** 设置属性状态：复杂多边形      |
+| [setState\_FillMode(fillMode)](./IPCB_PrimitiveFill.md)             |     | **_(BETA)_** 设置属性状态：填充模式       |
+| [setState\_Layer(layer)](./IPCB_PrimitiveFill.md)                   |     | **_(BETA)_** 设置属性状态：层          |
+| [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveFill.md)           |     | **_(BETA)_** 设置属性状态：线宽         |
+| [setState\_Net(net)](./IPCB_PrimitiveFill.md)                       |     | **_(BETA)_** 设置属性状态：网络名称       |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveFill.md)   |     | **_(BETA)_** 设置属性状态：是否锁定       |
+| [toAsync()](./IPCB_PrimitiveFill.md)                                |     | 将图元转换为异步图元                     |
+| [toSync()](./IPCB_PrimitiveFill.md)                                 |     | 将图元转换为同步图元                     |
 
 ---
 
@@ -361,7 +60,7 @@ convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)&gt;
 
 折线图元对象
 
@@ -382,7 +81,7 @@ convertToPour(): Promise<IPCB_PrimitivePour>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt;
 
 覆铜边框图元对象
 
@@ -403,7 +102,7 @@ convertToRegion(): Promise<IPCB_PrimitiveRegion>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt;
 
 区域图元对象
 
@@ -424,7 +123,7 @@ done(): Promise<IPCB_PrimitiveFill>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt;
 
 填充图元对象
 
@@ -616,7 +315,7 @@ reset(): Promise<IPCB_PrimitiveFill>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt;
 
 填充图元对象
 
@@ -636,39 +335,9 @@ setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveFill;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-复杂多边形
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                 | 描述    |
+| -------------- | ---------------------------------- | ----- |
+| complexPolygon | [IPCB\_Polygon](./IPCB_Polygon.md) | 复杂多边形 |
 
 
 
@@ -694,39 +363,9 @@ setState_FillMode(fillMode: EPCB_PrimitiveFillMode): IPCB_PrimitiveFill;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillMode
-
-
-</td><td>
-
-[EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md)
-
-
-</td><td>
-
-填充模式
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                            | 描述   |
+| -------- | ------------------------------------------------------------- | ---- |
+| fillMode | [EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md) | 填充模式 |
 
 
 
@@ -752,39 +391,9 @@ setState_Layer(layer: TPCB_LayersOfFill): IPCB_PrimitiveFill;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                  | 描述  |
+| ----- | --------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md) | 层   |
 
 
 
@@ -810,39 +419,9 @@ setState_LineWidth(lineWidth: number): IPCB_PrimitiveFill;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| lineWidth | number | 线宽  |
 
 
 
@@ -868,39 +447,9 @@ setState_Net(net: string): IPCB_PrimitiveFill;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -926,39 +475,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveFill;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 

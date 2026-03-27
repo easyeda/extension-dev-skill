@@ -5,73 +5,13 @@
 ## 签名
 
 ```typescript
-declare enum ESCH_ExportDocumentFileType 
+declare enum ESCH_ExportDocumentFileType
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-PDF
-
-
-</td><td>
-
-`"PDF"`
-
-
-</td><td>
-
-PDF 文档
-
-
-</td></tr>
-<tr><td>
-
-PNG
-
-
-</td><td>
-
-`"PNG"`
-
-
-</td><td>
-
-PNG 位图
-
-
-</td></tr>
-<tr><td>
-
-SVG
-
-
-</td><td>
-
-`"SVG"`
-
-
-</td><td>
-
-SVG 矢量图
-
-
-</td></tr>
-</tbody></table>
+| 成员  | 值       | 描述      |
+| --- | ------- | ------- |
+| PDF | `"PDF"` | PDF 文档  |
+| PNG | `"PNG"` | PNG 位图  |
+| SVG | `"SVG"` | SVG 矢量图 |

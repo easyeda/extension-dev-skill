@@ -5,70 +5,16 @@
 ## 签名
 
 ```typescript
-declare class DMT_Team 
+declare class DMT_Team
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getAllInvolvedTeamInfo()](./DMT_Team.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有参与的团队的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllTeamsInfo()](./DMT_Team.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有直接团队的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentTeamInfo()](./DMT_Team.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前团队的详细属性
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                       | 修饰符 | 描述             |
+| ----------------------------------------- | --- | -------------- |
+| [getAllInvolvedTeamInfo()](./DMT_Team.md) |     | 获取所有参与的团队的详细属性 |
+| [getAllTeamsInfo()](./DMT_Team.md)        |     | 获取所有直接团队的详细属性  |
+| [getCurrentTeamInfo()](./DMT_Team.md)     |     | 获取当前团队的详细属性    |
 
 ---
 
@@ -89,7 +35,7 @@ getAllInvolvedTeamInfo(): Promise<Array<IDMT_TeamItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)&gt;&gt;
 
 所有参与的团队的详细属性
 
@@ -108,7 +54,7 @@ getAllTeamsInfo(): Promise<Array<IDMT_TeamItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)&gt;&gt;
 
 所有团队的详细属性
 

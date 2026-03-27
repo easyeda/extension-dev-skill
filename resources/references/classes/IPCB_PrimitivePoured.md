@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitivePoured implements IPCB_Primitive 
+declare class IPCB_PrimitivePoured implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,121 +14,15 @@ declare class IPCB_PrimitivePoured implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addSolderMaskFill(pourFillId)](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 添加：阻焊区域
-
-
-</td></tr>
-<tr><td>
-
-[convertToFill(pourFillId)](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：填充图元
-
-
-</td></tr>
-<tr><td>
-
-[deletePourFills(pourFillIds)](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除覆铜填充区域
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PourFills()](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：覆铜填充区域
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PourPrimitiveId()](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：覆铜边框图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                        | 修饰符 | 描述                    |
+| ---------------------------------------------------------- | --- | --------------------- |
+| [addSolderMaskFill(pourFillId)](./IPCB_PrimitivePoured.md) |     | **_(BETA)_** 添加：阻焊区域  |
+| [convertToFill(pourFillId)](./IPCB_PrimitivePoured.md)     |     | **_(BETA)_** 转换到：填充图元 |
+| [deletePourFills(pourFillIds)](./IPCB_PrimitivePoured.md)  |     | **_(BETA)_** 删除覆铜填充区域 |
+| [getState\_PourFills()](./IPCB_PrimitivePoured.md)         |     | 获取属性状态：覆铜填充区域         |
+| [getState\_PourPrimitiveId()](./IPCB_PrimitivePoured.md)   |     | 获取属性状态：覆铜边框图元 ID      |
+| [getState\_PrimitiveId()](./IPCB_PrimitivePoured.md)       |     | 获取属性状态：图元 ID          |
+| [getState\_PrimitiveType()](./IPCB_PrimitivePoured.md)     |     | 获取属性状态：图元类型           |
 
 ---
 
@@ -150,37 +44,9 @@ addSolderMaskFill(pourFillId: IPCB_PrimitivePouredPourFill['id']): Promise<IPCB_
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pourFillId
-
-
-</td><td>
-
-[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\]
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                                                                                     | 描述  |
+| ---------- | -------------------------------------------------------------------------------------- | --- |
+| pourFillId | [IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)\['id'\] |     |
 
 
 
@@ -206,37 +72,9 @@ convertToFill(pourFillId: IPCB_PrimitivePouredPourFill['id']): Promise<IPCB_Prim
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pourFillId
-
-
-</td><td>
-
-[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\]
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                                                                                     | 描述  |
+| ---------- | -------------------------------------------------------------------------------------- | --- |
+| pourFillId | [IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)\['id'\] |     |
 
 
 
@@ -262,39 +100,9 @@ deletePourFills(pourFillIds: IPCB_PrimitivePouredPourFill['id'] | Array<IPCB_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pourFillIds
-
-
-</td><td>
-
-[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\] \| Array&lt;[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\]&gt;
-
-
-</td><td>
-
-覆铜填充区域 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                            | 描述        |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| pourFillIds | [IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)\['id'\] \| Array&lt;[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)\['id'\]&gt; | 覆铜填充区域 ID |
 
 
 
@@ -319,7 +127,7 @@ getState_PourFills(): Array<IPCB_PrimitivePouredPourFill>;
 
 ## 返回值
 
-Array&lt;[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->&gt;
+Array&lt;[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)&gt;
 
 覆铜填充区域
 

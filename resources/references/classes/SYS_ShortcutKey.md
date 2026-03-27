@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_ShortcutKey 
+declare class SYS_ShortcutKey
 ```
 
 ## 备注
@@ -14,65 +14,11 @@ declare class SYS_ShortcutKey
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getShortcutKeys(includeSystem)](./SYS_ShortcutKey.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 查询快捷键列表
-
-
-</td></tr>
-<tr><td>
-
-[registerShortcutKey(shortcutKey, title, callbackFn, documentType, scene)](./SYS_ShortcutKey.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 注册快捷键
-
-
-</td></tr>
-<tr><td>
-
-[unregisterShortcutKey(shortcutKey)](./SYS_ShortcutKey.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 反注册快捷键
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                              | 修饰符 | 描述                   |
+| ------------------------------------------------------------------------------------------------ | --- | -------------------- |
+| [getShortcutKeys(includeSystem)](./SYS_ShortcutKey.md)                                           |     | **_(BETA)_** 查询快捷键列表 |
+| [registerShortcutKey(shortcutKey, title, callbackFn, documentType, scene)](./SYS_ShortcutKey.md) |     | **_(BETA)_** 注册快捷键   |
+| [unregisterShortcutKey(shortcutKey)](./SYS_ShortcutKey.md)                                       |     | **_(BETA)_** 反注册快捷键  |
 
 ---
 
@@ -99,45 +45,15 @@ getShortcutKeys(includeSystem?: boolean): Promise<Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-includeSystem
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否包含系统快捷键
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述               |
+| ------------- | ------- | ---------------- |
+| includeSystem | boolean | _（可选）_ 是否包含系统快捷键 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;{ shortcutKey: [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)<!-- -->; title: string; documentType: Array&lt;[ESYS\_ShortcutKeyEffectiveEditorDocumentType](../enums/ESYS_ShortcutKeyEffectiveEditorDocumentType.md)<!-- -->&gt;; scene: Array&lt;[ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)<!-- -->&gt;; }&gt;&gt;
+Promise&lt;Array&lt;{ shortcutKey: [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md); title: string; documentType: Array&lt;[ESYS\_ShortcutKeyEffectiveEditorDocumentType](../enums/ESYS_ShortcutKeyEffectiveEditorDocumentType.md)&gt;; scene: Array&lt;[ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)&gt;; }&gt;&gt;
 
 快捷键列表
 
@@ -157,103 +73,13 @@ registerShortcutKey(shortcutKey: TSYS_ShortcutKeys, title: string, callbackFn: (
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-shortcutKey
-
-
-</td><td>
-
-[TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)
-
-
-</td><td>
-
-快捷键，数组中包含多个元素则解析为组合快捷键，将按规则排序后存入缓存
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-快捷键标题，快捷键的友好名称
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(shortcutKey: [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)<!-- -->) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-回调函数
-
-
-</td></tr>
-<tr><td>
-
-documentType
-
-
-</td><td>
-
-Array&lt;[ESYS\_ShortcutKeyEffectiveEditorDocumentType](../enums/ESYS_ShortcutKeyEffectiveEditorDocumentType.md)<!-- -->&gt;
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-scene
-
-
-</td><td>
-
-Array&lt;[ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)<!-- -->&gt;
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                   | 描述                                 |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| shortcutKey  | [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)                                                                  | 快捷键，数组中包含多个元素则解析为组合快捷键，将按规则排序后存入缓存 |
+| title        | string                                                                                                               | 快捷键标题，快捷键的友好名称                     |
+| callbackFn   | (shortcutKey: [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)) =&gt; void \| Promise&lt;void&gt;                 | 回调函数                               |
+| documentType | Array&lt;[ESYS\_ShortcutKeyEffectiveEditorDocumentType](../enums/ESYS_ShortcutKeyEffectiveEditorDocumentType.md)&gt; | _(Optional)_                       |
+| scene        | Array&lt;[ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)&gt;               | _(Optional)_                       |
 
 
 
@@ -279,39 +105,9 @@ unregisterShortcutKey(shortcutKey: TSYS_ShortcutKeys): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-shortcutKey
-
-
-</td><td>
-
-[TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)
-
-
-</td><td>
-
-快捷键，不区分传入的排列顺序，将自动排序并查询匹配的快捷键
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                  | 描述                            |
+| ----------- | --------------------------------------------------- | ----------------------------- |
+| shortcutKey | [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md) | 快捷键，不区分传入的排列顺序，将自动排序并查询匹配的快捷键 |
 
 
 

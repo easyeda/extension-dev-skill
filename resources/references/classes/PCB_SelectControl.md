@@ -5,7 +5,7 @@ PCB &amp; 封装 / 选择控制类
 ## 签名
 
 ```typescript
-declare class PCB_SelectControl 
+declare class PCB_SelectControl
 ```
 
 ## 备注
@@ -14,121 +14,15 @@ declare class PCB_SelectControl
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[clearSelected()](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 清除选中
-
-
-</td></tr>
-<tr><td>
-
-[doCrossProbeSelect(components, pins, nets, highlight, select)](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 进行交叉选择
-
-
-</td></tr>
-<tr><td>
-
-[doSelectPrimitives(primitiveIds)](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用图元 ID 选中图元
-
-
-</td></tr>
-<tr><td>
-
-[getAllSelectedPrimitives\_PrimitiveId()](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 查询所有已选中图元的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getAllSelectedPrimitives()](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 查询所有已选中图元的图元对象
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentMousePosition()](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前鼠标在画布上的位置
-
-
-</td></tr>
-<tr><td>
-
-[getSelectedPrimitives()](./PCB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 查询选中图元的所有参数
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                     | 修饰符 | 描述                           |
+| --------------------------------------------------------------------------------------- | --- | ---------------------------- |
+| [clearSelected()](./PCB_SelectControl.md)                                               |     | **_(BETA)_** 清除选中            |
+| [doCrossProbeSelect(components, pins, nets, highlight, select)](./PCB_SelectControl.md) |     | **_(BETA)_** 进行交叉选择          |
+| [doSelectPrimitives(primitiveIds)](./PCB_SelectControl.md)                              |     | **_(BETA)_** 使用图元 ID 选中图元    |
+| [getAllSelectedPrimitives\_PrimitiveId()](./PCB_SelectControl.md)                       |     | **_(BETA)_** 查询所有已选中图元的图元 ID |
+| [getAllSelectedPrimitives()](./PCB_SelectControl.md)                                    |     | **_(BETA)_** 查询所有已选中图元的图元对象  |
+| [getCurrentMousePosition()](./PCB_SelectControl.md)                                     |     | **_(BETA)_** 获取当前鼠标在画布上的位置   |
+| [getSelectedPrimitives()](./PCB_SelectControl.md)                                       |     | **_(BETA)_** 查询选中图元的所有参数     |
 
 ---
 
@@ -171,103 +65,13 @@ doCrossProbeSelect(components?: Array<string>, pins?: Array<string>, nets?: Arra
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-components
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 器件位号
-
-
-</td></tr>
-<tr><td>
-
-pins
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 器件位号\_引脚编号，格式为 \['U1\_1', 'U1\_2'\]
-
-
-</td></tr>
-<tr><td>
-
-nets
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-highlight
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否高亮
-
-
-</td></tr>
-<tr><td>
-
-select
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 操作是否成功
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                  | 描述                                         |
+| ---------- | ------------------- | ------------------------------------------ |
+| components | Array&lt;string&gt; | _（可选）_ 器件位号                                |
+| pins       | Array&lt;string&gt; | _（可选）_ 器件位号\_引脚编号，格式为 \['U1\_1', 'U1\_2'\] |
+| nets       | Array&lt;string&gt; | _（可选）_ 网络名称                                |
+| highlight  | boolean             | _（可选）_ 是否高亮                                |
+| select     | boolean             | _（可选）_ 操作是否成功                              |
 
 
 
@@ -291,39 +95,9 @@ doSelectPrimitives(primitiveIds: string | Array<string>): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                            | 描述    |
+| ------------ | ----------------------------- | ----- |
+| primitiveIds | string \| Array&lt;string&gt; | 图元 ID |
 
 
 
@@ -350,7 +124,7 @@ getAllSelectedPrimitives(): Promise<Array<IPCB_Primitive>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)&gt;&gt;
 
 所有已选中图元的图元对象
 

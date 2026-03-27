@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_Window 
+declare class SYS_Window
 ```
 
 ## 备注
@@ -14,149 +14,17 @@ declare class SYS_Window
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addEventListener(type, listener, options)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-新增事件监听
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentTheme()](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前主题
-
-
-</td></tr>
-<tr><td>
-
-[getUrlAnchor()](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取 URL 锚点
-
-
-</td></tr>
-<tr><td>
-
-[getUrlParam(key)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取 URL 参数
-
-
-</td></tr>
-<tr><td>
-
-[open(url, target)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开资源窗口
-
-
-</td></tr>
-<tr><td>
-
-[openUI(uiName, args)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开 UI 窗口
-
-
-</td></tr>
-<tr><td>
-
-[removeEventListener(removableObject)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移除事件监听
-
-
-</td></tr>
-<tr><td>
-
-[urlPushState(url)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-追加新的 URL 历史记录栈信息
-
-
-</td></tr>
-<tr><td>
-
-[urlReplaceState(url)](./SYS_Window.md)
-
-
-</td><td>
-
-
-</td><td>
-
-修改当前的 URL 历史记录栈信息
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                          | 修饰符 | 描述                |
+| ------------------------------------------------------------ | --- | ----------------- |
+| [addEventListener(type, listener, options)](./SYS_Window.md) |     | 新增事件监听            |
+| [getCurrentTheme()](./SYS_Window.md)                         |     | 获取当前主题            |
+| [getUrlAnchor()](./SYS_Window.md)                            |     | 获取 URL 锚点         |
+| [getUrlParam(key)](./SYS_Window.md)                          |     | 获取 URL 参数         |
+| [open(url, target)](./SYS_Window.md)                         |     | 打开资源窗口            |
+| [openUI(uiName, args)](./SYS_Window.md)                      |     | 打开 UI 窗口          |
+| [removeEventListener(removableObject)](./SYS_Window.md)      |     | 移除事件监听            |
+| [urlPushState(url)](./SYS_Window.md)                         |     | 追加新的 URL 历史记录栈信息  |
+| [urlReplaceState(url)](./SYS_Window.md)                      |     | 修改当前的 URL 历史记录栈信息 |
 
 ---
 
@@ -181,71 +49,11 @@ addEventListener(type: ESYS_WindowEventType, listener: (ev: any) => any, options
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-type
-
-
-</td><td>
-
-[ESYS\_WindowEventType](../enums/ESYS_WindowEventType.md)
-
-
-</td><td>
-
-事件类型，当前支持 `blur` `focus`
-
-
-</td></tr>
-<tr><td>
-
-listener
-
-
-</td><td>
-
-(ev: any) =&gt; any
-
-
-</td><td>
-
-事件监听回调
-
-
-</td></tr>
-<tr><td>
-
-options
-
-
-</td><td>
-
-\{ capture?: boolean; once?: boolean; passive?: boolean; signal?: AbortSignal; \}
-
-
-</td><td>
-
-_（可选）_ 可选参数
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                                | 描述                       |
+| -------- | --------------------------------------------------------------------------------- | ------------------------ |
+| type     | [ESYS\_WindowEventType](../enums/ESYS_WindowEventType.md)                         | 事件类型，当前支持 `blur` `focus` |
+| listener | (ev: any) =&gt; any                                                               | 事件监听回调                   |
+| options  | \{ capture?: boolean; once?: boolean; passive?: boolean; signal?: AbortSignal; \} | _（可选）_ 可选参数              |
 
 
 
@@ -270,7 +78,7 @@ getCurrentTheme(): Promise<ESYS_Theme>;
 
 ## 返回值
 
-Promise&lt;[ESYS\_Theme](../enums/ESYS_Theme.md)<!-- -->&gt;
+Promise&lt;[ESYS\_Theme](../enums/ESYS_Theme.md)&gt;
 
 当前主题
 
@@ -311,39 +119,9 @@ getUrlParam(key: string): string | null;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-key
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-参数名
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述  |
+| --- | ------ | --- |
+| key | string | 参数名 |
 
 
 
@@ -367,55 +145,10 @@ open(url: string, target?: ESYS_WindowOpenTarget): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-url
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-欲加载资源的 URL 或路径
-
-
-</td></tr>
-<tr><td>
-
-target
-
-
-</td><td>
-
-[ESYS\_WindowOpenTarget](../enums/ESYS_WindowOpenTarget.md)
-
-
-</td><td>
-
-_（可选）_ 上下文目标
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型                                                          | 描述             |
+| ------ | ----------------------------------------------------------- | -------------- |
+| url    | string                                                      | 欲加载资源的 URL 或路径 |
+| target | [ESYS\_WindowOpenTarget](../enums/ESYS_WindowOpenTarget.md) | _（可选）_ 上下文目标   |
 
 
 
@@ -439,55 +172,10 @@ openUI(uiName: string, args?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uiName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-UI 名称
-
-
-</td></tr>
-<tr><td>
-
-args
-
-
-</td><td>
-
-\{ \[key: string\]: any; \}
-
-
-</td><td>
-
-_（可选）_ 可选参数对象
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型                          | 描述            |
+| ------ | --------------------------- | ------------- |
+| uiName | string                      | UI 名称         |
+| args   | \{ \[key: string\]: any; \} | _（可选）_ 可选参数对象 |
 
 
 
@@ -513,39 +201,9 @@ removeEventListener(removableObject: ISYS_WindowEventListenerRemovableObject): v
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-removableObject
-
-
-</td><td>
-
-[ISYS\_WindowEventListenerRemovableObject](../interfaces/ISYS_WindowEventListenerRemovableObject.md)
-
-
-</td><td>
-
-窗口事件监听可移除对象
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                                                                                                   | 描述          |
+| --------------- | ---------------------------------------------------------------------------------------------------- | ----------- |
+| removableObject | [ISYS\_WindowEventListenerRemovableObject](../interfaces/ISYS_WindowEventListenerRemovableObject.md) | 窗口事件监听可移除对象 |
 
 
 
@@ -567,39 +225,9 @@ urlPushState(url: string): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-url
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-URL
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述  |
+| --- | ------ | --- |
+| url | string | URL |
 
 
 
@@ -621,39 +249,9 @@ urlReplaceState(url: string): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-url
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-URL
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述  |
+| --- | ------ | --- |
+| url | string | URL |
 
 
 

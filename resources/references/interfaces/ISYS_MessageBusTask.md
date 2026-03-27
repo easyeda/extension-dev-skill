@@ -5,90 +5,16 @@
 ## 签名
 
 ```typescript
-interface ISYS_MessageBusTask 
+interface ISYS_MessageBusTask
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[cancel](./ISYS_MessageBusTask.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; void
-
-
-</td><td>
-
-调用以取消任务
-
-
-</td></tr>
-<tr><td>
-
-[execute](./ISYS_MessageBusTask.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(message: any) =&gt; Promise&lt;void&gt;
-
-
-</td><td>
-
-任务处理
-
-
-</td></tr>
-<tr><td>
-
-[running](./ISYS_MessageBusTask.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; boolean
-
-
-</td><td>
-
-检查运行状态
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                 | 修饰符 | 类型                                       | 描述      |
+| ----------------------------------- | --- | ---------------------------------------- | ------- |
+| [cancel](./ISYS_MessageBusTask.md)  |     | () =&gt; void                            | 调用以取消任务 |
+| [execute](./ISYS_MessageBusTask.md) |     | (message: any) =&gt; Promise&lt;void&gt; | 任务处理    |
+| [running](./ISYS_MessageBusTask.md) |     | () =&gt; boolean                         | 检查运行状态  |
 
 ---
 

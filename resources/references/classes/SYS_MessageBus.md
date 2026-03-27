@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_MessageBus 
+declare class SYS_MessageBus
 ```
 
 ## 备注
@@ -13,275 +13,26 @@ declare class SYS_MessageBus
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[createPrivateMessageBus()](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建私有消息总线
-
-
-</td></tr>
-<tr><td>
-
-[publish(topic, message)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：发布消息
-
-
-</td></tr>
-<tr><td>
-
-[publishPublic(topic, message)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：发布消息
-
-
-</td></tr>
-<tr><td>
-
-[pull(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：拉消息
-
-
-</td></tr>
-<tr><td>
-
-[pullAsync(topic)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：拉消息 Promise 版本
-
-
-</td></tr>
-<tr><td>
-
-[pullAsyncPublic(topic)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：拉消息 Promise 版本
-
-
-</td></tr>
-<tr><td>
-
-[pullPublic(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：拉消息
-
-
-</td></tr>
-<tr><td>
-
-[push(topic, message)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：推消息
-
-
-</td></tr>
-<tr><td>
-
-[pushPublic(topic, message)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：推消息
-
-
-</td></tr>
-<tr><td>
-
-[removePrivateMessageBus()](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移除私有消息总线
-
-
-</td></tr>
-<tr><td>
-
-[rpcCall(topic, message, timeout)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：调用 RPC 服务
-
-
-</td></tr>
-<tr><td>
-
-[rpcCallPublic(topic, message, timeout)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：调用 RPC 服务
-
-
-</td></tr>
-<tr><td>
-
-[rpcService(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：注册 RPC 服务
-
-
-</td></tr>
-<tr><td>
-
-[rpcServicePublic(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：注册 RPC 服务
-
-
-</td></tr>
-<tr><td>
-
-[subscribe(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：订阅消息
-
-
-</td></tr>
-<tr><td>
-
-[subscribeOnce(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-私有消息总线：订阅单次消息
-
-
-</td></tr>
-<tr><td>
-
-[subscribeOncePublic(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：订阅单次消息
-
-
-</td></tr>
-<tr><td>
-
-[subscribePublic(topic, callbackFn)](./SYS_MessageBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-公共消息总线：订阅消息
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                           | 修饰符 | 描述                    |
+| ------------------------------------------------------------- | --- | --------------------- |
+| [createPrivateMessageBus()](./SYS_MessageBus.md)              |     | 创建私有消息总线              |
+| [publish(topic, message)](./SYS_MessageBus.md)                |     | 私有消息总线：发布消息           |
+| [publishPublic(topic, message)](./SYS_MessageBus.md)          |     | 公共消息总线：发布消息           |
+| [pull(topic, callbackFn)](./SYS_MessageBus.md)                |     | 私有消息总线：拉消息            |
+| [pullAsync(topic)](./SYS_MessageBus.md)                       |     | 私有消息总线：拉消息 Promise 版本 |
+| [pullAsyncPublic(topic)](./SYS_MessageBus.md)                 |     | 公共消息总线：拉消息 Promise 版本 |
+| [pullPublic(topic, callbackFn)](./SYS_MessageBus.md)          |     | 公共消息总线：拉消息            |
+| [push(topic, message)](./SYS_MessageBus.md)                   |     | 私有消息总线：推消息            |
+| [pushPublic(topic, message)](./SYS_MessageBus.md)             |     | 公共消息总线：推消息            |
+| [removePrivateMessageBus()](./SYS_MessageBus.md)              |     | 移除私有消息总线              |
+| [rpcCall(topic, message, timeout)](./SYS_MessageBus.md)       |     | 私有消息总线：调用 RPC 服务      |
+| [rpcCallPublic(topic, message, timeout)](./SYS_MessageBus.md) |     | 公共消息总线：调用 RPC 服务      |
+| [rpcService(topic, callbackFn)](./SYS_MessageBus.md)          |     | 私有消息总线：注册 RPC 服务      |
+| [rpcServicePublic(topic, callbackFn)](./SYS_MessageBus.md)    |     | 公共消息总线：注册 RPC 服务      |
+| [subscribe(topic, callbackFn)](./SYS_MessageBus.md)           |     | 私有消息总线：订阅消息           |
+| [subscribeOnce(topic, callbackFn)](./SYS_MessageBus.md)       |     | 私有消息总线：订阅单次消息         |
+| [subscribeOncePublic(topic, callbackFn)](./SYS_MessageBus.md) |     | 公共消息总线：订阅单次消息         |
+| [subscribePublic(topic, callbackFn)](./SYS_MessageBus.md)     |     | 公共消息总线：订阅消息           |
 
 ---
 
@@ -322,55 +73,10 @@ publish(topic: string, message: any): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-message
-
-
-</td><td>
-
-any
-
-
-</td><td>
-
-消息
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述  |
+| ------- | ------ | --- |
+| topic   | string | 主题  |
+| message | any    | 消息  |
 
 
 
@@ -396,55 +102,10 @@ publishPublic(topic: string, message: any): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-message
-
-
-</td><td>
-
-any
-
-
-</td><td>
-
-消息
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述  |
+| ------- | ------ | --- |
+| topic   | string | 主题  |
+| message | any    | 消息  |
 
 
 
@@ -470,55 +131,10 @@ pull(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(message: any) =&gt; void
-
-
-</td><td>
-
-拉到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                        | 描述       |
+| ---------- | ------------------------- | -------- |
+| topic      | string                    | 主题       |
+| callbackFn | (message: any) =&gt; void | 拉到消息后的回调 |
 
 
 
@@ -546,39 +162,9 @@ pullAsync(topic: string): Promise<any>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述  |
+| ----- | ------ | --- |
+| topic | string | 主题  |
 
 
 
@@ -606,39 +192,9 @@ pullAsyncPublic(topic: string): Promise<any>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述  |
+| ----- | ------ | --- |
+| topic | string | 主题  |
 
 
 
@@ -666,55 +222,10 @@ pullPublic(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTa
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(message: any) =&gt; void
-
-
-</td><td>
-
-拉到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                        | 描述       |
+| ---------- | ------------------------- | -------- |
+| topic      | string                    | 主题       |
+| callbackFn | (message: any) =&gt; void | 拉到消息后的回调 |
 
 
 
@@ -742,55 +253,10 @@ push(topic: string, message: any): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-message
-
-
-</td><td>
-
-any
-
-
-</td><td>
-
-消息
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述  |
+| ------- | ------ | --- |
+| topic   | string | 主题  |
+| message | any    | 消息  |
 
 
 
@@ -816,55 +282,10 @@ pushPublic(topic: string, message: any): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-message
-
-
-</td><td>
-
-any
-
-
-</td><td>
-
-消息
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述  |
+| ------- | ------ | --- |
+| topic   | string | 主题  |
+| message | any    | 消息  |
 
 
 
@@ -911,71 +332,11 @@ rpcCall(topic: string, message?: any, timeout?: number): Promise<any>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-message
-
-
-</td><td>
-
-any
-
-
-</td><td>
-
-_（可选）_ 消息
-
-
-</td></tr>
-<tr><td>
-
-timeout
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 超时
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述        |
+| ------- | ------ | --------- |
+| topic   | string | 主题        |
+| message | any    | _（可选）_ 消息 |
+| timeout | number | _（可选）_ 超时 |
 
 
 
@@ -999,71 +360,11 @@ rpcCallPublic(topic: string, message?: any, timeout?: number): Promise<any>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-message
-
-
-</td><td>
-
-any
-
-
-</td><td>
-
-_（可选）_ 消息
-
-
-</td></tr>
-<tr><td>
-
-timeout
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 超时
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述        |
+| ------- | ------ | --------- |
+| topic   | string | 主题        |
+| message | any    | _（可选）_ 消息 |
+| timeout | number | _（可选）_ 超时 |
 
 
 
@@ -1087,55 +388,10 @@ rpcService(topic: string, callbackFn: (...args: Array<any>) => any | Promise<any
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(...args: Array&lt;any&gt;) =&gt; any \| Promise&lt;any&gt;
-
-
-</td><td>
-
-接收到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                                                          | 描述        |
+| ---------- | ----------------------------------------------------------- | --------- |
+| topic      | string                                                      | 主题        |
+| callbackFn | (...args: Array&lt;any&gt;) =&gt; any \| Promise&lt;any&gt; | 接收到消息后的回调 |
 
 
 
@@ -1157,55 +413,10 @@ rpcServicePublic(topic: string, callbackFn: (...args: Array<any>) => any | Promi
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(...args: Array&lt;any&gt;) =&gt; any \| Promise&lt;any&gt;
-
-
-</td><td>
-
-接收到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                                                          | 描述        |
+| ---------- | ----------------------------------------------------------- | --------- |
+| topic      | string                                                      | 主题        |
+| callbackFn | (...args: Array&lt;any&gt;) =&gt; any \| Promise&lt;any&gt; | 接收到消息后的回调 |
 
 
 
@@ -1227,55 +438,10 @@ subscribe(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTas
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(message: any) =&gt; void
-
-
-</td><td>
-
-接收到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                        | 描述        |
+| ---------- | ------------------------- | --------- |
+| topic      | string                    | 主题        |
+| callbackFn | (message: any) =&gt; void | 接收到消息后的回调 |
 
 
 
@@ -1303,55 +469,10 @@ subscribeOnce(topic: string, callbackFn: (message: any) => void): ISYS_MessageBu
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(message: any) =&gt; void
-
-
-</td><td>
-
-接收到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                        | 描述        |
+| ---------- | ------------------------- | --------- |
+| topic      | string                    | 主题        |
+| callbackFn | (message: any) =&gt; void | 接收到消息后的回调 |
 
 
 
@@ -1375,55 +496,10 @@ subscribeOncePublic(topic: string, callbackFn: (message: any) => void): ISYS_Mes
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(message: any) =&gt; void
-
-
-</td><td>
-
-接收到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                        | 描述        |
+| ---------- | ------------------------- | --------- |
+| topic      | string                    | 主题        |
+| callbackFn | (message: any) =&gt; void | 接收到消息后的回调 |
 
 
 
@@ -1447,55 +523,10 @@ subscribePublic(topic: string, callbackFn: (message: any) => void): ISYS_Message
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topic
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-主题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(message: any) =&gt; void
-
-
-</td><td>
-
-接收到消息后的回调
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                        | 描述        |
+| ---------- | ------------------------- | --------- |
+| topic      | string                    | 主题        |
+| callbackFn | (message: any) =&gt; void | 接收到消息后的回调 |
 
 
 

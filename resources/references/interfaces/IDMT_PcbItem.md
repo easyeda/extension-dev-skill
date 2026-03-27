@@ -5,130 +5,18 @@ PCB 属性
 ## 签名
 
 ```typescript
-interface IDMT_PcbItem 
+interface IDMT_PcbItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[itemType](./IDMT_PcbItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.PCB](../enums/EDMT_ItemType.md) \| [EDMT\_ItemType.CBB\_PCB](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_PcbItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-PCB 名称
-
-
-</td></tr>
-<tr><td>
-
-[parentBoardName?](./IDMT_PcbItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 所属板子名称
-
-
-</td></tr>
-<tr><td>
-
-[parentProjectUuid](./IDMT_PcbItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属工程 UUID
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_PcbItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-PCB UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                    | 修饰符        | 类型                                                                                                      | 描述            |
+| -------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------- | ------------- |
+| [itemType](./IDMT_PcbItem.md)          | `readonly` | [EDMT\_ItemType.PCB](../enums/EDMT_ItemType.md) \| [EDMT\_ItemType.CBB\_PCB](../enums/EDMT_ItemType.md) | 项目类型          |
+| [name](./IDMT_PcbItem.md)              |            | string                                                                                                  | PCB 名称        |
+| [parentBoardName?](./IDMT_PcbItem.md)  |            | string                                                                                                  | _（可选）_ 所属板子名称 |
+| [parentProjectUuid](./IDMT_PcbItem.md) |            | string                                                                                                  | 所属工程 UUID     |
+| [uuid](./IDMT_PcbItem.md)              |            | string                                                                                                  | PCB UUID      |
 
 ---
 

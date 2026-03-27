@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class DMT_Panel 
+declare class DMT_Panel
 ```
 
 ## 备注
@@ -14,121 +14,15 @@ declare class DMT_Panel
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[copyPanel(panelUuid)](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-复制面板
-
-
-</td></tr>
-<tr><td>
-
-[createPanel()](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建面板
-
-
-</td></tr>
-<tr><td>
-
-[deletePanel(panelUuid)](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-删除面板
-
-
-</td></tr>
-<tr><td>
-
-[getAllPanelsInfo()](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取工程内所有面板的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentPanelInfo()](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前面板的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getPanelInfo(panelUuid)](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取面板的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[modifyPanelName(panelUuid, panelName)](./DMT_Panel.md)
-
-
-</td><td>
-
-
-</td><td>
-
-修改面板名称
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                     | 修饰符 | 描述                |
+| ------------------------------------------------------- | --- | ----------------- |
+| [copyPanel(panelUuid)](./DMT_Panel.md)                  |     | 复制面板              |
+| [createPanel()](./DMT_Panel.md)                         |     | **_(BETA)_** 创建面板 |
+| [deletePanel(panelUuid)](./DMT_Panel.md)                |     | 删除面板              |
+| [getAllPanelsInfo()](./DMT_Panel.md)                    |     | 获取工程内所有面板的详细属性    |
+| [getCurrentPanelInfo()](./DMT_Panel.md)                 |     | 获取当前面板的详细属性       |
+| [getPanelInfo(panelUuid)](./DMT_Panel.md)               |     | 获取面板的详细属性         |
+| [modifyPanelName(panelUuid, panelName)](./DMT_Panel.md) |     | 修改面板名称            |
 
 ---
 
@@ -148,39 +42,9 @@ copyPanel(panelUuid: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-panelUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-源面板 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述       |
+| --------- | ------ | -------- |
+| panelUuid | string | 源面板 UUID |
 
 
 
@@ -225,39 +89,9 @@ deletePanel(panelUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-panelUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-面板 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述      |
+| --------- | ------ | ------- |
+| panelUuid | string | 面板 UUID |
 
 
 
@@ -282,7 +116,7 @@ getAllPanelsInfo(): Promise<Array<IDMT_PanelItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_PanelItem](../interfaces/IDMT_PanelItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_PanelItem](../interfaces/IDMT_PanelItem.md)&gt;&gt;
 
 所有面板的详细属性的数组
 
@@ -323,39 +157,9 @@ getPanelInfo(panelUuid: string): Promise<IDMT_PanelItem | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-panelUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-面板 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述      |
+| --------- | ------ | ------- |
+| panelUuid | string | 面板 UUID |
 
 
 
@@ -379,55 +183,10 @@ modifyPanelName(panelUuid: string, panelName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-panelUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-面板 UUID
-
-
-</td></tr>
-<tr><td>
-
-panelName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-面板名称
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述      |
+| --------- | ------ | ------- |
+| panelUuid | string | 面板 UUID |
+| panelName | string | 面板名称    |
 
 
 

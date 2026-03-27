@@ -5,127 +5,21 @@ PCB &amp; 封装 / 覆铜边框图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitivePour implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitivePour implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(net, layer, complexPolygon, pourFillMethod, preserveSilos, pourName, pourPriority, lineWidth, primitiveLock)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建覆铜边框
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除覆铜边框
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取覆铜边框
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取覆铜边框
-
-
-</td></tr>
-<tr><td>
-
-[getAll(net, layer, primitiveLock)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有覆铜边框图元
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(net, layer, primitiveLock)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有覆铜边框的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改覆铜边框
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                                           | 修饰符 | 描述                          |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | --- | --------------------------- |
+| [create(net, layer, complexPolygon, pourFillMethod, preserveSilos, pourName, pourPriority, lineWidth, primitiveLock)](./PCB_PrimitivePour.md) |     | **_(BETA)_** 创建覆铜边框         |
+| [delete(primitiveIds)](./PCB_PrimitivePour.md)                                                                                                |     | **_(BETA)_** 删除覆铜边框         |
+| [get(primitiveIds)](./PCB_PrimitivePour.md)                                                                                                   |     | **_(BETA)_** 获取覆铜边框         |
+| [get(primitiveIds)](./PCB_PrimitivePour.md)                                                                                                   |     | **_(BETA)_** 获取覆铜边框         |
+| [getAll(net, layer, primitiveLock)](./PCB_PrimitivePour.md)                                                                                   |     | **_(BETA)_** 获取所有覆铜边框图元     |
+| [getAllPrimitiveId(net, layer, primitiveLock)](./PCB_PrimitivePour.md)                                                                        |     | **_(BETA)_** 获取所有覆铜边框的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitivePour.md)                                                                                       |     | **_(BETA)_** 修改覆铜边框         |
 
 ---
 
@@ -147,167 +41,17 @@ create(net: string, layer: TPCB_LayersOfCopper, complexPolygon: IPCB_Polygon, po
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-复杂多边形对象
-
-
-</td></tr>
-<tr><td>
-
-pourFillMethod
-
-
-</td><td>
-
-[EPCB\_PrimitivePourFillMethod](../enums/EPCB_PrimitivePourFillMethod.md)
-
-
-</td><td>
-
-_（可选）_ 覆铜填充方法
-
-
-</td></tr>
-<tr><td>
-
-preserveSilos
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否保留孤岛
-
-
-</td></tr>
-<tr><td>
-
-pourName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 覆铜名称
-
-
-</td></tr>
-<tr><td>
-
-pourPriority
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 覆铜优先级
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                        | 描述            |
+| -------------- | ------------------------------------------------------------------------- | ------------- |
+| net            | string                                                                    | 网络名称          |
+| layer          | [TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md)                   | 层             |
+| complexPolygon | [IPCB\_Polygon](./IPCB_Polygon.md)                                        | 复杂多边形对象       |
+| pourFillMethod | [EPCB\_PrimitivePourFillMethod](../enums/EPCB_PrimitivePourFillMethod.md) | _（可选）_ 覆铜填充方法 |
+| preserveSilos  | boolean                                                                   | _（可选）_ 是否保留孤岛 |
+| pourName       | string                                                                    | _（可选）_ 覆铜名称   |
+| pourPriority   | number                                                                    | _（可选）_ 覆铜优先级  |
+| lineWidth      | number                                                                    | _（可选）_ 线宽     |
+| primitiveLock  | boolean                                                                   | _（可选）_ 是否锁定   |
 
 
 
@@ -333,39 +77,9 @@ delete(primitiveIds: string | IPCB_PrimitivePour | Array<string> | Array<IPCB_Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePour](./IPCB_PrimitivePour.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
-
-
-</td><td>
-
-覆铜边框的图元 ID 或覆铜边框图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                             | 描述                   |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| primitiveIds | string \| [IPCB\_PrimitivePour](./IPCB_PrimitivePour.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt; | 覆铜边框的图元 ID 或覆铜边框图元对象 |
 
 
 
@@ -391,39 +105,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitivePour | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-覆铜边框的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                     |
+| ------------ | ------ | -------------------------------------- |
+| primitiveIds | string | 覆铜边框的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -449,45 +133,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePour>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-覆铜边框的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                     |
+| ------------ | ------------------- | -------------------------------------- |
+| primitiveIds | Array&lt;string&gt; | 覆铜边框的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt;&gt;
 
 覆铜边框图元对象，空数组表示获取失败
 
@@ -511,77 +165,17 @@ getAll(net?: string, layer?: TPCB_LayersOfCopper, primitiveLock?: boolean): Prom
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                      | 描述          |
+| ------------- | ------------------------------------------------------- | ----------- |
+| net           | string                                                  | _（可选）_ 网络名称 |
+| layer         | [TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                                 | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt;&gt;
 
 覆铜边框图元对象数组
 
@@ -601,71 +195,11 @@ getAllPrimitiveId(net?: string, layer?: TPCB_LayersOfCopper, primitiveLock?: boo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                      | 描述          |
+| ------------- | ------------------------------------------------------- | ----------- |
+| net           | string                                                  | _（可选）_ 网络名称 |
+| layer         | [TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                                 | _（可选）_ 是否锁定 |
 
 
 
@@ -701,55 +235,10 @@ modify(primitiveId: string | IPCB_PrimitivePour, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ net?: string; layer?: [TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md)<!-- -->; complexPolygon?: [IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->; pourFillMethod?: [EPCB\_PrimitivePourFillMethod](../enums/EPCB_PrimitivePourFillMethod.md)<!-- -->; preserveSilos?: boolean; pourName?: string; pourPriority?: number; lineWidth?: number; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                  | 描述    |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)                                                                                                                                                                                                                                                                                            | 图元 ID |
+| property    | { net?: string; layer?: [TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md); complexPolygon?: [IPCB\_Polygon](./IPCB_Polygon.md); pourFillMethod?: [EPCB\_PrimitivePourFillMethod](../enums/EPCB_PrimitivePourFillMethod.md); preserveSilos?: boolean; pourName?: string; pourPriority?: number; lineWidth?: number; primitiveLock?: boolean; } | 修改参数  |
 
 
 

@@ -5,128 +5,18 @@
 ## 签名
 
 ```typescript
-interface ISYS_FileSystemFileList 
+interface ISYS_FileSystemFileList
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[fileName](./ISYS_FileSystemFileList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件名（前后均无斜杠）
-
-
-</td></tr>
-<tr><td>
-
-[fullPath](./ISYS_FileSystemFileList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-完整路径，包含文件名的绝对路径
-
-
-</td></tr>
-<tr><td>
-
-[isDirectory](./ISYS_FileSystemFileList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否为目录
-
-
-</td></tr>
-<tr><td>
-
-[relativePath?](./ISYS_FileSystemFileList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 相对路径，不包含前面的传入路径和文件名（当没有传入路径时，不存在相对路径），且前后均无斜杠
-
-
-</td></tr>
-<tr><td>
-
-[subFiles?](./ISYS_FileSystemFileList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;[ISYS\_FileSystemFileList](./ISYS_FileSystemFileList.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 目录子文件
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                           | 修饰符 | 类型                                                                    | 描述                                                   |
+| --------------------------------------------- | --- | --------------------------------------------------------------------- | ---------------------------------------------------- |
+| [fileName](./ISYS_FileSystemFileList.md)      |     | string                                                                | 文件名（前后均无斜杠）                                          |
+| [fullPath](./ISYS_FileSystemFileList.md)      |     | string                                                                | 完整路径，包含文件名的绝对路径                                      |
+| [isDirectory](./ISYS_FileSystemFileList.md)   |     | boolean                                                               | 是否为目录                                                |
+| [relativePath?](./ISYS_FileSystemFileList.md) |     | string                                                                | _（可选）_ 相对路径，不包含前面的传入路径和文件名（当没有传入路径时，不存在相对路径），且前后均无斜杠 |
+| [subFiles?](./ISYS_FileSystemFileList.md)     |     | Array&lt;[ISYS\_FileSystemFileList](./ISYS_FileSystemFileList.md)&gt; | _（可选）_ 目录子文件                                         |
 
 ---
 

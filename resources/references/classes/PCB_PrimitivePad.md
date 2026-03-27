@@ -5,127 +5,21 @@ PCB &amp; 封装 / 焊盘图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitivePad implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitivePad implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(layer, padNumber, x, y, rotation, pad, net, hole, holeOffsetX, holeOffsetY, holeRotation, metallization, padType, specialPad, solderMaskAndPasteMaskExpansion, heatWelding, primitiveLock)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建焊盘
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除焊盘
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取焊盘
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取焊盘
-
-
-</td></tr>
-<tr><td>
-
-[getAll(layer, net, primitiveLock, padType)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有焊盘
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(layer, net, primitiveLock, padType)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有焊盘的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitivePad.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改焊盘
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                                                                                                                        | 修饰符 | 描述                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------- |
+| [create(layer, padNumber, x, y, rotation, pad, net, hole, holeOffsetX, holeOffsetY, holeRotation, metallization, padType, specialPad, solderMaskAndPasteMaskExpansion, heatWelding, primitiveLock)](./PCB_PrimitivePad.md) |     | 创建焊盘                      |
+| [delete(primitiveIds)](./PCB_PrimitivePad.md)                                                                                                                                                                              |     | **_(BETA)_** 删除焊盘         |
+| [get(primitiveIds)](./PCB_PrimitivePad.md)                                                                                                                                                                                 |     | **_(BETA)_** 获取焊盘         |
+| [get(primitiveIds)](./PCB_PrimitivePad.md)                                                                                                                                                                                 |     | **_(BETA)_** 获取焊盘         |
+| [getAll(layer, net, primitiveLock, padType)](./PCB_PrimitivePad.md)                                                                                                                                                        |     | **_(BETA)_** 获取所有焊盘       |
+| [getAllPrimitiveId(layer, net, primitiveLock, padType)](./PCB_PrimitivePad.md)                                                                                                                                             |     | **_(BETA)_** 获取所有焊盘的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitivePad.md)                                                                                                                                                                     |     | **_(BETA)_** 修改焊盘         |
 
 ---
 
@@ -145,295 +39,25 @@ create(layer: TPCB_LayersOfPad, padNumber: string, x: number, y: number, rotatio
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-padNumber
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘编号
-
-
-</td></tr>
-<tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-位置 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-位置 Y
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度
-
-
-</td></tr>
-<tr><td>
-
-pad
-
-
-</td><td>
-
-[TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md)
-
-
-</td><td>
-
-_（可选）_ 焊盘外形，在特殊焊盘外形实现前，该参数必传
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-hole
-
-
-</td><td>
-
-[TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md) \| null
-
-
-</td><td>
-
-_（可选）_ 孔，`null` 标识无孔
-
-
-</td></tr>
-<tr><td>
-
-holeOffsetX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 孔偏移 X
-
-
-</td></tr>
-<tr><td>
-
-holeOffsetY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 孔偏移 Y
-
-
-</td></tr>
-<tr><td>
-
-holeRotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 孔相对于焊盘的旋转角度
-
-
-</td></tr>
-<tr><td>
-
-metallization
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否金属化孔壁
-
-
-</td></tr>
-<tr><td>
-
-padType
-
-
-</td><td>
-
-[EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md)
-
-
-</td><td>
-
-_（可选）_ 焊盘类型
-
-
-</td></tr>
-<tr><td>
-
-specialPad
-
-
-</td><td>
-
-[TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)
-
-
-</td><td>
-
-_（可选）_ 特殊焊盘外形，当前暂未实现，请勿使用
-
-
-</td></tr>
-<tr><td>
-
-solderMaskAndPasteMaskExpansion
-
-
-</td><td>
-
-[IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
-
-
-</td><td>
-
-_（可选）_ 阻焊/助焊扩展，`null` 表示遵循规则
-
-
-</td></tr>
-<tr><td>
-
-heatWelding
-
-
-</td><td>
-
-IPCB\_PrimitivePadHeatWelding \| null
-
-
-</td><td>
-
-_（可选）_ 热焊优化参数
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数                              | 类型                                                                                                                       | 描述                           |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
+| layer                           | [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)                                                                        | 层                            |
+| padNumber                       | string                                                                                                                   | 焊盘编号                         |
+| x                               | number                                                                                                                   | 位置 X                         |
+| y                               | number                                                                                                                   | 位置 Y                         |
+| rotation                        | number                                                                                                                   | _（可选）_ 旋转角度                  |
+| pad                             | [TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md)                                                            | _（可选）_ 焊盘外形，在特殊焊盘外形实现前，该参数必传 |
+| net                             | string                                                                                                                   | _（可选）_ 网络名称                  |
+| hole                            | [TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md) \| null                                                      | _（可选）_ 孔，`null` 标识无孔         |
+| holeOffsetX                     | number                                                                                                                   | _（可选）_ 孔偏移 X                 |
+| holeOffsetY                     | number                                                                                                                   | _（可选）_ 孔偏移 Y                 |
+| holeRotation                    | number                                                                                                                   | _（可选）_ 孔相对于焊盘的旋转角度           |
+| metallization                   | boolean                                                                                                                  | _（可选）_ 是否金属化孔壁               |
+| padType                         | [EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md)                                                              | _（可选）_ 焊盘类型                  |
+| specialPad                      | [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)                                              | _（可选）_ 特殊焊盘外形，当前暂未实现，请勿使用    |
+| solderMaskAndPasteMaskExpansion | [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null | _（可选）_ 阻焊/助焊扩展，`null` 表示遵循规则 |
+| heatWelding                     | IPCB\_PrimitivePadHeatWelding \| null                                                                                    | _（可选）_ 热焊优化参数                |
+| primitiveLock                   | boolean                                                                                                                  | _（可选）_ 是否锁定                  |
 
 
 
@@ -459,39 +83,9 @@ delete(primitiveIds: string | IPCB_PrimitivePad | Array<string> | Array<IPCB_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePad](./IPCB_PrimitivePad.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)<!-- -->&gt;
-
-
-</td><td>
-
-焊盘的图元 ID 或焊盘图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                         | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| [IPCB\_PrimitivePad](./IPCB_PrimitivePad.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)&gt; | 焊盘的图元 ID 或焊盘图元对象 |
 
 
 
@@ -517,39 +111,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitivePad | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 焊盘的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -575,45 +139,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePad>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-焊盘的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 焊盘的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)&gt;&gt;
 
 焊盘图元对象，空数组表示获取失败
 
@@ -637,93 +171,18 @@ getAll(layer?: TPCB_LayersOfPad, net?: string, primitiveLock?: boolean, padType?
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-<tr><td>
-
-padType
-
-
-</td><td>
-
-[EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md)
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                          | 描述           |
+| ------------- | ----------------------------------------------------------- | ------------ |
+| layer         | [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)           | _（可选）_ 层     |
+| net           | string                                                      | _（可选）_ 网络名称  |
+| primitiveLock | boolean                                                     | _（可选）_ 是否锁定  |
+| padType       | [EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md) | _(Optional)_ |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)&gt;&gt;
 
 焊盘图元对象数组
 
@@ -743,87 +202,12 @@ getAllPrimitiveId(layer?: TPCB_LayersOfPad, net?: string, primitiveLock?: boolea
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-<tr><td>
-
-padType
-
-
-</td><td>
-
-[EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md)
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                          | 描述           |
+| ------------- | ----------------------------------------------------------- | ------------ |
+| layer         | [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)           | _（可选）_ 层     |
+| net           | string                                                      | _（可选）_ 网络名称  |
+| primitiveLock | boolean                                                     | _（可选）_ 是否锁定  |
+| padType       | [EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md) | _(Optional)_ |
 
 
 
@@ -866,55 +250,10 @@ modify(primitiveId: string | IPCB_PrimitivePad, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ layer?: [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)<!-- -->; padNumber?: string; x?: number; y?: number; rotation?: number; pad?: [TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md)<!-- -->; net?: string; hole?: [TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md) \| null; holeOffsetX?: number; holeOffsetY?: number; holeRotation?: number; metallization?: boolean; specialPad?: [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)<!-- -->; solderMaskAndPasteMaskExpansion?: [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null; heatWelding?: IPCB\_PrimitivePadHeatWelding \| null; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 描述    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 图元 ID |
+| property    | { layer?: [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md); padNumber?: string; x?: number; y?: number; rotation?: number; pad?: [TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md); net?: string; hole?: [TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md) \| null; holeOffsetX?: number; holeOffsetY?: number; holeRotation?: number; metallization?: boolean; specialPad?: [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md); solderMaskAndPasteMaskExpansion?: [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null; heatWelding?: IPCB\_PrimitivePadHeatWelding \| null; primitiveLock?: boolean; } | 修改参数  |
 
 
 

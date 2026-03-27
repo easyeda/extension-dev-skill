@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class DMT_EditorControl 
+declare class DMT_EditorControl
 ```
 
 ## 备注
@@ -14,289 +14,27 @@ declare class DMT_EditorControl
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[activateDocument(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-激活文档
-
-
-</td></tr>
-<tr><td>
-
-[activateSplitScreen(splitScreenId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-激活分屏
-
-
-</td></tr>
-<tr><td>
-
-[closeDocument(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-关闭文档
-
-
-</td></tr>
-<tr><td>
-
-[createSplitScreen(splitScreenType, tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建分屏
-
-
-</td></tr>
-<tr><td>
-
-[generateIndicatorMarkers(markers, color, lineWidth, zoom, tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 生成指示标记
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentRenderedAreaImage(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取画布渲染区域图像
-
-
-</td></tr>
-<tr><td>
-
-[getSplitScreenIdByTabId(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-使用标签页 ID 获取分屏 ID
-
-
-</td></tr>
-<tr><td>
-
-[getSplitScreenTree()](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取编辑器分屏属性树
-
-
-</td></tr>
-<tr><td>
-
-[getTabsBySplitScreenId(splitScreenId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取指定分屏 ID 下的所有标签页
-
-
-</td></tr>
-<tr><td>
-
-[mergeAllDocumentFromSplitScreen()](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-合并所有分屏
-
-
-</td></tr>
-<tr><td>
-
-[moveDocumentToSplitScreen(tabId, splitScreenId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将文档移动到指定分屏
-
-
-</td></tr>
-<tr><td>
-
-[openDocument(documentUuid, splitScreenId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开文档
-
-
-</td></tr>
-<tr><td>
-
-[openLibraryDocument(libraryUuid, libraryType, uuid, splitScreenId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 打开库符号、封装文档
-
-
-</td></tr>
-<tr><td>
-
-[removeIndicatorMarkers(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 移除指示标记
-
-
-</td></tr>
-<tr><td>
-
-[tileAllDocumentToSplitScreen()](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-平铺所有文档
-
-
-</td></tr>
-<tr><td>
-
-[zoomTo(x, y, scaleRatio, tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 缩放到坐标
-
-
-</td></tr>
-<tr><td>
-
-[zoomToAllPrimitives(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 缩放到所有图元（适应全部）
-
-
-</td></tr>
-<tr><td>
-
-[zoomToRegion(left, right, top, bottom, tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 缩放到区域
-
-
-</td></tr>
-<tr><td>
-
-[zoomToSelectedPrimitives(tabId)](./DMT_EditorControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 缩放到已选中图元（适应选中）
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                          | 修饰符 | 描述                          |
+| -------------------------------------------------------------------------------------------- | --- | --------------------------- |
+| [activateDocument(tabId)](./DMT_EditorControl.md)                                            |     | 激活文档                        |
+| [activateSplitScreen(splitScreenId)](./DMT_EditorControl.md)                                 |     | 激活分屏                        |
+| [closeDocument(tabId)](./DMT_EditorControl.md)                                               |     | 关闭文档                        |
+| [createSplitScreen(splitScreenType, tabId)](./DMT_EditorControl.md)                          |     | 创建分屏                        |
+| [generateIndicatorMarkers(markers, color, lineWidth, zoom, tabId)](./DMT_EditorControl.md)   |     | **_(BETA)_** 生成指示标记         |
+| [getCurrentRenderedAreaImage(tabId)](./DMT_EditorControl.md)                                 |     | **_(BETA)_** 获取画布渲染区域图像     |
+| [getSplitScreenIdByTabId(tabId)](./DMT_EditorControl.md)                                     |     | 使用标签页 ID 获取分屏 ID            |
+| [getSplitScreenTree()](./DMT_EditorControl.md)                                               |     | 获取编辑器分屏属性树                  |
+| [getTabsBySplitScreenId(splitScreenId)](./DMT_EditorControl.md)                              |     | 获取指定分屏 ID 下的所有标签页           |
+| [mergeAllDocumentFromSplitScreen()](./DMT_EditorControl.md)                                  |     | 合并所有分屏                      |
+| [moveDocumentToSplitScreen(tabId, splitScreenId)](./DMT_EditorControl.md)                    |     | 将文档移动到指定分屏                  |
+| [openDocument(documentUuid, splitScreenId)](./DMT_EditorControl.md)                          |     | 打开文档                        |
+| [openLibraryDocument(libraryUuid, libraryType, uuid, splitScreenId)](./DMT_EditorControl.md) |     | **_(BETA)_** 打开库符号、封装文档     |
+| [removeIndicatorMarkers(tabId)](./DMT_EditorControl.md)                                      |     | **_(BETA)_** 移除指示标记         |
+| [tileAllDocumentToSplitScreen()](./DMT_EditorControl.md)                                     |     | 平铺所有文档                      |
+| [zoomTo(x, y, scaleRatio, tabId)](./DMT_EditorControl.md)                                    |     | **_(BETA)_** 缩放到坐标          |
+| [zoomToAllPrimitives(tabId)](./DMT_EditorControl.md)                                         |     | **_(BETA)_** 缩放到所有图元（适应全部）  |
+| [zoomToRegion(left, right, top, bottom, tabId)](./DMT_EditorControl.md)                      |     | **_(BETA)_** 缩放到区域          |
+| [zoomToSelectedPrimitives(tabId)](./DMT_EditorControl.md)                                    |     | **_(BETA)_** 缩放到已选中图元（适应选中） |
 
 ---
 
@@ -316,39 +54,9 @@ activateDocument(tabId: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述     |
+| ----- | ------ | ------ |
+| tabId | string | 标签页 ID |
 
 
 
@@ -376,39 +84,9 @@ activateSplitScreen(splitScreenId: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-splitScreenId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-分屏 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述    |
+| ------------- | ------ | ----- |
+| splitScreenId | string | 分屏 ID |
 
 
 
@@ -436,39 +114,9 @@ closeDocument(tabId: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页 ID，此处支持 [IDMT\_SchematicPageItem.uuid](../interfaces/IDMT_SchematicPageItem.md)<!-- -->、[IDMT\_PcbItem.uuid](../interfaces/IDMT_PcbItem.md)<!-- -->、[IDMT\_PanelItem.uuid](../interfaces/IDMT_PanelItem.md) 作为输入
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述                                                                                                                                                                                                   |
+| ----- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tabId | string | 标签页 ID，此处支持 [IDMT\_SchematicPageItem.uuid](../interfaces/IDMT_SchematicPageItem.md)、[IDMT\_PcbItem.uuid](../interfaces/IDMT_PcbItem.md)、[IDMT\_PanelItem.uuid](../interfaces/IDMT_PanelItem.md) 作为输入 |
 
 
 
@@ -480,7 +128,7 @@ Promise&lt;boolean&gt;
 
 ## 备注
 
-如若文档尚未保存，执行此操作将会直接丢失所有未保存的数据，请在修改操作完成后首先执行 [SCH\_Document.save()](./SCH_Document.md)<!-- -->、[PCB\_Document.save()](./PCB_Document.md)<!-- -->、[PNL\_Document.save()](./PNL_Document.md) 保存数据
+如若文档尚未保存，执行此操作将会直接丢失所有未保存的数据，请在修改操作完成后首先执行 [SCH\_Document.save()](./SCH_Document.md)、[PCB\_Document.save()](./PCB_Document.md)、[PNL\_Document.save()](./PNL_Document.md) 保存数据
 
 ### createsplitscreen
 
@@ -499,55 +147,10 @@ createSplitScreen(splitScreenType: EDMT_EditorSplitScreenDirection, tabId: strin
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-splitScreenType
-
-
-</td><td>
-
-[EDMT\_EditorSplitScreenDirection](../enums/EDMT_EditorSplitScreenDirection.md)
-
-
-</td><td>
-
-分屏类型，`horizontal` 水平、`vertical` 垂直
-
-
-</td></tr>
-<tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页 ID，该标签页将会被移入新的分屏中
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                                                                              | 描述                                 |
+| --------------- | ------------------------------------------------------------------------------- | ---------------------------------- |
+| splitScreenType | [EDMT\_EditorSplitScreenDirection](../enums/EDMT_EditorSplitScreenDirection.md) | 分屏类型，`horizontal` 水平、`vertical` 垂直 |
+| tabId           | string                                                                          | 标签页 ID，该标签页将会被移入新的分屏中              |
 
 
 
@@ -582,103 +185,13 @@ generateIndicatorMarkers(markers: Array<IDMT_IndicatorMarkerShape>, color?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-markers
-
-
-</td><td>
-
-Array&lt;[IDMT\_IndicatorMarkerShape](../interfaces/IDMT_IndicatorMarkerShape.md)<!-- -->&gt;
-
-
-</td><td>
-
-指示标记外形对象数组
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-\{ r: number; g: number; b: number; alpha: number; \}
-
-
-</td><td>
-
-_（可选）_ 指示标记颜色
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-zoom
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否定位并缩放
-
-
-</td></tr>
-<tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                    | 描述                              |
+| --------- | ------------------------------------------------------------------------------------- | ------------------------------- |
+| markers   | Array&lt;[IDMT\_IndicatorMarkerShape](../interfaces/IDMT_IndicatorMarkerShape.md)&gt; | 指示标记外形对象数组                      |
+| color     | \{ r: number; g: number; b: number; alpha: number; \}                                 | _（可选）_ 指示标记颜色                   |
+| lineWidth | number                                                                                | _（可选）_ 线宽                       |
+| zoom      | boolean                                                                               | _（可选）_ 是否定位并缩放                  |
+| tabId     | string                                                                                | _（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布 |
 
 
 
@@ -708,39 +221,9 @@ getCurrentRenderedAreaImage(tabId?: string): Promise<Blob | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则获取最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述                               |
+| ----- | ------ | -------------------------------- |
+| tabId | string | _（可选）_ 标签页 ID，如若未传入，则获取最后输入焦点的画布 |
 
 
 
@@ -764,39 +247,9 @@ getSplitScreenIdByTabId(tabId: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述     |
+| ----- | ------ | ------ |
+| tabId | string | 标签页 ID |
 
 
 
@@ -823,7 +276,7 @@ getSplitScreenTree(): Promise<IDMT_EditorSplitScreenItem | undefined>;
 
 Promise&lt;[IDMT\_EditorSplitScreenItem](../interfaces/IDMT_EditorSplitScreenItem.md) \| undefined&gt;
 
-编辑器分屏属性树，如若为 `undefined`<!-- -->，则数据获取失败
+编辑器分屏属性树，如若为 `undefined`，则数据获取失败
 
 ### gettabsbysplitscreenid
 
@@ -839,51 +292,21 @@ getTabsBySplitScreenId(splitScreenId: string): Promise<Array<IDMT_EditorTabItem>
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-splitScreenId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-分屏 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述    |
+| ------------- | ------ | ----- |
+| splitScreenId | string | 分屏 ID |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_EditorTabItem](../interfaces/IDMT_EditorTabItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_EditorTabItem](../interfaces/IDMT_EditorTabItem.md)&gt;&gt;
 
 标签页列表
 
 ## 备注
 
-如果指定分屏下不存在直接标签页（即它属下还存在 [children](../interfaces/IDMT_EditorSplitScreenItem.md)<!-- -->），则返回空数组
+如果指定分屏下不存在直接标签页（即它属下还存在 [children](../interfaces/IDMT_EditorSplitScreenItem.md)），则返回空数组
 
 ### mergealldocumentfromsplitscreen
 
@@ -922,55 +345,10 @@ moveDocumentToSplitScreen(tabId: string, splitScreenId: string): Promise<boolean
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页 ID
-
-
-</td></tr>
-<tr><td>
-
-splitScreenId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-[分屏 ID](../interfaces/IDMT_EditorSplitScreenItem.md)
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                                   |
+| ------------- | ------ | ---------------------------------------------------- |
+| tabId         | string | 标签页 ID                                               |
+| splitScreenId | string | [分屏 ID](../interfaces/IDMT_EditorSplitScreenItem.md) |
 
 
 
@@ -998,55 +376,10 @@ openDocument(documentUuid: string, splitScreenId?: string): Promise<string | und
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-documentUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文档 UUID，此处支持 [IDMT\_SchematicItem.uuid](../interfaces/IDMT_SchematicItem.md)<!-- -->、[IDMT\_SchematicPageItem.uuid](../interfaces/IDMT_SchematicPageItem.md)<!-- -->、[IDMT\_PcbItem.uuid](../interfaces/IDMT_PcbItem.md)<!-- -->、[IDMT\_PanelItem.uuid](../interfaces/IDMT_PanelItem.md) 作为输入
-
-
-</td></tr>
-<tr><td>
-
-splitScreenId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 分屏 ID，即 [DMT\_EditorControl.getSplitScreenTree()](./DMT_EditorControl.md) 方法获取到的 [IDMT\_EditorSplitScreenItem.id](../interfaces/IDMT_EditorSplitScreenItem.md)
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                                                                                                                                                                                                                                                    |
+| ------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| documentUuid  | string | 文档 UUID，此处支持 [IDMT\_SchematicItem.uuid](../interfaces/IDMT_SchematicItem.md)、[IDMT\_SchematicPageItem.uuid](../interfaces/IDMT_SchematicPageItem.md)、[IDMT\_PcbItem.uuid](../interfaces/IDMT_PcbItem.md)、[IDMT\_PanelItem.uuid](../interfaces/IDMT_PanelItem.md) 作为输入 |
+| splitScreenId | string | _（可选）_ 分屏 ID，即 [DMT\_EditorControl.getSplitScreenTree()](./DMT_EditorControl.md) 方法获取到的 [IDMT\_EditorSplitScreenItem.id](../interfaces/IDMT_EditorSplitScreenItem.md)                                                                                                 |
 
 
 
@@ -1054,7 +387,7 @@ _（可选）_ 分屏 ID，即 [DMT\_EditorControl.getSplitScreenTree()](./DMT_E
 
 Promise&lt;string \| undefined&gt;
 
-标签页 ID，如若为 `undefined`<!-- -->，则打开文档失败
+标签页 ID，如若为 `undefined`，则打开文档失败
 
 ### openlibrarydocument
 
@@ -1072,87 +405,12 @@ openLibraryDocument(libraryUuid: string, libraryType: ELIB_LibraryType.SYMBOL | 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-libraryType
-
-
-</td><td>
-
-[ELIB\_LibraryType.SYMBOL](../enums/ELIB_LibraryType.md) \| [ELIB\_LibraryType.FOOTPRINT](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型，支持符号和封装
-
-
-</td></tr>
-<tr><td>
-
-uuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-符号、封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-splitScreenId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 分屏 ID，即 [DMT\_EditorControl.getSplitScreenTree()](./DMT_EditorControl.md) 方法获取到的 [IDMT\_EditorSplitScreenItem.id](../interfaces/IDMT_EditorSplitScreenItem.md)
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                                                      | 描述                                                                                                                                                                    |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| libraryUuid   | string                                                                                                                  | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取                                                                                                       |
+| libraryType   | [ELIB\_LibraryType.SYMBOL](../enums/ELIB_LibraryType.md) \| [ELIB\_LibraryType.FOOTPRINT](../enums/ELIB_LibraryType.md) | 库类型，支持符号和封装                                                                                                                                                           |
+| uuid          | string                                                                                                                  | 符号、封装 UUID                                                                                                                                                            |
+| splitScreenId | string                                                                                                                  | _（可选）_ 分屏 ID，即 [DMT\_EditorControl.getSplitScreenTree()](./DMT_EditorControl.md) 方法获取到的 [IDMT\_EditorSplitScreenItem.id](../interfaces/IDMT_EditorSplitScreenItem.md) |
 
 
 
@@ -1160,7 +418,7 @@ _（可选）_ 分屏 ID，即 [DMT\_EditorControl.getSplitScreenTree()](./DMT_E
 
 Promise&lt;string \| undefined&gt;
 
-标签页 ID，如若为 `undefined`<!-- -->，则打开文档失败
+标签页 ID，如若为 `undefined`，则打开文档失败
 
 ### removeindicatormarkers
 
@@ -1178,39 +436,9 @@ removeIndicatorMarkers(tabId?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述                              |
+| ----- | ------ | ------------------------------- |
+| tabId | string | _（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布 |
 
 
 
@@ -1268,87 +496,12 @@ zoomTo(x?: number, y?: number, scaleRatio?: number, tabId?: string): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 中心坐标 X，如若不传入则不改变当前 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 中心坐标 Y，如若不传入则不改变当前 Y 坐标
-
-
-</td></tr>
-<tr><td>
-
-scaleRatio
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 缩放比，如若不传入则不改变当前缩放比，单位跨度为 `1/100`<!-- -->，如若传入 `200`<!-- -->，则表示缩放比为 `200%`
-
-
-</td></tr>
-<tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型     | 描述                                                                |
+| ---------- | ------ | ----------------------------------------------------------------- |
+| x          | number | _（可选）_ 中心坐标 X，如若不传入则不改变当前 X 坐标                                    |
+| y          | number | _（可选）_ 中心坐标 Y，如若不传入则不改变当前 Y 坐标                                    |
+| scaleRatio | number | _（可选）_ 缩放比，如若不传入则不改变当前缩放比，单位跨度为 `1/100`，如若传入 `200`，则表示缩放比为 `200%` |
+| tabId      | string | _（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布                                   |
 
 
 
@@ -1383,39 +536,9 @@ zoomToAllPrimitives(tabId?: string): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述                              |
+| ----- | ------ | ------------------------------- |
+| tabId | string | _（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布 |
 
 
 
@@ -1445,103 +568,13 @@ zoomToRegion(left: number, right: number, top: number, bottom: number, tabId?: s
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-left
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第一 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-right
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第二 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-top
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第一 Y 坐标
-
-
-</td></tr>
-<tr><td>
-
-bottom
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第二 Y 坐标
-
-
-</td></tr>
-<tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述                              |
+| ------ | ------ | ------------------------------- |
+| left   | number | 矩形框第一 X 坐标                      |
+| right  | number | 矩形框第二 X 坐标                      |
+| top    | number | 矩形框第一 Y 坐标                      |
+| bottom | number | 矩形框第二 Y 坐标                      |
+| tabId  | string | _（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布 |
 
 
 
@@ -1576,39 +609,9 @@ zoomToSelectedPrimitives(tabId?: string): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tabId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述                              |
+| ----- | ------ | ------------------------------- |
+| tabId | string | _（可选）_ 标签页 ID，如若未传入，则为最后输入焦点的画布 |
 
 
 

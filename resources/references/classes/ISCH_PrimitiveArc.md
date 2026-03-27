@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitiveArc implements ISCH_Primitive 
+declare class ISCH_PrimitiveArc implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -14,401 +14,35 @@ declare class ISCH_PrimitiveArc implements ISCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Color()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_EndX()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：终止点 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_EndY()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：终止点 Y
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillColor()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineType()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ReferenceX()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：参考点 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ReferenceY()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：参考点 Y
-
-
-</td></tr>
-<tr><td>
-
-[getState\_StartX()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：起始点 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_StartY()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：起始点 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Color(color)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_EndX(endX)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：终止点 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_EndY(endY)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：终止点 Y
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillColor(fillColor)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineType(lineType)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ReferenceX(referenceX)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：参考点 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ReferenceY(referenceY)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：参考点 Y
-
-
-</td></tr>
-<tr><td>
-
-[setState\_StartX(startX)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：起始点 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_StartY(startY)](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：起始点 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                        | 修饰符 | 描述                          |
+| ---------------------------------------------------------- | --- | --------------------------- |
+| [done()](./ISCH_PrimitiveArc.md)                           |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_Color()](./ISCH_PrimitiveArc.md)                |     | 获取属性状态：颜色                   |
+| [getState\_EndX()](./ISCH_PrimitiveArc.md)                 |     | 获取属性状态：终止点 X                |
+| [getState\_EndY()](./ISCH_PrimitiveArc.md)                 |     | 获取属性状态：终止点 Y                |
+| [getState\_FillColor()](./ISCH_PrimitiveArc.md)            |     | 获取属性状态：填充颜色                 |
+| [getState\_LineType()](./ISCH_PrimitiveArc.md)             |     | 获取属性状态：线型                   |
+| [getState\_LineWidth()](./ISCH_PrimitiveArc.md)            |     | 获取属性状态：线宽                   |
+| [getState\_PrimitiveId()](./ISCH_PrimitiveArc.md)          |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveType()](./ISCH_PrimitiveArc.md)        |     | 获取属性状态：图元类型                 |
+| [getState\_ReferenceX()](./ISCH_PrimitiveArc.md)           |     | 获取属性状态：参考点 X                |
+| [getState\_ReferenceY()](./ISCH_PrimitiveArc.md)           |     | 获取属性状态：参考点 Y                |
+| [getState\_StartX()](./ISCH_PrimitiveArc.md)               |     | 获取属性状态：起始点 X                |
+| [getState\_StartY()](./ISCH_PrimitiveArc.md)               |     | 获取属性状态：起始点 Y                |
+| [isAsync()](./ISCH_PrimitiveArc.md)                        |     | 查询图元是否为异步图元                 |
+| [reset()](./ISCH_PrimitiveArc.md)                          |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_Color(color)](./ISCH_PrimitiveArc.md)           |     | **_(BETA)_** 设置属性状态：颜色      |
+| [setState\_EndX(endX)](./ISCH_PrimitiveArc.md)             |     | **_(BETA)_** 设置属性状态：终止点 X   |
+| [setState\_EndY(endY)](./ISCH_PrimitiveArc.md)             |     | **_(BETA)_** 设置属性状态：终止点 Y   |
+| [setState\_FillColor(fillColor)](./ISCH_PrimitiveArc.md)   |     | **_(BETA)_** 设置属性状态：填充颜色    |
+| [setState\_LineType(lineType)](./ISCH_PrimitiveArc.md)     |     | **_(BETA)_** 设置属性状态：线型      |
+| [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveArc.md)   |     | **_(BETA)_** 设置属性状态：线宽      |
+| [setState\_ReferenceX(referenceX)](./ISCH_PrimitiveArc.md) |     | **_(BETA)_** 设置属性状态：参考点 X   |
+| [setState\_ReferenceY(referenceY)](./ISCH_PrimitiveArc.md) |     | **_(BETA)_** 设置属性状态：参考点 Y   |
+| [setState\_StartX(startX)](./ISCH_PrimitiveArc.md)         |     | **_(BETA)_** 设置属性状态：起始点 X   |
+| [setState\_StartY(startY)](./ISCH_PrimitiveArc.md)         |     | **_(BETA)_** 设置属性状态：起始点 Y   |
+| [toAsync()](./ISCH_PrimitiveArc.md)                        |     | 将图元转换为异步图元                  |
+| [toSync()](./ISCH_PrimitiveArc.md)                         |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -431,7 +65,7 @@ done(): Promise<ISCH_PrimitiveArc>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)&gt;
 
 圆弧图元对象
 
@@ -699,7 +333,7 @@ reset(): Promise<ISCH_PrimitiveArc>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)&gt;
 
 圆弧图元对象
 
@@ -719,39 +353,9 @@ setState_Color(color: string | null): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型             | 描述  |
+| ----- | -------------- | --- |
+| color | string \| null | 颜色  |
 
 
 
@@ -777,39 +381,9 @@ setState_EndX(endX: number): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-endX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止点 X
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述    |
+| ---- | ------ | ----- |
+| endX | number | 终止点 X |
 
 
 
@@ -835,39 +409,9 @@ setState_EndY(endY: number): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-endY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止点 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述    |
+| ---- | ------ | ----- |
+| endY | number | 终止点 Y |
 
 
 
@@ -893,39 +437,9 @@ setState_FillColor(fillColor: string | null): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-填充颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述   |
+| --------- | -------------- | ---- |
+| fillColor | string \| null | 填充颜色 |
 
 
 
@@ -951,39 +465,9 @@ setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-线型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                    | 描述  |
+| -------- | --------------------------------------------------------------------- | --- |
+| lineType | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | 线型  |
 
 
 
@@ -1009,39 +493,9 @@ setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述  |
+| --------- | -------------- | --- |
+| lineWidth | number \| null | 线宽  |
 
 
 
@@ -1067,39 +521,9 @@ setState_ReferenceX(referenceX: number): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-referenceX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-参考点 X
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型     | 描述    |
+| ---------- | ------ | ----- |
+| referenceX | number | 参考点 X |
 
 
 
@@ -1125,39 +549,9 @@ setState_ReferenceY(referenceY: number): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-referenceY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-参考点 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型     | 描述    |
+| ---------- | ------ | ----- |
+| referenceY | number | 参考点 Y |
 
 
 
@@ -1183,39 +577,9 @@ setState_StartX(startX: number): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-startX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始点 X
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述    |
+| ------ | ------ | ----- |
+| startX | number | 起始点 X |
 
 
 
@@ -1241,39 +605,9 @@ setState_StartY(startY: number): ISCH_PrimitiveArc;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-startY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始点 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述    |
+| ------ | ------ | ----- |
+| startY | number | 起始点 Y |
 
 
 

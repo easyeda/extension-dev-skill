@@ -18,7 +18,6 @@ extension-dev-skill/
   SKILL.md                          # Skill definition (core rules and workflow)
   AGENTS.md                         # Supplementary agent guide (this file)
   resources/
-    api-reference.md                # API module overview, eda property list, MCP tool docs
     experience.md                   # Common pitfalls and lessons learned
     guide/                          # Developer guide (concepts, how-to, best practices)
     references/                     # Complete API reference (classes, enums, interfaces, types)

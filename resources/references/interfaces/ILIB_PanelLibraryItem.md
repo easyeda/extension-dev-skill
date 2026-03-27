@@ -5,149 +5,19 @@
 ## 签名
 
 ```typescript
-interface ILIB_PanelLibraryItem 
+interface ILIB_PanelLibraryItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[classification?](./ILIB_PanelLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-[description?](./ILIB_PanelLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-<tr><td>
-
-[libraryType](./ILIB_PanelLibraryItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[ELIB\_LibraryType.PANEL\_LIBRARY](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-[libraryUuid](./ILIB_PanelLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[name](./ILIB_PanelLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-面板库名称
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./ILIB_PanelLibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-面板库 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                           | 修饰符        | 类型                                                                                | 描述        |
+| --------------------------------------------- | ---------- | --------------------------------------------------------------------------------- | --------- |
+| [classification?](./ILIB_PanelLibraryItem.md) |            | [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 分类 |
+| [description?](./ILIB_PanelLibraryItem.md)    |            | string                                                                            | _（可选）_ 描述 |
+| [libraryType](./ILIB_PanelLibraryItem.md)     | `readonly` | [ELIB\_LibraryType.PANEL\_LIBRARY](../enums/ELIB_LibraryType.md)                  | 库类型       |
+| [libraryUuid](./ILIB_PanelLibraryItem.md)     |            | string                                                                            | 所属库 UUID  |
+| [name](./ILIB_PanelLibraryItem.md)            |            | string                                                                            | 面板库名称     |
+| [uuid](./ILIB_PanelLibraryItem.md)            |            | string                                                                            | 面板库 UUID  |
 
 ---
 

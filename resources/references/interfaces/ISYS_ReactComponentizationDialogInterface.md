@@ -7,90 +7,16 @@ React 组件化弹出窗口接口
 ## 签名
 
 ```typescript
-interface ISYS_ReactComponentizationDialogInterface 
+interface ISYS_ReactComponentizationDialogInterface
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[Components](./ISYS_ReactComponentizationDialogInterface.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Components
-
-
-</td><td>
-
-**_(ALPHA)_** 预制组件
-
-
-</td></tr>
-<tr><td>
-
-[portal](./ISYS_ReactComponentizationDialogInterface.md)
-
-
-</td><td>
-
-
-</td><td>
-
-WorkerPortal
-
-
-</td><td>
-
-**_(ALPHA)_** Portal 实例
-
-
-</td></tr>
-<tr><td>
-
-[render](./ISYS_ReactComponentizationDialogInterface.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(node: TComponentsNode) =&gt; void
-
-
-</td><td>
-
-**_(ALPHA)_** 渲染 React 组件
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                          | 修饰符 | 类型                                 | 描述                        |
+| ------------------------------------------------------------ | --- | ---------------------------------- | ------------------------- |
+| [Components](./ISYS_ReactComponentizationDialogInterface.md) |     | Components                         | **_(ALPHA)_** 预制组件        |
+| [portal](./ISYS_ReactComponentizationDialogInterface.md)     |     | WorkerPortal                       | **_(ALPHA)_** Portal 实例   |
+| [render](./ISYS_ReactComponentizationDialogInterface.md)     |     | (node: TComponentsNode) =&gt; void | **_(ALPHA)_** 渲染 React 组件 |
 
 ---
 

@@ -5,108 +5,19 @@ PCB &amp; 封装 / 多边形数学类
 ## 签名
 
 ```typescript
-declare class PCB_MathPolygon 
+declare class PCB_MathPolygon
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[calculateBBoxHeight(complexPolygon)](./PCB_MathPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[calculateBBoxWidth(complexPolygon)](./PCB_MathPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[convertImageToComplexPolygon(imageBlob, imageWidth, imageHeight, tolerance, simplification, smoothing, despeckling, whiteAsBackgroundColor, inversion)](./PCB_MathPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将图像转换为复杂多边形对象
-
-
-</td></tr>
-<tr><td>
-
-[createComplexPolygon(complexPolygon)](./PCB_MathPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[createPolygon(polygon)](./PCB_MathPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建单多边形
-
-
-</td></tr>
-<tr><td>
-
-[splitPolygon(complexPolygons)](./PCB_MathPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-拆分单多边形
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                                                                            | 修饰符 | 描述                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | -------------------------- |
+| [calculateBBoxHeight(complexPolygon)](./PCB_MathPolygon.md)                                                                                                                    |     |                            |
+| [calculateBBoxWidth(complexPolygon)](./PCB_MathPolygon.md)                                                                                                                     |     |                            |
+| [convertImageToComplexPolygon(imageBlob, imageWidth, imageHeight, tolerance, simplification, smoothing, despeckling, whiteAsBackgroundColor, inversion)](./PCB_MathPolygon.md) |     | **_(BETA)_** 将图像转换为复杂多边形对象 |
+| [createComplexPolygon(complexPolygon)](./PCB_MathPolygon.md)                                                                                                                   |     | 创建复杂多边形                    |
+| [createPolygon(polygon)](./PCB_MathPolygon.md)                                                                                                                                 |     | 创建单多边形                     |
+| [splitPolygon(complexPolygons)](./PCB_MathPolygon.md)                                                                                                                          |     | 拆分单多边形                     |
 
 ---
 
@@ -124,37 +35,9 @@ calculateBBoxHeight(complexPolygon: TPCB_PolygonSourceArray | Array<TPCB_Polygon
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt;
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                                                              | 描述  |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| complexPolygon | [TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt; |     |
 
 
 
@@ -174,37 +57,9 @@ calculateBBoxWidth(complexPolygon: TPCB_PolygonSourceArray | Array<TPCB_PolygonS
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt;
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                                                              | 描述  |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| complexPolygon | [TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt; |     |
 
 
 
@@ -228,167 +83,17 @@ convertImageToComplexPolygon(imageBlob: Blob, imageWidth: number, imageHeight: n
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-imageBlob
-
-
-</td><td>
-
-Blob
-
-
-</td><td>
-
-图像 Blob 文件，可以使用  方法从文件系统读取文件
-
-
-</td></tr>
-<tr><td>
-
-imageWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-图像宽度
-
-
-</td></tr>
-<tr><td>
-
-imageHeight
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-图像高度
-
-
-</td></tr>
-<tr><td>
-
-tolerance
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 容差，取值范围 `0`<!-- -->-`1`
-
-
-</td></tr>
-<tr><td>
-
-simplification
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 简化，取值范围 `0`<!-- -->-`1`
-
-
-</td></tr>
-<tr><td>
-
-smoothing
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 平滑，取值范围 `0`<!-- -->-`1.33`
-
-
-</td></tr>
-<tr><td>
-
-despeckling
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 去斑，取值范围 `0`<!-- -->-`5`
-
-
-</td></tr>
-<tr><td>
-
-whiteAsBackgroundColor
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否白色作为背景色
-
-
-</td></tr>
-<tr><td>
-
-inversion
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否反相
-
-
-</td></tr>
-</tbody></table>
+| 参数                     | 类型      | 描述                           |
+| ---------------------- | ------- | ---------------------------- |
+| imageBlob              | Blob    | 图像 Blob 文件，可以使用  方法从文件系统读取文件 |
+| imageWidth             | number  | 图像宽度                         |
+| imageHeight            | number  | 图像高度                         |
+| tolerance              | number  | _（可选）_ 容差，取值范围 `0`-`1`       |
+| simplification         | number  | _（可选）_ 简化，取值范围 `0`-`1`       |
+| smoothing              | number  | _（可选）_ 平滑，取值范围 `0`-`1.33`    |
+| despeckling            | number  | _（可选）_ 去斑，取值范围 `0`-`5`       |
+| whiteAsBackgroundColor | boolean | _（可选）_ 是否白色作为背景色             |
+| inversion              | boolean | _（可选）_ 是否反相                  |
 
 
 
@@ -412,39 +117,9 @@ createComplexPolygon(complexPolygon: TPCB_PolygonSourceArray | Array<TPCB_Polygo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt; \| [IPCB\_Polygon](./IPCB_Polygon.md) \| Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->&gt;
-
-
-</td><td>
-
-复杂多边形数据
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                                                                                                                                                       | 描述      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| complexPolygon | [TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt; \| [IPCB\_Polygon](./IPCB_Polygon.md) \| Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)&gt; | 复杂多边形数据 |
 
 
 
@@ -468,39 +143,9 @@ createPolygon(polygon: TPCB_PolygonSourceArray): IPCB_Polygon | undefined;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-polygon
-
-
-</td><td>
-
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)
-
-
-</td><td>
-
-单多边形数据
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型                                                              | 描述     |
+| ------- | --------------------------------------------------------------- | ------ |
+| polygon | [TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) | 单多边形数据 |
 
 
 
@@ -524,44 +169,14 @@ splitPolygon(...complexPolygons: Array<IPCB_ComplexPolygon>): Array<IPCB_Polygon
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygons
-
-
-</td><td>
-
-Array&lt;[IPCB\_ComplexPolygon](./IPCB_ComplexPolygon.md)<!-- -->&gt;
-
-
-</td><td>
-
-复杂多边形
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                                                            | 描述    |
+| --------------- | ------------------------------------------------------------- | ----- |
+| complexPolygons | Array&lt;[IPCB\_ComplexPolygon](./IPCB_ComplexPolygon.md)&gt; | 复杂多边形 |
 
 
 
 ## 返回值
 
-Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->&gt;
+Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)&gt;
 
 单多边形数组

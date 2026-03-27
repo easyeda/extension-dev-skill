@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface ILIB_LibraryInfo 
+interface ILIB_LibraryInfo
 ```
 
 ## 备注
@@ -14,66 +14,10 @@ interface ILIB_LibraryInfo
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[name](./ILIB_LibraryInfo.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库名称
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./ILIB_LibraryInfo.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                           | 修饰符 | 类型     | 描述     |
+| ----------------------------- | --- | ------ | ------ |
+| [name](./ILIB_LibraryInfo.md) |     | string | 库名称    |
+| [uuid](./ILIB_LibraryInfo.md) |     | string | 库 UUID |
 
 ---
 

@@ -10,7 +10,7 @@ type TPCB_PrimitiveDimensionCoordinateSet = [number, number, number, number, num
 
 ## 备注
 
-尺寸标注坐标集存在以下三种 [尺寸标注类型](../enums/EPCB_PrimitiveDimensionType.md)<!-- -->：
+尺寸标注坐标集存在以下三种 [尺寸标注类型](../enums/EPCB_PrimitiveDimensionType.md)：
 
 ① 半径标注
 

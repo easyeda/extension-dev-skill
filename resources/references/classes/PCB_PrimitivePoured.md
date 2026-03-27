@@ -5,99 +5,19 @@ PCB &amp; 封装 / 覆铜填充图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitivePoured implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitivePoured implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除覆铜填充
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取覆铜填充
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取覆铜填充
-
-
-</td></tr>
-<tr><td>
-
-[getAll()](./PCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有覆铜填充图元
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId()](./PCB_PrimitivePoured.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有覆铜填充的图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                              | 修饰符 | 描述                          |
+| ------------------------------------------------ | --- | --------------------------- |
+| [delete(primitiveIds)](./PCB_PrimitivePoured.md) |     | **_(BETA)_** 删除覆铜填充         |
+| [get(primitiveIds)](./PCB_PrimitivePoured.md)    |     | **_(BETA)_** 获取覆铜填充         |
+| [get(primitiveIds)](./PCB_PrimitivePoured.md)    |     | **_(BETA)_** 获取覆铜填充         |
+| [getAll()](./PCB_PrimitivePoured.md)             |     | **_(BETA)_** 获取所有覆铜填充图元     |
+| [getAllPrimitiveId()](./PCB_PrimitivePoured.md)  |     | **_(BETA)_** 获取所有覆铜填充的图元 ID |
 
 ---
 
@@ -119,39 +39,9 @@ delete(primitiveIds: string | IPCB_PrimitivePoured | Array<string> | Array<IPCB_
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)<!-- -->&gt;
-
-
-</td><td>
-
-覆铜填充的图元 ID 或覆铜填充图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                     | 描述                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| primitiveIds | string \| [IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)&gt; | 覆铜填充的图元 ID 或覆铜填充图元对象 |
 
 
 
@@ -177,39 +67,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitivePoured | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-覆铜填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                     |
+| ------------ | ------ | -------------------------------------- |
+| primitiveIds | string | 覆铜填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -235,45 +95,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePoured>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-覆铜填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                     |
+| ------------ | ------------------- | -------------------------------------- |
+| primitiveIds | Array&lt;string&gt; | 覆铜填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)&gt;&gt;
 
 覆铜填充图元对象，空数组表示获取失败
 
@@ -298,7 +128,7 @@ getAll(): Promise<Array<IPCB_PrimitivePoured>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)&gt;&gt;
 
 覆铜填充图元对象数组
 

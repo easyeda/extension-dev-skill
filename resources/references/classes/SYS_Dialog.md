@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_Dialog 
+declare class SYS_Dialog
 ```
 
 ## 备注
@@ -14,93 +14,13 @@ declare class SYS_Dialog
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[showConfirmationMessage(content, title, mainButtonTitle, buttonTitle, callbackFn)](./SYS_Dialog.md)
-
-
-</td><td>
-
-
-</td><td>
-
-弹出确认窗口
-
-
-</td></tr>
-<tr><td>
-
-[showInformationMessage(content, title, buttonTitle)](./SYS_Dialog.md)
-
-
-</td><td>
-
-
-</td><td>
-
-弹出消息窗口
-
-
-</td></tr>
-<tr><td>
-
-[showInputDialog(beforeContent, afterContent, title, type, value, otherProperty, callbackFn)](./SYS_Dialog.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 弹出输入窗口
-
-
-</td></tr>
-<tr><td>
-
-[showSelectDialog(options, beforeContent, afterContent, title, defaultOption, multiple, callbackFn)](./SYS_Dialog.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 弹出选择窗口
-
-
-</td></tr>
-<tr><td>
-
-[showSelectDialog(options, beforeContent, afterContent, title, defaultOption, multiple, callbackFn)](./SYS_Dialog.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 弹出多选窗口
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                   | 修饰符 | 描述                  |
+| --------------------------------------------------------------------------------------------------------------------- | --- | ------------------- |
+| [showConfirmationMessage(content, title, mainButtonTitle, buttonTitle, callbackFn)](./SYS_Dialog.md)                  |     | 弹出确认窗口              |
+| [showInformationMessage(content, title, buttonTitle)](./SYS_Dialog.md)                                                |     | 弹出消息窗口              |
+| [showInputDialog(beforeContent, afterContent, title, type, value, otherProperty, callbackFn)](./SYS_Dialog.md)        |     | **_(BETA)_** 弹出输入窗口 |
+| [showSelectDialog(options, beforeContent, afterContent, title, defaultOption, multiple, callbackFn)](./SYS_Dialog.md) |     | **_(BETA)_** 弹出选择窗口 |
+| [showSelectDialog(options, beforeContent, afterContent, title, defaultOption, multiple, callbackFn)](./SYS_Dialog.md) |     | **_(BETA)_** 弹出多选窗口 |
 
 ---
 
@@ -120,103 +40,13 @@ showConfirmationMessage(content: string, title?: string, mainButtonTitle?: strin
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-content
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-消息文本，支持使用 `\n` 换行
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 弹出窗口标题
-
-
-</td></tr>
-<tr><td>
-
-mainButtonTitle
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 主要按钮标题
-
-
-</td></tr>
-<tr><td>
-
-buttonTitle
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 主要按钮标题
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(mainButtonClicked: boolean) =&gt; void
-
-
-</td><td>
-
-_（可选）_ 回调函数
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                                      | 描述                |
+| --------------- | --------------------------------------- | ----------------- |
+| content         | string                                  | 消息文本，支持使用 `\n` 换行 |
+| title           | string                                  | _（可选）_ 弹出窗口标题     |
+| mainButtonTitle | string                                  | _（可选）_ 主要按钮标题     |
+| buttonTitle     | string                                  | _（可选）_ 主要按钮标题     |
+| callbackFn      | (mainButtonClicked: boolean) =&gt; void | _（可选）_ 回调函数       |
 
 
 
@@ -242,71 +72,11 @@ showInformationMessage(content: string, title?: string, buttonTitle?: string): v
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-content
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-消息文本，支持使用 `\n` 换行
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 弹出窗口标题
-
-
-</td></tr>
-<tr><td>
-
-buttonTitle
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 按钮标题，为空则不显示按钮
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述                   |
+| ----------- | ------ | -------------------- |
+| content     | string | 消息文本，支持使用 `\n` 换行    |
+| title       | string | _（可选）_ 弹出窗口标题        |
+| buttonTitle | string | _（可选）_ 按钮标题，为空则不显示按钮 |
 
 
 
@@ -344,135 +114,15 @@ showInputDialog(beforeContent?: string, afterContent?: string, title?: string, t
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-beforeContent
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 输入框上方文字
-
-
-</td></tr>
-<tr><td>
-
-afterContent
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 输入框下方文字
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 弹出窗口标题
-
-
-</td></tr>
-<tr><td>
-
-type
-
-
-</td><td>
-
-'color' \| 'date' \| 'datetime-local' \| 'email' \| 'mouth' \| 'number' \| 'password' \| 'tel' \| 'text' \| 'time' \| 'url' \| 'week'
-
-
-</td><td>
-
-_（可选）_ 输入框类型
-
-
-</td></tr>
-<tr><td>
-
-value
-
-
-</td><td>
-
-string \| number
-
-
-</td><td>
-
-_（可选）_ 输入框默认值
-
-
-</td></tr>
-<tr><td>
-
-otherProperty
-
-
-</td><td>
-
-\{ max?: number; maxlength?: number; min?: number; minlength?: number; multiple?: boolean; pattern?: RegExp; placeholder?: string; readonly?: boolean; step?: number; \}
-
-
-</td><td>
-
-_（可选）_ 其它参数，可参考 [The HTML Input element](https://developer.mozilla.org/docs/Web/HTML/Element/input#attributes)
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(value: any) =&gt; void
-
-
-</td><td>
-
-_（可选）_ 回调函数
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                                                                                                       | 描述                                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| beforeContent | string                                                                                                                                                                   | _（可选）_ 输入框上方文字                                                                                                 |
+| afterContent  | string                                                                                                                                                                   | _（可选）_ 输入框下方文字                                                                                                 |
+| title         | string                                                                                                                                                                   | _（可选）_ 弹出窗口标题                                                                                                  |
+| type          | 'color' \| 'date' \| 'datetime-local' \| 'email' \| 'mouth' \| 'number' \| 'password' \| 'tel' \| 'text' \| 'time' \| 'url' \| 'week'                                    | _（可选）_ 输入框类型                                                                                                   |
+| value         | string \| number                                                                                                                                                         | _（可选）_ 输入框默认值                                                                                                  |
+| otherProperty | \{ max?: number; maxlength?: number; min?: number; minlength?: number; multiple?: boolean; pattern?: RegExp; placeholder?: string; readonly?: boolean; step?: number; \} | _（可选）_ 其它参数，可参考 [The HTML Input element](https://developer.mozilla.org/docs/Web/HTML/Element/input#attributes) |
+| callbackFn    | (value: any) =&gt; void                                                                                                                                                  | _（可选）_ 回调函数                                                                                                    |
 
 
 
@@ -501,139 +151,15 @@ showSelectDialog(options: Array<string> | Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-options
-
-
-</td><td>
-
-Array&lt;string&gt; \| Array&lt;{ value: string; displayContent: string; }&gt;
-
-
-</td><td>
-
-选项列表，可以为字符串数组或对象数组，在未指定 `defaultOption` 时，默认值为列表的第一项；
-
-如若为字符串数组，则选项的值和选项的展示内容将保持一致；
-
-如若为对象数组，则 `value` 表示选项的值，`displayContent` 表示选项的展示内容
-
-
-</td></tr>
-<tr><td>
-
-beforeContent
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 选择框上方文字
-
-
-</td></tr>
-<tr><td>
-
-afterContent
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 选择框下方文字
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 选择框标题
-
-
-</td></tr>
-<tr><td>
-
-defaultOption
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 默认选项，以选项的值作为匹配参数，如若 `multiple` 参数为 `true`<!-- -->，则此处需要传入字符串数组
-
-
-</td></tr>
-<tr><td>
-
-multiple
-
-
-</td><td>
-
-false
-
-
-</td><td>
-
-_（可选）_ 是否支持多选，默认为单选框
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(value: string) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-_（可选）_ 回调函数
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                             | 描述                                                                                                                                           |
+| ------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| options       | Array&lt;string&gt; \| Array&lt;{ value: string; displayContent: string; }&gt; | 选项列表，可以为字符串数组或对象数组，在未指定 `defaultOption` 时，默认值为列表的第一项； 如若为字符串数组，则选项的值和选项的展示内容将保持一致； 如若为对象数组，则 `value` 表示选项的值，`displayContent` 表示选项的展示内容 |
+| beforeContent | string                                                                         | _（可选）_ 选择框上方文字                                                                                                                               |
+| afterContent  | string                                                                         | _（可选）_ 选择框下方文字                                                                                                                               |
+| title         | string                                                                         | _（可选）_ 选择框标题                                                                                                                                 |
+| defaultOption | string                                                                         | _（可选）_ 默认选项，以选项的值作为匹配参数，如若 `multiple` 参数为 `true`，则此处需要传入字符串数组                                                                                |
+| multiple      | false                                                                          | _（可选）_ 是否支持多选，默认为单选框                                                                                                                         |
+| callbackFn    | (value: string) =&gt; void \| Promise&lt;void&gt;                              | _（可选）_ 回调函数                                                                                                                                  |
 
 
 
@@ -662,139 +188,15 @@ showSelectDialog(options: Array<string> | Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-options
-
-
-</td><td>
-
-Array&lt;string&gt; \| Array&lt;{ value: string; displayContent: string; }&gt;
-
-
-</td><td>
-
-选项列表，可以为字符串数组或对象数组，在未指定 `defaultOption` 时，默认值为列表的第一项；
-
-如若为字符串数组，则选项的值和选项的展示内容将保持一致；
-
-如若为对象数组，则 `value` 表示选项的值，`displayContent` 表示选项的展示内容
-
-
-</td></tr>
-<tr><td>
-
-beforeContent
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 多选框上方文字
-
-
-</td></tr>
-<tr><td>
-
-afterContent
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 多选框下方文字
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 多选框标题
-
-
-</td></tr>
-<tr><td>
-
-defaultOption
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 默认选项数组，以选项的值作为匹配参数
-
-
-</td></tr>
-<tr><td>
-
-multiple
-
-
-</td><td>
-
-true
-
-
-</td><td>
-
-_（可选）_ 是否支持多选
-
-
-</td></tr>
-<tr><td>
-
-callbackFn
-
-
-</td><td>
-
-(value: Array&lt;string&gt;) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-_（可选）_ 回调函数
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                             | 描述                                                                                                                                           |
+| ------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| options       | Array&lt;string&gt; \| Array&lt;{ value: string; displayContent: string; }&gt; | 选项列表，可以为字符串数组或对象数组，在未指定 `defaultOption` 时，默认值为列表的第一项； 如若为字符串数组，则选项的值和选项的展示内容将保持一致； 如若为对象数组，则 `value` 表示选项的值，`displayContent` 表示选项的展示内容 |
+| beforeContent | string                                                                         | _（可选）_ 多选框上方文字                                                                                                                               |
+| afterContent  | string                                                                         | _（可选）_ 多选框下方文字                                                                                                                               |
+| title         | string                                                                         | _（可选）_ 多选框标题                                                                                                                                 |
+| defaultOption | Array&lt;string&gt;                                                            | _（可选）_ 默认选项数组，以选项的值作为匹配参数                                                                                                                    |
+| multiple      | true                                                                           | _（可选）_ 是否支持多选                                                                                                                                |
+| callbackFn    | (value: Array&lt;string&gt;) =&gt; void \| Promise&lt;void&gt;                 | _（可选）_ 回调函数                                                                                                                                  |
 
 
 

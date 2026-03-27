@@ -5,7 +5,7 @@ PCB &amp; 封装 / 图元类
 ## 签名
 
 ```typescript
-declare class PCB_Primitive 
+declare class PCB_Primitive
 ```
 
 ## 备注
@@ -14,37 +14,9 @@ declare class PCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getPrimitivesBBox(primitiveIds)](./PCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取图元的 BBox
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                   | 修饰符 | 描述                      |
+| ----------------------------------------------------- | --- | ----------------------- |
+| [getPrimitivesBBox(primitiveIds)](./PCB_Primitive.md) |     | **_(BETA)_** 获取图元的 BBox |
 
 ---
 
@@ -71,39 +43,9 @@ getPrimitivesBBox(primitiveIds: Array<string | IPCB_Primitive>): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string \| [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)<!-- -->&gt;
-
-
-</td><td>
-
-图元 ID 数组或图元对象数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                        | 描述              |
+| ------------ | ------------------------------------------------------------------------- | --------------- |
+| primitiveIds | Array&lt;string \| [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)&gt; | 图元 ID 数组或图元对象数组 |
 
 
 

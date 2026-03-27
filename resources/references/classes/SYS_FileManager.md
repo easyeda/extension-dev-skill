@@ -5,224 +5,27 @@
 ## 签名
 
 ```typescript
-declare class SYS_FileManager 
+declare class SYS_FileManager
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[extractLibInfo(data)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-提取文件内的库配置信息
-
-
-</td></tr>
-<tr><td>
-
-[extractProjectInfo(data)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-提取文件内的工程配置信息
-
-
-</td></tr>
-<tr><td>
-
-[getCbbFileByCbbUuid(cbbUuid, libraryUuid, props)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用复用模块 UUID 获取复用模块文件
-
-
-</td></tr>
-<tr><td>
-
-[getDeviceFileByDeviceUuid(deviceUuid, libraryUuid, fileType)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-使用器件 UUID 获取器件文件
-
-
-</td></tr>
-<tr><td>
-
-[getDocumentFile(fileName, password, fileType)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取文档文件
-
-
-</td></tr>
-<tr><td>
-
-[getDocumentFootprintSources()](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取文档封装源码
-
-
-</td></tr>
-<tr><td>
-
-[getDocumentSource()](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取文档源码
-
-
-</td></tr>
-<tr><td>
-
-[getFootprintFileByFootprintUuid(footprintUuid, libraryUuid, fileType)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用封装 UUID 获取封装文件
-
-
-</td></tr>
-<tr><td>
-
-[getPanelLibraryFileByPanelLibraryUuid(panelLibraryUuid, libraryUuid, fileType)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用面板库 UUID 获取面板库文件
-
-
-</td></tr>
-<tr><td>
-
-[getProjectFile(fileName, password, fileType)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取工程文件
-
-
-</td></tr>
-<tr><td>
-
-[getProjectFileByProjectUuid(projectUuid, fileName, password, fileType)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用工程 UUID 获取工程文件
-
-
-</td></tr>
-<tr><td>
-
-[importProjectByProjectFile(projectFile, fileType, props, saveTo, librariesImportSetting)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用工程文件导入工程
-
-
-</td></tr>
-<tr><td>
-
-[importProjectByProjectFile(projectFile, fileType, props, saveTo, librariesImportSetting)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用工程文件导入工程
-
-
-</td></tr>
-<tr><td>
-
-[setDocumentSource(source)](./SYS_FileManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改文档源码
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                              | 修饰符 | 描述                                |
+| ---------------------------------------------------------------------------------------------------------------- | --- | --------------------------------- |
+| [extractLibInfo(data)](./SYS_FileManager.md)                                                                     |     | 提取文件内的库配置信息                       |
+| [extractProjectInfo(data)](./SYS_FileManager.md)                                                                 |     | 提取文件内的工程配置信息                      |
+| [getCbbFileByCbbUuid(cbbUuid, libraryUuid, props)](./SYS_FileManager.md)                                         |     | **_(BETA)_** 使用复用模块 UUID 获取复用模块文件 |
+| [getDeviceFileByDeviceUuid(deviceUuid, libraryUuid, fileType)](./SYS_FileManager.md)                             |     | 使用器件 UUID 获取器件文件                  |
+| [getDocumentFile(fileName, password, fileType)](./SYS_FileManager.md)                                            |     | 获取文档文件                            |
+| [getDocumentFootprintSources()](./SYS_FileManager.md)                                                            |     | **_(BETA)_** 获取文档封装源码             |
+| [getDocumentSource()](./SYS_FileManager.md)                                                                      |     | **_(BETA)_** 获取文档源码               |
+| [getFootprintFileByFootprintUuid(footprintUuid, libraryUuid, fileType)](./SYS_FileManager.md)                    |     | **_(BETA)_** 使用封装 UUID 获取封装文件     |
+| [getPanelLibraryFileByPanelLibraryUuid(panelLibraryUuid, libraryUuid, fileType)](./SYS_FileManager.md)           |     | **_(BETA)_** 使用面板库 UUID 获取面板库文件   |
+| [getProjectFile(fileName, password, fileType)](./SYS_FileManager.md)                                             |     | 获取工程文件                            |
+| [getProjectFileByProjectUuid(projectUuid, fileName, password, fileType)](./SYS_FileManager.md)                   |     | **_(BETA)_** 使用工程 UUID 获取工程文件     |
+| [importProjectByProjectFile(projectFile, fileType, props, saveTo, librariesImportSetting)](./SYS_FileManager.md) |     | **_(BETA)_** 使用工程文件导入工程           |
+| [importProjectByProjectFile(projectFile, fileType, props, saveTo, librariesImportSetting)](./SYS_FileManager.md) |     | **_(BETA)_** 使用工程文件导入工程           |
+| [setDocumentSource(source)](./SYS_FileManager.md)                                                                |     | **_(BETA)_** 修改文档源码               |
 
 ---
 
@@ -242,39 +45,9 @@ extractLibInfo(data: File | Array<File>): Promise<any>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-data
-
-
-</td><td>
-
-File \| Array&lt;File&gt;
-
-
-</td><td>
-
-库文件
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                        | 描述  |
+| ---- | ------------------------- | --- |
+| data | File \| Array&lt;File&gt; | 库文件 |
 
 
 
@@ -298,39 +71,9 @@ extractProjectInfo(data: File): Promise<any>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-data
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-工程文件
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型   | 描述   |
+| ---- | ---- | ---- |
+| data | File | 工程文件 |
 
 
 
@@ -362,71 +105,11 @@ getCbbFileByCbbUuid(cbbUuid: string, libraryUuid?: string, props?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-cbbUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-复用模块 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-{ fileName?: string; password?: string; fileType?: 'epro' \| 'epro2'; templateSchematicUuid?: string; templatePcbUuid?: string; }
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                | 描述                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| cbbUuid     | string                                                                                                                            | 复用模块 UUID                                                              |
+| libraryUuid | string                                                                                                                            | _（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| props       | { fileName?: string; password?: string; fileType?: 'epro' \| 'epro2'; templateSchematicUuid?: string; templatePcbUuid?: string; } | _(Optional)_                                                           |
 
 
 
@@ -456,71 +139,11 @@ getDeviceFileByDeviceUuid(deviceUuid: string | Array<string>, libraryUuid?: stri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-deviceUuid
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-器件 UUID 或器件 UUID 列表
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取，如若不传入，则为系统库
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'elibz' \| 'elibz2'
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                            | 描述                                                                                 |
+| ----------- | ----------------------------- | ---------------------------------------------------------------------------------- |
+| deviceUuid  | string \| Array&lt;string&gt; | 器件 UUID 或器件 UUID 列表                                                                |
+| libraryUuid | string                        | _（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取，如若不传入，则为系统库 |
+| fileType    | 'elibz' \| 'elibz2'           | _(Optional)_                                                                       |
 
 
 
@@ -550,71 +173,11 @@ getDocumentFile(fileName?: string, password?: string, fileType?: 'epro' | 'epro2
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-password
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 加密密码
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'epro' \| 'epro2'
-
-
-</td><td>
-
-_（可选）_ 文件格式
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                | 描述          |
+| -------- | ----------------- | ----------- |
+| fileName | string            | _（可选）_ 文件名  |
+| password | string            | _（可选）_ 加密密码 |
+| fileType | 'epro' \| 'epro2' | _（可选）_ 文件格式 |
 
 
 
@@ -691,71 +254,11 @@ getFootprintFileByFootprintUuid(footprintUuid: string | Array<string>, libraryUu
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-封装 UUID 或封装 UUID 列表
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'elibz' \| 'elibz2'
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                            | 描述                                                                     |
+| ------------- | ----------------------------- | ---------------------------------------------------------------------- |
+| footprintUuid | string \| Array&lt;string&gt; | 封装 UUID 或封装 UUID 列表                                                    |
+| libraryUuid   | string                        | _（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| fileType      | 'elibz' \| 'elibz2'           | _(Optional)_                                                           |
 
 
 
@@ -787,71 +290,11 @@ getPanelLibraryFileByPanelLibraryUuid(panelLibraryUuid: string | Array<string>, 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-panelLibraryUuid
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-面板库 UUID 或面板库 UUID 列表
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'elibz' \| 'elibz2'
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型                            | 描述                                                                     |
+| ---------------- | ----------------------------- | ---------------------------------------------------------------------- |
+| panelLibraryUuid | string \| Array&lt;string&gt; | 面板库 UUID 或面板库 UUID 列表                                                  |
+| libraryUuid      | string                        | _（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| fileType         | 'elibz' \| 'elibz2'           | _(Optional)_                                                           |
 
 
 
@@ -881,71 +324,11 @@ getProjectFile(fileName?: string, password?: string, fileType?: 'epro' | 'epro2'
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-password
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 加密密码
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'epro' \| 'epro2'
-
-
-</td><td>
-
-_（可选）_ 文件格式
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                | 描述          |
+| -------- | ----------------- | ----------- |
+| fileName | string            | _（可选）_ 文件名  |
+| password | string            | _（可选）_ 加密密码 |
+| fileType | 'epro' \| 'epro2' | _（可选）_ 文件格式 |
 
 
 
@@ -977,87 +360,12 @@ getProjectFileByProjectUuid(projectUuid: string, fileName?: string, password?: s
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工程 UUID
-
-
-</td></tr>
-<tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-password
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 加密密码
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'epro' \| 'epro2'
-
-
-</td><td>
-
-_（可选）_ 文件格式
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                | 描述          |
+| ----------- | ----------------- | ----------- |
+| projectUuid | string            | 工程 UUID     |
+| fileName    | string            | _（可选）_ 文件名  |
+| password    | string            | _（可选）_ 加密密码 |
+| fileType    | 'epro' \| 'epro2' | _（可选）_ 文件格式 |
 
 
 
@@ -1109,103 +417,13 @@ importProjectByProjectFile(projectFile: File, fileType?: 'JLCEDA' | 'JLCEDA Pro'
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectFile
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-工程文件
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'JLCEDA' \| 'JLCEDA Pro' \| 'EasyEDA' \| 'EasyEDA Pro' \| 'Allegro' \| 'OrCAD' \| 'EAGLE' \| 'KiCad' \| 'PADS' \| 'LTspice'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-{ importOption?: [ESYS\_ImportProjectImportOption](../enums/ESYS_ImportProjectImportOption.md)<!-- -->; schematicObjectStyle?: [ESYS\_ImportProjectSchematicObjectStyle](../enums/ESYS_ImportProjectSchematicObjectStyle.md)<!-- -->; associateFootprint?: boolean; associate3DModel?: boolean; importFootprintNotesLayer?: boolean; }
-
-
-</td><td>
-
-_（可选）_ 导入参数，参考 EDA 前端 \*\*导入\*\* 窗口内的配置项
-
-
-</td></tr>
-<tr><td>
-
-saveTo
-
-
-</td><td>
-
-{ operation: 'New Project'; newProjectOwnerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)<!-- -->\['uuid'\]; newProjectOwnerFolderUuid?: [IDMT\_FolderItem](../interfaces/IDMT_FolderItem.md)<!-- -->\['uuid'\]; newProjectName?: string; newProjectFriendlyName?: string; newProjectDescription?: string; newProjectCollaborationMode?: [EDMT\_ProjectCollaborationMode](../enums/EDMT_ProjectCollaborationMode.md)<!-- -->; } \| { operation: 'Existing Project'; existingProjectUuid: [IDMT\_BriefProjectItem](../interfaces/IDMT_BriefProjectItem.md)<!-- -->\['uuid'\]; }
-
-
-</td><td>
-
-_（可选）_ 保存到工程参数
-
-
-</td></tr>
-<tr><td>
-
-librariesImportSetting
-
-
-</td><td>
-
-{ ownerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)<!-- -->\['uuid'\]; createDeviceForSingleSymbol?: boolean; }
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数                     | 类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 描述                                       |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| projectFile            | File                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 工程文件                                     |
+| fileType               | 'JLCEDA' \| 'JLCEDA Pro' \| 'EasyEDA' \| 'EasyEDA Pro' \| 'Allegro' \| 'OrCAD' \| 'EAGLE' \| 'KiCad' \| 'PADS' \| 'LTspice'                                                                                                                                                                                                                                                                                                                                                                                                                                | _（可选）_ 文件类型                              |
+| props                  | { importOption?: [ESYS\_ImportProjectImportOption](../enums/ESYS_ImportProjectImportOption.md); schematicObjectStyle?: [ESYS\_ImportProjectSchematicObjectStyle](../enums/ESYS_ImportProjectSchematicObjectStyle.md); associateFootprint?: boolean; associate3DModel?: boolean; importFootprintNotesLayer?: boolean; }                                                                                                                                                                                                                                     | _（可选）_ 导入参数，参考 EDA 前端 \*\*导入\*\* 窗口内的配置项 |
+| saveTo                 | { operation: 'New Project'; newProjectOwnerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)\['uuid'\]; newProjectOwnerFolderUuid?: [IDMT\_FolderItem](../interfaces/IDMT_FolderItem.md)\['uuid'\]; newProjectName?: string; newProjectFriendlyName?: string; newProjectDescription?: string; newProjectCollaborationMode?: [EDMT\_ProjectCollaborationMode](../enums/EDMT_ProjectCollaborationMode.md); } \| { operation: 'Existing Project'; existingProjectUuid: [IDMT\_BriefProjectItem](../interfaces/IDMT_BriefProjectItem.md)\['uuid'\]; } | _（可选）_ 保存到工程参数                           |
+| librariesImportSetting | { ownerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)\['uuid'\]; createDeviceForSingleSymbol?: boolean; }                                                                                                                                                                                                                                                                                                                                                                                                                                      | _(Optional)_                             |
 
 
 
@@ -1257,103 +475,13 @@ importProjectByProjectFile(projectFile: File, fileType?: 'Altium Designer' | 'Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectFile
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-工程文件
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'Altium Designer' \| 'Protel'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-{ importOption?: [ESYS\_ImportProjectImportOption](../enums/ESYS_ImportProjectImportOption.md)<!-- -->; viaSolderMaskExpansion?: [ESYS\_ImportProjectViaSolderMaskExpansion](../enums/ESYS_ImportProjectViaSolderMaskExpansion.md)<!-- -->; boardOutlineSource?: [ESYS\_ImportProjectBoardOutlineSource](../enums/ESYS_ImportProjectBoardOutlineSource.md)<!-- -->; schematicObjectStyle?: [ESYS\_ImportProjectSchematicObjectStyle](../enums/ESYS_ImportProjectSchematicObjectStyle.md)<!-- -->; associateFootprint?: boolean; associate3DModel?: boolean; importFootprintNotesLayer?: boolean; }
-
-
-</td><td>
-
-_（可选）_ 导入参数，参考 EDA 前端 \*\*导入\*\* 窗口内的配置项
-
-
-</td></tr>
-<tr><td>
-
-saveTo
-
-
-</td><td>
-
-{ operation: 'New Project'; newProjectOwnerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)<!-- -->\['uuid'\]; newProjectOwnerFolderUuid?: [IDMT\_FolderItem](../interfaces/IDMT_FolderItem.md)<!-- -->\['uuid'\]; newProjectName?: string; newProjectFriendlyName?: string; newProjectDescription?: string; newProjectCollaborationMode?: [EDMT\_ProjectCollaborationMode](../enums/EDMT_ProjectCollaborationMode.md)<!-- -->; } \| { operation: 'Existing Project'; existingProjectUuid: [IDMT\_BriefProjectItem](../interfaces/IDMT_BriefProjectItem.md)<!-- -->\['uuid'\]; }
-
-
-</td><td>
-
-_（可选）_ 保存到工程参数
-
-
-</td></tr>
-<tr><td>
-
-librariesImportSetting
-
-
-</td><td>
-
-{ ownerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)<!-- -->\['uuid'\]; createDeviceForSingleSymbol?: boolean; }
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数                     | 类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 描述                                       |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| projectFile            | File                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 工程文件                                     |
+| fileType               | 'Altium Designer' \| 'Protel'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | _（可选）_ 文件类型                              |
+| props                  | { importOption?: [ESYS\_ImportProjectImportOption](../enums/ESYS_ImportProjectImportOption.md); viaSolderMaskExpansion?: [ESYS\_ImportProjectViaSolderMaskExpansion](../enums/ESYS_ImportProjectViaSolderMaskExpansion.md); boardOutlineSource?: [ESYS\_ImportProjectBoardOutlineSource](../enums/ESYS_ImportProjectBoardOutlineSource.md); schematicObjectStyle?: [ESYS\_ImportProjectSchematicObjectStyle](../enums/ESYS_ImportProjectSchematicObjectStyle.md); associateFootprint?: boolean; associate3DModel?: boolean; importFootprintNotesLayer?: boolean; } | _（可选）_ 导入参数，参考 EDA 前端 \*\*导入\*\* 窗口内的配置项 |
+| saveTo                 | { operation: 'New Project'; newProjectOwnerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)\['uuid'\]; newProjectOwnerFolderUuid?: [IDMT\_FolderItem](../interfaces/IDMT_FolderItem.md)\['uuid'\]; newProjectName?: string; newProjectFriendlyName?: string; newProjectDescription?: string; newProjectCollaborationMode?: [EDMT\_ProjectCollaborationMode](../enums/EDMT_ProjectCollaborationMode.md); } \| { operation: 'Existing Project'; existingProjectUuid: [IDMT\_BriefProjectItem](../interfaces/IDMT_BriefProjectItem.md)\['uuid'\]; }         | _（可选）_ 保存到工程参数                           |
+| librariesImportSetting | { ownerTeamUuid: [IDMT\_TeamItem](../interfaces/IDMT_TeamItem.md)\['uuid'\]; createDeviceForSingleSymbol?: boolean; }                                                                                                                                                                                                                                                                                                                                                                                                                                              | _(Optional)_                             |
 
 
 
@@ -1383,39 +511,9 @@ setDocumentSource(source: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-source
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文档源码
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述   |
+| ------ | ------ | ---- |
+| source | string | 文档源码 |
 
 
 

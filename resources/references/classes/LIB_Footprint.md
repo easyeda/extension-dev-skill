@@ -5,140 +5,21 @@
 ## 签名
 
 ```typescript
-declare class LIB_Footprint 
+declare class LIB_Footprint
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[copy(footprintUuid, libraryUuid, targetLibraryUuid, targetClassification, newFootprintName)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 复制封装
-
-
-</td></tr>
-<tr><td>
-
-[create(libraryUuid, footprintName, classification, description)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建封装
-
-
-</td></tr>
-<tr><td>
-
-[delete(footprintUuid, libraryUuid)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除封装
-
-
-</td></tr>
-<tr><td>
-
-[get(footprintUuid, libraryUuid)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取封装的所有属性
-
-
-</td></tr>
-<tr><td>
-
-[modify(footprintUuid, libraryUuid, footprintName, classification, description)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改封装
-
-
-</td></tr>
-<tr><td>
-
-[openInEditor(footprintUuid, libraryUuid, splitScreenId)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 在编辑器打开文档
-
-
-</td></tr>
-<tr><td>
-
-[search(key, libraryUuid, classification, itemsOfPage, page)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 搜索封装
-
-
-</td></tr>
-<tr><td>
-
-[updateDocumentSource(footprintUuid, libraryUuid, documentSource)](./LIB_Footprint.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 更新封装的文档源码
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                               | 修饰符 | 描述                     |
+| ----------------------------------------------------------------------------------------------------------------- | --- | ---------------------- |
+| [copy(footprintUuid, libraryUuid, targetLibraryUuid, targetClassification, newFootprintName)](./LIB_Footprint.md) |     | **_(BETA)_** 复制封装      |
+| [create(libraryUuid, footprintName, classification, description)](./LIB_Footprint.md)                             |     | **_(BETA)_** 创建封装      |
+| [delete(footprintUuid, libraryUuid)](./LIB_Footprint.md)                                                          |     | **_(BETA)_** 删除封装      |
+| [get(footprintUuid, libraryUuid)](./LIB_Footprint.md)                                                             |     | **_(BETA)_** 获取封装的所有属性 |
+| [modify(footprintUuid, libraryUuid, footprintName, classification, description)](./LIB_Footprint.md)              |     | **_(BETA)_** 修改封装      |
+| [openInEditor(footprintUuid, libraryUuid, splitScreenId)](./LIB_Footprint.md)                                     |     | **_(BETA)_** 在编辑器打开文档  |
+| [search(key, libraryUuid, classification, itemsOfPage, page)](./LIB_Footprint.md)                                 |     | **_(BETA)_** 搜索封装      |
+| [updateDocumentSource(footprintUuid, libraryUuid, documentSource)](./LIB_Footprint.md)                            |     | **_(BETA)_** 更新封装的文档源码 |
 
 ---
 
@@ -160,103 +41,13 @@ copy(footprintUuid: string, libraryUuid: string, targetLibraryUuid: string, targ
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-targetLibraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-目标库 UUID
-
-
-</td></tr>
-<tr><td>
-
-targetClassification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 目标库内的分类
-
-
-</td></tr>
-<tr><td>
-
-newFootprintName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 新封装名称，如若目标库内存在重名封装将导致复制失败
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型                                                                                            | 描述                                                              |
+| -------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| footprintUuid        | string                                                                                        | 封装 UUID                                                         |
+| libraryUuid          | string                                                                                        | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| targetLibraryUuid    | string                                                                                        | 目标库 UUID                                                        |
+| targetClassification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 目标库内的分类                                                  |
+| newFootprintName     | string                                                                                        | _（可选）_ 新封装名称，如若目标库内存在重名封装将导致复制失败                                |
 
 
 
@@ -282,87 +73,12 @@ create(libraryUuid: string, footprintName: string, classification?: ILIB_Classif
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-footprintName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装名称
-
-
-</td></tr>
-<tr><td>
-
-classification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-description
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                            | 描述                                                              |
+| -------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| libraryUuid    | string                                                                                        | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| footprintName  | string                                                                                        | 封装名称                                                            |
+| classification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 分类                                                       |
+| description    | string                                                                                        | _（可选）_ 描述                                                       |
 
 
 
@@ -388,55 +104,10 @@ delete(footprintUuid: string, libraryUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                                              |
+| ------------- | ------ | --------------------------------------------------------------- |
+| footprintUuid | string | 封装 UUID                                                         |
+| libraryUuid   | string | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
 
 
 
@@ -462,55 +133,10 @@ get(footprintUuid: string, libraryUuid?: string): Promise<ILIB_FootprintItem | u
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                                                     |
+| ------------- | ------ | ---------------------------------------------------------------------- |
+| footprintUuid | string | 封装 UUID                                                                |
+| libraryUuid   | string | _（可选）_ 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
 
 
 
@@ -536,103 +162,13 @@ modify(footprintUuid: string, libraryUuid: string, footprintName?: string, class
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-footprintName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 封装名称
-
-
-</td></tr>
-<tr><td>
-
-classification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; \| null
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-description
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                    | 描述                                                              |
+| -------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| footprintUuid  | string                                                                                                | 封装 UUID                                                         |
+| libraryUuid    | string                                                                                                | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| footprintName  | string                                                                                                | _（可选）_ 封装名称                                                     |
+| classification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; \| null | _（可选）_ 分类                                                       |
+| description    | string \| null                                                                                        | _（可选）_ 描述                                                       |
 
 
 
@@ -662,71 +198,11 @@ openInEditor(footprintUuid: string, libraryUuid: string, splitScreenId?: string)
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-splitScreenId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 分屏 ID，不填写则默认在最后输入焦点的分屏内打开，可以使用 [DMT\_EditorControl](./DMT_EditorControl.md) 内的接口获取
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                                                                        |
+| ------------- | ------ | ----------------------------------------------------------------------------------------- |
+| footprintUuid | string | 封装 UUID                                                                                   |
+| libraryUuid   | string | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取                           |
+| splitScreenId | string | _（可选）_ 分屏 ID，不填写则默认在最后输入焦点的分屏内打开，可以使用 [DMT\_EditorControl](./DMT_EditorControl.md) 内的接口获取 |
 
 
 
@@ -734,7 +210,7 @@ _（可选）_ 分屏 ID，不填写则默认在最后输入焦点的分屏内�
 
 Promise&lt;string \| undefined&gt;
 
-标签页 ID，对应 [IDMT\_EditorTabItem.tabId](../interfaces/IDMT_EditorTabItem.md)<!-- -->，可使用 [DMT\_EditorControl.getSplitScreenIdByTabId()](./DMT_EditorControl.md) 获取到分屏 ID
+标签页 ID，对应 [IDMT\_EditorTabItem.tabId](../interfaces/IDMT_EditorTabItem.md)，可使用 [DMT\_EditorControl.getSplitScreenIdByTabId()](./DMT_EditorControl.md) 获取到分屏 ID
 
 ### search
 
@@ -752,109 +228,19 @@ search(key: string, libraryUuid?: string, classification?: ILIB_ClassificationIn
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-key
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-搜索关键字
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-classification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类，默认为全部
-
-
-</td></tr>
-<tr><td>
-
-itemsOfPage
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 一页搜索结果的数量
-
-
-</td></tr>
-<tr><td>
-
-page
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 页数
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                            | 描述                                                                            |
+| -------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| key            | string                                                                                        | 搜索关键字                                                                         |
+| libraryUuid    | string                                                                                        | _（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| classification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 分类，默认为全部                                                               |
+| itemsOfPage    | number                                                                                        | _（可选）_ 一页搜索结果的数量                                                              |
+| page           | number                                                                                        | _（可选）_ 页数                                                                     |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ILIB\_FootprintSearchItem](../interfaces/ILIB_FootprintSearchItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ILIB\_FootprintSearchItem](../interfaces/ILIB_FootprintSearchItem.md)&gt;&gt;
 
 搜索到的封装属性列表
 
@@ -874,71 +260,11 @@ updateDocumentSource(footprintUuid: string, libraryUuid: string, documentSource:
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-footprintUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-documentSource
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文档源码
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型     | 描述                                                              |
+| -------------- | ------ | --------------------------------------------------------------- |
+| footprintUuid  | string | 封装 UUID                                                         |
+| libraryUuid    | string | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| documentSource | string | 文档源码                                                            |
 
 
 

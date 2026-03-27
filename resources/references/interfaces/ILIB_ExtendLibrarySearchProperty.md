@@ -5,90 +5,16 @@
 ## 签名
 
 ```typescript
-interface ILIB_ExtendLibrarySearchProperty<T> 
+interface ILIB_ExtendLibrarySearchProperty<T>
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[page?](./ILIB_ExtendLibrarySearchProperty.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 页数
-
-
-</td></tr>
-<tr><td>
-
-[pageSize?](./ILIB_ExtendLibrarySearchProperty.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 单页条目数
-
-
-</td></tr>
-<tr><td>
-
-[query](./ILIB_ExtendLibrarySearchProperty.md)
-
-
-</td><td>
-
-
-</td><td>
-
-T &amp; { wd?: string; listByTitles?: Array&lt;string&gt;; classification?: [ILIB\_ExtendLibraryClassificationIndex](./ILIB_ExtendLibraryClassificationIndex.md) \| Array&lt;string&gt;; }
-
-
-</td><td>
-
-查询参数
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                | 修饰符 | 类型                                                                                                                                                                                         | 描述           |
+| -------------------------------------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| [page?](./ILIB_ExtendLibrarySearchProperty.md)     |     | number                                                                                                                                                                                     | _（可选）_ 页数    |
+| [pageSize?](./ILIB_ExtendLibrarySearchProperty.md) |     | number                                                                                                                                                                                     | _（可选）_ 单页条目数 |
+| [query](./ILIB_ExtendLibrarySearchProperty.md)     |     | T &amp; { wd?: string; listByTitles?: Array&lt;string&gt;; classification?: [ILIB\_ExtendLibraryClassificationIndex](./ILIB_ExtendLibraryClassificationIndex.md) \| Array&lt;string&gt;; } | 查询参数         |
 
 ---
 

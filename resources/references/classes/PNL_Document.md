@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class PNL_Document 
+declare class PNL_Document
 ```
 
 ## 备注
@@ -14,37 +14,9 @@ declare class PNL_Document
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[save()](./PNL_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 保存文档
-
-
-</td></tr>
-</tbody></table>
+| 方法名                         | 修饰符 | 描述                |
+| --------------------------- | --- | ----------------- |
+| [save()](./PNL_Document.md) |     | **_(BETA)_** 保存文档 |
 
 ---
 

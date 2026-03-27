@@ -5,204 +5,22 @@
 ## 签名
 
 ```typescript
-interface ILIB_FootprintSearchItem 
+interface ILIB_FootprintSearchItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[ascription](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-归属
-
-
-</td></tr>
-<tr><td>
-
-[classification?](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-[description?](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-<tr><td>
-
-[lastModifiedBy](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-前次修改者
-
-
-</td></tr>
-<tr><td>
-
-[libraryUuid](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[name](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装名称
-
-
-</td></tr>
-<tr><td>
-
-[ordinal](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-排序
-
-
-</td></tr>
-<tr><td>
-
-[updateTimestamp](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-更新时间戳
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./ILIB_FootprintSearchItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-封装 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                              | 修饰符 | 类型                                                                                | 描述        |
+| ------------------------------------------------ | --- | --------------------------------------------------------------------------------- | --------- |
+| [ascription](./ILIB_FootprintSearchItem.md)      |     | string                                                                            | 归属        |
+| [classification?](./ILIB_FootprintSearchItem.md) |     | [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 分类 |
+| [description?](./ILIB_FootprintSearchItem.md)    |     | string                                                                            | _（可选）_ 描述 |
+| [lastModifiedBy](./ILIB_FootprintSearchItem.md)  |     | string                                                                            | 前次修改者     |
+| [libraryUuid](./ILIB_FootprintSearchItem.md)     |     | string                                                                            | 所属库 UUID  |
+| [name](./ILIB_FootprintSearchItem.md)            |     | string                                                                            | 封装名称      |
+| [ordinal](./ILIB_FootprintSearchItem.md)         |     | number                                                                            | 排序        |
+| [updateTimestamp](./ILIB_FootprintSearchItem.md) |     | number                                                                            | 更新时间戳     |
+| [uuid](./ILIB_FootprintSearchItem.md)            |     | string                                                                            | 封装 UUID   |
 
 ---
 

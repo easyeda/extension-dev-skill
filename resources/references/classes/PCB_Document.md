@@ -5,7 +5,7 @@ PCB &amp; 封装 / 文档操作类
 ## 签名
 
 ```typescript
-declare class PCB_Document 
+declare class PCB_Document
 ```
 
 ## 备注
@@ -14,275 +14,26 @@ declare class PCB_Document
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[convertCanvasOriginToDataOrigin(x, y)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-输入画布坐标返回该坐标对应的数据坐标
-
-
-</td></tr>
-<tr><td>
-
-[convertDataOriginToCanvasOrigin(x, y)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-输入数据坐标返回该坐标对应的画布坐标
-
-
-</td></tr>
-<tr><td>
-
-[getCalculatingRatlineStatus()](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前飞线计算功能状态
-
-
-</td></tr>
-<tr><td>
-
-[getCanvasOrigin()](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取画布原点相对于数据原点的偏移坐标
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentFilterConfiguration()](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前画布过滤器配置
-
-
-</td></tr>
-<tr><td>
-
-[getPrimitiveAtPoint(x, y)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取坐标点的图元
-
-
-</td></tr>
-<tr><td>
-
-[getPrimitivesInRegion(left, right, top, bottom, leftToRight)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取区域内所有图元
-
-
-</td></tr>
-<tr><td>
-
-[importAutoLayoutJsonFile(autoLayoutFile)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 导入自动布局文件（JSON）
-
-
-</td></tr>
-<tr><td>
-
-[importAutoRouteJsonFile(autoRouteFile)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 导入自动布线文件（JSON）
-
-
-</td></tr>
-<tr><td>
-
-[importAutoRouteSesFile(autoRouteFile)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 导入自动布线文件（SES）
-
-
-</td></tr>
-<tr><td>
-
-[importChanges(uuid)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-从原理图导入变更
-
-
-</td></tr>
-<tr><td>
-
-[navigateToCoordinates(x, y)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-定位到画布坐标
-
-
-</td></tr>
-<tr><td>
-
-[navigateToRegion(left, right, top, bottom)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 定位到画布区域
-
-
-</td></tr>
-<tr><td>
-
-[save(uuid)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-保存文档
-
-
-</td></tr>
-<tr><td>
-
-[setCanvasOrigin(offsetX, offsetY)](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-设置画布原点相对于数据原点的偏移坐标
-
-
-</td></tr>
-<tr><td>
-
-[startCalculatingRatline()](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-启动飞线计算功能
-
-
-</td></tr>
-<tr><td>
-
-[stopCalculatingRatline()](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-停止飞线计算功能
-
-
-</td></tr>
-<tr><td>
-
-[zoomToBoardOutline()](./PCB_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 缩放到板框（适应板框）
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                               | 修饰符 | 描述                          |
+| --------------------------------------------------------------------------------- | --- | --------------------------- |
+| [convertCanvasOriginToDataOrigin(x, y)](./PCB_Document.md)                        |     | 输入画布坐标返回该坐标对应的数据坐标          |
+| [convertDataOriginToCanvasOrigin(x, y)](./PCB_Document.md)                        |     | 输入数据坐标返回该坐标对应的画布坐标          |
+| [getCalculatingRatlineStatus()](./PCB_Document.md)                                |     | 获取当前飞线计算功能状态                |
+| [getCanvasOrigin()](./PCB_Document.md)                                            |     | 获取画布原点相对于数据原点的偏移坐标          |
+| [getCurrentFilterConfiguration()](./PCB_Document.md)                              |     | **_(BETA)_** 获取当前画布过滤器配置    |
+| [getPrimitiveAtPoint(x, y)](./PCB_Document.md)                                    |     | **_(BETA)_** 获取坐标点的图元       |
+| [getPrimitivesInRegion(left, right, top, bottom, leftToRight)](./PCB_Document.md) |     | **_(BETA)_** 获取区域内所有图元      |
+| [importAutoLayoutJsonFile(autoLayoutFile)](./PCB_Document.md)                     |     | **_(BETA)_** 导入自动布局文件（JSON） |
+| [importAutoRouteJsonFile(autoRouteFile)](./PCB_Document.md)                       |     | **_(BETA)_** 导入自动布线文件（JSON） |
+| [importAutoRouteSesFile(autoRouteFile)](./PCB_Document.md)                        |     | **_(BETA)_** 导入自动布线文件（SES）  |
+| [importChanges(uuid)](./PCB_Document.md)                                          |     | 从原理图导入变更                    |
+| [navigateToCoordinates(x, y)](./PCB_Document.md)                                  |     | 定位到画布坐标                     |
+| [navigateToRegion(left, right, top, bottom)](./PCB_Document.md)                   |     | **_(BETA)_** 定位到画布区域        |
+| [save(uuid)](./PCB_Document.md)                                                   |     | 保存文档                        |
+| [setCanvasOrigin(offsetX, offsetY)](./PCB_Document.md)                            |     | 设置画布原点相对于数据原点的偏移坐标          |
+| [startCalculatingRatline()](./PCB_Document.md)                                    |     | 启动飞线计算功能                    |
+| [stopCalculatingRatline()](./PCB_Document.md)                                     |     | 停止飞线计算功能                    |
+| [zoomToBoardOutline()](./PCB_Document.md)                                         |     | **_(BETA)_** 缩放到板框（适应板框）    |
 
 ---
 
@@ -305,51 +56,10 @@ convertCanvasOriginToDataOrigin(x: number, y: number): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述  |
+| --- | ------ | --- |
+| x   | number |     |
+| y   | number |     |
 
 
 
@@ -380,55 +90,10 @@ convertDataOriginToCanvasOrigin(x: number, y: number): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-数据原点 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-数据原点 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述     |
+| --- | ------ | ------ |
+| x   | number | 数据原点 X |
+| y   | number | 数据原点 Y |
 
 
 
@@ -457,7 +122,7 @@ getCalculatingRatlineStatus(): Promise<EPCB_DocumentRatlineCalculatingActiveStat
 
 ## 返回值
 
-Promise&lt;[EPCB\_DocumentRatlineCalculatingActiveStatus](../enums/EPCB_DocumentRatlineCalculatingActiveStatus.md)<!-- -->&gt;
+Promise&lt;[EPCB\_DocumentRatlineCalculatingActiveStatus](../enums/EPCB_DocumentRatlineCalculatingActiveStatus.md)&gt;
 
 功能状态
 
@@ -489,7 +154,7 @@ Promise&lt;{ offsetX: number; offsetY: number; }&gt;
 
 嘉立创 EDA 专业版 API 使用的均为数据原点；
 
-如果返回的数据为 `{ canvasOriginOffsetX: 100, canvasOriginOffsetY: 200 }`<!-- -->， 则代表画布原点在数据原点的向右 100 单位且向上 200 单位的位置；
+如果返回的数据为 `{ canvasOriginOffsetX: 100, canvasOriginOffsetY: 200 }`， 则代表画布原点在数据原点的向右 100 单位且向上 200 单位的位置；
 
 此处的单位为数据层面单位，在跨度上等同于画布层面的 mil
 
@@ -532,55 +197,10 @@ getPrimitiveAtPoint(x: number, y: number): Promise<IPCB_Primitive | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标点 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标点 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| x   | number | 坐标点 X |
+| y   | number | 坐标点 Y |
 
 
 
@@ -610,109 +230,19 @@ getPrimitivesInRegion(left: number, right: number, top: number, bottom: number, 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-left
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第一 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-right
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第二 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-top
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第一 Y 坐标
-
-
-</td></tr>
-<tr><td>
-
-bottom
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第二 Y 坐标
-
-
-</td></tr>
-<tr><td>
-
-leftToRight
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否仅获取完全框选的图元，`false` 则触碰即获取
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型      | 描述                                 |
+| ----------- | ------- | ---------------------------------- |
+| left        | number  | 矩形框第一 X 坐标                         |
+| right       | number  | 矩形框第二 X 坐标                         |
+| top         | number  | 矩形框第一 Y 坐标                         |
+| bottom      | number  | 矩形框第二 Y 坐标                         |
+| leftToRight | boolean | _（可选）_ 是否仅获取完全框选的图元，`false` 则触碰即获取 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)&gt;&gt;
 
 区域内所有图元
 
@@ -732,39 +262,9 @@ importAutoLayoutJsonFile(autoLayoutFile: File): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-autoLayoutFile
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-欲导入的 JSON 文件
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型   | 描述           |
+| -------------- | ---- | ------------ |
+| autoLayoutFile | File | 欲导入的 JSON 文件 |
 
 
 
@@ -794,39 +294,9 @@ importAutoRouteJsonFile(autoRouteFile: File): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-autoRouteFile
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-欲导入的 JSON 文件
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型   | 描述           |
+| ------------- | ---- | ------------ |
+| autoRouteFile | File | 欲导入的 JSON 文件 |
 
 
 
@@ -856,39 +326,9 @@ importAutoRouteSesFile(autoRouteFile: File): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-autoRouteFile
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-欲导入的 SES 文件
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型   | 描述          |
+| ------------- | ---- | ----------- |
+| autoRouteFile | File | 欲导入的 SES 文件 |
 
 
 
@@ -916,39 +356,9 @@ importChanges(uuid?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 原理图 UUID，默认为关联在同一个 Board 下的原理图
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述                                    |
+| ---- | ------ | ------------------------------------- |
+| uuid | string | _（可选）_ 原理图 UUID，默认为关联在同一个 Board 下的原理图 |
 
 
 
@@ -972,55 +382,10 @@ navigateToCoordinates(x: number, y: number): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| x   | number | 坐标 X |
+| y   | number | 坐标 Y |
 
 
 
@@ -1054,87 +419,12 @@ navigateToRegion(left: number, right: number, top: number, bottom: number): Prom
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-left
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第一 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-right
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第二 X 坐标
-
-
-</td></tr>
-<tr><td>
-
-top
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第一 Y 坐标
-
-
-</td></tr>
-<tr><td>
-
-bottom
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-矩形框第二 Y 坐标
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述         |
+| ------ | ------ | ---------- |
+| left   | number | 矩形框第一 X 坐标 |
+| right  | number | 矩形框第二 X 坐标 |
+| top    | number | 矩形框第一 Y 坐标 |
+| bottom | number | 矩形框第二 Y 坐标 |
 
 
 
@@ -1148,7 +438,7 @@ Promise&lt;boolean&gt;
 
 本接口在前端画布上定位到指定的区域，区域数据为相对于数据原点的偏移；
 
-例如：传入数据为 `{left: 0, right: 60, top: 100, bottom: -20}` =<!-- -->&gt; `navigateToRegion(0, 60, 100, -20)`<!-- -->， 则画布将会定位到以 `[30, 40]` 为中心的，`x` 轴方向长度为 `60`<!-- -->，`y` 轴方向长度为 `120` 的矩形范围；
+例如：传入数据为 `{left: 0, right: 60, top: 100, bottom: -20}` =&gt; `navigateToRegion(0, 60, 100, -20)`， 则画布将会定位到以 `[30, 40]` 为中心的，`x` 轴方向长度为 `60`，`y` 轴方向长度为 `120` 的矩形范围；
 
 本接口不进行缩放操作，但会生成指示定位中心及表示区域范围的矩形框；
 
@@ -1168,37 +458,9 @@ save(uuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述  |
+| ---- | ------ | --- |
+| uuid | string |     |
 
 
 
@@ -1222,55 +484,10 @@ setCanvasOrigin(offsetX: number, offsetY: number): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-offsetX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-画布原点相对于数据原点的 X 坐标偏移
-
-
-</td></tr>
-<tr><td>
-
-offsetY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-画布原点相对于数据原点的 Y 坐标偏移
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述                  |
+| ------- | ------ | ------------------- |
+| offsetX | number | 画布原点相对于数据原点的 X 坐标偏移 |
+| offsetY | number | 画布原点相对于数据原点的 Y 坐标偏移 |
 
 
 
@@ -1286,7 +503,7 @@ Promise&lt;boolean&gt;
 
 嘉立创 EDA 专业版 API 使用的均为数据原点；
 
-如果希望在 API 操作时前端画布坐标能与数据一致， 建议调用本方法并设置偏移量为零， 即 `setCanvasOrigin(0, 0)`<!-- -->；
+如果希望在 API 操作时前端画布坐标能与数据一致， 建议调用本方法并设置偏移量为零， 即 `setCanvasOrigin(0, 0)`；
 
 此处的单位为数据层面单位，在跨度上等同于画布层面的 mil
 

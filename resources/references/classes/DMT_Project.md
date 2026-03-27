@@ -5,112 +5,19 @@
 ## 签名
 
 ```typescript
-declare class DMT_Project 
+declare class DMT_Project
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[createProject(projectFriendlyName, projectName, teamUuid, folderUuid, description, collaborationMode)](./DMT_Project.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建工程
-
-
-</td></tr>
-<tr><td>
-
-[getAllProjectsUuid(teamUuid, folderUuid, workspaceUuid)](./DMT_Project.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有工程的 UUID
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentProjectInfo()](./DMT_Project.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前工程的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getProjectInfo(projectUuid)](./DMT_Project.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取工程属性
-
-
-</td></tr>
-<tr><td>
-
-[moveProjectToFolder(projectUuid, folderUuid)](./DMT_Project.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移动工程到文件夹
-
-
-</td></tr>
-<tr><td>
-
-[openProject(projectUuid)](./DMT_Project.md)
-
-
-</td><td>
-
-
-</td><td>
-
-打开工程
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                       | 修饰符 | 描述                |
+| ------------------------------------------------------------------------------------------------------------------------- | --- | ----------------- |
+| [createProject(projectFriendlyName, projectName, teamUuid, folderUuid, description, collaborationMode)](./DMT_Project.md) |     | **_(BETA)_** 创建工程 |
+| [getAllProjectsUuid(teamUuid, folderUuid, workspaceUuid)](./DMT_Project.md)                                               |     | 获取所有工程的 UUID      |
+| [getCurrentProjectInfo()](./DMT_Project.md)                                                                               |     | 获取当前工程的详细属性       |
+| [getProjectInfo(projectUuid)](./DMT_Project.md)                                                                           |     | 获取工程属性            |
+| [moveProjectToFolder(projectUuid, folderUuid)](./DMT_Project.md)                                                          |     | 移动工程到文件夹          |
+| [openProject(projectUuid)](./DMT_Project.md)                                                                              |     | 打开工程              |
 
 ---
 
@@ -132,119 +39,14 @@ createProject(projectFriendlyName: string, projectName?: string, teamUuid?: stri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectFriendlyName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工程友好名称
-
-
-</td></tr>
-<tr><td>
-
-projectName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 工程名称，不可重复，仅支持字母 `a-zA-Z`<!-- -->、数字 `0-9`<!-- -->、中划线 `-`<!-- -->，如若不指定，则根据工程友好名称自动生成
-
-
-</td></tr>
-<tr><td>
-
-teamUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 团队 UUID，如若不指定，则默认为个人；在不存在个人工程的环境下必须指定团队 UUID
-
-
-</td></tr>
-<tr><td>
-
-folderUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件夹 UUID，如若不指定，则为根文件夹
-
-
-</td></tr>
-<tr><td>
-
-description
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 工程描述
-
-
-</td></tr>
-<tr><td>
-
-collaborationMode
-
-
-</td><td>
-
-[EDMT\_ProjectCollaborationMode](../enums/EDMT_ProjectCollaborationMode.md)
-
-
-</td><td>
-
-_（可选）_ 工程协作模式，如若团队权限无需工程设置协作模式，则该参数将被忽略
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型                                                                          | 描述                                                                   |
+| ------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| projectFriendlyName | string                                                                      | 工程友好名称                                                               |
+| projectName         | string                                                                      | _（可选）_ 工程名称，不可重复，仅支持字母 `a-zA-Z`、数字 `0-9`、中划线 `-`，如若不指定，则根据工程友好名称自动生成 |
+| teamUuid            | string                                                                      | _（可选）_ 团队 UUID，如若不指定，则默认为个人；在不存在个人工程的环境下必须指定团队 UUID                  |
+| folderUuid          | string                                                                      | _（可选）_ 文件夹 UUID，如若不指定，则为根文件夹                                         |
+| description         | string                                                                      | _（可选）_ 工程描述                                                          |
+| collaborationMode   | [EDMT\_ProjectCollaborationMode](../enums/EDMT_ProjectCollaborationMode.md) | _（可选）_ 工程协作模式，如若团队权限无需工程设置协作模式，则该参数将被忽略                              |
 
 
 
@@ -268,71 +70,11 @@ getAllProjectsUuid(teamUuid?: string, folderUuid?: string, workspaceUuid?: strin
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-teamUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 团队 UUID
-
-
-</td></tr>
-<tr><td>
-
-folderUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件夹 UUID，如若不指定，则默认为团队的根文件夹
-
-
-</td></tr>
-<tr><td>
-
-workspaceUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 工作区 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                                |
+| ------------- | ------ | --------------------------------- |
+| teamUuid      | string | _（可选）_ 团队 UUID                    |
+| folderUuid    | string | _（可选）_ 文件夹 UUID，如若不指定，则默认为团队的根文件夹 |
+| workspaceUuid | string | _（可选）_ 工作区 UUID                   |
 
 
 
@@ -344,13 +86,13 @@ Promise&lt;Array&lt;string&gt;&gt;
 
 ## 备注
 
-如若指定 `teamUuid`<!-- -->，则获取指定团队下的所有工程；
+如若指定 `teamUuid`，则获取指定团队下的所有工程；
 
-如若指定 `folderUuid`<!-- -->，则获取指定文件夹下的所有工程；
+如若指定 `folderUuid`，则获取指定文件夹下的所有工程；
 
-`teamUuid`<!-- -->、`folderUuid` 需要且仅允许指定其一，如若都指定则只取 `folderUuid`<!-- -->；
+`teamUuid`、`folderUuid` 需要且仅允许指定其一，如若都指定则只取 `folderUuid`；
 
-如若指定 `workspaceUuid`<!-- -->，则在指定 Workspace 下获取指定团队/文件夹下的所有工程
+如若指定 `workspaceUuid`，则在指定 Workspace 下获取指定团队/文件夹下的所有工程
 
 ### getcurrentprojectinfo
 
@@ -389,39 +131,9 @@ getProjectInfo(projectUuid: string): Promise<IDMT_BriefProjectItem | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工程 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述      |
+| ----------- | ------ | ------- |
+| projectUuid | string | 工程 UUID |
 
 
 
@@ -449,55 +161,10 @@ moveProjectToFolder(projectUuid: string, folderUuid?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工程 UUID
-
-
-</td></tr>
-<tr><td>
-
-folderUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件夹 UUID，只能为当前工程所在团队或个人下的文件夹，如若为 `undefined` 则移动到当前团队的根文件夹
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述                                                                |
+| ----------- | ------ | ----------------------------------------------------------------- |
+| projectUuid | string | 工程 UUID                                                           |
+| folderUuid  | string | _（可选）_ 文件夹 UUID，只能为当前工程所在团队或个人下的文件夹，如若为 `undefined` 则移动到当前团队的根文件夹 |
 
 
 
@@ -521,39 +188,9 @@ openProject(projectUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-projectUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工程 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述      |
+| ----------- | ------ | ------- |
+| projectUuid | string | 工程 UUID |
 
 
 

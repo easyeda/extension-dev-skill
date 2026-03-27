@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_FontManager 
+declare class SYS_FontManager
 ```
 
 ## 备注
@@ -14,65 +14,11 @@ declare class SYS_FontManager
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addFont(fontName)](./SYS_FontManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-添加字体到字体列表
-
-
-</td></tr>
-<tr><td>
-
-[deleteFont(fontName)](./SYS_FontManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-删除字体列表内的指定字体
-
-
-</td></tr>
-<tr><td>
-
-[getFontsList()](./SYS_FontManager.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前已经配置的字体列表
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                          | 修饰符 | 描述            |
+| -------------------------------------------- | --- | ------------- |
+| [addFont(fontName)](./SYS_FontManager.md)    |     | 添加字体到字体列表     |
+| [deleteFont(fontName)](./SYS_FontManager.md) |     | 删除字体列表内的指定字体  |
+| [getFontsList()](./SYS_FontManager.md)       |     | 获取当前已经配置的字体列表 |
 
 ---
 
@@ -92,39 +38,9 @@ addFont(fontName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fontName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-字体名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| fontName | string | 字体名称 |
 
 
 
@@ -148,39 +64,9 @@ deleteFont(fontName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fontName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-字体名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| fontName | string | 字体名称 |
 
 
 

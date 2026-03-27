@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_SimulationEngine 
+declare class SCH_SimulationEngine
 ```
 
 ## 备注
@@ -14,37 +14,9 @@ declare class SCH_SimulationEngine
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[pushData(eventType, props)](./SCH_SimulationEngine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-向仿真内核发送数据
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                     | 修饰符 | 描述        |
+| ------------------------------------------------------- | --- | --------- |
+| [pushData(eventType, props)](./SCH_SimulationEngine.md) |     | 向仿真内核发送数据 |
 
 ---
 
@@ -66,55 +38,10 @@ pushData(eventType: ESCH_DynamicSimulationEnginePushEventType | ESCH_SpiceSimula
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-eventType
-
-
-</td><td>
-
-[ESCH\_DynamicSimulationEnginePushEventType](../enums/ESCH_DynamicSimulationEnginePushEventType.md) \| [ESCH\_SpiceSimulationEnginePushEventType](../enums/ESCH_SpiceSimulationEnginePushEventType.md)
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-\{ \[key: string\]: any; \}
-
-
-</td><td>
-
-数据
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                                                     | 描述   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
+| eventType | [ESCH\_DynamicSimulationEnginePushEventType](../enums/ESCH_DynamicSimulationEnginePushEventType.md) \| [ESCH\_SpiceSimulationEnginePushEventType](../enums/ESCH_SpiceSimulationEnginePushEventType.md) | 事件类型 |
+| props     | \{ \[key: string\]: any; \}                                                                                                                                                                            | 数据   |
 
 
 

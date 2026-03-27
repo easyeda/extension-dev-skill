@@ -5,7 +5,7 @@ PCB &amp; 封装 / 生产资料类
 ## 签名
 
 ```typescript
-declare class PCB_ManufactureData 
+declare class PCB_ManufactureData
 ```
 
 ## 备注
@@ -14,415 +14,36 @@ declare class PCB_ManufactureData
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[deleteBomTemplate(template)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除 BOM 模板
-
-
-</td></tr>
-<tr><td>
-
-[get3DFile(fileName, fileType, element, modelMode, autoGenerateModels)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 3D 模型文件
-
-
-</td></tr>
-<tr><td>
-
-[get3DShellFile(fileName, fileType)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 3D 外壳文件
-
-
-</td></tr>
-<tr><td>
-
-[getAltiumDesignerFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 Altium Designer 文件
-
-
-</td></tr>
-<tr><td>
-
-[getAutoLayoutJsonFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取自动布局文件（JSON）
-
-
-</td></tr>
-<tr><td>
-
-[getAutoRouteJsonFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取自动布线文件（JSON）
-
-
-</td></tr>
-<tr><td>
-
-[getBomFile(fileName, fileType, template, filterOptions, statistics, property, columns)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 BOM 文件
-
-
-</td></tr>
-<tr><td>
-
-[getBomTemplateFile(template)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 BOM 模板文件
-
-
-</td></tr>
-<tr><td>
-
-[getBomTemplates()](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 BOM 模板列表
-
-
-</td></tr>
-<tr><td>
-
-[getDsnFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取自动布线文件（DSN）
-
-
-</td></tr>
-<tr><td>
-
-[getDxfFile(fileName, layers, objects)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 DXF 文件
-
-
-</td></tr>
-<tr><td>
-
-[getFlyingProbeTestFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取飞针测试文件
-
-
-</td></tr>
-<tr><td>
-
-[getGerberFile(fileName, colorSilkscreen, unit, digitalFormat, other, layers, objects)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 PCB 制版文件（Gerber）
-
-
-</td></tr>
-<tr><td>
-
-[getIdxFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 IDX 文件
-
-
-</td></tr>
-<tr><td>
-
-[getIpcD356AFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 IPC-D-356A 文件
-
-
-</td></tr>
-<tr><td>
-
-[getManufactureData()](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 导出制造文件
-
-
-</td></tr>
-<tr><td>
-
-[getNetlistFile(fileName, netlistType)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取网表文件（Netlist）
-
-
-</td></tr>
-<tr><td>
-
-[getOpenDatabaseDoublePlusFile(fileName, unit, otherData, layers, objects)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 ODB++ 文件
-
-
-</td></tr>
-<tr><td>
-
-[getPadsFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 PADS 文件
-
-
-</td></tr>
-<tr><td>
-
-[getPcbInfoFile(fileName)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 PCB 信息文件
-
-
-</td></tr>
-<tr><td>
-
-[getPdfFile(fileName, outputMethod, contentConfig, watermark)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 PDF 文件
-
-
-</td></tr>
-<tr><td>
-
-[getPickAndPlaceFile(fileName, fileType, unit)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取坐标文件（PickAndPlace）
-
-
-</td></tr>
-<tr><td>
-
-[getTestPointFile(fileName, fileType)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取测试点报告文件
-
-
-</td></tr>
-<tr><td>
-
-[place3DShellOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 3D 外壳下单
-
-
-</td></tr>
-<tr><td>
-
-[placeComponentsOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 元件下单
-
-
-</td></tr>
-<tr><td>
-
-[placePcbOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** PCB 下单
-
-
-</td></tr>
-<tr><td>
-
-[placeSmtComponentsOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** SMT 元件下单
-
-
-</td></tr>
-<tr><td>
-
-[uploadBomTemplateFile(templateFile, template)](./PCB_ManufactureData.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 上传 BOM 模板文件
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                | 修饰符 | 描述                                 |
+| ------------------------------------------------------------------------------------------------------------------ | --- | ---------------------------------- |
+| [deleteBomTemplate(template)](./PCB_ManufactureData.md)                                                            |     | **_(BETA)_** 删除 BOM 模板             |
+| [get3DFile(fileName, fileType, element, modelMode, autoGenerateModels)](./PCB_ManufactureData.md)                  |     | **_(BETA)_** 获取 3D 模型文件            |
+| [get3DShellFile(fileName, fileType)](./PCB_ManufactureData.md)                                                     |     | **_(BETA)_** 获取 3D 外壳文件            |
+| [getAltiumDesignerFile(fileName)](./PCB_ManufactureData.md)                                                        |     | **_(BETA)_** 获取 Altium Designer 文件 |
+| [getAutoLayoutJsonFile(fileName)](./PCB_ManufactureData.md)                                                        |     | **_(BETA)_** 获取自动布局文件（JSON）        |
+| [getAutoRouteJsonFile(fileName)](./PCB_ManufactureData.md)                                                         |     | **_(BETA)_** 获取自动布线文件（JSON）        |
+| [getBomFile(fileName, fileType, template, filterOptions, statistics, property, columns)](./PCB_ManufactureData.md) |     | **_(BETA)_** 获取 BOM 文件             |
+| [getBomTemplateFile(template)](./PCB_ManufactureData.md)                                                           |     | **_(BETA)_** 获取 BOM 模板文件           |
+| [getBomTemplates()](./PCB_ManufactureData.md)                                                                      |     | **_(BETA)_** 获取 BOM 模板列表           |
+| [getDsnFile(fileName)](./PCB_ManufactureData.md)                                                                   |     | **_(BETA)_** 获取自动布线文件（DSN）         |
+| [getDxfFile(fileName, layers, objects)](./PCB_ManufactureData.md)                                                  |     | **_(BETA)_** 获取 DXF 文件             |
+| [getFlyingProbeTestFile(fileName)](./PCB_ManufactureData.md)                                                       |     | **_(BETA)_** 获取飞针测试文件              |
+| [getGerberFile(fileName, colorSilkscreen, unit, digitalFormat, other, layers, objects)](./PCB_ManufactureData.md)  |     | **_(BETA)_** 获取 PCB 制版文件（Gerber）   |
+| [getIdxFile(fileName)](./PCB_ManufactureData.md)                                                                   |     | **_(BETA)_** 获取 IDX 文件             |
+| [getIpcD356AFile(fileName)](./PCB_ManufactureData.md)                                                              |     | **_(BETA)_** 获取 IPC-D-356A 文件      |
+| [getManufactureData()](./PCB_ManufactureData.md)                                                                   |     | **_(BETA)_** 导出制造文件                |
+| [getNetlistFile(fileName, netlistType)](./PCB_ManufactureData.md)                                                  |     | **_(BETA)_** 获取网表文件（Netlist）       |
+| [getOpenDatabaseDoublePlusFile(fileName, unit, otherData, layers, objects)](./PCB_ManufactureData.md)              |     | **_(BETA)_** 获取 ODB++ 文件           |
+| [getPadsFile(fileName)](./PCB_ManufactureData.md)                                                                  |     | **_(BETA)_** 获取 PADS 文件            |
+| [getPcbInfoFile(fileName)](./PCB_ManufactureData.md)                                                               |     | **_(BETA)_** 获取 PCB 信息文件           |
+| [getPdfFile(fileName, outputMethod, contentConfig, watermark)](./PCB_ManufactureData.md)                           |     | **_(BETA)_** 获取 PDF 文件             |
+| [getPickAndPlaceFile(fileName, fileType, unit)](./PCB_ManufactureData.md)                                          |     | **_(BETA)_** 获取坐标文件（PickAndPlace）  |
+| [getTestPointFile(fileName, fileType)](./PCB_ManufactureData.md)                                                   |     | **_(BETA)_** 获取测试点报告文件             |
+| [place3DShellOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)                                          |     | **_(BETA)_** 3D 外壳下单               |
+| [placeComponentsOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)                                       |     | **_(BETA)_** 元件下单                  |
+| [placePcbOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)                                              |     | **_(BETA)_** PCB 下单                |
+| [placeSmtComponentsOrder(interactive, ignoreWarning)](./PCB_ManufactureData.md)                                    |     | **_(BETA)_** SMT 元件下单              |
+| [uploadBomTemplateFile(templateFile, template)](./PCB_ManufactureData.md)                                          |     | **_(BETA)_** 上传 BOM 模板文件           |
 
 ---
 
@@ -444,39 +65,9 @@ deleteBomTemplate(template: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-template
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-BOM 模板名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述       |
+| -------- | ------ | -------- |
+| template | string | BOM 模板名称 |
 
 
 
@@ -502,103 +93,13 @@ get3DFile(fileName?: string, fileType?: 'step' | 'obj', element?: Array<'Compone
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'step' \| 'obj'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-<tr><td>
-
-element
-
-
-</td><td>
-
-Array&lt;'Component Model' \| 'Via' \| 'Silkscreen' \| 'Wire In Signal Layer'&gt;
-
-
-</td><td>
-
-_（可选）_ 导出对象
-
-
-</td></tr>
-<tr><td>
-
-modelMode
-
-
-</td><td>
-
-'Outfit' \| 'Parts'
-
-
-</td><td>
-
-_（可选）_ 导出模式，`Outfit` = 装配体，`Parts` = 零件
-
-
-</td></tr>
-<tr><td>
-
-autoGenerateModels
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否为未绑定 3D 模型的元件自动生成 3D 模型（根据元件的“高度”属性）
-
-
-</td></tr>
-</tbody></table>
+| 参数                 | 类型                                                                                | 描述                                            |
+| ------------------ | --------------------------------------------------------------------------------- | --------------------------------------------- |
+| fileName           | string                                                                            | _（可选）_ 文件名                                    |
+| fileType           | 'step' \| 'obj'                                                                   | _（可选）_ 文件类型                                   |
+| element            | Array&lt;'Component Model' \| 'Via' \| 'Silkscreen' \| 'Wire In Signal Layer'&gt; | _（可选）_ 导出对象                                   |
+| modelMode          | 'Outfit' \| 'Parts'                                                               | _（可选）_ 导出模式，`Outfit` = 装配体，`Parts` = 零件       |
+| autoGenerateModels | boolean                                                                           | _（可选）_ 是否为未绑定 3D 模型的元件自动生成 3D 模型（根据元件的“高度”属性） |
 
 
 
@@ -630,55 +131,10 @@ get3DShellFile(fileName?: string, fileType?: 'stl' | 'step' | 'obj'): Promise<Fi
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'stl' \| 'step' \| 'obj'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                       | 描述          |
+| -------- | ------------------------ | ----------- |
+| fileName | string                   | _（可选）_ 文件名  |
+| fileType | 'stl' \| 'step' \| 'obj' | _（可选）_ 文件类型 |
 
 
 
@@ -708,39 +164,9 @@ getAltiumDesignerFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -770,39 +196,9 @@ getAutoLayoutJsonFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -832,39 +228,9 @@ getAutoRouteJsonFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -897,135 +263,15 @@ getBomFile(fileName?: string, fileType?: 'xlsx' | 'csv', template?: string, filt
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'xlsx' \| 'csv'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-<tr><td>
-
-template
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 模板名称
-
-
-</td></tr>
-<tr><td>
-
-filterOptions
-
-
-</td><td>
-
-Array&lt;{ property: string; includeValue: boolean \| string; }&gt;
-
-
-</td><td>
-
-_（可选）_ 过滤规则，仅应包含需要启用的规则，`property` 为规则名称，`includeValue` 为匹配的值
-
-
-</td></tr>
-<tr><td>
-
-statistics
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 统计，包含所有需要启用的统计项的名称
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 属性，包含所有需要启用的属性的名称
-
-
-</td></tr>
-<tr><td>
-
-columns
-
-
-</td><td>
-
-Array&lt;[IPCB\_BomPropertiesTableColumns](../interfaces/IPCB_BomPropertiesTableColumns.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 列的属性及排序，`title`<!-- -->、`sort`<!-- -->、`group`<!-- -->、`orderWeight` 不传入则取默认值，`null` 代表 \*\*无\*\* 或 \*\*空\*\*
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                              | 描述                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| fileName      | string                                                                                          | _（可选）_ 文件名                                                                                   |
+| fileType      | 'xlsx' \| 'csv'                                                                                 | _（可选）_ 文件类型                                                                                  |
+| template      | string                                                                                          | _（可选）_ 模板名称                                                                                  |
+| filterOptions | Array&lt;{ property: string; includeValue: boolean \| string; }&gt;                             | _（可选）_ 过滤规则，仅应包含需要启用的规则，`property` 为规则名称，`includeValue` 为匹配的值                                |
+| statistics    | Array&lt;string&gt;                                                                             | _（可选）_ 统计，包含所有需要启用的统计项的名称                                                                    |
+| property      | Array&lt;string&gt;                                                                             | _（可选）_ 属性，包含所有需要启用的属性的名称                                                                     |
+| columns       | Array&lt;[IPCB\_BomPropertiesTableColumns](../interfaces/IPCB_BomPropertiesTableColumns.md)&gt; | _（可选）_ 列的属性及排序，`title`、`sort`、`group`、`orderWeight` 不传入则取默认值，`null` 代表 \*\*无\*\* 或 \*\*空\*\* |
 
 
 
@@ -1055,39 +301,9 @@ getBomTemplateFile(template: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-template
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-BOM 模板名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述       |
+| -------- | ------ | -------- |
+| template | string | BOM 模板名称 |
 
 
 
@@ -1134,39 +350,9 @@ getDsnFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -1199,71 +385,11 @@ getDxfFile(fileName?: string, layers?: Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-layers
-
-
-</td><td>
-
-Array&lt;{ layerId: number; mirror: boolean; }&gt;
-
-
-</td><td>
-
-_（可选）_ 导出层
-
-
-</td></tr>
-<tr><td>
-
-objects
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 导出对象
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                 | 描述          |
+| -------- | -------------------------------------------------- | ----------- |
+| fileName | string                                             | _（可选）_ 文件名  |
+| layers   | Array&lt;{ layerId: number; mirror: boolean; }&gt; | _（可选）_ 导出层  |
+| objects  | Array&lt;string&gt;                                | _（可选）_ 导出对象 |
 
 
 
@@ -1293,39 +419,9 @@ getFlyingProbeTestFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -1362,135 +458,15 @@ getGerberFile(fileName?: string, colorSilkscreen?: boolean, unit?: ESYS_Unit.MIL
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-colorSilkscreen
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否生成彩色丝印制造文件（嘉立创专用文件）
-
-
-</td></tr>
-<tr><td>
-
-unit
-
-
-</td><td>
-
-[ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md)
-
-
-</td><td>
-
-_（可选）_ 单位
-
-
-</td></tr>
-<tr><td>
-
-digitalFormat
-
-
-</td><td>
-
-\{ integerNumber: number; decimalNumber: number; \}
-
-
-</td><td>
-
-_（可选）_ 数字格式
-
-
-</td></tr>
-<tr><td>
-
-other
-
-
-</td><td>
-
-\{ metallicDrillingInformation: boolean; nonMetallicDrillingInformation: boolean; drillTable: boolean; flyingProbeTestingFile: boolean; \}
-
-
-</td><td>
-
-_（可选）_ 其它
-
-
-</td></tr>
-<tr><td>
-
-layers
-
-
-</td><td>
-
-Array&lt;{ layerId: number; isMirror: boolean; }&gt;
-
-
-</td><td>
-
-_（可选）_ 导出层，默认则按照嘉立创生产需求导出
-
-
-</td></tr>
-<tr><td>
-
-objects
-
-
-</td><td>
-
-Array&lt;'Pad' \| 'Via' \| 'Track' \| 'Text' \| 'Image' \| 'Dimension' \| 'BoardOutline' \| 'BoardCutout' \| 'CopperFilled' \| 'SolidRegion' \| 'FPCStiffener' \| 'Line' \| 'PlaneZone' \| 'ComponentProperty' \| 'ComponentSilkscreen' \| 'TearDrop'&gt;
-
-
-</td><td>
-
-_（可选）_ 导出对象，默认则按照嘉立创生产需求导出
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                                                                                                                                                                                                                                                        | 描述                           |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| fileName        | string                                                                                                                                                                                                                                                    | _（可选）_ 文件名                   |
+| colorSilkscreen | boolean                                                                                                                                                                                                                                                   | _（可选）_ 是否生成彩色丝印制造文件（嘉立创专用文件） |
+| unit            | [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md)                                                                                                                                                                | _（可选）_ 单位                    |
+| digitalFormat   | \{ integerNumber: number; decimalNumber: number; \}                                                                                                                                                                                                       | _（可选）_ 数字格式                  |
+| other           | \{ metallicDrillingInformation: boolean; nonMetallicDrillingInformation: boolean; drillTable: boolean; flyingProbeTestingFile: boolean; \}                                                                                                                | _（可选）_ 其它                    |
+| layers          | Array&lt;{ layerId: number; isMirror: boolean; }&gt;                                                                                                                                                                                                      | _（可选）_ 导出层，默认则按照嘉立创生产需求导出    |
+| objects         | Array&lt;'Pad' \| 'Via' \| 'Track' \| 'Text' \| 'Image' \| 'Dimension' \| 'BoardOutline' \| 'BoardCutout' \| 'CopperFilled' \| 'SolidRegion' \| 'FPCStiffener' \| 'Line' \| 'PlaneZone' \| 'ComponentProperty' \| 'ComponentSilkscreen' \| 'TearDrop'&gt; | _（可选）_ 导出对象，默认则按照嘉立创生产需求导出   |
 
 
 
@@ -1520,39 +496,9 @@ getIdxFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述           |
+| -------- | ------ | ------------ |
+| fileName | string | _(Optional)_ |
 
 
 
@@ -1582,39 +528,9 @@ getIpcD356AFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -1673,55 +589,10 @@ getNetlistFile(fileName?: string, netlistType?: ESYS_NetlistType): Promise<File 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-netlistType
-
-
-</td><td>
-
-[ESYS\_NetlistType](../enums/ESYS_NetlistType.md)
-
-
-</td><td>
-
-_（可选）_ 网表类型
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                | 描述          |
+| ----------- | ------------------------------------------------- | ----------- |
+| fileName    | string                                            | _（可选）_ 文件名  |
+| netlistType | [ESYS\_NetlistType](../enums/ESYS_NetlistType.md) | _（可选）_ 网表类型 |
 
 
 
@@ -1761,103 +632,13 @@ getOpenDatabaseDoublePlusFile(fileName?: string, unit?: ESYS_Unit.INCH, otherDat
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-unit
-
-
-</td><td>
-
-[ESYS\_Unit.INCH](../enums/ESYS_Unit.md)
-
-
-</td><td>
-
-_（可选）_ 单位
-
-
-</td></tr>
-<tr><td>
-
-otherData
-
-
-</td><td>
-
-\{ metallizedDrilledHoles?: boolean; nonMetallizedDrilledHoles?: boolean; drillTable?: boolean; flyingProbeTestFile?: boolean; \}
-
-
-</td><td>
-
-_（可选）_ 其它
-
-
-</td></tr>
-<tr><td>
-
-layers
-
-
-</td><td>
-
-Array&lt;{ layerId: number; mirror: boolean; }&gt;
-
-
-</td><td>
-
-_（可选）_ 导出层，默认则按照嘉立创生产需求导出
-
-
-</td></tr>
-<tr><td>
-
-objects
-
-
-</td><td>
-
-Array&lt;{ objectName: string; }&gt;
-
-
-</td><td>
-
-_（可选）_ 导出对象，默认则按照嘉立创生产需求导出
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                | 描述                         |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| fileName  | string                                                                                                                            | _（可选）_ 文件名                 |
+| unit      | [ESYS\_Unit.INCH](../enums/ESYS_Unit.md)                                                                                          | _（可选）_ 单位                  |
+| otherData | \{ metallizedDrilledHoles?: boolean; nonMetallizedDrilledHoles?: boolean; drillTable?: boolean; flyingProbeTestFile?: boolean; \} | _（可选）_ 其它                  |
+| layers    | Array&lt;{ layerId: number; mirror: boolean; }&gt;                                                                                | _（可选）_ 导出层，默认则按照嘉立创生产需求导出  |
+| objects   | Array&lt;{ objectName: string; }&gt;                                                                                              | _（可选）_ 导出对象，默认则按照嘉立创生产需求导出 |
 
 
 
@@ -1887,39 +668,9 @@ getPadsFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -1949,39 +700,9 @@ getPcbInfoFile(fileName?: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述         |
+| -------- | ------ | ---------- |
+| fileName | string | _（可选）_ 文件名 |
 
 
 
@@ -2030,87 +751,12 @@ getPdfFile(fileName?: string, outputMethod?: EPCB_PdfOutputMethod, contentConfig
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-outputMethod
-
-
-</td><td>
-
-[EPCB\_PdfOutputMethod](../enums/EPCB_PdfOutputMethod.md)
-
-
-</td><td>
-
-_（可选）_ 输出方式
-
-
-</td></tr>
-<tr><td>
-
-contentConfig
-
-
-</td><td>
-
-\{ displayAttributesAsMenu: boolean; showOutlineOnly: boolean; \}
-
-
-</td><td>
-
-_（可选）_ 内容配置
-
-
-</td></tr>
-<tr><td>
-
-watermark
-
-
-</td><td>
-
-{ show?: boolean; content?: string; styleConfig?: { color: string; transparency: 'Opaque' \| '75%' \| '50%' \| '25%'; font: string; fontSize: string; style: { blood: boolean; italic: boolean; underline: boolean; }; slope: 0 \| 45 \| 90; denseness: 'Single' \| 'Sparse' \| 'Std' \| 'Dense'; }; }
-
-
-</td><td>
-
-_（可选）_ 水印
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                                                                                                                                                                                                                                     | 描述          |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| fileName      | string                                                                                                                                                                                                                                                                                                 | _（可选）_ 文件名  |
+| outputMethod  | [EPCB\_PdfOutputMethod](../enums/EPCB_PdfOutputMethod.md)                                                                                                                                                                                                                                              | _（可选）_ 输出方式 |
+| contentConfig | \{ displayAttributesAsMenu: boolean; showOutlineOnly: boolean; \}                                                                                                                                                                                                                                      | _（可选）_ 内容配置 |
+| watermark     | { show?: boolean; content?: string; styleConfig?: { color: string; transparency: 'Opaque' \| '75%' \| '50%' \| '25%'; font: string; fontSize: string; style: { blood: boolean; italic: boolean; underline: boolean; }; slope: 0 \| 45 \| 90; denseness: 'Single' \| 'Sparse' \| 'Std' \| 'Dense'; }; } | _（可选）_ 水印   |
 
 
 
@@ -2124,7 +770,7 @@ PDF 文件数据（或压缩包）
 
 可以使用 [SYS\_FileSystem.saveFile()](./SYS_FileSystem.md) 接口将文件导出到本地文件系统
 
-`outputMethod`<!-- -->、`contentConfig`<!-- -->、`watermark` 参数暂不可用，等待后期规划
+`outputMethod`、`contentConfig`、`watermark` 参数暂不可用，等待后期规划
 
 ### getpickandplacefile
 
@@ -2142,71 +788,11 @@ getPickAndPlaceFile(fileName?: string, fileType?: 'xlsx' | 'csv', unit?: ESYS_Un
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'xlsx' \| 'csv'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-<tr><td>
-
-unit
-
-
-</td><td>
-
-[ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md)
-
-
-</td><td>
-
-_（可选）_ 单位
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                                        | 描述          |
+| -------- | ----------------------------------------------------------------------------------------- | ----------- |
+| fileName | string                                                                                    | _（可选）_ 文件名  |
+| fileType | 'xlsx' \| 'csv'                                                                           | _（可选）_ 文件类型 |
+| unit     | [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md) | _（可选）_ 单位   |
 
 
 
@@ -2236,55 +822,10 @@ getTestPointFile(fileName?: string, fileType?: 'xlsx' | 'csv'): Promise<File | u
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-fileType
-
-
-</td><td>
-
-'xlsx' \| 'csv'
-
-
-</td><td>
-
-_（可选）_ 文件类型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型              | 描述          |
+| -------- | --------------- | ----------- |
+| fileName | string          | _（可选）_ 文件名  |
+| fileType | 'xlsx' \| 'csv' | _（可选）_ 文件类型 |
 
 
 
@@ -2314,63 +855,10 @@ place3DShellOrder(interactive?: boolean, ignoreWarning?: boolean): Promise<boole
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-interactive
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否启用交互式检查
-
-如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略；
-
-如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面
-
-
-</td></tr>
-<tr><td>
-
-ignoreWarning
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 在非交互式检查时忽略警告
-
-如果设置为 `true`<!-- -->，将会忽略所有检查警告项并尽可能生成下单资料；
-
-如果设置为 `false`<!-- -->，存在任意警告将中断执行并返回 `false` 的结果
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述                                                                                                                                                                     |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| interactive   | boolean | _（可选）_ 是否启用交互式检查 如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略； 如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面 |
+| ignoreWarning | boolean | _（可选）_ 在非交互式检查时忽略警告 如果设置为 `true`，将会忽略所有检查警告项并尽可能生成下单资料； 如果设置为 `false`，存在任意警告将中断执行并返回 `false` 的结果                                                                 |
 
 
 
@@ -2400,63 +888,10 @@ placeComponentsOrder(interactive?: boolean, ignoreWarning?: boolean): Promise<bo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-interactive
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否启用交互式检查
-
-如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略；
-
-如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面
-
-
-</td></tr>
-<tr><td>
-
-ignoreWarning
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 在非交互式检查时忽略警告
-
-如果设置为 `true`<!-- -->，将会忽略所有检查警告项并尽可能生成下单资料；
-
-如果设置为 `false`<!-- -->，存在任意警告将中断执行并返回 `false` 的结果
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述                                                                                                                                                                     |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| interactive   | boolean | _（可选）_ 是否启用交互式检查 如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略； 如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面 |
+| ignoreWarning | boolean | _（可选）_ 在非交互式检查时忽略警告 如果设置为 `true`，将会忽略所有检查警告项并尽可能生成下单资料； 如果设置为 `false`，存在任意警告将中断执行并返回 `false` 的结果                                                                 |
 
 
 
@@ -2486,63 +921,10 @@ placePcbOrder(interactive?: boolean, ignoreWarning?: boolean): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-interactive
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否启用交互式检查
-
-如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略；
-
-如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面
-
-
-</td></tr>
-<tr><td>
-
-ignoreWarning
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 在非交互式检查时忽略警告
-
-如果设置为 `true`<!-- -->，将会忽略所有检查警告项并尽可能生成下单资料；
-
-如果设置为 `false`<!-- -->，存在任意警告将中断执行并返回 `false` 的结果
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述                                                                                                                                                                     |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| interactive   | boolean | _（可选）_ 是否启用交互式检查 如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略； 如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面 |
+| ignoreWarning | boolean | _（可选）_ 在非交互式检查时忽略警告 如果设置为 `true`，将会忽略所有检查警告项并尽可能生成下单资料； 如果设置为 `false`，存在任意警告将中断执行并返回 `false` 的结果                                                                 |
 
 
 
@@ -2572,63 +954,10 @@ placeSmtComponentsOrder(interactive?: boolean, ignoreWarning?: boolean): Promise
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-interactive
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否启用交互式检查
-
-如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略；
-
-如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面
-
-
-</td></tr>
-<tr><td>
-
-ignoreWarning
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 在非交互式检查时忽略警告
-
-如果设置为 `true`<!-- -->，将会忽略所有检查警告项并尽可能生成下单资料；
-
-如果设置为 `false`<!-- -->，存在任意警告将中断执行并返回 `false` 的结果
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述                                                                                                                                                                     |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| interactive   | boolean | _（可选）_ 是否启用交互式检查 如若启用，则会存在弹窗等待用户进行交互，且无法使用 `ignoreWarning` 参数忽略警告， 即 `ignoreWarning` 参数将被忽略； 如若禁用，则在调用后不会有任何 EDA 内部弹窗，程序执行静默检查， 如若达成下单条件，将返回 `true` 并在新标签页打开下单页面 |
+| ignoreWarning | boolean | _（可选）_ 在非交互式检查时忽略警告 如果设置为 `true`，将会忽略所有检查警告项并尽可能生成下单资料； 如果设置为 `false`，存在任意警告将中断执行并返回 `false` 的结果                                                                 |
 
 
 
@@ -2658,55 +987,10 @@ uploadBomTemplateFile(templateFile: File, template?: string): Promise<string | u
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-templateFile
-
-
-</td><td>
-
-File
-
-
-</td><td>
-
-BOM 模板文件
-
-
-</td></tr>
-<tr><td>
-
-template
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ BOM 模板名称，如若为 `undefined` 则自动从 `templateFile` 中取值
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                                      |
+| ------------ | ------ | ------------------------------------------------------- |
+| templateFile | File   | BOM 模板文件                                                |
+| template     | string | _（可选）_ BOM 模板名称，如若为 `undefined` 则自动从 `templateFile` 中取值 |
 
 
 

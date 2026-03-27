@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_FileSystem 
+declare class SYS_FileSystem
 ```
 
 ## 备注
@@ -13,191 +13,20 @@ declare class SYS_FileSystem
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[deleteFileInFileSystem(uri, force)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除文件系统内的文件
-
-
-</td></tr>
-<tr><td>
-
-[getDocumentsPath()](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取文档目录路径
-
-
-</td></tr>
-<tr><td>
-
-[getEdaPath()](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取 EDA 文档目录路径
-
-
-</td></tr>
-<tr><td>
-
-[getExtensionFile(uri)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取扩展内的文件
-
-
-</td></tr>
-<tr><td>
-
-[getLibrariesPaths()](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取库目录路径
-
-
-</td></tr>
-<tr><td>
-
-[getProjectsPaths()](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取工程目录路径
-
-
-</td></tr>
-<tr><td>
-
-[listFilesOfFileSystem(folderPath, recursive)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 查看文件系统路径下的文件列表
-
-
-</td></tr>
-<tr><td>
-
-[openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 打开读入文件窗口
-
-
-</td></tr>
-<tr><td>
-
-[openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 打开读入文件窗口
-
-
-</td></tr>
-<tr><td>
-
-[readFileFromFileSystem(uri)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 从文件系统读取文件
-
-
-</td></tr>
-<tr><td>
-
-[saveFile(fileData, fileName)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-保存文件
-
-
-</td></tr>
-<tr><td>
-
-[saveFileToFileSystem(uri, fileData, fileName, force)](./SYS_FileSystem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 向文件系统写入文件
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                         | 修饰符 | 描述                          |
+| --------------------------------------------------------------------------- | --- | --------------------------- |
+| [deleteFileInFileSystem(uri, force)](./SYS_FileSystem.md)                   |     | **_(BETA)_** 删除文件系统内的文件     |
+| [getDocumentsPath()](./SYS_FileSystem.md)                                   |     | **_(BETA)_** 获取文档目录路径       |
+| [getEdaPath()](./SYS_FileSystem.md)                                         |     | **_(BETA)_** 获取 EDA 文档目录路径  |
+| [getExtensionFile(uri)](./SYS_FileSystem.md)                                |     | 获取扩展内的文件                    |
+| [getLibrariesPaths()](./SYS_FileSystem.md)                                  |     | **_(BETA)_** 获取库目录路径        |
+| [getProjectsPaths()](./SYS_FileSystem.md)                                   |     | **_(BETA)_** 获取工程目录路径       |
+| [listFilesOfFileSystem(folderPath, recursive)](./SYS_FileSystem.md)         |     | **_(BETA)_** 查看文件系统路径下的文件列表 |
+| [openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)   |     | **_(BETA)_** 打开读入文件窗口       |
+| [openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)   |     | **_(BETA)_** 打开读入文件窗口       |
+| [readFileFromFileSystem(uri)](./SYS_FileSystem.md)                          |     | **_(BETA)_** 从文件系统读取文件      |
+| [saveFile(fileData, fileName)](./SYS_FileSystem.md)                         |     | 保存文件                        |
+| [saveFileToFileSystem(uri, fileData, fileName, force)](./SYS_FileSystem.md) |     | **_(BETA)_** 向文件系统写入文件      |
 
 ---
 
@@ -219,59 +48,10 @@ deleteFileInFileSystem(uri: string, force?: boolean): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uri
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件资源定位符
-
-如若结尾为斜杠 `/`<!-- -->（Windows 为反斜杠 `\`<!-- -->），则识别为文件夹；
-
-如若结尾非斜杠，则识别为完整文件名，此时 `fileName` 参数将被忽略
-
-
-</td></tr>
-<tr><td>
-
-force
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 强制删除文件夹（当欲删除的是文件夹且文件夹内有文件时，是否强制删除该文件夹）
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型      | 描述                                                                                          |
+| ----- | ------- | ------------------------------------------------------------------------------------------- |
+| uri   | string  | 文件资源定位符 如若结尾为斜杠 `/`（Windows 为反斜杠 `\`），则识别为文件夹； 如若结尾非斜杠，则识别为完整文件名，此时 `fileName` 参数将被忽略 |
+| force | boolean | _（可选）_ 强制删除文件夹（当欲删除的是文件夹且文件夹内有文件时，是否强制删除该文件夹）                                               |
 
 
 
@@ -310,7 +90,7 @@ Promise&lt;string&gt;
 
 ## 备注
 
-返回的路径中，结尾不包含斜杠 `/`<!-- -->（或反斜杠 `\`<!-- -->）
+返回的路径中，结尾不包含斜杠 `/`（或反斜杠 `\`）
 
 注意 1：本接口仅客户端有效，在浏览器环境内调用将始终 `throw Error`
 
@@ -339,7 +119,7 @@ EDA 文档目录路径
 
 ## 备注
 
-返回的路径中，结尾不包含斜杠 `/`<!-- -->（或反斜杠 `\`<!-- -->）
+返回的路径中，结尾不包含斜杠 `/`（或反斜杠 `\`）
 
 注意 1：本接口仅客户端有效，在浏览器环境内调用将始终 `throw Error`
 
@@ -359,39 +139,9 @@ getExtensionFile(uri: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uri
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件路径
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| uri | string | 文件路径 |
 
 
 
@@ -471,61 +221,16 @@ listFilesOfFileSystem(folderPath: string, recursive?: boolean): Promise<Array<IS
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-folderPath
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-目录路径
-
-
-</td></tr>
-<tr><td>
-
-recursive
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否递归获取所有子文件
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型      | 描述                 |
+| ---------- | ------- | ------------------ |
+| folderPath | string  | 目录路径               |
+| recursive  | boolean | _（可选）_ 是否递归获取所有子文件 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISYS\_FileSystemFileList](../interfaces/ISYS_FileSystemFileList.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISYS\_FileSystemFileList](../interfaces/ISYS_FileSystemFileList.md)&gt;&gt;
 
 当前目录下的文件列表
 
@@ -551,55 +256,10 @@ openReadFileDialog(filenameExtensions?: string | Array<string>, multiFiles?: tru
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-filenameExtensions
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 文件扩展名
-
-
-</td></tr>
-<tr><td>
-
-multiFiles
-
-
-</td><td>
-
-true
-
-
-</td><td>
-
-_（可选）_ 是否允许读取多文件
-
-
-</td></tr>
-</tbody></table>
+| 参数                 | 类型                            | 描述               |
+| ------------------ | ----------------------------- | ---------------- |
+| filenameExtensions | string \| Array&lt;string&gt; | _（可选）_ 文件扩展名     |
+| multiFiles         | true                          | _（可选）_ 是否允许读取多文件 |
 
 
 
@@ -625,55 +285,10 @@ openReadFileDialog(filenameExtensions?: string | Array<string>, multiFiles?: fal
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-filenameExtensions
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 文件扩展名
-
-
-</td></tr>
-<tr><td>
-
-multiFiles
-
-
-</td><td>
-
-false
-
-
-</td><td>
-
-_（可选）_ 是否允许读取多文件
-
-
-</td></tr>
-</tbody></table>
+| 参数                 | 类型                            | 描述               |
+| ------------------ | ----------------------------- | ---------------- |
+| filenameExtensions | string \| Array&lt;string&gt; | _（可选）_ 文件扩展名     |
+| multiFiles         | false                         | _（可选）_ 是否允许读取多文件 |
 
 
 
@@ -699,39 +314,9 @@ readFileFromFileSystem(uri: string): Promise<File | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uri
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件资源定位符，需要包含完整的文件名称的绝对路径
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述                       |
+| --- | ------ | ------------------------ |
+| uri | string | 文件资源定位符，需要包含完整的文件名称的绝对路径 |
 
 
 
@@ -761,55 +346,10 @@ saveFile(fileData: File | Blob, fileName?: string): Promise<void>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fileData
-
-
-</td><td>
-
-File \| Blob
-
-
-</td><td>
-
-文件数据
-
-
-</td></tr>
-<tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型           | 描述          |
+| -------- | ------------ | ----------- |
+| fileData | File \| Blob | 文件数据        |
+| fileName | string       | _（可选）_ 文件名称 |
 
 
 
@@ -837,91 +377,12 @@ saveFileToFileSystem(uri: string, fileData: File | Blob, fileName?: string, forc
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uri
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件资源定位符
-
-如若结尾为斜杠 `/`<!-- -->（Windows 为反斜杠 `\`<!-- -->），则识别为文件夹；
-
-如若结尾非斜杠，则识别为完整文件名，此时 `fileName` 参数将被忽略
-
-
-</td></tr>
-<tr><td>
-
-fileData
-
-
-</td><td>
-
-File \| Blob
-
-
-</td><td>
-
-文件数据
-
-
-</td></tr>
-<tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名称
-
-
-</td></tr>
-<tr><td>
-
-force
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 强制写入（文件存在则覆盖文件）
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型           | 描述                                                                                          |
+| -------- | ------------ | ------------------------------------------------------------------------------------------- |
+| uri      | string       | 文件资源定位符 如若结尾为斜杠 `/`（Windows 为反斜杠 `\`），则识别为文件夹； 如若结尾非斜杠，则识别为完整文件名，此时 `fileName` 参数将被忽略 |
+| fileData | File \| Blob | 文件数据                                                                                        |
+| fileName | string       | _（可选）_ 文件名称                                                                                 |
+| force    | boolean      | _（可选）_ 强制写入（文件存在则覆盖文件）                                                                      |
 
 
 

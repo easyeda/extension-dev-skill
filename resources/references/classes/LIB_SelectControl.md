@@ -5,42 +5,14 @@
 ## 签名
 
 ```typescript
-declare class LIB_SelectControl 
+declare class LIB_SelectControl
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getSelectedLibraryRowInfo()](./LIB_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前底部库选中行的信息
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                   | 修饰符 | 描述                         |
+| ----------------------------------------------------- | --- | -------------------------- |
+| [getSelectedLibraryRowInfo()](./LIB_SelectControl.md) |     | **_(BETA)_** 获取当前底部库选中行的信息 |
 
 ---
 

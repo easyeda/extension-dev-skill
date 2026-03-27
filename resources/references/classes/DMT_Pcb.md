@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class DMT_Pcb 
+declare class DMT_Pcb
 ```
 
 ## 备注
@@ -14,121 +14,15 @@ declare class DMT_Pcb
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[copyPcb(pcbUuid, boardName)](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-复制 PCB
-
-
-</td></tr>
-<tr><td>
-
-[createPcb(boardName)](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建 PCB
-
-
-</td></tr>
-<tr><td>
-
-[deletePcb(pcbUuid)](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-删除 PCB
-
-
-</td></tr>
-<tr><td>
-
-[getAllPcbsInfo()](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取工程内所有 PCB 的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentPcbInfo()](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前 PCB 的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getPcbInfo(pcbUuid)](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取 PCB 的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[modifyPcbName(pcbUuid, pcbName)](./DMT_Pcb.md)
-
-
-</td><td>
-
-
-</td><td>
-
-修改 PCB 名称
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                             | 修饰符 | 描述                |
+| ----------------------------------------------- | --- | ----------------- |
+| [copyPcb(pcbUuid, boardName)](./DMT_Pcb.md)     |     | 复制 PCB            |
+| [createPcb(boardName)](./DMT_Pcb.md)            |     | 创建 PCB            |
+| [deletePcb(pcbUuid)](./DMT_Pcb.md)              |     | 删除 PCB            |
+| [getAllPcbsInfo()](./DMT_Pcb.md)                |     | 获取工程内所有 PCB 的详细属性 |
+| [getCurrentPcbInfo()](./DMT_Pcb.md)             |     | 获取当前 PCB 的详细属性    |
+| [getPcbInfo(pcbUuid)](./DMT_Pcb.md)             |     | 获取 PCB 的详细属性      |
+| [modifyPcbName(pcbUuid, pcbName)](./DMT_Pcb.md) |     | 修改 PCB 名称         |
 
 ---
 
@@ -148,55 +42,10 @@ copyPcb(pcbUuid: string, boardName?: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pcbUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-源 PCB UUID
-
-
-</td></tr>
-<tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 新 PCB 所属板子名称，如若不指定则为游离 PCB
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述                                |
+| --------- | ------ | --------------------------------- |
+| pcbUuid   | string | 源 PCB UUID                        |
+| boardName | string | _（可选）_ 新 PCB 所属板子名称，如若不指定则为游离 PCB |
 
 
 
@@ -224,39 +73,9 @@ createPcb(boardName?: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 所属板子名称，如若不指定则为游离 PCB
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述                          |
+| --------- | ------ | --------------------------- |
+| boardName | string | _（可选）_ 所属板子名称，如若不指定则为游离 PCB |
 
 
 
@@ -280,39 +99,9 @@ deletePcb(pcbUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pcbUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-PCB UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述       |
+| ------- | ------ | -------- |
+| pcbUuid | string | PCB UUID |
 
 
 
@@ -341,7 +130,7 @@ getAllPcbsInfo(): Promise<Array<IDMT_PcbItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_PcbItem](../interfaces/IDMT_PcbItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_PcbItem](../interfaces/IDMT_PcbItem.md)&gt;&gt;
 
 所有 PCB 的详细属性的数组
 
@@ -382,39 +171,9 @@ getPcbInfo(pcbUuid: string): Promise<IDMT_PcbItem | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pcbUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-PCB UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述       |
+| ------- | ------ | -------- |
+| pcbUuid | string | PCB UUID |
 
 
 
@@ -438,55 +197,10 @@ modifyPcbName(pcbUuid: string, pcbName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pcbUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-PCB UUID
-
-
-</td></tr>
-<tr><td>
-
-pcbName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-PCB 名称
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述       |
+| ------- | ------ | -------- |
+| pcbUuid | string | PCB UUID |
+| pcbName | string | PCB 名称   |
 
 
 

@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_Netlist 
+declare class SCH_Netlist
 ```
 
 ## 备注
@@ -14,51 +14,10 @@ declare class SCH_Netlist
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getNetlist(type)](./SCH_Netlist.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取网表
-
-
-</td></tr>
-<tr><td>
-
-[setNetlist(type, netlist)](./SCH_Netlist.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 更新网表
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                           | 修饰符 | 描述                |
+| --------------------------------------------- | --- | ----------------- |
+| [getNetlist(type)](./SCH_Netlist.md)          |     | 获取网表              |
+| [setNetlist(type, netlist)](./SCH_Netlist.md) |     | **_(BETA)_** 更新网表 |
 
 ---
 
@@ -82,39 +41,9 @@ getNetlist(type?: ESYS_NetlistType): Promise<string>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-type
-
-
-</td><td>
-
-[ESYS\_NetlistType](../enums/ESYS_NetlistType.md)
-
-
-</td><td>
-
-_（可选）_ 网表格式
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                                                | 描述          |
+| ---- | ------------------------------------------------- | ----------- |
+| type | [ESYS\_NetlistType](../enums/ESYS_NetlistType.md) | _（可选）_ 网表格式 |
 
 
 
@@ -140,55 +69,10 @@ setNetlist(type: ESYS_NetlistType | undefined, netlist: string): Promise<void>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-type
-
-
-</td><td>
-
-[ESYS\_NetlistType](../enums/ESYS_NetlistType.md) \| undefined
-
-
-</td><td>
-
-网表格式
-
-
-</td></tr>
-<tr><td>
-
-netlist
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网表数据
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型                                                             | 描述   |
+| ------- | -------------------------------------------------------------- | ---- |
+| type    | [ESYS\_NetlistType](../enums/ESYS_NetlistType.md) \| undefined | 网表格式 |
+| netlist | string                                                         | 网表数据 |
 
 
 

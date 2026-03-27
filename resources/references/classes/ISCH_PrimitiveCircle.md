@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitiveCircle implements ISCH_Primitive 
+declare class ISCH_PrimitiveCircle implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -14,345 +14,31 @@ declare class ISCH_PrimitiveCircle implements ISCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_CenterX()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：圆心 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_CenterY()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：圆心 Y
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Color()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillColor()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillStyle()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充样式
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineType()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Radius()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：半径
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_CenterX(centerX)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：圆心 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_CenterY(centerY)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：圆心 Y
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Color(color)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillColor(fillColor)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillStyle(fillStyle)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充样式
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineType(lineType)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Radius(radius)](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：半径
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitiveCircle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                         | 修饰符 | 描述                          |
+| ----------------------------------------------------------- | --- | --------------------------- |
+| [done()](./ISCH_PrimitiveCircle.md)                         |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_CenterX()](./ISCH_PrimitiveCircle.md)            |     | 获取属性状态：圆心 X                 |
+| [getState\_CenterY()](./ISCH_PrimitiveCircle.md)            |     | 获取属性状态：圆心 Y                 |
+| [getState\_Color()](./ISCH_PrimitiveCircle.md)              |     | 获取属性状态：颜色                   |
+| [getState\_FillColor()](./ISCH_PrimitiveCircle.md)          |     | 获取属性状态：填充颜色                 |
+| [getState\_FillStyle()](./ISCH_PrimitiveCircle.md)          |     | 获取属性状态：填充样式                 |
+| [getState\_LineType()](./ISCH_PrimitiveCircle.md)           |     | 获取属性状态：线型                   |
+| [getState\_LineWidth()](./ISCH_PrimitiveCircle.md)          |     | 获取属性状态：线宽                   |
+| [getState\_PrimitiveId()](./ISCH_PrimitiveCircle.md)        |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveType()](./ISCH_PrimitiveCircle.md)      |     | 获取属性状态：图元类型                 |
+| [getState\_Radius()](./ISCH_PrimitiveCircle.md)             |     | 获取属性状态：半径                   |
+| [isAsync()](./ISCH_PrimitiveCircle.md)                      |     | 查询图元是否为异步图元                 |
+| [reset()](./ISCH_PrimitiveCircle.md)                        |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_CenterX(centerX)](./ISCH_PrimitiveCircle.md)     |     | **_(BETA)_** 设置属性状态：圆心 X    |
+| [setState\_CenterY(centerY)](./ISCH_PrimitiveCircle.md)     |     | **_(BETA)_** 设置属性状态：圆心 Y    |
+| [setState\_Color(color)](./ISCH_PrimitiveCircle.md)         |     | **_(BETA)_** 设置属性状态：颜色      |
+| [setState\_FillColor(fillColor)](./ISCH_PrimitiveCircle.md) |     | **_(BETA)_** 设置属性状态：填充颜色    |
+| [setState\_FillStyle(fillStyle)](./ISCH_PrimitiveCircle.md) |     | **_(BETA)_** 设置属性状态：填充样式    |
+| [setState\_LineType(lineType)](./ISCH_PrimitiveCircle.md)   |     | **_(BETA)_** 设置属性状态：线型      |
+| [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveCircle.md) |     | **_(BETA)_** 设置属性状态：线宽      |
+| [setState\_Radius(radius)](./ISCH_PrimitiveCircle.md)       |     | **_(BETA)_** 设置属性状态：半径      |
+| [toAsync()](./ISCH_PrimitiveCircle.md)                      |     | 将图元转换为异步图元                  |
+| [toSync()](./ISCH_PrimitiveCircle.md)                       |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -605,7 +291,7 @@ reset(): Promise<ISCH_PrimitiveCircle>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveCircle](./ISCH_PrimitiveCircle.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveCircle](./ISCH_PrimitiveCircle.md)&gt;
 
 圆图元对象
 
@@ -625,39 +311,9 @@ setState_CenterX(centerX: number): ISCH_PrimitiveCircle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-centerX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-圆心 X
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述   |
+| ------- | ------ | ---- |
+| centerX | number | 圆心 X |
 
 
 
@@ -683,39 +339,9 @@ setState_CenterY(centerY: number): ISCH_PrimitiveCircle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-centerY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-圆心 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述   |
+| ------- | ------ | ---- |
+| centerY | number | 圆心 Y |
 
 
 
@@ -741,39 +367,9 @@ setState_Color(color: string | null): ISCH_PrimitiveCircle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型             | 描述  |
+| ----- | -------------- | --- |
+| color | string \| null | 颜色  |
 
 
 
@@ -799,39 +395,9 @@ setState_FillColor(fillColor: string | null): ISCH_PrimitiveCircle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-填充颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述   |
+| --------- | -------------- | ---- |
+| fillColor | string \| null | 填充颜色 |
 
 
 
@@ -857,39 +423,9 @@ setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_PrimitiveCir
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillStyle
-
-
-</td><td>
-
-[ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null
-
-
-</td><td>
-
-填充样式
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                      | 描述   |
+| --------- | ----------------------------------------------------------------------- | ---- |
+| fillStyle | [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null | 填充样式 |
 
 
 
@@ -915,39 +451,9 @@ setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveCircle
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-线型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                    | 描述  |
+| -------- | --------------------------------------------------------------------- | --- |
+| lineType | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | 线型  |
 
 
 
@@ -973,39 +479,9 @@ setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveCircle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述  |
+| --------- | -------------- | --- |
+| lineWidth | number \| null | 线宽  |
 
 
 
@@ -1031,39 +507,9 @@ setState_Radius(radius: number): ISCH_PrimitiveCircle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-radius
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-半径
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述  |
+| ------ | ------ | --- |
+| radius | number | 半径  |
 
 
 

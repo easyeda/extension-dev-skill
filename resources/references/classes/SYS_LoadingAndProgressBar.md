@@ -5,84 +5,17 @@
 ## 签名
 
 ```typescript
-declare class SYS_LoadingAndProgressBar 
+declare class SYS_LoadingAndProgressBar
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[destroyLoading()](./SYS_LoadingAndProgressBar.md)
-
-
-</td><td>
-
-
-</td><td>
-
-销毁无进度加载覆盖
-
-
-</td></tr>
-<tr><td>
-
-[destroyProgressBar()](./SYS_LoadingAndProgressBar.md)
-
-
-</td><td>
-
-
-</td><td>
-
-销毁进度条
-
-
-</td></tr>
-<tr><td>
-
-[showLoading()](./SYS_LoadingAndProgressBar.md)
-
-
-</td><td>
-
-
-</td><td>
-
-显示无进度加载覆盖
-
-
-</td></tr>
-<tr><td>
-
-[showProgressBar(progress, title)](./SYS_LoadingAndProgressBar.md)
-
-
-</td><td>
-
-
-</td><td>
-
-显示进度条或设置进度条进度
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                | 修饰符 | 描述            |
+| ------------------------------------------------------------------ | --- | ------------- |
+| [destroyLoading()](./SYS_LoadingAndProgressBar.md)                 |     | 销毁无进度加载覆盖     |
+| [destroyProgressBar()](./SYS_LoadingAndProgressBar.md)             |     | 销毁进度条         |
+| [showLoading()](./SYS_LoadingAndProgressBar.md)                    |     | 显示无进度加载覆盖     |
+| [showProgressBar(progress, title)](./SYS_LoadingAndProgressBar.md) |     | 显示进度条或设置进度条进度 |
 
 ---
 
@@ -157,55 +90,10 @@ showProgressBar(progress?: number, title?: string): void;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-progress
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 进度值，取值范围 `0-100`
-
-
-</td></tr>
-<tr><td>
-
-title
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 进度条标题
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述                      |
+| -------- | ------ | ----------------------- |
+| progress | number | _（可选）_ 进度值，取值范围 `0-100` |
+| title    | string | _（可选）_ 进度条标题            |
 
 
 

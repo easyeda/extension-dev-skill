@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_HeaderMenu 
+declare class SYS_HeaderMenu
 ```
 
 ## 备注
@@ -13,93 +13,13 @@ declare class SYS_HeaderMenu
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[insertHeaderMenus(headerMenus)](./SYS_HeaderMenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-导入顶部菜单数据
-
-
-</td></tr>
-<tr><td>
-
-[insertSystemHeaderMenuItem(env, id, props)](./SYS_HeaderMenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 在指定位置插入系统顶部菜单项
-
-
-</td></tr>
-<tr><td>
-
-[removeHeaderMenus()](./SYS_HeaderMenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移除顶部菜单数据
-
-
-</td></tr>
-<tr><td>
-
-[removeSystemHeaderMenuItem(id, props)](./SYS_HeaderMenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 移除系统顶部菜单项
-
-
-</td></tr>
-<tr><td>
-
-[replaceHeaderMenus(headerMenus)](./SYS_HeaderMenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-替换顶部菜单数据
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                               | 修饰符 | 描述                          |
+| ----------------------------------------------------------------- | --- | --------------------------- |
+| [insertHeaderMenus(headerMenus)](./SYS_HeaderMenu.md)             |     | 导入顶部菜单数据                    |
+| [insertSystemHeaderMenuItem(env, id, props)](./SYS_HeaderMenu.md) |     | **_(BETA)_** 在指定位置插入系统顶部菜单项 |
+| [removeHeaderMenus()](./SYS_HeaderMenu.md)                        |     | 移除顶部菜单数据                    |
+| [removeSystemHeaderMenuItem(id, props)](./SYS_HeaderMenu.md)      |     | **_(BETA)_** 移除系统顶部菜单项      |
+| [replaceHeaderMenus(headerMenus)](./SYS_HeaderMenu.md)            |     | 替换顶部菜单数据                    |
 
 ---
 
@@ -119,39 +39,9 @@ insertHeaderMenus(headerMenus: ISYS_HeaderMenus): Promise<void>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-headerMenus
-
-
-</td><td>
-
-[ISYS\_HeaderMenus](../interfaces/ISYS_HeaderMenus.md)
-
-
-</td><td>
-
-顶部菜单数据
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                     | 描述     |
+| ----------- | ------------------------------------------------------ | ------ |
+| headerMenus | [ISYS\_HeaderMenus](../interfaces/ISYS_HeaderMenus.md) | 顶部菜单数据 |
 
 
 
@@ -183,71 +73,11 @@ insertSystemHeaderMenuItem(env: ESYS_HeaderMenuEnvironment, id: Array<string>, p
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-env
-
-
-</td><td>
-
-[ESYS\_HeaderMenuEnvironment](../enums/ESYS_HeaderMenuEnvironment.md)
-
-
-</td><td>
-
-环境
-
-
-</td></tr>
-<tr><td>
-
-id
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-菜单项 ID 树，将会按照数组顺序按层级匹配菜单项，并将数组最后一位作为插入的菜单项的 ID
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-{ title: string; registerFn?: string; menuItems?: Array&lt;[ISYS\_HeaderMenuSub1MenuItem](../interfaces/ISYS_HeaderMenuSub1MenuItem.md) \| [ISYS\_HeaderMenuSub2MenuItem](../interfaces/ISYS_HeaderMenuSub2MenuItem.md) \| null&gt;; insertDividerBefore?: boolean; insertDividerAfter?: boolean; insertBefore?: string; crossDividerWhenInsert?: boolean; }
-
-
-</td><td>
-
-其它参数
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                                                                                                                                                                                                                                                                                                           | 描述                                             |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| env   | [ESYS\_HeaderMenuEnvironment](../enums/ESYS_HeaderMenuEnvironment.md)                                                                                                                                                                                                                                                                                        | 环境                                             |
+| id    | Array&lt;string&gt;                                                                                                                                                                                                                                                                                                                                          | 菜单项 ID 树，将会按照数组顺序按层级匹配菜单项，并将数组最后一位作为插入的菜单项的 ID |
+| props | { title: string; registerFn?: string; menuItems?: Array&lt;[ISYS\_HeaderMenuSub1MenuItem](../interfaces/ISYS_HeaderMenuSub1MenuItem.md) \| [ISYS\_HeaderMenuSub2MenuItem](../interfaces/ISYS_HeaderMenuSub2MenuItem.md) \| null&gt;; insertDividerBefore?: boolean; insertDividerAfter?: boolean; insertBefore?: string; crossDividerWhenInsert?: boolean; } | 其它参数                                           |
 
 
 
@@ -263,7 +93,7 @@ Promise&lt;string \| undefined&gt;
 
 本接口需要在系统已有的系统一级菜单下新增子菜单，无法新增和修改一级菜单，`id` 数组请至少传递 `2` 个值
 
-本接口将会强制新建的系统顶部菜单的 ID 包含扩展 UUID，例如输入的 `id = 'example'`<!-- -->，将会被自动重写为 `e143d88179874e7f851cc890cd22fc71|example`<!-- -->，后续如需移除该菜单，请输入重写后的名称
+本接口将会强制新建的系统顶部菜单的 ID 包含扩展 UUID，例如输入的 `id = 'example'`，将会被自动重写为 `e143d88179874e7f851cc890cd22fc71|example`，后续如需移除该菜单，请输入重写后的名称
 
 本接口不能在 \*\*高级\*\* 菜单下新增任何子菜单
 
@@ -309,55 +139,10 @@ removeSystemHeaderMenuItem(id: Array<string>, props?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-菜单项 ID 树，将会按照数组顺序按层级匹配菜单项，并移除数组最后一位对应的菜单项
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-\{ removeTheBeforeDivider?: boolean; removeTheAfterDivider?: boolean; \}
-
-
-</td><td>
-
-_（可选）_ 其它参数，是否移除菜单项之前、之后的分隔线
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                       | 描述                                        |
+| ----- | ------------------------------------------------------------------------ | ----------------------------------------- |
+| id    | Array&lt;string&gt;                                                      | 菜单项 ID 树，将会按照数组顺序按层级匹配菜单项，并移除数组最后一位对应的菜单项 |
+| props | \{ removeTheBeforeDivider?: boolean; removeTheAfterDivider?: boolean; \} | _（可选）_ 其它参数，是否移除菜单项之前、之后的分隔线              |
 
 
 
@@ -395,39 +180,9 @@ replaceHeaderMenus(headerMenus: ISYS_HeaderMenus): Promise<void>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-headerMenus
-
-
-</td><td>
-
-[ISYS\_HeaderMenus](../interfaces/ISYS_HeaderMenus.md)
-
-
-</td><td>
-
-顶部菜单数据
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                     | 描述     |
+| ----------- | ------------------------------------------------------ | ------ |
+| headerMenus | [ISYS\_HeaderMenus](../interfaces/ISYS_HeaderMenus.md) | 顶部菜单数据 |
 
 
 

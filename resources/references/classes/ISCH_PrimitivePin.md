@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitivePin implements ISCH_Primitive 
+declare class ISCH_PrimitivePin implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -16,680 +16,52 @@ declare class ISCH_PrimitivePin implements ISCH_Primitive
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[async](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-异步
-
-
-</td></tr>
-<tr><td>
-
-[pinColor](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-引脚颜色
-
-
-</td></tr>
-<tr><td>
-
-[pinLength](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-引脚长度
-
-
-</td></tr>
-<tr><td>
-
-[pinName](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-引脚名称
-
-
-</td></tr>
-<tr><td>
-
-[pinNumber](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-引脚编号
-
-
-</td></tr>
-<tr><td>
-
-[pinShape](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-[ESCH\_PrimitivePinShape](../enums/ESCH_PrimitivePinShape.md)
-
-
-</td><td>
-
-引脚形状
-
-
-</td></tr>
-<tr><td>
-
-[pinType](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-[ESCH\_PrimitivePinType](../enums/ESCH_PrimitivePinType.md)
-
-
-</td><td>
-
-引脚类型
-
-
-</td></tr>
-<tr><td>
-
-[primitiveId?](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[primitiveType](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-`readonly`
-
-
-</td><td>
-
-[ESCH\_PrimitiveType](../enums/ESCH_PrimitiveType.md)
-
-
-</td><td>
-
-图元类型
-
-
-</td></tr>
-<tr><td>
-
-[rotation](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[x](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[y](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-`protected`
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                     | 修饰符                       | 类型                                                            | 描述           |
+| --------------------------------------- | ------------------------- | ------------------------------------------------------------- | ------------ |
+| [async](./ISCH_PrimitivePin.md)         | `protected`               | boolean                                                       | 异步           |
+| [pinColor](./ISCH_PrimitivePin.md)      | `protected`               | string \| null                                                | 引脚颜色         |
+| [pinLength](./ISCH_PrimitivePin.md)     | `protected`               | number                                                        | 引脚长度         |
+| [pinName](./ISCH_PrimitivePin.md)       | `protected`               | string                                                        | 引脚名称         |
+| [pinNumber](./ISCH_PrimitivePin.md)     | `protected`               | string                                                        | 引脚编号         |
+| [pinShape](./ISCH_PrimitivePin.md)      | `protected`               | [ESCH\_PrimitivePinShape](../enums/ESCH_PrimitivePinShape.md) | 引脚形状         |
+| [pinType](./ISCH_PrimitivePin.md)       | `protected`               | [ESCH\_PrimitivePinType](../enums/ESCH_PrimitivePinType.md)   | 引脚类型         |
+| [primitiveId?](./ISCH_PrimitivePin.md)  | `protected`               | string                                                        | _（可选）_ 图元 ID |
+| [primitiveType](./ISCH_PrimitivePin.md) | `protected` `readonly` | [ESCH\_PrimitiveType](../enums/ESCH_PrimitiveType.md)         | 图元类型         |
+| [rotation](./ISCH_PrimitivePin.md)      | `protected`               | number                                                        | 旋转角度         |
+| [x](./ISCH_PrimitivePin.md)             | `protected`               | number                                                        | 坐标 X         |
+| [y](./ISCH_PrimitivePin.md)             | `protected`               | number                                                        | 坐标 Y         |
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_OtherProperty()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：其它参数
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PinColor()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：引脚颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PinLength()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：引脚长度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PinName()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：引脚名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PinNumber()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：引脚编号
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PinShape()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：引脚形状
-
-
-</td></tr>
-<tr><td>
-
-[getState\_pinType()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：引脚类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Rotation()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_X()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Y()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_OtherProperty(otherProperty)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：其它参数
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PinColor(pinColor)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：引脚颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PinLength(pinLength)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：引脚长度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PinName(pinName)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：引脚名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PinNumber(pinNumber)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：引脚编号
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PinShape(pinShape)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：引脚形状
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PinType(pinType)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：引脚类型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Rotation(rotation)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_X(x)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Y(y)](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitivePin.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                              | 修饰符 | 描述                          |
+| ---------------------------------------------------------------- | --- | --------------------------- |
+| [done()](./ISCH_PrimitivePin.md)                                 |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_OtherProperty()](./ISCH_PrimitivePin.md)              |     | 获取属性状态：其它参数                 |
+| [getState\_PinColor()](./ISCH_PrimitivePin.md)                   |     | 获取属性状态：引脚颜色                 |
+| [getState\_PinLength()](./ISCH_PrimitivePin.md)                  |     | 获取属性状态：引脚长度                 |
+| [getState\_PinName()](./ISCH_PrimitivePin.md)                    |     | 获取属性状态：引脚名称                 |
+| [getState\_PinNumber()](./ISCH_PrimitivePin.md)                  |     | 获取属性状态：引脚编号                 |
+| [getState\_PinShape()](./ISCH_PrimitivePin.md)                   |     | 获取属性状态：引脚形状                 |
+| [getState\_pinType()](./ISCH_PrimitivePin.md)                    |     | 获取属性状态：引脚类型                 |
+| [getState\_PrimitiveId()](./ISCH_PrimitivePin.md)                |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveType()](./ISCH_PrimitivePin.md)              |     | 获取属性状态：图元类型                 |
+| [getState\_Rotation()](./ISCH_PrimitivePin.md)                   |     | 获取属性状态：旋转角度                 |
+| [getState\_X()](./ISCH_PrimitivePin.md)                          |     | 获取属性状态：坐标 X                 |
+| [getState\_Y()](./ISCH_PrimitivePin.md)                          |     | 获取属性状态：坐标 Y                 |
+| [isAsync()](./ISCH_PrimitivePin.md)                              |     | 查询图元是否为异步图元                 |
+| [reset()](./ISCH_PrimitivePin.md)                                |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_OtherProperty(otherProperty)](./ISCH_PrimitivePin.md) |     | **_(BETA)_** 设置属性状态：其它参数    |
+| [setState\_PinColor(pinColor)](./ISCH_PrimitivePin.md)           |     | **_(BETA)_** 设置属性状态：引脚颜色    |
+| [setState\_PinLength(pinLength)](./ISCH_PrimitivePin.md)         |     | **_(BETA)_** 设置属性状态：引脚长度    |
+| [setState\_PinName(pinName)](./ISCH_PrimitivePin.md)             |     | **_(BETA)_** 设置属性状态：引脚名称    |
+| [setState\_PinNumber(pinNumber)](./ISCH_PrimitivePin.md)         |     | **_(BETA)_** 设置属性状态：引脚编号    |
+| [setState\_PinShape(pinShape)](./ISCH_PrimitivePin.md)           |     | **_(BETA)_** 设置属性状态：引脚形状    |
+| [setState\_PinType(pinType)](./ISCH_PrimitivePin.md)             |     | **_(BETA)_** 设置属性状态：引脚类型    |
+| [setState\_Rotation(rotation)](./ISCH_PrimitivePin.md)           |     | **_(BETA)_** 设置属性状态：旋转角度    |
+| [setState\_X(x)](./ISCH_PrimitivePin.md)                         |     | **_(BETA)_** 设置属性状态：坐标 X    |
+| [setState\_Y(y)](./ISCH_PrimitivePin.md)                         |     | **_(BETA)_** 设置属性状态：坐标 Y    |
+| [toAsync()](./ISCH_PrimitivePin.md)                              |     | 将图元转换为异步图元                  |
+| [toSync()](./ISCH_PrimitivePin.md)                               |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -861,7 +233,7 @@ done(): Promise<ISCH_PrimitivePin>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitivePin](./ISCH_PrimitivePin.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitivePin](./ISCH_PrimitivePin.md)&gt;
 
 引脚图元对象
 
@@ -1131,7 +503,7 @@ reset(): Promise<ISCH_PrimitivePin>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitivePin](./ISCH_PrimitivePin.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitivePin](./ISCH_PrimitivePin.md)&gt;
 
 引脚图元对象
 
@@ -1153,39 +525,9 @@ setState_OtherProperty(otherProperty: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-otherProperty
-
-
-</td><td>
-
-\{ \[key: string\]: string \| number \| boolean; \}
-
-
-</td><td>
-
-其它参数
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述   |
+| ------------- | --------------------------------------------------- | ---- |
+| otherProperty | \{ \[key: string\]: string \| number \| boolean; \} | 其它参数 |
 
 
 
@@ -1211,39 +553,9 @@ setState_PinColor(pinColor: string | null): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pinColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-引脚颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型             | 描述   |
+| -------- | -------------- | ---- |
+| pinColor | string \| null | 引脚颜色 |
 
 
 
@@ -1269,39 +581,9 @@ setState_PinLength(pinLength: number): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pinLength
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-引脚长度
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述   |
+| --------- | ------ | ---- |
+| pinLength | number | 引脚长度 |
 
 
 
@@ -1327,39 +609,9 @@ setState_PinName(pinName: string): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pinName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-引脚名称
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述   |
+| ------- | ------ | ---- |
+| pinName | string | 引脚名称 |
 
 
 
@@ -1385,39 +637,9 @@ setState_PinNumber(pinNumber: string): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pinNumber
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-引脚编号
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述   |
+| --------- | ------ | ---- |
+| pinNumber | string | 引脚编号 |
 
 
 
@@ -1443,39 +665,9 @@ setState_PinShape(pinShape: ESCH_PrimitivePinShape): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pinShape
-
-
-</td><td>
-
-[ESCH\_PrimitivePinShape](../enums/ESCH_PrimitivePinShape.md)
-
-
-</td><td>
-
-引脚形状
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                            | 描述   |
+| -------- | ------------------------------------------------------------- | ---- |
+| pinShape | [ESCH\_PrimitivePinShape](../enums/ESCH_PrimitivePinShape.md) | 引脚形状 |
 
 
 
@@ -1501,39 +693,9 @@ setState_PinType(pinType: ESCH_PrimitivePinType): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pinType
-
-
-</td><td>
-
-[ESCH\_PrimitivePinType](../enums/ESCH_PrimitivePinType.md)
-
-
-</td><td>
-
-引脚类型
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型                                                          | 描述   |
+| ------- | ----------------------------------------------------------- | ---- |
+| pinType | [ESCH\_PrimitivePinType](../enums/ESCH_PrimitivePinType.md) | 引脚类型 |
 
 
 
@@ -1559,39 +721,9 @@ setState_Rotation(rotation: number): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| rotation | number | 旋转角度 |
 
 
 
@@ -1617,39 +749,9 @@ setState_X(x: number): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| x   | number | 坐标 X |
 
 
 
@@ -1675,39 +777,9 @@ setState_Y(y: number): ISCH_PrimitivePin;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| y   | number | 坐标 Y |
 
 
 

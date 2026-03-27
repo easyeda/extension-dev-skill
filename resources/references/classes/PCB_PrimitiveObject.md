@@ -5,7 +5,7 @@ PCB &amp; 封装 / 二进制内嵌对象图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitiveObject implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitiveObject implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
@@ -15,121 +15,15 @@ declare class PCB_PrimitiveObject implements IPCB_PrimitiveAPI
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(layer, topLeftX, topLeftY, binaryData, width, height, rotation, mirror, fileName, primitiveLock)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建二进制内嵌对象
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除二进制内嵌对象
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取二进制内嵌对象
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取二进制内嵌对象
-
-
-</td></tr>
-<tr><td>
-
-[getAll(layer, primitiveLock)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有二进制内嵌对象
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(layer, primitiveLock)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有二进制内嵌对象的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitiveObject.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改二进制内嵌对象
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                                 | 修饰符 | 描述                             |
+| ----------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------ |
+| [create(layer, topLeftX, topLeftY, binaryData, width, height, rotation, mirror, fileName, primitiveLock)](./PCB_PrimitiveObject.md) |     | **_(BETA)_** 创建二进制内嵌对象         |
+| [delete(primitiveIds)](./PCB_PrimitiveObject.md)                                                                                    |     | **_(BETA)_** 删除二进制内嵌对象         |
+| [get(primitiveIds)](./PCB_PrimitiveObject.md)                                                                                       |     | **_(BETA)_** 获取二进制内嵌对象         |
+| [get(primitiveIds)](./PCB_PrimitiveObject.md)                                                                                       |     | **_(BETA)_** 获取二进制内嵌对象         |
+| [getAll(layer, primitiveLock)](./PCB_PrimitiveObject.md)                                                                            |     | **_(BETA)_** 获取所有二进制内嵌对象       |
+| [getAllPrimitiveId(layer, primitiveLock)](./PCB_PrimitiveObject.md)                                                                 |     | **_(BETA)_** 获取所有二进制内嵌对象的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitiveObject.md)                                                                           |     | **_(BETA)_** 修改二进制内嵌对象         |
 
 ---
 
@@ -151,183 +45,18 @@ create(layer: TPCB_LayersOfObject, topLeftX: number, topLeftY: number, binaryDat
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-topLeftX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-左上点 X
-
-
-</td></tr>
-<tr><td>
-
-topLeftY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-左上点 Y
-
-
-</td></tr>
-<tr><td>
-
-binaryData
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-二进制数据
-
-
-</td></tr>
-<tr><td>
-
-width
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-宽
-
-
-</td></tr>
-<tr><td>
-
-height
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-高
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度
-
-
-</td></tr>
-<tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否水平镜像
-
-
-</td></tr>
-<tr><td>
-
-fileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件名
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                      | 描述            |
+| ------------- | ------------------------------------------------------- | ------------- |
+| layer         | [TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md) | 层             |
+| topLeftX      | number                                                  | 左上点 X         |
+| topLeftY      | number                                                  | 左上点 Y         |
+| binaryData    | string                                                  | 二进制数据         |
+| width         | number                                                  | 宽             |
+| height        | number                                                  | 高             |
+| rotation      | number                                                  | _（可选）_ 旋转角度   |
+| mirror        | boolean                                                 | _（可选）_ 是否水平镜像 |
+| fileName      | string                                                  | _（可选）_ 文件名    |
+| primitiveLock | boolean                                                 | _（可选）_ 是否锁定   |
 
 
 
@@ -353,39 +82,9 @@ delete(primitiveIds: string | IPCB_PrimitiveObject | Array<string> | Array<IPCB_
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)<!-- -->&gt;
-
-
-</td><td>
-
-二进制内嵌对象的图元 ID 或二进制内嵌对象图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                     | 描述                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- |
+| primitiveIds | string \| [IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)&gt; | 二进制内嵌对象的图元 ID 或二进制内嵌对象图元对象 |
 
 
 
@@ -411,39 +110,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitiveObject | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-二进制内嵌对象的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                        |
+| ------------ | ------ | ----------------------------------------- |
+| primitiveIds | string | 二进制内嵌对象的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -469,45 +138,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveObject>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-二进制内嵌对象的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                        |
+| ------------ | ------------------- | ----------------------------------------- |
+| primitiveIds | Array&lt;string&gt; | 二进制内嵌对象的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)&gt;&gt;
 
 二进制内嵌对象图元对象，空数组表示获取失败
 
@@ -531,61 +170,16 @@ getAll(layer?: TPCB_LayersOfObject, primitiveLock?: boolean): Promise<Array<IPCB
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                      | 描述          |
+| ------------- | ------------------------------------------------------- | ----------- |
+| layer         | [TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                                 | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)&gt;&gt;
 
 二进制内嵌对象图元对象数组
 
@@ -605,55 +199,10 @@ getAllPrimitiveId(layer?: TPCB_LayersOfObject, primitiveLock?: boolean): Promise
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                      | 描述          |
+| ------------- | ------------------------------------------------------- | ----------- |
+| layer         | [TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                                 | _（可选）_ 是否锁定 |
 
 
 
@@ -690,55 +239,10 @@ modify(primitiveId: string | IPCB_PrimitiveObject, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ layer?: [TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md)<!-- -->; topLeftX?: number; topLeftY?: number; binaryData?: string; width?: number; height?: number; rotation?: number; mirror?: boolean; fileName?: string; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                | 描述    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)                                                                                                                                                                                      | 图元 ID |
+| property    | { layer?: [TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md); topLeftX?: number; topLeftY?: number; binaryData?: string; width?: number; height?: number; rotation?: number; mirror?: boolean; fileName?: string; primitiveLock?: boolean; } | 修改参数  |
 
 
 

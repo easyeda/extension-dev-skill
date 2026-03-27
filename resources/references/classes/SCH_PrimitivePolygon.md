@@ -5,127 +5,21 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitivePolygon implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitivePolygon implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(line, color, fillColor, lineWidth, lineType)](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建多边形
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除多边形
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取多边形
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取多边形
-
-
-</td></tr>
-<tr><td>
-
-[getAll()](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有多边形
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId()](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有多边形的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改多边形
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                              | 修饰符 | 描述                         |
+| -------------------------------------------------------------------------------- | --- | -------------------------- |
+| [create(line, color, fillColor, lineWidth, lineType)](./SCH_PrimitivePolygon.md) |     | **_(BETA)_** 创建多边形         |
+| [delete(primitiveIds)](./SCH_PrimitivePolygon.md)                                |     | **_(BETA)_** 删除多边形         |
+| [get(primitiveIds)](./SCH_PrimitivePolygon.md)                                   |     | **_(BETA)_** 获取多边形         |
+| [get(primitiveIds)](./SCH_PrimitivePolygon.md)                                   |     | **_(BETA)_** 获取多边形         |
+| [getAll()](./SCH_PrimitivePolygon.md)                                            |     | **_(BETA)_** 获取所有多边形       |
+| [getAllPrimitiveId()](./SCH_PrimitivePolygon.md)                                 |     | **_(BETA)_** 获取所有多边形的图元 ID |
+| [modify(primitiveId, property)](./SCH_PrimitivePolygon.md)                       |     | **_(BETA)_** 修改多边形         |
 
 ---
 
@@ -147,103 +41,13 @@ create(line: Array<number>, color?: string | null, fillColor?: string | null, li
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-line
-
-
-</td><td>
-
-Array&lt;number&gt;
-
-
-</td><td>
-
-坐标组，连续的一组 `[x1, y1, x2, y2, x3, y3]` 所描述的线
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 颜色，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 填充颜色，`none` 表示无填充，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-_（可选）_ 线宽，范围 `1-10`<!-- -->，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-_（可选）_ 线型，`null` 表示默认
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                    | 描述                                         |
+| --------- | --------------------------------------------------------------------- | ------------------------------------------ |
+| line      | Array&lt;number&gt;                                                   | 坐标组，连续的一组 `[x1, y1, x2, y2, x3, y3]` 所描述的线 |
+| color     | string \| null                                                        | _（可选）_ 颜色，`null` 表示默认                      |
+| fillColor | string \| null                                                        | _（可选）_ 填充颜色，`none` 表示无填充，`null` 表示默认       |
+| lineWidth | number \| null                                                        | _（可选）_ 线宽，范围 `1-10`，`null` 表示默认            |
+| lineType  | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | _（可选）_ 线型，`null` 表示默认                      |
 
 
 
@@ -269,39 +73,9 @@ delete(primitiveIds: string | ISCH_PrimitivePolygon | Array<string> | Array<ISCH
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;
-
-
-</td><td>
-
-多边形的图元 ID 或多边形图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                         | 描述                 |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| primitiveIds | string \| [ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)&gt; | 多边形的图元 ID 或多边形图元对象 |
 
 
 
@@ -327,39 +101,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitivePolygon | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-多边形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                    |
+| ------------ | ------ | ------------------------------------- |
+| primitiveIds | string | 多边形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -385,45 +129,15 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitivePolygon>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-多边形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                    |
+| ------------ | ------------------- | ------------------------------------- |
+| primitiveIds | Array&lt;string&gt; | 多边形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)&gt;&gt;
 
 多边形图元对象，空数组表示获取失败
 
@@ -448,7 +162,7 @@ getAll(): Promise<Array<ISCH_PrimitivePolygon>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)&gt;&gt;
 
 多边形图元对象数组
 
@@ -495,55 +209,10 @@ modify(primitiveId: string | ISCH_PrimitivePolygon, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ line?: Array&lt;number&gt;; color?: string \| null; fillColor?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                | 描述    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)                                                                                                                                    | 图元 ID |
+| property    | { line?: Array&lt;number&gt;; color?: string \| null; fillColor?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; } | 修改参数  |
 
 
 

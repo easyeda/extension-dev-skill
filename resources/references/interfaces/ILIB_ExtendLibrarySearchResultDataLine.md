@@ -5,185 +5,21 @@
 ## 签名
 
 ```typescript
-interface ILIB_ExtendLibrarySearchResultDataLine 
+interface ILIB_ExtendLibrarySearchResultDataLine
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[classification?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ExtendLibraryClassificationIndex](./ILIB_ExtendLibraryClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[createTime?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[creator?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ExtendLibraryUserIndex](./ILIB_ExtendLibraryUserIndex.md)
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[description?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[modifier?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ExtendLibraryUserIndex](./ILIB_ExtendLibraryUserIndex.md)
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[owner?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ExtendLibraryUserIndex](./ILIB_ExtendLibraryUserIndex.md)
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[updateTime?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[version?](./ILIB_ExtendLibrarySearchResultDataLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                            | 修饰符 | 类型                                                                                                          | 描述           |
+| -------------------------------------------------------------- | --- | ----------------------------------------------------------------------------------------------------------- | ------------ |
+| [classification?](./ILIB_ExtendLibrarySearchResultDataLine.md) |     | [ILIB\_ExtendLibraryClassificationIndex](./ILIB_ExtendLibraryClassificationIndex.md) \| Array&lt;string&gt; | _(Optional)_ |
+| [createTime?](./ILIB_ExtendLibrarySearchResultDataLine.md)     |     | number                                                                                                      | _(Optional)_ |
+| [creator?](./ILIB_ExtendLibrarySearchResultDataLine.md)        |     | [ILIB\_ExtendLibraryUserIndex](./ILIB_ExtendLibraryUserIndex.md)                                            | _(Optional)_ |
+| [description?](./ILIB_ExtendLibrarySearchResultDataLine.md)    |     | string                                                                                                      | _(Optional)_ |
+| [modifier?](./ILIB_ExtendLibrarySearchResultDataLine.md)       |     | [ILIB\_ExtendLibraryUserIndex](./ILIB_ExtendLibraryUserIndex.md)                                            | _(Optional)_ |
+| [owner?](./ILIB_ExtendLibrarySearchResultDataLine.md)          |     | [ILIB\_ExtendLibraryUserIndex](./ILIB_ExtendLibraryUserIndex.md)                                            | _(Optional)_ |
+| [updateTime?](./ILIB_ExtendLibrarySearchResultDataLine.md)     |     | number                                                                                                      | _(Optional)_ |
+| [version?](./ILIB_ExtendLibrarySearchResultDataLine.md)        |     | string                                                                                                      | _(Optional)_ |
 
 ---
 

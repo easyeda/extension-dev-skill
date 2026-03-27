@@ -5,168 +5,20 @@
 ## 签名
 
 ```typescript
-interface IDMT_SchematicItem 
+interface IDMT_SchematicItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[cbbSymbol?](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_SymbolItem](./ILIB_SymbolItem.md)
-
-
-</td><td>
-
-_（可选）_ 复用模块原理图关联的模块符号
-
-
-</td></tr>
-<tr><td>
-
-[itemType](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.SCHEMATIC](../enums/EDMT_ItemType.md) \| [EDMT\_ItemType.CBB\_SCHEMATIC](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图名称
-
-
-</td></tr>
-<tr><td>
-
-[page](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;[IDMT\_SchematicPageItem](./IDMT_SchematicPageItem.md)<!-- -->&gt;
-
-
-</td><td>
-
-下属原理图图页
-
-
-</td></tr>
-<tr><td>
-
-[parentBoardUuid?](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 所属板子 UUID
-
-
-</td></tr>
-<tr><td>
-
-[parentProjectUuid](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属工程 UUID
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                          | 修饰符        | 类型                                                                                                                  | 描述                    |
+| -------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| [cbbSymbol?](./IDMT_SchematicItem.md)        |            | [ILIB\_SymbolItem](./ILIB_SymbolItem.md)                                                                            | _（可选）_ 复用模块原理图关联的模块符号 |
+| [itemType](./IDMT_SchematicItem.md)          | `readonly` | [EDMT\_ItemType.SCHEMATIC](../enums/EDMT_ItemType.md) \| [EDMT\_ItemType.CBB\_SCHEMATIC](../enums/EDMT_ItemType.md) | 项目类型                  |
+| [name](./IDMT_SchematicItem.md)              |            | string                                                                                                              | 原理图名称                 |
+| [page](./IDMT_SchematicItem.md)              |            | Array&lt;[IDMT\_SchematicPageItem](./IDMT_SchematicPageItem.md)&gt;                                                 | 下属原理图图页               |
+| [parentBoardUuid?](./IDMT_SchematicItem.md)  |            | string                                                                                                              | _（可选）_ 所属板子 UUID      |
+| [parentProjectUuid](./IDMT_SchematicItem.md) |            | string                                                                                                              | 所属工程 UUID             |
+| [uuid](./IDMT_SchematicItem.md)              |            | string                                                                                                              | 原理图 UUID              |
 
 ---
 

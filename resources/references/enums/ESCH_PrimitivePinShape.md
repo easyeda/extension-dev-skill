@@ -5,89 +5,14 @@
 ## 签名
 
 ```typescript
-declare enum ESCH_PrimitivePinShape 
+declare enum ESCH_PrimitivePinShape
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-CLOCK
-
-
-</td><td>
-
-`"Clock"`
-
-
-</td><td>
-
-时钟
-
-
-</td></tr>
-<tr><td>
-
-INVERTED
-
-
-</td><td>
-
-`"Inverted"`
-
-
-</td><td>
-
-反向
-
-
-</td></tr>
-<tr><td>
-
-INVERTED\_CLOCK
-
-
-</td><td>
-
-`"Inverted Clock"`
-
-
-</td><td>
-
-反向时钟
-
-
-</td></tr>
-<tr><td>
-
-NONE
-
-
-</td><td>
-
-`"None"`
-
-
-</td><td>
-
-无
-
-
-</td></tr>
-</tbody></table>
+| 成员              | 值                  | 描述   |
+| --------------- | ------------------ | ---- |
+| CLOCK           | `"Clock"`          | 时钟   |
+| INVERTED        | `"Inverted"`       | 反向   |
+| INVERTED\_CLOCK | `"Inverted Clock"` | 反向时钟 |
+| NONE            | `"None"`           | 无    |

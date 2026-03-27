@@ -5,127 +5,21 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitiveBus implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitiveBus implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(busName, line, color, lineWidth, lineType)](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建总线
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除总线
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取总线
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取总线
-
-
-</td></tr>
-<tr><td>
-
-[getAll()](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有总线
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId()](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有总线的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改总线
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                        | 修饰符 | 描述                        |
+| -------------------------------------------------------------------------- | --- | ------------------------- |
+| [create(busName, line, color, lineWidth, lineType)](./SCH_PrimitiveBus.md) |     | **_(BETA)_** 创建总线         |
+| [delete(primitiveIds)](./SCH_PrimitiveBus.md)                              |     | **_(BETA)_** 删除总线         |
+| [get(primitiveIds)](./SCH_PrimitiveBus.md)                                 |     | **_(BETA)_** 获取总线         |
+| [get(primitiveIds)](./SCH_PrimitiveBus.md)                                 |     | **_(BETA)_** 获取总线         |
+| [getAll()](./SCH_PrimitiveBus.md)                                          |     | **_(BETA)_** 获取所有总线       |
+| [getAllPrimitiveId()](./SCH_PrimitiveBus.md)                               |     | **_(BETA)_** 获取所有总线的图元 ID |
+| [modify(primitiveId, property)](./SCH_PrimitiveBus.md)                     |     | **_(BETA)_** 修改总线         |
 
 ---
 
@@ -147,103 +41,13 @@ create(busName: string, line: Array<number> | Array<Array<number>>, color?: stri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-busName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-总线名称
-
-
-</td></tr>
-<tr><td>
-
-line
-
-
-</td><td>
-
-Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;
-
-
-</td><td>
-
-多段线坐标组，每段都是连续的一组 `[x1, y1, x2, y2, x3, y3]` 所描述的线，如若多段线彼此无任何连接则创建将会失败
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 总线颜色，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-_（可选）_ 线宽，范围 `1-10`<!-- -->，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-_（可选）_ 线型，`null` 表示默认
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                    | 描述                                                                    |
+| --------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| busName   | string                                                                | 总线名称                                                                  |
+| line      | Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;               | 多段线坐标组，每段都是连续的一组 `[x1, y1, x2, y2, x3, y3]` 所描述的线，如若多段线彼此无任何连接则创建将会失败 |
+| color     | string \| null                                                        | _（可选）_ 总线颜色，`null` 表示默认                                               |
+| lineWidth | number \| null                                                        | _（可选）_ 线宽，范围 `1-10`，`null` 表示默认                                       |
+| lineType  | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | _（可选）_ 线型，`null` 表示默认                                                 |
 
 
 
@@ -269,39 +73,9 @@ delete(primitiveIds: string | ISCH_PrimitiveBus | Array<string> | Array<ISCH_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)<!-- -->&gt;
-
-
-</td><td>
-
-总线的图元 ID 或总线图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                         | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| [ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)&gt; | 总线的图元 ID 或总线图元对象 |
 
 
 
@@ -327,39 +101,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitiveBus | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-总线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 总线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -385,45 +129,15 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveBus>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-总线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 总线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)&gt;&gt;
 
 总线图元对象，空数组表示获取失败
 
@@ -448,7 +162,7 @@ getAll(): Promise<Array<ISCH_PrimitiveBus>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)&gt;&gt;
 
 总线图元对象数组
 
@@ -495,55 +209,10 @@ modify(primitiveId: string | ISCH_PrimitiveBus, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-总线的图元 ID 或总线图元对象
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ busName?: string; line?: Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;; color?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                          | 描述               |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| primitiveId | string \| [ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)                                                                                                                                                                      | 总线的图元 ID 或总线图元对象 |
+| property    | { busName?: string; line?: Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;; color?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; } | 修改参数             |
 
 
 

@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class DMT_Schematic 
+declare class DMT_Schematic
 ```
 
 ## 备注
@@ -14,261 +14,25 @@ declare class DMT_Schematic
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[copySchematic(schematicUuid, boardName)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 复制原理图
-
-
-</td></tr>
-<tr><td>
-
-[copySchematicPage(schematicPageUuid, schematicUuid)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 复制原理图图页
-
-
-</td></tr>
-<tr><td>
-
-[createSchematic(boardName)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建原理图
-
-
-</td></tr>
-<tr><td>
-
-[createSchematicPage(schematicUuid)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建原理图图页
-
-
-</td></tr>
-<tr><td>
-
-[deleteSchematic(schematicUuid)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除原理图
-
-
-</td></tr>
-<tr><td>
-
-[deleteSchematicPage(schematicPageUuid)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除原理图图页
-
-
-</td></tr>
-<tr><td>
-
-[getAllSchematicPagesInfo()](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取工程内所有原理图图页的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllSchematicsInfo()](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取工程内所有原理图的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentSchematicAllSchematicPagesInfo()](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前原理图内所有原理图图页的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentSchematicInfo()](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前原理图的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentSchematicPageInfo()](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前原理图图页的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getSchematicInfo(schematicUuid)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取原理图的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getSchematicPageInfo(schematicPageUuid)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取原理图图页的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[modifySchematicName(schematicUuid, schematicName)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改原理图名称
-
-
-</td></tr>
-<tr><td>
-
-[modifySchematicPageName(schematicPageUuid, schematicPageName)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改原理图图页名称
-
-
-</td></tr>
-<tr><td>
-
-[modifySchematicPageTitleBlock(showTitleBlock, titleBlockData)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改原理图图页明细表
-
-
-</td></tr>
-<tr><td>
-
-[reorderSchematicPages(schematicUuid, schematicPageItemsArray)](./DMT_Schematic.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 重新排序原理图图页
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                 | 修饰符 | 描述                                |
+| ----------------------------------------------------------------------------------- | --- | --------------------------------- |
+| [copySchematic(schematicUuid, boardName)](./DMT_Schematic.md)                       |     | **_(BETA)_** 复制原理图                |
+| [copySchematicPage(schematicPageUuid, schematicUuid)](./DMT_Schematic.md)           |     | **_(BETA)_** 复制原理图图页              |
+| [createSchematic(boardName)](./DMT_Schematic.md)                                    |     | **_(BETA)_** 创建原理图                |
+| [createSchematicPage(schematicUuid)](./DMT_Schematic.md)                            |     | **_(BETA)_** 创建原理图图页              |
+| [deleteSchematic(schematicUuid)](./DMT_Schematic.md)                                |     | **_(BETA)_** 删除原理图                |
+| [deleteSchematicPage(schematicPageUuid)](./DMT_Schematic.md)                        |     | **_(BETA)_** 删除原理图图页              |
+| [getAllSchematicPagesInfo()](./DMT_Schematic.md)                                    |     | **_(BETA)_** 获取工程内所有原理图图页的详细属性    |
+| [getAllSchematicsInfo()](./DMT_Schematic.md)                                        |     | **_(BETA)_** 获取工程内所有原理图的详细属性      |
+| [getCurrentSchematicAllSchematicPagesInfo()](./DMT_Schematic.md)                    |     | **_(BETA)_** 获取当前原理图内所有原理图图页的详细属性 |
+| [getCurrentSchematicInfo()](./DMT_Schematic.md)                                     |     | **_(BETA)_** 获取当前原理图的详细属性         |
+| [getCurrentSchematicPageInfo()](./DMT_Schematic.md)                                 |     | **_(BETA)_** 获取当前原理图图页的详细属性       |
+| [getSchematicInfo(schematicUuid)](./DMT_Schematic.md)                               |     | **_(BETA)_** 获取原理图的详细属性           |
+| [getSchematicPageInfo(schematicPageUuid)](./DMT_Schematic.md)                       |     | **_(BETA)_** 获取原理图图页的详细属性         |
+| [modifySchematicName(schematicUuid, schematicName)](./DMT_Schematic.md)             |     | **_(BETA)_** 修改原理图名称              |
+| [modifySchematicPageName(schematicPageUuid, schematicPageName)](./DMT_Schematic.md) |     | **_(BETA)_** 修改原理图图页名称            |
+| [modifySchematicPageTitleBlock(showTitleBlock, titleBlockData)](./DMT_Schematic.md) |     | **_(BETA)_** 修改原理图图页明细表           |
+| [reorderSchematicPages(schematicUuid, schematicPageItemsArray)](./DMT_Schematic.md) |     | **_(BETA)_** 重新排序原理图图页            |
 
 ---
 
@@ -290,55 +54,10 @@ copySchematic(schematicUuid: string, boardName?: string): Promise<string | undef
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-源原理图 UUID
-
-
-</td></tr>
-<tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 新原理图所属板子名称，如若不指定则为游离原理图
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                             |
+| ------------- | ------ | ------------------------------ |
+| schematicUuid | string | 源原理图 UUID                      |
+| boardName     | string | _（可选）_ 新原理图所属板子名称，如若不指定则为游离原理图 |
 
 
 
@@ -368,55 +87,10 @@ copySchematicPage(schematicPageUuid: string, schematicUuid?: string): Promise<st
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicPageUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-源原理图图页 UUID
-
-
-</td></tr>
-<tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 目标原理图 UUID，如若不指定则为当前原理图
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述                             |
+| ----------------- | ------ | ------------------------------ |
+| schematicPageUuid | string | 源原理图图页 UUID                    |
+| schematicUuid     | string | _（可选）_ 目标原理图 UUID，如若不指定则为当前原理图 |
 
 
 
@@ -442,39 +116,9 @@ createSchematic(boardName?: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 所属板子名称，如若不指定则为游离原理图
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述                         |
+| --------- | ------ | -------------------------- |
+| boardName | string | _（可选）_ 所属板子名称，如若不指定则为游离原理图 |
 
 
 
@@ -500,39 +144,9 @@ createSchematicPage(schematicUuid: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属原理图 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述         |
+| ------------- | ------ | ---------- |
+| schematicUuid | string | 所属原理图 UUID |
 
 
 
@@ -558,39 +172,9 @@ deleteSchematic(schematicUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述       |
+| ------------- | ------ | -------- |
+| schematicUuid | string | 原理图 UUID |
 
 
 
@@ -620,39 +204,9 @@ deleteSchematicPage(schematicPageUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicPageUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图图页 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述         |
+| ----------------- | ------ | ---------- |
+| schematicPageUuid | string | 原理图图页 UUID |
 
 
 
@@ -679,7 +233,7 @@ getAllSchematicPagesInfo(): Promise<Array<IDMT_SchematicPageItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)&gt;&gt;
 
 所有原理图图页的详细属性的数组
 
@@ -700,7 +254,7 @@ getAllSchematicsInfo(): Promise<Array<IDMT_SchematicItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_SchematicItem](../interfaces/IDMT_SchematicItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_SchematicItem](../interfaces/IDMT_SchematicItem.md)&gt;&gt;
 
 所有原理图的详细属性的数组
 
@@ -721,7 +275,7 @@ getCurrentSchematicAllSchematicPagesInfo(): Promise<Array<IDMT_SchematicPageItem
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)&gt;&gt;
 
 所有原理图图页的详细属性的数组
 
@@ -791,39 +345,9 @@ getSchematicInfo(schematicUuid: string): Promise<IDMT_SchematicItem | undefined>
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述       |
+| ------------- | ------ | -------- |
+| schematicUuid | string | 原理图 UUID |
 
 
 
@@ -849,39 +373,9 @@ getSchematicPageInfo(schematicPageUuid: string): Promise<IDMT_SchematicPageItem 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicPageUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图图页 UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述         |
+| ----------------- | ------ | ---------- |
+| schematicPageUuid | string | 原理图图页 UUID |
 
 
 
@@ -907,55 +401,10 @@ modifySchematicName(schematicUuid: string, schematicName: string): Promise<boole
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图 UUID
-
-
-</td></tr>
-<tr><td>
-
-schematicName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图名称
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述       |
+| ------------- | ------ | -------- |
+| schematicUuid | string | 原理图 UUID |
+| schematicName | string | 原理图名称    |
 
 
 
@@ -985,55 +434,10 @@ modifySchematicPageName(schematicPageUuid: string, schematicPageName: string): P
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicPageUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图图页 UUID
-
-
-</td></tr>
-<tr><td>
-
-schematicPageName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图图页名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述         |
+| ----------------- | ------ | ---------- |
+| schematicPageUuid | string | 原理图图页 UUID |
+| schematicPageName | string | 原理图图页名称    |
 
 
 
@@ -1065,55 +469,10 @@ modifySchematicPageTitleBlock(showTitleBlock?: boolean, titleBlockData?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-showTitleBlock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否显示明细表，不定义将保持当前状态
-
-
-</td></tr>
-<tr><td>
-
-titleBlockData
-
-
-</td><td>
-
-\{ \[key: string\]: \{ showTitle?: boolean; showValue?: boolean; value?: any; \}; \}
-
-
-</td><td>
-
-_（可选）_ 需要修改的明细项及其修改的值
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                   | 描述                        |
+| -------------- | ------------------------------------------------------------------------------------ | ------------------------- |
+| showTitleBlock | boolean                                                                              | _（可选）_ 是否显示明细表，不定义将保持当前状态 |
+| titleBlockData | \{ \[key: string\]: \{ showTitle?: boolean; showValue?: boolean; value?: any; \}; \} | _（可选）_ 需要修改的明细项及其修改的值     |
 
 
 
@@ -1121,11 +480,11 @@ _（可选）_ 需要修改的明细项及其修改的值
 
 Promise&lt;boolean&gt;
 
-修改操作是否成功，如若未传入 `showTitleBlock` 和 `titleBlockData` 将返回 `false`<!-- -->；请注意，如若存在无法识别的明细项但程序并未出错，将返回 `true` 的结果，因为无法识别的明细项被忽略
+修改操作是否成功，如若未传入 `showTitleBlock` 和 `titleBlockData` 将返回 `false`；请注意，如若存在无法识别的明细项但程序并未出错，将返回 `true` 的结果，因为无法识别的明细项被忽略
 
 ## 备注
 
-`titleBlockData` 仅需要传入任何需要修改的明细项作为 `key`<!-- -->，并传入其需要修改的值，任何无法识别的明细项将被忽略，任何未传入的项和值将保持默认状态
+`titleBlockData` 仅需要传入任何需要修改的明细项作为 `key`，并传入其需要修改的值，任何无法识别的明细项将被忽略，任何未传入的项和值将保持默认状态
 
 ### reorderschematicpages
 
@@ -1143,55 +502,10 @@ reorderSchematicPages(schematicUuid: string, schematicPageItemsArray: Array<IDMT
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-执行排序的图页所关联的原理图 UUID
-
-
-</td></tr>
-<tr><td>
-
-schematicPageItemsArray
-
-
-</td><td>
-
-Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)<!-- -->&gt;
-
-
-</td><td>
-
-所有原理图图页属性的数组
-
-
-</td></tr>
-</tbody></table>
+| 参数                      | 类型                                                                              | 描述                  |
+| ----------------------- | ------------------------------------------------------------------------------- | ------------------- |
+| schematicUuid           | string                                                                          | 执行排序的图页所关联的原理图 UUID |
+| schematicPageItemsArray | Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)&gt; | 所有原理图图页属性的数组        |
 
 
 

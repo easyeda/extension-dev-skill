@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_Drc 
+declare class SCH_Drc
 ```
 
 ## 备注
@@ -14,51 +14,10 @@ declare class SCH_Drc
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[check(strict, userInterface, includeVerboseError)](./SCH_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 检查 DRC
-
-
-</td></tr>
-<tr><td>
-
-[check(strict, userInterface, includeVerboseError)](./SCH_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 检查 DRC
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                               | 修饰符 | 描述                  |
+| ----------------------------------------------------------------- | --- | ------------------- |
+| [check(strict, userInterface, includeVerboseError)](./SCH_Drc.md) |     | **_(BETA)_** 检查 DRC |
+| [check(strict, userInterface, includeVerboseError)](./SCH_Drc.md) |     | **_(BETA)_** 检查 DRC |
 
 ---
 
@@ -80,71 +39,11 @@ check(strict: boolean, userInterface: boolean, includeVerboseError: false): Prom
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-strict
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否严格检查，当前原理图统一为严格检查模式
-
-
-</td></tr>
-<tr><td>
-
-userInterface
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否显示 UI（呼出底部 DRC 窗口）
-
-
-</td></tr>
-<tr><td>
-
-includeVerboseError
-
-
-</td><td>
-
-false
-
-
-</td><td>
-
-是否在返回值中包含详细错误信息，如若为 `true`<!-- -->，则返回值将始终为数组
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型      | 描述                                    |
+| ------------------- | ------- | ------------------------------------- |
+| strict              | boolean | 是否严格检查，当前原理图统一为严格检查模式                 |
+| userInterface       | boolean | 是否显示 UI（呼出底部 DRC 窗口）                  |
+| includeVerboseError | false   | 是否在返回值中包含详细错误信息，如若为 `true`，则返回值将始终为数组 |
 
 
 
@@ -170,71 +69,11 @@ check(strict: boolean, userInterface: boolean, includeVerboseError: true): Promi
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-strict
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否严格检查，当前原理图统一为严格检查模式
-
-
-</td></tr>
-<tr><td>
-
-userInterface
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否显示 UI（呼出底部 DRC 窗口）
-
-
-</td></tr>
-<tr><td>
-
-includeVerboseError
-
-
-</td><td>
-
-true
-
-
-</td><td>
-
-是否在返回值中包含详细错误信息，如若为 `true`<!-- -->，则返回值将始终为数组
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型      | 描述                                    |
+| ------------------- | ------- | ------------------------------------- |
+| strict              | boolean | 是否严格检查，当前原理图统一为严格检查模式                 |
+| userInterface       | boolean | 是否显示 UI（呼出底部 DRC 窗口）                  |
+| includeVerboseError | true    | 是否在返回值中包含详细错误信息，如若为 `true`，则返回值将始终为数组 |
 
 
 

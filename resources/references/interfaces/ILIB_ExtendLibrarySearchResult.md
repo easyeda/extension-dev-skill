@@ -5,128 +5,18 @@
 ## 签名
 
 ```typescript
-interface ILIB_ExtendLibrarySearchResult<T> 
+interface ILIB_ExtendLibrarySearchResult<T>
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[count](./ILIB_ExtendLibrarySearchResult.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-总条目数
-
-
-</td></tr>
-<tr><td>
-
-[lists](./ILIB_ExtendLibrarySearchResult.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;T&gt;
-
-
-</td><td>
-
-结果列表
-
-
-</td></tr>
-<tr><td>
-
-[page](./ILIB_ExtendLibrarySearchResult.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-当前页数
-
-
-</td></tr>
-<tr><td>
-
-[pageSize](./ILIB_ExtendLibrarySearchResult.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-单页条目数
-
-
-</td></tr>
-<tr><td>
-
-[totalPage](./ILIB_ExtendLibrarySearchResult.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-总页数
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                              | 修饰符 | 类型             | 描述    |
+| ------------------------------------------------ | --- | -------------- | ----- |
+| [count](./ILIB_ExtendLibrarySearchResult.md)     |     | number         | 总条目数  |
+| [lists](./ILIB_ExtendLibrarySearchResult.md)     |     | Array&lt;T&gt; | 结果列表  |
+| [page](./ILIB_ExtendLibrarySearchResult.md)      |     | number         | 当前页数  |
+| [pageSize](./ILIB_ExtendLibrarySearchResult.md)  |     | number         | 单页条目数 |
+| [totalPage](./ILIB_ExtendLibrarySearchResult.md) |     | number         | 总页数   |
 
 ---
 

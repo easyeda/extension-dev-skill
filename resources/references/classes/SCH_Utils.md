@@ -5,5 +5,5 @@
 ## 签名
 
 ```typescript
-declare class SCH_Utils 
+declare class SCH_Utils
 ```

@@ -5,187 +5,21 @@
 ## 签名
 
 ```typescript
-interface ILIB_DeviceItem 
+interface ILIB_DeviceItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[association](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_DeviceAssociationItem](./ILIB_DeviceAssociationItem.md)
-
-
-</td><td>
-
-关联
-
-
-</td></tr>
-<tr><td>
-
-[classification?](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 器件分类
-
-
-</td></tr>
-<tr><td>
-
-[description?](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-<tr><td>
-
-[libraryType](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[ELIB\_LibraryType.DEVICE](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-[libraryUuid](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[name](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件名称
-
-
-</td></tr>
-<tr><td>
-
-[property](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ILIB\_DeviceExtendPropertyItem](./ILIB_DeviceExtendPropertyItem.md)
-
-
-</td><td>
-
-扩展属性
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./ILIB_DeviceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                     | 修饰符        | 类型                                                                                | 描述          |
+| --------------------------------------- | ---------- | --------------------------------------------------------------------------------- | ----------- |
+| [association](./ILIB_DeviceItem.md)     |            | [ILIB\_DeviceAssociationItem](./ILIB_DeviceAssociationItem.md)                    | 关联          |
+| [classification?](./ILIB_DeviceItem.md) |            | [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 器件分类 |
+| [description?](./ILIB_DeviceItem.md)    |            | string                                                                            | _（可选）_ 描述   |
+| [libraryType](./ILIB_DeviceItem.md)     | `readonly` | [ELIB\_LibraryType.DEVICE](../enums/ELIB_LibraryType.md)                          | 库类型         |
+| [libraryUuid](./ILIB_DeviceItem.md)     |            | string                                                                            | 所属库 UUID    |
+| [name](./ILIB_DeviceItem.md)            |            | string                                                                            | 器件名称        |
+| [property](./ILIB_DeviceItem.md)        |            | [ILIB\_DeviceExtendPropertyItem](./ILIB_DeviceExtendPropertyItem.md)              | 扩展属性        |
+| [uuid](./ILIB_DeviceItem.md)            |            | string                                                                            | 器件 UUID     |
 
 ---
 

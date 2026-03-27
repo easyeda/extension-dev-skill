@@ -5,127 +5,21 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitiveRectangle implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitiveRectangle implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(topLeftX, topLeftY, width, height, cornerRadius, rotation, color, fillColor, lineWidth, lineType, fillStyle)](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建矩形
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-删除矩形
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取矩形
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取矩形
-
-
-</td></tr>
-<tr><td>
-
-[getAll()](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有矩形
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId()](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有矩形的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改矩形
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                                                | 修饰符 | 描述                |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ----------------- |
+| [create(topLeftX, topLeftY, width, height, cornerRadius, rotation, color, fillColor, lineWidth, lineType, fillStyle)](./SCH_PrimitiveRectangle.md) |     | 创建矩形              |
+| [delete(primitiveIds)](./SCH_PrimitiveRectangle.md)                                                                                                |     | 删除矩形              |
+| [get(primitiveIds)](./SCH_PrimitiveRectangle.md)                                                                                                   |     | **_(BETA)_** 获取矩形 |
+| [get(primitiveIds)](./SCH_PrimitiveRectangle.md)                                                                                                   |     | **_(BETA)_** 获取矩形 |
+| [getAll()](./SCH_PrimitiveRectangle.md)                                                                                                            |     | 获取所有矩形            |
+| [getAllPrimitiveId()](./SCH_PrimitiveRectangle.md)                                                                                                 |     | 获取所有矩形的图元 ID      |
+| [modify(primitiveId, property)](./SCH_PrimitiveRectangle.md)                                                                                       |     | **_(BETA)_** 修改矩形 |
 
 ---
 
@@ -145,199 +39,19 @@ create(topLeftX: number, topLeftY: number, width: number, height: number, corner
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topLeftX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-左上点 X
-
-
-</td></tr>
-<tr><td>
-
-topLeftY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-左上点 Y
-
-
-</td></tr>
-<tr><td>
-
-width
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-宽
-
-
-</td></tr>
-<tr><td>
-
-height
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-高
-
-
-</td></tr>
-<tr><td>
-
-cornerRadius
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 圆角半径
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度，绕左上点旋转，可选 `0` `90` `180` `270`
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 颜色，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 填充颜色，`none` 表示无填充，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-_（可选）_ 线宽，范围 `1-10`<!-- -->，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-_（可选）_ 线型，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-fillStyle
-
-
-</td><td>
-
-[ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null
-
-
-</td><td>
-
-_（可选）_ 填充样式，`null` 表示默认
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                      | 描述                                         |
+| ------------ | ----------------------------------------------------------------------- | ------------------------------------------ |
+| topLeftX     | number                                                                  | 左上点 X                                      |
+| topLeftY     | number                                                                  | 左上点 Y                                      |
+| width        | number                                                                  | 宽                                          |
+| height       | number                                                                  | 高                                          |
+| cornerRadius | number                                                                  | _（可选）_ 圆角半径                                |
+| rotation     | number                                                                  | _（可选）_ 旋转角度，绕左上点旋转，可选 `0` `90` `180` `270` |
+| color        | string \| null                                                          | _（可选）_ 颜色，`null` 表示默认                      |
+| fillColor    | string \| null                                                          | _（可选）_ 填充颜色，`none` 表示无填充，`null` 表示默认       |
+| lineWidth    | number \| null                                                          | _（可选）_ 线宽，范围 `1-10`，`null` 表示默认            |
+| lineType     | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null   | _（可选）_ 线型，`null` 表示默认                      |
+| fillStyle    | [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null | _（可选）_ 填充样式，`null` 表示默认                    |
 
 
 
@@ -361,39 +75,9 @@ delete(primitiveIds: string | ISCH_PrimitiveRectangle | Array<string> | Array<IS
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)<!-- -->&gt;
-
-
-</td><td>
-
-矩形的图元 ID 或矩形图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                                 | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| [ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)&gt; | 矩形的图元 ID 或矩形图元对象 |
 
 
 
@@ -419,39 +103,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitiveRectangle | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-矩形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 矩形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -477,45 +131,15 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveRectangle>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-矩形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 矩形的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)&gt;&gt;
 
 矩形图元对象，空数组表示获取失败
 
@@ -538,7 +162,7 @@ getAll(): Promise<Array<ISCH_PrimitiveRectangle>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)&gt;&gt;
 
 矩形图元对象数组
 
@@ -589,55 +213,10 @@ modify(primitiveId: string | ISCH_PrimitiveRectangle, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ topLeftX?: number; topLeftY?: number; width?: number; height?: number; cornerRadius?: number; rotation?: number; color?: string \| null; fillColor?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; fillStyle?: [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                                          | 描述    |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)                                                                                                                                                                                                                                                                                                          | 图元 ID |
+| property    | { topLeftX?: number; topLeftY?: number; width?: number; height?: number; cornerRadius?: number; rotation?: number; color?: string \| null; fillColor?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; fillStyle?: [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null; } | 修改参数  |
 
 
 

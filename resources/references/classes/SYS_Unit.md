@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_Unit 
+declare class SYS_Unit
 ```
 
 ## 备注
@@ -14,121 +14,15 @@ declare class SYS_Unit
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getSystemDataUnit()](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取 API 系统数据单位跨度
-
-
-</td></tr>
-<tr><td>
-
-[inchToMil(inch, numberOfDecimals)](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-单位转换：英寸到密尔
-
-
-</td></tr>
-<tr><td>
-
-[inchToMm(inch, numberOfDecimals)](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-单位转换：英寸到毫米
-
-
-</td></tr>
-<tr><td>
-
-[milToInch(mil, numberOfDecimals)](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-单位转换：密尔到英寸
-
-
-</td></tr>
-<tr><td>
-
-[milToMm(mil, numberOfDecimals)](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-单位转换：密尔到毫米
-
-
-</td></tr>
-<tr><td>
-
-[mmToInch(mm, numberOfDecimals)](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-单位转换：毫米到英寸
-
-
-</td></tr>
-<tr><td>
-
-[mmToMil(mm, numberOfDecimals)](./SYS_Unit.md)
-
-
-</td><td>
-
-
-</td><td>
-
-单位转换：毫米到密尔
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                | 修饰符 | 描述              |
+| -------------------------------------------------- | --- | --------------- |
+| [getSystemDataUnit()](./SYS_Unit.md)               |     | 获取 API 系统数据单位跨度 |
+| [inchToMil(inch, numberOfDecimals)](./SYS_Unit.md) |     | 单位转换：英寸到密尔      |
+| [inchToMm(inch, numberOfDecimals)](./SYS_Unit.md)  |     | 单位转换：英寸到毫米      |
+| [milToInch(mil, numberOfDecimals)](./SYS_Unit.md)  |     | 单位转换：密尔到英寸      |
+| [milToMm(mil, numberOfDecimals)](./SYS_Unit.md)    |     | 单位转换：密尔到毫米      |
+| [mmToInch(mm, numberOfDecimals)](./SYS_Unit.md)    |     | 单位转换：毫米到英寸      |
+| [mmToMil(mm, numberOfDecimals)](./SYS_Unit.md)     |     | 单位转换：毫米到密尔      |
 
 ---
 
@@ -155,7 +49,7 @@ getSystemDataUnit(): ESYS_Unit.MIL;
 
 ## 备注
 
-当前 API 系统数据单位跨度等效为 `mil`<!-- -->，不会发生改变
+当前 API 系统数据单位跨度等效为 `mil`，不会发生改变
 
 ### inchtomil
 
@@ -171,55 +65,10 @@ inchToMil(inch: number, numberOfDecimals?: number): number;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-inch
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-输入英寸数
-
-
-</td></tr>
-<tr><td>
-
-numberOfDecimals
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 保留小数位数，默认为 `4`
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述                    |
+| ---------------- | ------ | --------------------- |
+| inch             | number | 输入英寸数                 |
+| numberOfDecimals | number | _（可选）_ 保留小数位数，默认为 `4` |
 
 
 
@@ -243,55 +92,10 @@ inchToMm(inch: number, numberOfDecimals?: number): number;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-inch
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-输入英寸数
-
-
-</td></tr>
-<tr><td>
-
-numberOfDecimals
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 保留小数位数，默认为 `4`
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述                    |
+| ---------------- | ------ | --------------------- |
+| inch             | number | 输入英寸数                 |
+| numberOfDecimals | number | _（可选）_ 保留小数位数，默认为 `4` |
 
 
 
@@ -315,55 +119,10 @@ milToInch(mil: number, numberOfDecimals?: number): number;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-mil
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-输入密尔数
-
-
-</td></tr>
-<tr><td>
-
-numberOfDecimals
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 保留小数位数，默认为 `4`
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述                    |
+| ---------------- | ------ | --------------------- |
+| mil              | number | 输入密尔数                 |
+| numberOfDecimals | number | _（可选）_ 保留小数位数，默认为 `4` |
 
 
 
@@ -387,55 +146,10 @@ milToMm(mil: number, numberOfDecimals?: number): number;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-mil
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-输入密尔数
-
-
-</td></tr>
-<tr><td>
-
-numberOfDecimals
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 保留小数位数，默认为 `4`
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述                    |
+| ---------------- | ------ | --------------------- |
+| mil              | number | 输入密尔数                 |
+| numberOfDecimals | number | _（可选）_ 保留小数位数，默认为 `4` |
 
 
 
@@ -459,55 +173,10 @@ mmToInch(mm: number, numberOfDecimals?: number): number;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-mm
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-输入毫米数
-
-
-</td></tr>
-<tr><td>
-
-numberOfDecimals
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 保留小数位数，默认为 `4`
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述                    |
+| ---------------- | ------ | --------------------- |
+| mm               | number | 输入毫米数                 |
+| numberOfDecimals | number | _（可选）_ 保留小数位数，默认为 `4` |
 
 
 
@@ -531,55 +200,10 @@ mmToMil(mm: number, numberOfDecimals?: number): number;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-mm
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-输入毫米数
-
-
-</td></tr>
-<tr><td>
-
-numberOfDecimals
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 保留小数位数，默认为 `4`
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述                    |
+| ---------------- | ------ | --------------------- |
+| mm               | number | 输入毫米数                 |
+| numberOfDecimals | number | _（可选）_ 保留小数位数，默认为 `4` |
 
 
 

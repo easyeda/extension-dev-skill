@@ -5,73 +5,13 @@
 ## 签名
 
 ```typescript
-declare enum EPCB_PrimitivePadHeatWeldingConnectionMethod 
+declare enum EPCB_PrimitivePadHeatWeldingConnectionMethod
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-DIRECT\_CONNECTED
-
-
-</td><td>
-
-`"Direct-connected"`
-
-
-</td><td>
-
-直连
-
-
-</td></tr>
-<tr><td>
-
-DIVERGENT
-
-
-</td><td>
-
-`"Divergent"`
-
-
-</td><td>
-
-发散
-
-
-</td></tr>
-<tr><td>
-
-NON\_CONNECTED
-
-
-</td><td>
-
-`"Non-connected"`
-
-
-</td><td>
-
-无连接
-
-
-</td></tr>
-</tbody></table>
+| 成员                | 值                    | 描述  |
+| ----------------- | -------------------- | --- |
+| DIRECT\_CONNECTED | `"Direct-connected"` | 直连  |
+| DIVERGENT         | `"Divergent"`        | 发散  |
+| NON\_CONNECTED    | `"Non-connected"`    | 无连接 |

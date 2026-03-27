@@ -5,105 +5,15 @@
 ## 签名
 
 ```typescript
-declare enum EPCB_PrimitivePadShapeType 
+declare enum EPCB_PrimitivePadShapeType
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-ELLIPSE
-
-
-</td><td>
-
-`"ELLIPSE"`
-
-
-</td><td>
-
-圆形
-
-
-</td></tr>
-<tr><td>
-
-OBLONG
-
-
-</td><td>
-
-`"OVAL"`
-
-
-</td><td>
-
-长圆形
-
-
-</td></tr>
-<tr><td>
-
-POLYLINE\_COMPLEX\_POLYGON
-
-
-</td><td>
-
-`"POLYGON"`
-
-
-</td><td>
-
-折线复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-RECTANGLE
-
-
-</td><td>
-
-`"RECT"`
-
-
-</td><td>
-
-矩形
-
-
-</td></tr>
-<tr><td>
-
-REGULAR\_POLYGON
-
-
-</td><td>
-
-`"NGON"`
-
-
-</td><td>
-
-正多边形
-
-
-</td></tr>
-</tbody></table>
+| 成员                         | 值           | 描述      |
+| -------------------------- | ----------- | ------- |
+| ELLIPSE                    | `"ELLIPSE"` | 圆形      |
+| OBLONG                     | `"OVAL"`    | 长圆形     |
+| POLYLINE\_COMPLEX\_POLYGON | `"POLYGON"` | 折线复杂多边形 |
+| RECTANGLE                  | `"RECT"`    | 矩形      |
+| REGULAR\_POLYGON           | `"NGON"`    | 正多边形    |

@@ -5,60 +5,15 @@
 ## 签名
 
 ```typescript
-declare enum ESYS_ImportProjectBoardOutlineSource 
+declare enum ESYS_ImportProjectBoardOutlineSource
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-FROM\_KEEPOUT\_LAYER
-
-
-</td><td>
-
-`"keepout"`
-
-
-</td><td>
-
-从 Keepout 层
-
-
-</td></tr>
-<tr><td>
-
-FROM\_MECHANICAL\_LAYER\_1
-
-
-</td><td>
-
-`"mechanical"`
-
-
-</td><td>
-
-从机械层 1
-
-
-</td></tr>
-</tbody></table>
+| 成员                         | 值              | 描述          |
+| -------------------------- | -------------- | ----------- |
+| FROM\_KEEPOUT\_LAYER       | `"keepout"`    | 从 Keepout 层 |
+| FROM\_MECHANICAL\_LAYER\_1 | `"mechanical"` | 从机械层 1      |
 
 ## 备注
 

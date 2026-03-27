@@ -5,140 +5,21 @@
 ## 签名
 
 ```typescript
-declare class LIB_Classification 
+declare class LIB_Classification
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[createPrimary(libraryUuid, libraryType, primaryClassificationName)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建一级分类
-
-
-</td></tr>
-<tr><td>
-
-[createSecondary(libraryUuid, libraryType, primaryClassificationUuid, secondaryClassificationName)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建二级分类
-
-
-</td></tr>
-<tr><td>
-
-[deleteByIndex(classificationIndex)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除指定索引的分类
-
-
-</td></tr>
-<tr><td>
-
-[deleteByUuid(libraryUuid, classificationUuid)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除指定 UUID 的分类
-
-
-</td></tr>
-<tr><td>
-
-[getAllClassificationTree(libraryUuid, libraryType)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有分类信息组成的树
-
-
-</td></tr>
-<tr><td>
-
-[getIndexByName(libraryUuid, libraryType, primaryClassificationName, secondaryClassificationName)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取指定名称的分类的分类索引
-
-
-</td></tr>
-<tr><td>
-
-[getNameByIndex(classificationIndex)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取指定索引的分类的名称
-
-
-</td></tr>
-<tr><td>
-
-[getNameByUuid(libraryUuid, libraryType, primaryClassificationUuid, secondaryClassificationUuid)](./LIB_Classification.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取指定 UUID 的分类的名称
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                          | 修饰符 | 描述                            |
+| ---------------------------------------------------------------------------------------------------------------------------- | --- | ----------------------------- |
+| [createPrimary(libraryUuid, libraryType, primaryClassificationName)](./LIB_Classification.md)                                |     | **_(BETA)_** 创建一级分类           |
+| [createSecondary(libraryUuid, libraryType, primaryClassificationUuid, secondaryClassificationName)](./LIB_Classification.md) |     | **_(BETA)_** 创建二级分类           |
+| [deleteByIndex(classificationIndex)](./LIB_Classification.md)                                                                |     | **_(BETA)_** 删除指定索引的分类        |
+| [deleteByUuid(libraryUuid, classificationUuid)](./LIB_Classification.md)                                                     |     | **_(BETA)_** 删除指定 UUID 的分类    |
+| [getAllClassificationTree(libraryUuid, libraryType)](./LIB_Classification.md)                                                |     | **_(BETA)_** 获取所有分类信息组成的树     |
+| [getIndexByName(libraryUuid, libraryType, primaryClassificationName, secondaryClassificationName)](./LIB_Classification.md)  |     | **_(BETA)_** 获取指定名称的分类的分类索引   |
+| [getNameByIndex(classificationIndex)](./LIB_Classification.md)                                                               |     | **_(BETA)_** 获取指定索引的分类的名称     |
+| [getNameByUuid(libraryUuid, libraryType, primaryClassificationUuid, secondaryClassificationUuid)](./LIB_Classification.md)   |     | **_(BETA)_** 获取指定 UUID 的分类的名称 |
 
 ---
 
@@ -164,71 +45,11 @@ createPrimary(libraryUuid: string, libraryType: ELIB_LibraryType, primaryClassif
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryType
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-primaryClassificationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-一级分类名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                        | 类型                                                | 描述     |
+| ------------------------- | ------------------------------------------------- | ------ |
+| libraryUuid               | string                                            | 库 UUID |
+| libraryType               | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型    |
+| primaryClassificationName | string                                            | 一级分类名称 |
 
 
 
@@ -258,87 +79,12 @@ createSecondary(libraryUuid: string, libraryType: ELIB_LibraryType, primaryClass
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryType
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-primaryClassificationUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-一级分类 UUID
-
-
-</td></tr>
-<tr><td>
-
-secondaryClassificationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-二级分类名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                          | 类型                                                | 描述        |
+| --------------------------- | ------------------------------------------------- | --------- |
+| libraryUuid                 | string                                            | 库 UUID    |
+| libraryType                 | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型       |
+| primaryClassificationUuid   | string                                            | 一级分类 UUID |
+| secondaryClassificationName | string                                            | 二级分类名称    |
 
 
 
@@ -368,39 +114,9 @@ deleteByIndex(classificationIndex: ILIB_ClassificationIndex): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-classificationIndex
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md)
-
-
-</td><td>
-
-分类索引
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型                                                                     | 描述   |
+| ------------------- | ---------------------------------------------------------------------- | ---- |
+| classificationIndex | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) | 分类索引 |
 
 
 
@@ -426,53 +142,10 @@ deleteByUuid(libraryUuid: string, classificationUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-classificationUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数                 | 类型     | 描述     |
+| ------------------ | ------ | ------ |
+| libraryUuid        | string | 库 UUID |
+| classificationUuid | string |        |
 
 
 
@@ -505,55 +178,10 @@ getAllClassificationTree(libraryUuid: string, libraryType: ELIB_LibraryType): Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryType
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                | 描述     |
+| ----------- | ------------------------------------------------- | ------ |
+| libraryUuid | string                                            | 库 UUID |
+| libraryType | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型    |
 
 
 
@@ -583,87 +211,12 @@ getIndexByName(libraryUuid: string, libraryType: ELIB_LibraryType, primaryClassi
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryType
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-primaryClassificationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-一级分类名称
-
-
-</td></tr>
-<tr><td>
-
-secondaryClassificationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 二级分类名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                          | 类型                                                | 描述            |
+| --------------------------- | ------------------------------------------------- | ------------- |
+| libraryUuid                 | string                                            | 库 UUID        |
+| libraryType                 | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型           |
+| primaryClassificationName   | string                                            | 一级分类名称        |
+| secondaryClassificationName | string                                            | _（可选）_ 二级分类名称 |
 
 
 
@@ -700,39 +253,9 @@ getNameByIndex(classificationIndex: ILIB_ClassificationIndex): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-classificationIndex
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md)
-
-
-</td><td>
-
-分类索引
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型                                                                     | 描述   |
+| ------------------- | ---------------------------------------------------------------------- | ---- |
+| classificationIndex | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) | 分类索引 |
 
 
 
@@ -761,87 +284,12 @@ getNameByUuid(libraryUuid: string, libraryType: ELIB_LibraryType, primaryClassif
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryType
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-primaryClassificationUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-一级分类 UUID
-
-
-</td></tr>
-<tr><td>
-
-secondaryClassificationUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 二级分类 UUID，如若不指定，则只获取一级分类的信息
-
-
-</td></tr>
-</tbody></table>
+| 参数                          | 类型                                                | 描述                                 |
+| --------------------------- | ------------------------------------------------- | ---------------------------------- |
+| libraryUuid                 | string                                            | 库 UUID                             |
+| libraryType                 | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型                                |
+| primaryClassificationUuid   | string                                            | 一级分类 UUID                          |
+| secondaryClassificationUuid | string                                            | _（可选）_ 二级分类 UUID，如若不指定，则只获取一级分类的信息 |
 
 
 

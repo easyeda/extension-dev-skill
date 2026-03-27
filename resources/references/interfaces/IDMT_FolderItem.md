@@ -5,168 +5,20 @@
 ## 签名
 
 ```typescript
-interface IDMT_FolderItem 
+interface IDMT_FolderItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[childrenFoldersUuid?](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 子文件夹 UUID 列表
-
-
-</td></tr>
-<tr><td>
-
-[description?](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文件夹描述
-
-
-</td></tr>
-<tr><td>
-
-[itemType](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.FOLDER](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件夹名称
-
-
-</td></tr>
-<tr><td>
-
-[parentFolderUuid](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-父文件夹 UUID
-
-
-</td></tr>
-<tr><td>
-
-[teamUuid](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属团队 UUID
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_FolderItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文件夹 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                          | 修饰符        | 类型                                                 | 描述                  |
+| -------------------------------------------- | ---------- | -------------------------------------------------- | ------------------- |
+| [childrenFoldersUuid?](./IDMT_FolderItem.md) |            | Array&lt;string&gt;                                | _（可选）_ 子文件夹 UUID 列表 |
+| [description?](./IDMT_FolderItem.md)         |            | string                                             | _（可选）_ 文件夹描述        |
+| [itemType](./IDMT_FolderItem.md)             | `readonly` | [EDMT\_ItemType.FOLDER](../enums/EDMT_ItemType.md) | 项目类型                |
+| [name](./IDMT_FolderItem.md)                 |            | string                                             | 文件夹名称               |
+| [parentFolderUuid](./IDMT_FolderItem.md)     |            | string                                             | 父文件夹 UUID           |
+| [teamUuid](./IDMT_FolderItem.md)             |            | string                                             | 所属团队 UUID           |
+| [uuid](./IDMT_FolderItem.md)                 |            | string                                             | 文件夹 UUID            |
 
 ---
 

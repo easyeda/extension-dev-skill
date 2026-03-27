@@ -5,169 +5,19 @@
 ## 签名
 
 ```typescript
-declare enum ESCH_PrimitiveTextAlignMode 
+declare enum ESCH_PrimitiveTextAlignMode
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-CENTER
-
-
-</td><td>
-
-`5`
-
-
-</td><td>
-
-中心
-
-
-</td></tr>
-<tr><td>
-
-CENTER\_BOTTOM
-
-
-</td><td>
-
-`6`
-
-
-</td><td>
-
-中下
-
-
-</td></tr>
-<tr><td>
-
-CENTER\_TOP
-
-
-</td><td>
-
-`4`
-
-
-</td><td>
-
-中上
-
-
-</td></tr>
-<tr><td>
-
-LEFT\_BOTTOM
-
-
-</td><td>
-
-`3`
-
-
-</td><td>
-
-左下
-
-
-</td></tr>
-<tr><td>
-
-LEFT\_MIDDLE
-
-
-</td><td>
-
-`2`
-
-
-</td><td>
-
-左中
-
-
-</td></tr>
-<tr><td>
-
-LEFT\_TOP
-
-
-</td><td>
-
-`1`
-
-
-</td><td>
-
-左上
-
-
-</td></tr>
-<tr><td>
-
-RIGHT\_BOTTOM
-
-
-</td><td>
-
-`9`
-
-
-</td><td>
-
-右下
-
-
-</td></tr>
-<tr><td>
-
-RIGHT\_MIDDLE
-
-
-</td><td>
-
-`8`
-
-
-</td><td>
-
-右中
-
-
-</td></tr>
-<tr><td>
-
-RIGHT\_TOP
-
-
-</td><td>
-
-`7`
-
-
-</td><td>
-
-右上
-
-
-</td></tr>
-</tbody></table>
+| 成员             | 值   | 描述  |
+| -------------- | --- | --- |
+| CENTER         | `5` | 中心  |
+| CENTER\_BOTTOM | `6` | 中下  |
+| CENTER\_TOP    | `4` | 中上  |
+| LEFT\_BOTTOM   | `3` | 左下  |
+| LEFT\_MIDDLE   | `2` | 左中  |
+| LEFT\_TOP      | `1` | 左上  |
+| RIGHT\_BOTTOM  | `9` | 右下  |
+| RIGHT\_MIDDLE  | `8` | 右中  |
+| RIGHT\_TOP     | `7` | 右上  |

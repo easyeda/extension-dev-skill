@@ -5,109 +5,17 @@
 ## 签名
 
 ```typescript
-interface IPCB_PrimitivePouredPourFill 
+interface IPCB_PrimitivePouredPourFill
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[fill](./IPCB_PrimitivePouredPourFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否填充
-
-
-</td></tr>
-<tr><td>
-
-[id](./IPCB_PrimitivePouredPourFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-ID
-
-
-</td></tr>
-<tr><td>
-
-[lineWidth](./IPCB_PrimitivePouredPourFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-<tr><td>
-
-[path](./IPCB_PrimitivePouredPourFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[IPCB\_ComplexPolygon](../classes/IPCB_ComplexPolygon.md)
-
-
-</td><td>
-
-复杂多边形
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                            | 修饰符 | 类型                                                        | 描述    |
+| ---------------------------------------------- | --- | --------------------------------------------------------- | ----- |
+| [fill](./IPCB_PrimitivePouredPourFill.md)      |     | boolean                                                   | 是否填充  |
+| [id](./IPCB_PrimitivePouredPourFill.md)        |     | string                                                    | ID    |
+| [lineWidth](./IPCB_PrimitivePouredPourFill.md) |     | number                                                    | 线宽    |
+| [path](./IPCB_PrimitivePouredPourFill.md)      |     | [IPCB\_ComplexPolygon](../classes/IPCB_ComplexPolygon.md) | 复杂多边形 |
 
 ---
 

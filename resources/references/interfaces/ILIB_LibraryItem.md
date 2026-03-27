@@ -5,90 +5,16 @@
 ## 签名
 
 ```typescript
-interface ILIB_LibraryItem 
+interface ILIB_LibraryItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[libraryType](./ILIB_LibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-[libraryUuid?](./ILIB_LibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 所属库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./ILIB_LibraryItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                   | 修饰符 | 类型                                                | 描述              |
+| ------------------------------------- | --- | ------------------------------------------------- | --------------- |
+| [libraryType](./ILIB_LibraryItem.md)  |     | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型             |
+| [libraryUuid?](./ILIB_LibraryItem.md) |     | string                                            | _（可选）_ 所属库 UUID |
+| [uuid](./ILIB_LibraryItem.md)         |     | string                                            | UUID            |
 
 ---
 

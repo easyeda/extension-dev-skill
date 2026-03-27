@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_I18n 
+declare class SYS_I18n
 ```
 
 ## 备注
@@ -15,163 +15,18 @@ declare class SYS_I18n
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addLanguageChangedEventListener(id, callFn, onlyOnce)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-新增语言切换事件监听
-
-
-</td></tr>
-<tr><td>
-
-[getAllSupportedLanguages()](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询所有支持的语言
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentLanguage()](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前语言环境
-
-
-</td></tr>
-<tr><td>
-
-[importMultilingual(language, source)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-导入多语言
-
-
-</td></tr>
-<tr><td>
-
-[importMultilingualLanguage(namespace, language, source)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-导入多语言：指定命名空间和语言
-
-
-</td></tr>
-<tr><td>
-
-[importMultilingualNamespace(namespace, source)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-导入多语言：指定命名空间
-
-
-</td></tr>
-<tr><td>
-
-[isEventListenerAlreadyExist(id)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询事件监听是否存在
-
-
-</td></tr>
-<tr><td>
-
-[isLanguageSupported(language)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-检查语言是否受支持
-
-
-</td></tr>
-<tr><td>
-
-[removeEventListener(id)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移除事件监听
-
-
-</td></tr>
-<tr><td>
-
-[text(tag, namespace, language, args)](./SYS_I18n.md)
-
-
-</td><td>
-
-
-</td><td>
-
-输出语言文本
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                      | 修饰符 | 描述              |
+| ------------------------------------------------------------------------ | --- | --------------- |
+| [addLanguageChangedEventListener(id, callFn, onlyOnce)](./SYS_I18n.md)   |     | 新增语言切换事件监听      |
+| [getAllSupportedLanguages()](./SYS_I18n.md)                              |     | 查询所有支持的语言       |
+| [getCurrentLanguage()](./SYS_I18n.md)                                    |     | 获取当前语言环境        |
+| [importMultilingual(language, source)](./SYS_I18n.md)                    |     | 导入多语言           |
+| [importMultilingualLanguage(namespace, language, source)](./SYS_I18n.md) |     | 导入多语言：指定命名空间和语言 |
+| [importMultilingualNamespace(namespace, source)](./SYS_I18n.md)          |     | 导入多语言：指定命名空间    |
+| [isEventListenerAlreadyExist(id)](./SYS_I18n.md)                         |     | 查询事件监听是否存在      |
+| [isLanguageSupported(language)](./SYS_I18n.md)                           |     | 检查语言是否受支持       |
+| [removeEventListener(id)](./SYS_I18n.md)                                 |     | 移除事件监听          |
+| [text(tag, namespace, language, args)](./SYS_I18n.md)                    |     | 输出语言文本          |
 
 ---
 
@@ -191,69 +46,11 @@ addLanguageChangedEventListener(id: string, callFn: (newLanguage: string, lastLa
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(newLanguage: string, lastLanguage: string) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-onlyOnce
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                            | 描述               |
+| -------- | ----------------------------------------------------------------------------- | ---------------- |
+| id       | string                                                                        | 事件 ID，用以防止重复注册事件 |
+| callFn   | (newLanguage: string, lastLanguage: string) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
+| onlyOnce | boolean                                                                       |                  |
 
 
 
@@ -317,55 +114,10 @@ importMultilingual(language: string, source: ISYS_LanguageKeyValuePairs): boolea
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-language
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-语言
-
-
-</td></tr>
-<tr><td>
-
-source
-
-
-</td><td>
-
-[ISYS\_LanguageKeyValuePairs](../interfaces/ISYS_LanguageKeyValuePairs.md)
-
-
-</td><td>
-
-欲导入的多语言数据对象
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                         | 描述          |
+| -------- | -------------------------------------------------------------------------- | ----------- |
+| language | string                                                                     | 语言          |
+| source   | [ISYS\_LanguageKeyValuePairs](../interfaces/ISYS_LanguageKeyValuePairs.md) | 欲导入的多语言数据对象 |
 
 
 
@@ -393,71 +145,11 @@ importMultilingualLanguage(namespace: string, language: string, source: ISYS_Lan
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-namespace
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-命名空间
-
-
-</td></tr>
-<tr><td>
-
-language
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-语言
-
-
-</td></tr>
-<tr><td>
-
-source
-
-
-</td><td>
-
-[ISYS\_LanguageKeyValuePairs](../interfaces/ISYS_LanguageKeyValuePairs.md)
-
-
-</td><td>
-
-欲导入的多语言数据对象
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                         | 描述          |
+| --------- | -------------------------------------------------------------------------- | ----------- |
+| namespace | string                                                                     | 命名空间        |
+| language  | string                                                                     | 语言          |
+| source    | [ISYS\_LanguageKeyValuePairs](../interfaces/ISYS_LanguageKeyValuePairs.md) | 欲导入的多语言数据对象 |
 
 
 
@@ -481,55 +173,10 @@ importMultilingualNamespace(namespace: string, source: ISYS_MultilingualLanguage
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-namespace
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-命名空间
-
-
-</td></tr>
-<tr><td>
-
-source
-
-
-</td><td>
-
-[ISYS\_MultilingualLanguagesData](../interfaces/ISYS_MultilingualLanguagesData.md)
-
-
-</td><td>
-
-欲导入的多语言数据对象
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                 | 描述          |
+| --------- | ---------------------------------------------------------------------------------- | ----------- |
+| namespace | string                                                                             | 命名空间        |
+| source    | [ISYS\_MultilingualLanguagesData](../interfaces/ISYS_MultilingualLanguagesData.md) | 欲导入的多语言数据对象 |
 
 
 
@@ -553,39 +200,9 @@ isEventListenerAlreadyExist(id: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 事件 ID |
 
 
 
@@ -609,39 +226,9 @@ isLanguageSupported(language: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-language
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-语言
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述  |
+| -------- | ------ | --- |
+| language | string | 语言  |
 
 
 
@@ -665,39 +252,9 @@ removeEventListener(id: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 事件 ID |
 
 
 
@@ -721,87 +278,12 @@ text(tag: string, namespace?: string, language?: string, ...args: Array<any>): s
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-tag
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文本标签，对应多语言文件键值对中的键
-
-
-</td></tr>
-<tr><td>
-
-namespace
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文本命名空间，在扩展运行环境内默认为扩展的 UUID，否则为系统默认命名空间
-
-
-</td></tr>
-<tr><td>
-
-language
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 语言，`undefined` 为 EDA 当前的显示语言
-
-
-</td></tr>
-<tr><td>
-
-args
-
-
-</td><td>
-
-Array&lt;any&gt;
-
-
-</td><td>
-
-语言文本中替换占位符的参数
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型               | 描述                                            |
+| --------- | ---------------- | --------------------------------------------- |
+| tag       | string           | 文本标签，对应多语言文件键值对中的键                            |
+| namespace | string           | _（可选）_ 文本命名空间，在扩展运行环境内默认为扩展的 UUID，否则为系统默认命名空间 |
+| language  | string           | _（可选）_ 语言，`undefined` 为 EDA 当前的显示语言           |
+| args      | Array&lt;any&gt; | 语言文本中替换占位符的参数                                 |
 
 
 

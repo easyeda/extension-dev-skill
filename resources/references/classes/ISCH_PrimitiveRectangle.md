@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitiveRectangle implements ISCH_Primitive 
+declare class ISCH_PrimitiveRectangle implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -14,429 +14,37 @@ declare class ISCH_PrimitiveRectangle implements ISCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Color()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：边框颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_CornerRadius()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：圆角半径
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillColor()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillStyle()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充样式
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Height()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：高
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineType()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Rotation()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_TopLeftX()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：左上点 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_TopLeftY()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：左上点 Y
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Width()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：宽
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Color(color)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：边框颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_CornerRadius(cornerRadius)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：圆角半径
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillColor(fillColor)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillStyle(fillStyle)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充样式
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Height(height)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：高
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineType(lineType)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Rotation(rotation)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_TopLeftX(topLeftX)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：左上点 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_TopLeftY(topLeftY)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：左上点 Y
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Width(width)](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：宽
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitiveRectangle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                  | 修饰符 | 描述                          |
+| -------------------------------------------------------------------- | --- | --------------------------- |
+| [done()](./ISCH_PrimitiveRectangle.md)                               |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_Color()](./ISCH_PrimitiveRectangle.md)                    |     | 获取属性状态：边框颜色                 |
+| [getState\_CornerRadius()](./ISCH_PrimitiveRectangle.md)             |     | 获取属性状态：圆角半径                 |
+| [getState\_FillColor()](./ISCH_PrimitiveRectangle.md)                |     | 获取属性状态：填充颜色                 |
+| [getState\_FillStyle()](./ISCH_PrimitiveRectangle.md)                |     | 获取属性状态：填充样式                 |
+| [getState\_Height()](./ISCH_PrimitiveRectangle.md)                   |     | 获取属性状态：高                    |
+| [getState\_LineType()](./ISCH_PrimitiveRectangle.md)                 |     | 获取属性状态：线型                   |
+| [getState\_LineWidth()](./ISCH_PrimitiveRectangle.md)                |     | 获取属性状态：线宽                   |
+| [getState\_PrimitiveId()](./ISCH_PrimitiveRectangle.md)              |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveType()](./ISCH_PrimitiveRectangle.md)            |     | 获取属性状态：图元类型                 |
+| [getState\_Rotation()](./ISCH_PrimitiveRectangle.md)                 |     | 获取属性状态：旋转角度                 |
+| [getState\_TopLeftX()](./ISCH_PrimitiveRectangle.md)                 |     | 获取属性状态：左上点 X                |
+| [getState\_TopLeftY()](./ISCH_PrimitiveRectangle.md)                 |     | 获取属性状态：左上点 Y                |
+| [getState\_Width()](./ISCH_PrimitiveRectangle.md)                    |     | 获取属性状态：宽                    |
+| [isAsync()](./ISCH_PrimitiveRectangle.md)                            |     | 查询图元是否为异步图元                 |
+| [reset()](./ISCH_PrimitiveRectangle.md)                              |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_Color(color)](./ISCH_PrimitiveRectangle.md)               |     | **_(BETA)_** 设置属性状态：边框颜色    |
+| [setState\_CornerRadius(cornerRadius)](./ISCH_PrimitiveRectangle.md) |     | **_(BETA)_** 设置属性状态：圆角半径    |
+| [setState\_FillColor(fillColor)](./ISCH_PrimitiveRectangle.md)       |     | **_(BETA)_** 设置属性状态：填充颜色    |
+| [setState\_FillStyle(fillStyle)](./ISCH_PrimitiveRectangle.md)       |     | **_(BETA)_** 设置属性状态：填充样式    |
+| [setState\_Height(height)](./ISCH_PrimitiveRectangle.md)             |     | **_(BETA)_** 设置属性状态：高       |
+| [setState\_LineType(lineType)](./ISCH_PrimitiveRectangle.md)         |     | **_(BETA)_** 设置属性状态：线型      |
+| [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveRectangle.md)       |     | **_(BETA)_** 设置属性状态：线宽      |
+| [setState\_Rotation(rotation)](./ISCH_PrimitiveRectangle.md)         |     | **_(BETA)_** 设置属性状态：旋转角度    |
+| [setState\_TopLeftX(topLeftX)](./ISCH_PrimitiveRectangle.md)         |     | **_(BETA)_** 设置属性状态：左上点 X   |
+| [setState\_TopLeftY(topLeftY)](./ISCH_PrimitiveRectangle.md)         |     | **_(BETA)_** 设置属性状态：左上点 Y   |
+| [setState\_Width(width)](./ISCH_PrimitiveRectangle.md)               |     | **_(BETA)_** 设置属性状态：宽       |
+| [toAsync()](./ISCH_PrimitiveRectangle.md)                            |     | 将图元转换为异步图元                  |
+| [toSync()](./ISCH_PrimitiveRectangle.md)                             |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -746,7 +354,7 @@ reset(): Promise<ISCH_PrimitiveRectangle>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)&gt;
 
 矩形图元对象
 
@@ -766,39 +374,9 @@ setState_Color(color: string | null): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-边框颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型             | 描述   |
+| ----- | -------------- | ---- |
+| color | string \| null | 边框颜色 |
 
 
 
@@ -824,39 +402,9 @@ setState_CornerRadius(cornerRadius: number): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-cornerRadius
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-圆角半径
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述   |
+| ------------ | ------ | ---- |
+| cornerRadius | number | 圆角半径 |
 
 
 
@@ -882,39 +430,9 @@ setState_FillColor(fillColor: string | null): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-填充颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述   |
+| --------- | -------------- | ---- |
+| fillColor | string \| null | 填充颜色 |
 
 
 
@@ -940,39 +458,9 @@ setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_PrimitiveRec
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillStyle
-
-
-</td><td>
-
-[ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null
-
-
-</td><td>
-
-填充样式
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                      | 描述   |
+| --------- | ----------------------------------------------------------------------- | ---- |
+| fillStyle | [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null | 填充样式 |
 
 
 
@@ -998,39 +486,9 @@ setState_Height(height: number): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-height
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-高
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述  |
+| ------ | ------ | --- |
+| height | number | 高   |
 
 
 
@@ -1056,39 +514,9 @@ setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveRectan
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-线型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                    | 描述  |
+| -------- | --------------------------------------------------------------------- | --- |
+| lineType | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | 线型  |
 
 
 
@@ -1114,39 +542,9 @@ setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述  |
+| --------- | -------------- | --- |
+| lineWidth | number \| null | 线宽  |
 
 
 
@@ -1172,39 +570,9 @@ setState_Rotation(rotation: number): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| rotation | number | 旋转角度 |
 
 
 
@@ -1230,39 +598,9 @@ setState_TopLeftX(topLeftX: number): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topLeftX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-左上点 X
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述    |
+| -------- | ------ | ----- |
+| topLeftX | number | 左上点 X |
 
 
 
@@ -1288,39 +626,9 @@ setState_TopLeftY(topLeftY: number): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-topLeftY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-左上点 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述    |
+| -------- | ------ | ----- |
+| topLeftY | number | 左上点 Y |
 
 
 
@@ -1346,39 +654,9 @@ setState_Width(width: number): ISCH_PrimitiveRectangle;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-width
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-宽
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述  |
+| ----- | ------ | --- |
+| width | number | 宽   |
 
 
 

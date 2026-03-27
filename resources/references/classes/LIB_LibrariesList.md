@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class LIB_LibrariesList 
+declare class LIB_LibrariesList
 ```
 
 ## 备注
@@ -15,93 +15,13 @@ declare class LIB_LibrariesList
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getAllLibrariesList()](./LIB_LibrariesList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取所有库的列表
-
-
-</td></tr>
-<tr><td>
-
-[getFavoriteLibraryUuid()](./LIB_LibrariesList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取收藏库的 UUID
-
-
-</td></tr>
-<tr><td>
-
-[getPersonalLibraryUuid()](./LIB_LibrariesList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取个人库的 UUID
-
-
-</td></tr>
-<tr><td>
-
-[getProjectLibraryUuid()](./LIB_LibrariesList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取工程库的 UUID
-
-
-</td></tr>
-<tr><td>
-
-[getSystemLibraryUuid()](./LIB_LibrariesList.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取系统库的 UUID
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                | 修饰符 | 描述          |
+| -------------------------------------------------- | --- | ----------- |
+| [getAllLibrariesList()](./LIB_LibrariesList.md)    |     | 获取所有库的列表    |
+| [getFavoriteLibraryUuid()](./LIB_LibrariesList.md) |     | 获取收藏库的 UUID |
+| [getPersonalLibraryUuid()](./LIB_LibrariesList.md) |     | 获取个人库的 UUID |
+| [getProjectLibraryUuid()](./LIB_LibrariesList.md)  |     | 获取工程库的 UUID |
+| [getSystemLibraryUuid()](./LIB_LibrariesList.md)   |     | 获取系统库的 UUID |
 
 ---
 
@@ -122,13 +42,13 @@ getAllLibrariesList(): Promise<Array<ILIB_LibraryInfo>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[ILIB\_LibraryInfo](../interfaces/ILIB_LibraryInfo.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ILIB\_LibraryInfo](../interfaces/ILIB_LibraryInfo.md)&gt;&gt;
 
 库信息列表
 
 ## 备注
 
-此处不会获取到系统库、个人库、工程库、收藏库的信息，如需获取它们的信息，请使用 [getSystemLibraryUuid](./LIB_LibrariesList.md)<!-- -->、[getPersonalLibraryUuid](./LIB_LibrariesList.md)<!-- -->、[getProjectLibraryUuid](./LIB_LibrariesList.md)<!-- -->、[getFavoriteLibraryUuid](./LIB_LibrariesList.md) 接口
+此处不会获取到系统库、个人库、工程库、收藏库的信息，如需获取它们的信息，请使用 [getSystemLibraryUuid](./LIB_LibrariesList.md)、[getPersonalLibraryUuid](./LIB_LibrariesList.md)、[getProjectLibraryUuid](./LIB_LibrariesList.md)、[getFavoriteLibraryUuid](./LIB_LibrariesList.md) 接口
 
 ### getfavoritelibraryuuid
 

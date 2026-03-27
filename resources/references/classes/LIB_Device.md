@@ -5,140 +5,21 @@
 ## 签名
 
 ```typescript
-declare class LIB_Device 
+declare class LIB_Device
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[copy(deviceUuid, libraryUuid, targetLibraryUuid, targetClassification, newDeviceName)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 复制器件
-
-
-</td></tr>
-<tr><td>
-
-[create(libraryUuid, deviceName, classification, association, description, property)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建器件
-
-
-</td></tr>
-<tr><td>
-
-[delete(deviceUuid, libraryUuid)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除器件
-
-
-</td></tr>
-<tr><td>
-
-[get(deviceUuid, libraryUuid)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取器件的所有属性
-
-
-</td></tr>
-<tr><td>
-
-[getByLcscIds(lcscIds, libraryUuid, allowMultiMatch)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用立创 C 编号获取器件
-
-
-</td></tr>
-<tr><td>
-
-[getByLcscIds(lcscIds, libraryUuid, allowMultiMatch)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用立创 C 编号批量获取器件
-
-
-</td></tr>
-<tr><td>
-
-[modify(deviceUuid, libraryUuid, deviceName, classification, association, description, property)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改器件
-
-
-</td></tr>
-<tr><td>
-
-[search(key, libraryUuid, classification, symbolType, itemsOfPage, page)](./LIB_Device.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 搜索器件
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                | 修饰符 | 描述                           |
+| ------------------------------------------------------------------------------------------------------------------ | --- | ---------------------------- |
+| [copy(deviceUuid, libraryUuid, targetLibraryUuid, targetClassification, newDeviceName)](./LIB_Device.md)           |     | **_(BETA)_** 复制器件            |
+| [create(libraryUuid, deviceName, classification, association, description, property)](./LIB_Device.md)             |     | **_(BETA)_** 创建器件            |
+| [delete(deviceUuid, libraryUuid)](./LIB_Device.md)                                                                 |     | **_(BETA)_** 删除器件            |
+| [get(deviceUuid, libraryUuid)](./LIB_Device.md)                                                                    |     | **_(BETA)_** 获取器件的所有属性       |
+| [getByLcscIds(lcscIds, libraryUuid, allowMultiMatch)](./LIB_Device.md)                                             |     | **_(BETA)_** 使用立创 C 编号获取器件   |
+| [getByLcscIds(lcscIds, libraryUuid, allowMultiMatch)](./LIB_Device.md)                                             |     | **_(BETA)_** 使用立创 C 编号批量获取器件 |
+| [modify(deviceUuid, libraryUuid, deviceName, classification, association, description, property)](./LIB_Device.md) |     | **_(BETA)_** 修改器件            |
+| [search(key, libraryUuid, classification, symbolType, itemsOfPage, page)](./LIB_Device.md)                         |     | **_(BETA)_** 搜索器件            |
 
 ---
 
@@ -160,103 +41,13 @@ copy(deviceUuid: string, libraryUuid: string, targetLibraryUuid: string, targetC
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-deviceUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-targetLibraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-目标库 UUID
-
-
-</td></tr>
-<tr><td>
-
-targetClassification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 目标库内的分类
-
-
-</td></tr>
-<tr><td>
-
-newDeviceName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 新器件名称，如若目标库内存在重名器件将导致复制失败
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型                                                                                            | 描述                                                              |
+| -------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| deviceUuid           | string                                                                                        | 器件 UUID                                                         |
+| libraryUuid          | string                                                                                        | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| targetLibraryUuid    | string                                                                                        | 目标库 UUID                                                        |
+| targetClassification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 目标库内的分类                                                  |
+| newDeviceName        | string                                                                                        | _（可选）_ 新器件名称，如若目标库内存在重名器件将导致复制失败                                |
 
 
 
@@ -299,119 +90,14 @@ create(libraryUuid: string, deviceName: string, classification?: ILIB_Classifica
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-deviceName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件名称
-
-
-</td></tr>
-<tr><td>
-
-classification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-association
-
-
-</td><td>
-
-{ symbolType?: [ELIB\_SymbolType](../enums/ELIB_SymbolType.md)<!-- -->; symbolUuid?: string; symbol?: { uuid: string; libraryUuid: string; }; footprintUuid?: string; footprint?: { uuid: string; libraryUuid: string; }; model3D?: { uuid: string; libraryUuid: string; }; imageData?: File \| Blob; }
-
-
-</td><td>
-
-_（可选）_ 关联符号、封装、图像，指定 `symbolType` 则创建新符号，无需新建符号则无需指定 `symbolType`<!-- -->，但请注意，如若不新建符号也不指定符号的关联信息将无法创建器件
-
-
-</td></tr>
-<tr><td>
-
-description
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-[ILIB\_DeviceExtendPropertyItem](../interfaces/ILIB_DeviceExtendPropertyItem.md)
-
-
-</td><td>
-
-_（可选）_ 其它参数，仅 `designator`<!-- -->、`addIntoBom`<!-- -->、`addIntoPcb` 存在默认值
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                                                                                                                                                                                                              | 描述                                                                                               |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| libraryUuid    | string                                                                                                                                                                                                                                                                                          | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取                                  |
+| deviceName     | string                                                                                                                                                                                                                                                                                          | 器件名称                                                                                             |
+| classification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;                                                                                                                                                                                                   | _（可选）_ 分类                                                                                        |
+| association    | { symbolType?: [ELIB\_SymbolType](../enums/ELIB_SymbolType.md); symbolUuid?: string; symbol?: { uuid: string; libraryUuid: string; }; footprintUuid?: string; footprint?: { uuid: string; libraryUuid: string; }; model3D?: { uuid: string; libraryUuid: string; }; imageData?: File \| Blob; } | _（可选）_ 关联符号、封装、图像，指定 `symbolType` 则创建新符号，无需新建符号则无需指定 `symbolType`，但请注意，如若不新建符号也不指定符号的关联信息将无法创建器件 |
+| description    | string                                                                                                                                                                                                                                                                                          | _（可选）_ 描述                                                                                        |
+| property       | [ILIB\_DeviceExtendPropertyItem](../interfaces/ILIB_DeviceExtendPropertyItem.md)                                                                                                                                                                                                                | _（可选）_ 其它参数，仅 `designator`、`addIntoBom`、`addIntoPcb` 存在默认值                                       |
 
 
 
@@ -437,55 +123,10 @@ delete(deviceUuid: string, libraryUuid: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-deviceUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述                                                              |
+| ----------- | ------ | --------------------------------------------------------------- |
+| deviceUuid  | string | 器件 UUID                                                         |
+| libraryUuid | string | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
 
 
 
@@ -511,55 +152,10 @@ get(deviceUuid: string, libraryUuid?: string): Promise<ILIB_DeviceItem | undefin
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-deviceUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述                                                                            |
+| ----------- | ------ | ----------------------------------------------------------------------------- |
+| deviceUuid  | string | 器件 UUID                                                                       |
+| libraryUuid | string | _（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
 
 
 
@@ -585,77 +181,17 @@ getByLcscIds<T extends boolean>(lcscIds: string, libraryUuid?: string, allowMult
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lcscIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-立创 C 编号
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-allowMultiMatch
-
-
-</td><td>
-
-T
-
-
-</td><td>
-
-_（可选）_ 是否允许单个立创 C 编号匹配多个结果
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型     | 描述                                                                            |
+| --------------- | ------ | ----------------------------------------------------------------------------- |
+| lcscIds         | string | 立创 C 编号                                                                       |
+| libraryUuid     | string | _（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| allowMultiMatch | T      | _（可选）_ 是否允许单个立创 C 编号匹配多个结果                                                    |
 
 
 
 ## 返回值
 
-Promise&lt;T extends true ? [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) \| undefined : Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)<!-- -->&gt;&gt;
+Promise&lt;T extends true ? [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) \| undefined : Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)&gt;&gt;
 
 搜索到的器件属性
 
@@ -663,7 +199,7 @@ Promise&lt;T extends true ? [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSe
 
 默认情况下，如果在同一个库内匹配到多个相同 C 编号的器件，将只会返回第一个结果；
 
-如果希望返回多个结果，请将 `allowMultiMatch` 置为 `true`<!-- -->；
+如果希望返回多个结果，请将 `allowMultiMatch` 置为 `true`；
 
 私有化部署环境暂无法使用本接口
 
@@ -683,77 +219,17 @@ getByLcscIds(lcscIds: Array<string>, libraryUuid?: string, allowMultiMatch?: boo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lcscIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-立创 C 编号数组
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-allowMultiMatch
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否允许单个立创 C 编号匹配多个结果
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                  | 描述                                                                            |
+| --------------- | ------------------- | ----------------------------------------------------------------------------- |
+| lcscIds         | Array&lt;string&gt; | 立创 C 编号数组                                                                     |
+| libraryUuid     | string              | _（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| allowMultiMatch | boolean             | _（可选）_ 是否允许单个立创 C 编号匹配多个结果                                                    |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)&gt;&gt;
 
 搜索到的器件属性的列表
 
@@ -761,7 +237,7 @@ Promise&lt;Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem
 
 默认情况下，如果在同一个库内匹配到多个相同 C 编号的器件，将只会返回第一个结果；
 
-如果希望返回多个结果，请将 `allowMultiMatch` 置为 `true`<!-- -->；
+如果希望返回多个结果，请将 `allowMultiMatch` 置为 `true`；
 
 私有化部署环境暂无法使用本接口
 
@@ -810,135 +286,15 @@ modify(deviceUuid: string, libraryUuid: string, deviceName?: string, classificat
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-deviceUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-deviceName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 器件名称
-
-
-</td></tr>
-<tr><td>
-
-classification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; \| null
-
-
-</td><td>
-
-_（可选）_ 分类
-
-
-</td></tr>
-<tr><td>
-
-association
-
-
-</td><td>
-
-\{ symbolUuid?: string; symbol?: \{ uuid: string; libraryUuid: string; \}; footprintUuid?: string \| null; footprint?: \{ uuid: string; libraryUuid: string; \} \| null; model3D?: \{ uuid: string; libraryUuid: string; \} \| null; imageData?: File \| Blob \| null; \}
-
-
-</td><td>
-
-_（可选）_ 关联符号、封装、图像
-
-
-</td></tr>
-<tr><td>
-
-description
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 描述
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-\{ name?: string \| null; designator?: string; addIntoBom?: boolean; addIntoPcb?: boolean; net?: string; manufacturer?: string \| null; manufacturerId?: string \| null; supplier?: string \| null; supplierId?: string \| null; otherProperty?: \{ \[key: string\]: boolean \| number \| string \| undefined \| null; \}; \}
-
-
-</td><td>
-
-_（可选）_ 其它参数
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                                                                                                                                                                                                                                            | 描述                                                              |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| deviceUuid     | string                                                                                                                                                                                                                                                                                                                        | 器件 UUID                                                         |
+| libraryUuid    | string                                                                                                                                                                                                                                                                                                                        | 库 UUID，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| deviceName     | string                                                                                                                                                                                                                                                                                                                        | _（可选）_ 器件名称                                                     |
+| classification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; \| null                                                                                                                                                                                                                         | _（可选）_ 分类                                                       |
+| association    | \{ symbolUuid?: string; symbol?: \{ uuid: string; libraryUuid: string; \}; footprintUuid?: string \| null; footprint?: \{ uuid: string; libraryUuid: string; \} \| null; model3D?: \{ uuid: string; libraryUuid: string; \} \| null; imageData?: File \| Blob \| null; \}                                                     | _（可选）_ 关联符号、封装、图像                                               |
+| description    | string \| null                                                                                                                                                                                                                                                                                                                | _（可选）_ 描述                                                       |
+| property       | \{ name?: string \| null; designator?: string; addIntoBom?: boolean; addIntoPcb?: boolean; net?: string; manufacturer?: string \| null; manufacturerId?: string \| null; supplier?: string \| null; supplierId?: string \| null; otherProperty?: \{ \[key: string\]: boolean \| number \| string \| undefined \| null; \}; \} | _（可选）_ 其它参数                                                     |
 
 
 
@@ -968,124 +324,19 @@ search(key: string, libraryUuid?: string, classification?: ILIB_ClassificationIn
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-key
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-搜索关键字
-
-
-</td></tr>
-<tr><td>
-
-libraryUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取
-
-
-</td></tr>
-<tr><td>
-
-classification
-
-
-</td><td>
-
-[ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
-
-
-</td><td>
-
-_（可选）_ 分类，默认为全部
-
-
-</td></tr>
-<tr><td>
-
-symbolType
-
-
-</td><td>
-
-[ELIB\_SymbolType](../enums/ELIB_SymbolType.md)
-
-
-</td><td>
-
-_（可选）_ 符号类型，默认为全部
-
-
-</td></tr>
-<tr><td>
-
-itemsOfPage
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 一页搜索结果的数量
-
-
-</td></tr>
-<tr><td>
-
-page
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 页数
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                            | 描述                                                                            |
+| -------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| key            | string                                                                                        | 搜索关键字                                                                         |
+| libraryUuid    | string                                                                                        | _（可选）_ 库 UUID，默认为系统库，可以使用 [LIB\_LibrariesList](./LIB_LibrariesList.md) 内的接口获取 |
+| classification | [ILIB\_ClassificationIndex](../interfaces/ILIB_ClassificationIndex.md) \| Array&lt;string&gt; | _（可选）_ 分类，默认为全部                                                               |
+| symbolType     | [ELIB\_SymbolType](../enums/ELIB_SymbolType.md)                                               | _（可选）_ 符号类型，默认为全部                                                             |
+| itemsOfPage    | number                                                                                        | _（可选）_ 一页搜索结果的数量                                                              |
+| page           | number                                                                                        | _（可选）_ 页数                                                                     |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)&gt;&gt;
 
 搜索到的器件属性的列表

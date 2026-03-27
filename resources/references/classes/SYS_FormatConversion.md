@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_FormatConversion 
+declare class SYS_FormatConversion
 ```
 
 ## 备注
@@ -14,51 +14,10 @@ declare class SYS_FormatConversion
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[convertAltiumDesignerLibrariesToEasyEDAMultiFiles(file)](./SYS_FormatConversion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换 Altium Designer 库到多个嘉立创库文件（每个器件一个文件）
-
-
-</td></tr>
-<tr><td>
-
-[convertAltiumDesignerLibrariesToEasyEDASingleFile(file)](./SYS_FormatConversion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换 Altium Designer 库到单个嘉立创库文件
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                  | 修饰符 | 描述                                                   |
+| ------------------------------------------------------------------------------------ | --- | ---------------------------------------------------- |
+| [convertAltiumDesignerLibrariesToEasyEDAMultiFiles(file)](./SYS_FormatConversion.md) |     | **_(BETA)_** 转换 Altium Designer 库到多个嘉立创库文件（每个器件一个文件） |
+| [convertAltiumDesignerLibrariesToEasyEDASingleFile(file)](./SYS_FormatConversion.md) |     | **_(BETA)_** 转换 Altium Designer 库到单个嘉立创库文件           |
 
 ---
 
@@ -80,39 +39,9 @@ convertAltiumDesignerLibrariesToEasyEDAMultiFiles(file: File | Array<File>): Pro
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-file
-
-
-</td><td>
-
-File \| Array&lt;File&gt;
-
-
-</td><td>
-
-Altium Designer 库文件
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                        | 描述                  |
+| ---- | ------------------------- | ------------------- |
+| file | File \| Array&lt;File&gt; | Altium Designer 库文件 |
 
 
 
@@ -138,39 +67,9 @@ convertAltiumDesignerLibrariesToEasyEDASingleFile(file: File | Array<File>): Pro
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-file
-
-
-</td><td>
-
-File \| Array&lt;File&gt;
-
-
-</td><td>
-
-Altium Designer 库文件
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                        | 描述                  |
+| ---- | ------------------------- | ------------------- |
+| file | File \| Array&lt;File&gt; | Altium Designer 库文件 |
 
 
 

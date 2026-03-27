@@ -9,7 +9,7 @@
 ## 签名
 
 ```typescript
-interface ILIB_ClassificationIndex 
+interface ILIB_ClassificationIndex
 ```
 
 ## 备注
@@ -18,104 +18,12 @@ interface ILIB_ClassificationIndex
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[libraryType](./ILIB_ClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
-
-
-</td><td>
-
-库类型
-
-
-</td></tr>
-<tr><td>
-
-[libraryUuid](./ILIB_ClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[primaryClassificationUuid](./ILIB_ClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-一级分类 UUID
-
-
-</td></tr>
-<tr><td>
-
-[secondaryClassificationUuid?](./ILIB_ClassificationIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 二级分类 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                           | 修饰符 | 类型                                                | 描述               |
+| ------------------------------------------------------------- | --- | ------------------------------------------------- | ---------------- |
+| [libraryType](./ILIB_ClassificationIndex.md)                  |     | [ELIB\_LibraryType](../enums/ELIB_LibraryType.md) | 库类型              |
+| [libraryUuid](./ILIB_ClassificationIndex.md)                  |     | string                                            | 库 UUID           |
+| [primaryClassificationUuid](./ILIB_ClassificationIndex.md)    |     | string                                            | 一级分类 UUID        |
+| [secondaryClassificationUuid?](./ILIB_ClassificationIndex.md) |     | string                                            | _（可选）_ 二级分类 UUID |
 
 ---
 

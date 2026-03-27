@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveLine implements IPCB_Primitive 
+declare class IPCB_PrimitiveLine implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -16,387 +16,34 @@ declare class IPCB_PrimitiveLine implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getAdjacentPrimitives()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取相邻的图元对象
-
-
-</td></tr>
-<tr><td>
-
-[getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取整段导线
-
-
-</td></tr>
-<tr><td>
-
-[getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取整段导线
-
-
-</td></tr>
-<tr><td>
-
-[getState\_EndX()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：终止位置 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_EndY()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：终止位置 Y
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Net()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_StartX()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：起始位置 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_StartY()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：起始位置 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_EndX(endX)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：终止位置 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_EndY(endY)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：终止位置 Y
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Net(net)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_StartX(startX)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：起始位置 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_StartY(startY)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：起始位置 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                               | 修饰符 | 描述                          |
+| ----------------------------------------------------------------- | --- | --------------------------- |
+| [done()](./IPCB_PrimitiveLine.md)                                 |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getAdjacentPrimitives()](./IPCB_PrimitiveLine.md)                |     | **_(BETA)_** 获取相邻的图元对象      |
+| [getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)            |     | **_(BETA)_** 获取整段导线         |
+| [getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)            |     | **_(BETA)_** 获取整段导线         |
+| [getState\_EndX()](./IPCB_PrimitiveLine.md)                       |     | 获取属性状态：终止位置 X               |
+| [getState\_EndY()](./IPCB_PrimitiveLine.md)                       |     | 获取属性状态：终止位置 Y               |
+| [getState\_Layer()](./IPCB_PrimitiveLine.md)                      |     | 获取属性状态：层                    |
+| [getState\_LineWidth()](./IPCB_PrimitiveLine.md)                  |     | 获取属性状态：线宽                   |
+| [getState\_Net()](./IPCB_PrimitiveLine.md)                        |     | 获取属性状态：网络名称                 |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveLine.md)                |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveLine.md)              |     | 获取属性状态：是否锁定                 |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveLine.md)              |     | 获取属性状态：图元类型                 |
+| [getState\_StartX()](./IPCB_PrimitiveLine.md)                     |     | 获取属性状态：起始位置 X               |
+| [getState\_StartY()](./IPCB_PrimitiveLine.md)                     |     | 获取属性状态：起始位置 Y               |
+| [isAsync()](./IPCB_PrimitiveLine.md)                              |     | 查询图元是否为异步图元                 |
+| [reset()](./IPCB_PrimitiveLine.md)                                |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_EndX(endX)](./IPCB_PrimitiveLine.md)                   |     | **_(BETA)_** 设置属性状态：终止位置 X  |
+| [setState\_EndY(endY)](./IPCB_PrimitiveLine.md)                   |     | **_(BETA)_** 设置属性状态：终止位置 Y  |
+| [setState\_Layer(layer)](./IPCB_PrimitiveLine.md)                 |     | **_(BETA)_** 设置属性状态：层       |
+| [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveLine.md)         |     | **_(BETA)_** 设置属性状态：线宽      |
+| [setState\_Net(net)](./IPCB_PrimitiveLine.md)                     |     | **_(BETA)_** 设置属性状态：网络名称    |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveLine.md) |     | **_(BETA)_** 设置属性状态：是否锁定    |
+| [setState\_StartX(startX)](./IPCB_PrimitiveLine.md)               |     | **_(BETA)_** 设置属性状态：起始位置 X  |
+| [setState\_StartY(startY)](./IPCB_PrimitiveLine.md)               |     | **_(BETA)_** 设置属性状态：起始位置 Y  |
+| [toAsync()](./IPCB_PrimitiveLine.md)                              |     | 将图元转换为异步图元                  |
+| [toSync()](./IPCB_PrimitiveLine.md)                               |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -419,7 +66,7 @@ done(): Promise<IPCB_PrimitiveLine>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md)&gt;
 
 直线图元对象
 
@@ -440,7 +87,7 @@ getAdjacentPrimitives(): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveVia | 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)&gt;&gt;
 
 相邻的直线、过孔、圆弧线图元对象
 
@@ -464,45 +111,15 @@ getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IPCB_Prim
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-includeVias
-
-
-</td><td>
-
-false
-
-
-</td><td>
-
-是否包含导线两端的过孔
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型    | 描述          |
+| ----------- | ----- | ----------- |
+| includeVias | false | 是否包含导线两端的过孔 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)&gt;&gt;
 
 整段导线内的所有直线和圆弧线
 
@@ -522,45 +139,15 @@ getEntireTrack(includeVias: true): Promise<Array<IPCB_PrimitiveLine | IPCB_Primi
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-includeVias
-
-
-</td><td>
-
-true
-
-
-</td><td>
-
-是否包含导线两端的过孔
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型   | 描述          |
+| ----------- | ---- | ----------- |
+| includeVias | true | 是否包含导线两端的过孔 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md) \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md) \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)&gt;&gt;
 
 整段导线内的所有直线、圆弧线，以及两端连接的过孔（如果有）
 
@@ -790,7 +377,7 @@ reset(): Promise<IPCB_PrimitiveLine>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md)&gt;
 
 直线图元对象
 
@@ -810,39 +397,9 @@ setState_EndX(endX: number): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-endX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止位置 X
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述     |
+| ---- | ------ | ------ |
+| endX | number | 终止位置 X |
 
 
 
@@ -868,39 +425,9 @@ setState_EndY(endY: number): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-endY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止位置 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型     | 描述     |
+| ---- | ------ | ------ |
+| endY | number | 终止位置 Y |
 
 
 
@@ -926,39 +453,9 @@ setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                  | 描述  |
+| ----- | --------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md) | 层   |
 
 
 
@@ -984,39 +481,9 @@ setState_LineWidth(lineWidth: number): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| lineWidth | number | 线宽  |
 
 
 
@@ -1042,39 +509,9 @@ setState_Net(net: string): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -1100,39 +537,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -1158,39 +565,9 @@ setState_StartX(startX: number): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-startX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始位置 X
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述     |
+| ------ | ------ | ------ |
+| startX | number | 起始位置 X |
 
 
 
@@ -1216,39 +593,9 @@ setState_StartY(startY: number): IPCB_PrimitiveLine;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-startY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始位置 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型     | 描述     |
+| ------ | ------ | ------ |
+| startY | number | 起始位置 Y |
 
 
 

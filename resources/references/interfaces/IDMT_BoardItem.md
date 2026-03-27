@@ -5,130 +5,18 @@
 ## 签名
 
 ```typescript
-interface IDMT_BoardItem 
+interface IDMT_BoardItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[itemType](./IDMT_BoardItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.BOARD](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_BoardItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-板子名称
-
-
-</td></tr>
-<tr><td>
-
-[parentProjectUuid](./IDMT_BoardItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属工程 UUID
-
-
-</td></tr>
-<tr><td>
-
-[pcb](./IDMT_BoardItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[IDMT\_PcbItem](./IDMT_PcbItem.md)
-
-
-</td><td>
-
-下属 PCB
-
-
-</td></tr>
-<tr><td>
-
-[schematic](./IDMT_BoardItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[IDMT\_SchematicItem](./IDMT_SchematicItem.md)
-
-
-</td><td>
-
-下属原理图
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                      | 修饰符        | 类型                                                | 描述        |
+| ---------------------------------------- | ---------- | ------------------------------------------------- | --------- |
+| [itemType](./IDMT_BoardItem.md)          | `readonly` | [EDMT\_ItemType.BOARD](../enums/EDMT_ItemType.md) | 项目类型      |
+| [name](./IDMT_BoardItem.md)              |            | string                                            | 板子名称      |
+| [parentProjectUuid](./IDMT_BoardItem.md) |            | string                                            | 所属工程 UUID |
+| [pcb](./IDMT_BoardItem.md)               |            | [IDMT\_PcbItem](./IDMT_PcbItem.md)                | 下属 PCB    |
+| [schematic](./IDMT_BoardItem.md)         |            | [IDMT\_SchematicItem](./IDMT_SchematicItem.md)    | 下属原理图     |
 
 ---
 

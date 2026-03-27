@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface IDMT_EditorSplitScreenItem 
+interface IDMT_EditorSplitScreenItem
 ```
 
 ## 备注
@@ -14,123 +14,13 @@ interface IDMT_EditorSplitScreenItem
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[children?](./IDMT_EditorSplitScreenItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;[IDMT\_EditorSplitScreenItem](./IDMT_EditorSplitScreenItem.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 子分屏
-
-
-</td></tr>
-<tr><td>
-
-[direction?](./IDMT_EditorSplitScreenItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[EDMT\_EditorSplitScreenDirection](../enums/EDMT_EditorSplitScreenDirection.md)
-
-
-</td><td>
-
-_（可选）_ 分屏方向
-
-
-</td></tr>
-<tr><td>
-
-[fatherId?](./IDMT_EditorSplitScreenItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 父级分屏 ID
-
-
-</td></tr>
-<tr><td>
-
-[id](./IDMT_EditorSplitScreenItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-分屏 ID
-
-
-</td></tr>
-<tr><td>
-
-[tabs?](./IDMT_EditorSplitScreenItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;[IDMT\_EditorTabItem](./IDMT_EditorTabItem.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 分屏内标签页
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                           | 修饰符 | 类型                                                                              | 描述             |
+| --------------------------------------------- | --- | ------------------------------------------------------------------------------- | -------------- |
+| [children?](./IDMT_EditorSplitScreenItem.md)  |     | Array&lt;[IDMT\_EditorSplitScreenItem](./IDMT_EditorSplitScreenItem.md)&gt;     | _（可选）_ 子分屏     |
+| [direction?](./IDMT_EditorSplitScreenItem.md) |     | [EDMT\_EditorSplitScreenDirection](../enums/EDMT_EditorSplitScreenDirection.md) | _（可选）_ 分屏方向    |
+| [fatherId?](./IDMT_EditorSplitScreenItem.md)  |     | string                                                                          | _（可选）_ 父级分屏 ID |
+| [id](./IDMT_EditorSplitScreenItem.md)         |     | string                                                                          | 分屏 ID          |
+| [tabs?](./IDMT_EditorSplitScreenItem.md)      |     | Array&lt;[IDMT\_EditorTabItem](./IDMT_EditorTabItem.md)&gt;                     | _（可选）_ 分屏内标签页  |
 
 ---
 

@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class DMT_Board 
+declare class DMT_Board
 ```
 
 ## 备注
@@ -14,121 +14,15 @@ declare class DMT_Board
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[copyBoard(sourceBoardName)](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-复制板子
-
-
-</td></tr>
-<tr><td>
-
-[createBoard(schematicUuid, pcbUuid)](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建板子
-
-
-</td></tr>
-<tr><td>
-
-[deleteBoard(boardName)](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-删除板子
-
-
-</td></tr>
-<tr><td>
-
-[getAllBoardsInfo()](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取工程内所有板子的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getBoardInfo(boardName)](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取板子的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentBoardInfo()](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前板子的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[modifyBoardName(originalBoardName, boardName)](./DMT_Board.md)
-
-
-</td><td>
-
-
-</td><td>
-
-修改板子名称
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                             | 修饰符 | 描述                |
+| --------------------------------------------------------------- | --- | ----------------- |
+| [copyBoard(sourceBoardName)](./DMT_Board.md)                    |     | 复制板子              |
+| [createBoard(schematicUuid, pcbUuid)](./DMT_Board.md)           |     | **_(BETA)_** 创建板子 |
+| [deleteBoard(boardName)](./DMT_Board.md)                        |     | 删除板子              |
+| [getAllBoardsInfo()](./DMT_Board.md)                            |     | 获取工程内所有板子的详细属性    |
+| [getBoardInfo(boardName)](./DMT_Board.md)                       |     | 获取板子的详细属性         |
+| [getCurrentBoardInfo()](./DMT_Board.md)                         |     | 获取当前板子的详细属性       |
+| [modifyBoardName(originalBoardName, boardName)](./DMT_Board.md) |     | 修改板子名称            |
 
 ---
 
@@ -148,39 +42,9 @@ copyBoard(sourceBoardName: string): Promise<string | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-sourceBoardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-源板子名称
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型     | 描述    |
+| --------------- | ------ | ----- |
+| sourceBoardName | string | 源板子名称 |
 
 
 
@@ -206,55 +70,10 @@ createBoard(schematicUuid?: string, pcbUuid?: string): Promise<string | undefine
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-schematicUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 关联原理图 UUID
-
-
-</td></tr>
-<tr><td>
-
-pcbUuid
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 关联 PCB UUID
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型     | 描述                 |
+| ------------- | ------ | ------------------ |
+| schematicUuid | string | _（可选）_ 关联原理图 UUID  |
+| pcbUuid       | string | _（可选）_ 关联 PCB UUID |
 
 
 
@@ -278,39 +97,9 @@ deleteBoard(boardName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-板子名称
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述   |
+| --------- | ------ | ---- |
+| boardName | string | 板子名称 |
 
 
 
@@ -339,7 +128,7 @@ getAllBoardsInfo(): Promise<Array<IDMT_BoardItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IDMT\_BoardItem](../interfaces/IDMT_BoardItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IDMT\_BoardItem](../interfaces/IDMT_BoardItem.md)&gt;&gt;
 
 所有板子的详细属性的数组
 
@@ -357,39 +146,9 @@ getBoardInfo(boardName: string): Promise<IDMT_BoardItem | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-板子名称
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述   |
+| --------- | ------ | ---- |
+| boardName | string | 板子名称 |
 
 
 
@@ -436,55 +195,10 @@ modifyBoardName(originalBoardName: string, boardName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-originalBoardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原板子名称
-
-
-</td></tr>
-<tr><td>
-
-boardName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-新板子名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述    |
+| ----------------- | ------ | ----- |
+| originalBoardName | string | 原板子名称 |
+| boardName         | string | 新板子名称 |
 
 
 

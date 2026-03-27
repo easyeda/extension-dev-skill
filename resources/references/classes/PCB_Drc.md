@@ -5,7 +5,7 @@ PCB &amp; 封装 / 设计规则检查（DRC）类
 ## 签名
 
 ```typescript
-declare class PCB_Drc 
+declare class PCB_Drc
 ```
 
 ## 备注
@@ -14,625 +14,51 @@ declare class PCB_Drc
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addNetToEqualLengthNetGroup(equalLengthNetGroupName, net)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将网络添加到等长网络组
-
-
-</td></tr>
-<tr><td>
-
-[addNetToNetClass(netClassName, net)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将网络添加到网络类
-
-
-</td></tr>
-<tr><td>
-
-[addPadPairToPadPairGroup(padPairGroupName, padPair)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将焊盘对添加到焊盘对组
-
-
-</td></tr>
-<tr><td>
-
-[check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 检查 DRC
-
-
-</td></tr>
-<tr><td>
-
-[check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 检查 DRC
-
-
-</td></tr>
-<tr><td>
-
-[createDifferentialPair(differentialPairName, positiveNet, negativeNet)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建差分对
-
-
-</td></tr>
-<tr><td>
-
-[createEqualLengthNetGroup(equalLengthNetGroupName, nets, color)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建等长网络组
-
-
-</td></tr>
-<tr><td>
-
-[createNetClass(netClassName, nets, color)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建网络类
-
-
-</td></tr>
-<tr><td>
-
-[createPadPairGroup(padPairGroupName, padPairs)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建焊盘对组
-
-
-</td></tr>
-<tr><td>
-
-[deleteDifferentialPair(differentialPairName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除差分对
-
-
-</td></tr>
-<tr><td>
-
-[deleteEqualLengthNetGroup(equalLengthNetGroupName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除等长网络组
-
-
-</td></tr>
-<tr><td>
-
-[deleteNetClass(netClassName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除网络类
-
-
-</td></tr>
-<tr><td>
-
-[deletePadPairGroup(padPairGroupName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除焊盘对组
-
-
-</td></tr>
-<tr><td>
-
-[deleteRuleConfiguration(configurationName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-[getAllDifferentialPairs()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有差分对的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllEqualLengthNetGroups()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有等长网络组的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllNetClasses()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有网络类的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllPadPairGroups()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有焊盘对组的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllRuleConfigurations(includeSystem)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentRuleConfiguration()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-[getCurrentRuleConfigurationName()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取当前设计规则配置名称
-
-
-</td></tr>
-<tr><td>
-
-[getDefaultRuleConfigurationName()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取新建 PCB 默认设计规则配置的名称
-
-
-</td></tr>
-<tr><td>
-
-[getNetByNetRules()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取网络-网络规则
-
-
-</td></tr>
-<tr><td>
-
-[getNetRules()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取网络规则
-
-
-</td></tr>
-<tr><td>
-
-[getPadPairGroupMinWireLength(padPairGroupName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取焊盘对组最短导线长度
-
-
-</td></tr>
-<tr><td>
-
-[getRegionRules()](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取区域规则
-
-
-</td></tr>
-<tr><td>
-
-[getRuleConfiguration(configurationName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取指定设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-[modifyDifferentialPairName(originalDifferentialPairName, differentialPairName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改差分对的名称
-
-
-</td></tr>
-<tr><td>
-
-[modifyDifferentialPairNegativeNet(differentialPairName, negativeNet)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改差分对负网络
-
-
-</td></tr>
-<tr><td>
-
-[modifyDifferentialPairPositiveNet(differentialPairName, positiveNet)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改差分对正网络
-
-
-</td></tr>
-<tr><td>
-
-[modifyEqualLengthNetGroupName(originalEqualLengthNetGroupName, equalLengthNetGroupName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改等长网络组的名称
-
-
-</td></tr>
-<tr><td>
-
-[modifyNetClassName(originalNetClassName, netClassName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改网络类的名称
-
-
-</td></tr>
-<tr><td>
-
-[modifyPadPairGroupName(originalPadPairGroupName, padPairGroupName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改焊盘对组的名称
-
-
-</td></tr>
-<tr><td>
-
-[overwriteCurrentRuleConfiguration(ruleConfiguration)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 覆写目前规则配置
-
-
-</td></tr>
-<tr><td>
-
-[overwriteNetByNetRules(netByNetRules)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 覆写网络-网络规则
-
-
-</td></tr>
-<tr><td>
-
-[overwriteNetRules(netRules)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 覆写网络规则
-
-
-</td></tr>
-<tr><td>
-
-[overwriteRegionRules(regionRules)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 覆写区域规则
-
-
-</td></tr>
-<tr><td>
-
-[removeNetFromEqualLengthNetGroup(equalLengthNetGroupName, net)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 从等长网络组中移除网络
-
-
-</td></tr>
-<tr><td>
-
-[removeNetFromNetClass(netClassName, net)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 从网络类中移除网络
-
-
-</td></tr>
-<tr><td>
-
-[removePadPairFromPadPairGroup(padPairGroupName, padPair)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 从焊盘对组中移除焊盘对
-
-
-</td></tr>
-<tr><td>
-
-[renameRuleConfiguration(originalConfigurationName, configurationName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 重命名设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-[saveRuleConfiguration(ruleConfiguration, configurationName, allowOverwrite)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 保存设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-[setAsDefaultRuleConfiguration(configurationName)](./PCB_Drc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置为新建 PCB 默认设计规则配置
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                     | 修饰符 | 描述                                |
+| ------------------------------------------------------------------------------------------------------- | --- | --------------------------------- |
+| [addNetToEqualLengthNetGroup(equalLengthNetGroupName, net)](./PCB_Drc.md)                               |     | **_(BETA)_** 将网络添加到等长网络组          |
+| [addNetToNetClass(netClassName, net)](./PCB_Drc.md)                                                     |     | **_(BETA)_** 将网络添加到网络类            |
+| [addPadPairToPadPairGroup(padPairGroupName, padPair)](./PCB_Drc.md)                                     |     | **_(BETA)_** 将焊盘对添加到焊盘对组          |
+| [check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)                                       |     | **_(BETA)_** 检查 DRC               |
+| [check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)                                       |     | **_(BETA)_** 检查 DRC               |
+| [createDifferentialPair(differentialPairName, positiveNet, negativeNet)](./PCB_Drc.md)                  |     | **_(BETA)_** 创建差分对                |
+| [createEqualLengthNetGroup(equalLengthNetGroupName, nets, color)](./PCB_Drc.md)                         |     | **_(BETA)_** 创建等长网络组              |
+| [createNetClass(netClassName, nets, color)](./PCB_Drc.md)                                               |     | **_(BETA)_** 创建网络类                |
+| [createPadPairGroup(padPairGroupName, padPairs)](./PCB_Drc.md)                                          |     | **_(BETA)_** 创建焊盘对组               |
+| [deleteDifferentialPair(differentialPairName)](./PCB_Drc.md)                                            |     | **_(BETA)_** 删除差分对                |
+| [deleteEqualLengthNetGroup(equalLengthNetGroupName)](./PCB_Drc.md)                                      |     | **_(BETA)_** 删除等长网络组              |
+| [deleteNetClass(netClassName)](./PCB_Drc.md)                                                            |     | **_(BETA)_** 删除网络类                |
+| [deletePadPairGroup(padPairGroupName)](./PCB_Drc.md)                                                    |     | **_(BETA)_** 删除焊盘对组               |
+| [deleteRuleConfiguration(configurationName)](./PCB_Drc.md)                                              |     | **_(BETA)_** 删除设计规则配置             |
+| [getAllDifferentialPairs()](./PCB_Drc.md)                                                               |     | **_(BETA)_** 获取所有差分对的详细属性         |
+| [getAllEqualLengthNetGroups()](./PCB_Drc.md)                                                            |     | **_(BETA)_** 获取所有等长网络组的详细属性       |
+| [getAllNetClasses()](./PCB_Drc.md)                                                                      |     | **_(BETA)_** 获取所有网络类的详细属性         |
+| [getAllPadPairGroups()](./PCB_Drc.md)                                                                   |     | **_(BETA)_** 获取所有焊盘对组的详细属性        |
+| [getAllRuleConfigurations(includeSystem)](./PCB_Drc.md)                                                 |     | **_(BETA)_** 获取所有设计规则配置           |
+| [getCurrentRuleConfiguration()](./PCB_Drc.md)                                                           |     | **_(BETA)_** 获取当前设计规则配置           |
+| [getCurrentRuleConfigurationName()](./PCB_Drc.md)                                                       |     | 获取当前设计规则配置名称                      |
+| [getDefaultRuleConfigurationName()](./PCB_Drc.md)                                                       |     | **_(BETA)_** 获取新建 PCB 默认设计规则配置的名称 |
+| [getNetByNetRules()](./PCB_Drc.md)                                                                      |     | **_(BETA)_** 获取网络-网络规则            |
+| [getNetRules()](./PCB_Drc.md)                                                                           |     | **_(BETA)_** 获取网络规则               |
+| [getPadPairGroupMinWireLength(padPairGroupName)](./PCB_Drc.md)                                          |     | **_(BETA)_** 获取焊盘对组最短导线长度         |
+| [getRegionRules()](./PCB_Drc.md)                                                                        |     | **_(BETA)_** 获取区域规则               |
+| [getRuleConfiguration(configurationName)](./PCB_Drc.md)                                                 |     | 获取指定设计规则配置                        |
+| [modifyDifferentialPairName(originalDifferentialPairName, differentialPairName)](./PCB_Drc.md)          |     | **_(BETA)_** 修改差分对的名称             |
+| [modifyDifferentialPairNegativeNet(differentialPairName, negativeNet)](./PCB_Drc.md)                    |     | **_(BETA)_** 修改差分对负网络             |
+| [modifyDifferentialPairPositiveNet(differentialPairName, positiveNet)](./PCB_Drc.md)                    |     | **_(BETA)_** 修改差分对正网络             |
+| [modifyEqualLengthNetGroupName(originalEqualLengthNetGroupName, equalLengthNetGroupName)](./PCB_Drc.md) |     | **_(BETA)_** 修改等长网络组的名称           |
+| [modifyNetClassName(originalNetClassName, netClassName)](./PCB_Drc.md)                                  |     | **_(BETA)_** 修改网络类的名称             |
+| [modifyPadPairGroupName(originalPadPairGroupName, padPairGroupName)](./PCB_Drc.md)                      |     | **_(BETA)_** 修改焊盘对组的名称            |
+| [overwriteCurrentRuleConfiguration(ruleConfiguration)](./PCB_Drc.md)                                    |     | **_(BETA)_** 覆写目前规则配置             |
+| [overwriteNetByNetRules(netByNetRules)](./PCB_Drc.md)                                                   |     | **_(BETA)_** 覆写网络-网络规则            |
+| [overwriteNetRules(netRules)](./PCB_Drc.md)                                                             |     | **_(BETA)_** 覆写网络规则               |
+| [overwriteRegionRules(regionRules)](./PCB_Drc.md)                                                       |     | **_(BETA)_** 覆写区域规则               |
+| [removeNetFromEqualLengthNetGroup(equalLengthNetGroupName, net)](./PCB_Drc.md)                          |     | **_(BETA)_** 从等长网络组中移除网络          |
+| [removeNetFromNetClass(netClassName, net)](./PCB_Drc.md)                                                |     | **_(BETA)_** 从网络类中移除网络            |
+| [removePadPairFromPadPairGroup(padPairGroupName, padPair)](./PCB_Drc.md)                                |     | **_(BETA)_** 从焊盘对组中移除焊盘对          |
+| [renameRuleConfiguration(originalConfigurationName, configurationName)](./PCB_Drc.md)                   |     | **_(BETA)_** 重命名设计规则配置            |
+| [saveRuleConfiguration(ruleConfiguration, configurationName, allowOverwrite)](./PCB_Drc.md)             |     | **_(BETA)_** 保存设计规则配置             |
+| [setAsDefaultRuleConfiguration(configurationName)](./PCB_Drc.md)                                        |     | **_(BETA)_** 设置为新建 PCB 默认设计规则配置   |
 
 ---
 
@@ -654,55 +80,10 @@ addNetToEqualLengthNetGroup(equalLengthNetGroupName: string, net: string | Array
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-equalLengthNetGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-等长网络组名称
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                      | 类型                            | 描述      |
+| ----------------------- | ----------------------------- | ------- |
+| equalLengthNetGroupName | string                        | 等长网络组名称 |
+| net                     | string \| Array&lt;string&gt; | 网络名称    |
 
 
 
@@ -728,55 +109,10 @@ addNetToNetClass(netClassName: string, net: string | Array<string>): Promise<boo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-netClassName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络类名称
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                            | 描述    |
+| ------------ | ----------------------------- | ----- |
+| netClassName | string                        | 网络类名称 |
+| net          | string \| Array&lt;string&gt; | 网络名称  |
 
 
 
@@ -802,55 +138,10 @@ addPadPairToPadPairGroup(padPairGroupName: string, padPair: [string, string] | A
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-padPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘对组名称
-
-
-</td></tr>
-<tr><td>
-
-padPair
-
-
-</td><td>
-
-\[string, string\] \| Array&lt;\[string, string\]&gt;
-
-
-</td><td>
-
-焊盘对
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型                                                    | 描述     |
+| ---------------- | ----------------------------------------------------- | ------ |
+| padPairGroupName | string                                                | 焊盘对组名称 |
+| padPair          | \[string, string\] \| Array&lt;\[string, string\]&gt; | 焊盘对    |
 
 
 
@@ -880,71 +171,11 @@ check(strict: boolean, userInterface: boolean, includeVerboseError: false): Prom
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-strict
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否严格检查，当前 PCB 统一为严格检查模式
-
-
-</td></tr>
-<tr><td>
-
-userInterface
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否显示 UI（呼出底部 DRC 窗口）
-
-
-</td></tr>
-<tr><td>
-
-includeVerboseError
-
-
-</td><td>
-
-false
-
-
-</td><td>
-
-是否在返回值中包含详细错误信息，如若为 `true`<!-- -->，则返回值将始终为数组
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型      | 描述                                    |
+| ------------------- | ------- | ------------------------------------- |
+| strict              | boolean | 是否严格检查，当前 PCB 统一为严格检查模式               |
+| userInterface       | boolean | 是否显示 UI（呼出底部 DRC 窗口）                  |
+| includeVerboseError | false   | 是否在返回值中包含详细错误信息，如若为 `true`，则返回值将始终为数组 |
 
 
 
@@ -970,71 +201,11 @@ check(strict: boolean, userInterface: boolean, includeVerboseError: true): Promi
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-strict
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否严格检查，当前 PCB 统一为严格检查模式
-
-
-</td></tr>
-<tr><td>
-
-userInterface
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否显示 UI（呼出底部 DRC 窗口）
-
-
-</td></tr>
-<tr><td>
-
-includeVerboseError
-
-
-</td><td>
-
-true
-
-
-</td><td>
-
-是否在返回值中包含详细错误信息，如若为 `true`<!-- -->，则返回值将始终为数组
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型      | 描述                                    |
+| ------------------- | ------- | ------------------------------------- |
+| strict              | boolean | 是否严格检查，当前 PCB 统一为严格检查模式               |
+| userInterface       | boolean | 是否显示 UI（呼出底部 DRC 窗口）                  |
+| includeVerboseError | true    | 是否在返回值中包含详细错误信息，如若为 `true`，则返回值将始终为数组 |
 
 
 
@@ -1060,71 +231,11 @@ createDifferentialPair(differentialPairName: string, positiveNet: string, negati
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-differentialPairName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-差分对名称
-
-
-</td></tr>
-<tr><td>
-
-positiveNet
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-正网络名称
-
-
-</td></tr>
-<tr><td>
-
-negativeNet
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-负网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型     | 描述    |
+| -------------------- | ------ | ----- |
+| differentialPairName | string | 差分对名称 |
+| positiveNet          | string | 正网络名称 |
+| negativeNet          | string | 负网络名称 |
 
 
 
@@ -1150,71 +261,11 @@ createEqualLengthNetGroup(equalLengthNetGroupName: string, nets: Array<string>, 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-equalLengthNetGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-等长网络组名称
-
-
-</td></tr>
-<tr><td>
-
-nets
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称数组
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-[IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)<!-- -->\['color'\]
-
-
-</td><td>
-
-等长网络组颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数                      | 类型                                                                                        | 描述      |
+| ----------------------- | ----------------------------------------------------------------------------------------- | ------- |
+| equalLengthNetGroupName | string                                                                                    | 等长网络组名称 |
+| nets                    | Array&lt;string&gt;                                                                       | 网络名称数组  |
+| color                   | [IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)\['color'\] | 等长网络组颜色 |
 
 
 
@@ -1240,71 +291,11 @@ createNetClass(netClassName: string, nets: Array<string>, color: IPCB_EqualLengt
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-netClassName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络类名称
-
-
-</td></tr>
-<tr><td>
-
-nets
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称数组
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-[IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)<!-- -->\['color'\]
-
-
-</td><td>
-
-网络类颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                        | 描述     |
+| ------------ | ----------------------------------------------------------------------------------------- | ------ |
+| netClassName | string                                                                                    | 网络类名称  |
+| nets         | Array&lt;string&gt;                                                                       | 网络名称数组 |
+| color        | [IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)\['color'\] | 网络类颜色  |
 
 
 
@@ -1330,55 +321,10 @@ createPadPairGroup(padPairGroupName: string, padPairs: Array<[string, string]>):
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-padPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘对组名称
-
-
-</td></tr>
-<tr><td>
-
-padPairs
-
-
-</td><td>
-
-Array&lt;\[string, string\]&gt;
-
-
-</td><td>
-
-焊盘对数组
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型                              | 描述     |
+| ---------------- | ------------------------------- | ------ |
+| padPairGroupName | string                          | 焊盘对组名称 |
+| padPairs         | Array&lt;\[string, string\]&gt; | 焊盘对数组  |
 
 
 
@@ -1408,39 +354,9 @@ deleteDifferentialPair(differentialPairName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-differentialPairName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-差分对名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型     | 描述    |
+| -------------------- | ------ | ----- |
+| differentialPairName | string | 差分对名称 |
 
 
 
@@ -1466,39 +382,9 @@ deleteEqualLengthNetGroup(equalLengthNetGroupName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-equalLengthNetGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-等长网络组名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                      | 类型     | 描述      |
+| ----------------------- | ------ | ------- |
+| equalLengthNetGroupName | string | 等长网络组名称 |
 
 
 
@@ -1524,39 +410,9 @@ deleteNetClass(netClassName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-netClassName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络类名称
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述    |
+| ------------ | ------ | ----- |
+| netClassName | string | 网络类名称 |
 
 
 
@@ -1582,39 +438,9 @@ deletePadPairGroup(padPairGroupName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-padPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘对组名称
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述     |
+| ---------------- | ------ | ------ |
+| padPairGroupName | string | 焊盘对组名称 |
 
 
 
@@ -1640,39 +466,9 @@ deleteRuleConfiguration(configurationName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-configurationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-配置名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述   |
+| ----------------- | ------ | ---- |
+| configurationName | string | 配置名称 |
 
 
 
@@ -1705,7 +501,7 @@ getAllDifferentialPairs(): Promise<Array<IPCB_DifferentialPairItem> | {
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_DifferentialPairItem](../interfaces/IPCB_DifferentialPairItem.md)<!-- -->&gt; \| { \[key: string\]: any; }&gt;
+Promise&lt;Array&lt;[IPCB\_DifferentialPairItem](../interfaces/IPCB_DifferentialPairItem.md)&gt; \| { \[key: string\]: any; }&gt;
 
 所有差分对的详细属性
 
@@ -1732,7 +528,7 @@ getAllEqualLengthNetGroups(): Promise<Array<IPCB_EqualLengthNetGroupItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)&gt;&gt;
 
 所有等长网络组的详细属性
 
@@ -1753,7 +549,7 @@ getAllNetClasses(): Promise<Array<IPCB_NetClassItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_NetClassItem](../interfaces/IPCB_NetClassItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_NetClassItem](../interfaces/IPCB_NetClassItem.md)&gt;&gt;
 
 所有网络类的详细属性
 
@@ -1774,7 +570,7 @@ getAllPadPairGroups(): Promise<Array<IPCB_PadPairGroupItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PadPairGroupItem](../interfaces/IPCB_PadPairGroupItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PadPairGroupItem](../interfaces/IPCB_PadPairGroupItem.md)&gt;&gt;
 
 所有焊盘对组的详细属性
 
@@ -1796,39 +592,9 @@ getAllRuleConfigurations(includeSystem?: boolean): Promise<Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-includeSystem
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否获取系统设计规则配置
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述                  |
+| ------------- | ------- | ------------------- |
+| includeSystem | boolean | _（可选）_ 是否获取系统设计规则配置 |
 
 
 
@@ -1963,45 +729,15 @@ getPadPairGroupMinWireLength(padPairGroupName: string): Promise<Array<IPCB_PadPa
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-padPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘对组名称
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型     | 描述     |
+| ---------------- | ------ | ------ |
+| padPairGroupName | string | 焊盘对组名称 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PadPairMinWireLengthItem](../interfaces/IPCB_PadPairMinWireLengthItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PadPairMinWireLengthItem](../interfaces/IPCB_PadPairMinWireLengthItem.md)&gt;&gt;
 
 所有焊盘对的最短导线长度
 
@@ -2044,39 +780,9 @@ getRuleConfiguration(configurationName: string): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-configurationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-配置名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述   |
+| ----------------- | ------ | ---- |
+| configurationName | string | 配置名称 |
 
 
 
@@ -2102,55 +808,10 @@ modifyDifferentialPairName(originalDifferentialPairName: string, differentialPai
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-originalDifferentialPairName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原差分对名称
-
-
-</td></tr>
-<tr><td>
-
-differentialPairName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-新差分对名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                           | 类型     | 描述     |
+| ---------------------------- | ------ | ------ |
+| originalDifferentialPairName | string | 原差分对名称 |
+| differentialPairName         | string | 新差分对名称 |
 
 
 
@@ -2176,55 +837,10 @@ modifyDifferentialPairNegativeNet(differentialPairName: string, negativeNet: str
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-differentialPairName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-差分对名称
-
-
-</td></tr>
-<tr><td>
-
-negativeNet
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-负网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型     | 描述    |
+| -------------------- | ------ | ----- |
+| differentialPairName | string | 差分对名称 |
+| negativeNet          | string | 负网络名称 |
 
 
 
@@ -2250,55 +866,10 @@ modifyDifferentialPairPositiveNet(differentialPairName: string, positiveNet: str
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-differentialPairName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-差分对名称
-
-
-</td></tr>
-<tr><td>
-
-positiveNet
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-正网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型     | 描述    |
+| -------------------- | ------ | ----- |
+| differentialPairName | string | 差分对名称 |
+| positiveNet          | string | 正网络名称 |
 
 
 
@@ -2324,55 +895,10 @@ modifyEqualLengthNetGroupName(originalEqualLengthNetGroupName: string, equalLeng
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-originalEqualLengthNetGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原等长网络组名称
-
-
-</td></tr>
-<tr><td>
-
-equalLengthNetGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-新等长网络组名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                              | 类型     | 描述       |
+| ------------------------------- | ------ | -------- |
+| originalEqualLengthNetGroupName | string | 原等长网络组名称 |
+| equalLengthNetGroupName         | string | 新等长网络组名称 |
 
 
 
@@ -2398,55 +924,10 @@ modifyNetClassName(originalNetClassName: string, netClassName: string): Promise<
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-originalNetClassName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原网络类名称
-
-
-</td></tr>
-<tr><td>
-
-netClassName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-新网络类名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型     | 描述     |
+| -------------------- | ------ | ------ |
+| originalNetClassName | string | 原网络类名称 |
+| netClassName         | string | 新网络类名称 |
 
 
 
@@ -2472,55 +953,10 @@ modifyPadPairGroupName(originalPadPairGroupName: string, padPairGroupName: strin
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-originalPadPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原焊盘对组名称
-
-
-</td></tr>
-<tr><td>
-
-padPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-新焊盘对组名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                       | 类型     | 描述      |
+| ------------------------ | ------ | ------- |
+| originalPadPairGroupName | string | 原焊盘对组名称 |
+| padPairGroupName         | string | 新焊盘对组名称 |
 
 
 
@@ -2548,37 +984,9 @@ overwriteCurrentRuleConfiguration(ruleConfiguration: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-ruleConfiguration
-
-
-</td><td>
-
-\{ \[key: string\]: any; \}
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型                          | 描述  |
+| ----------------- | --------------------------- | --- |
+| ruleConfiguration | \{ \[key: string\]: any; \} |     |
 
 
 
@@ -2610,39 +1018,9 @@ overwriteNetByNetRules(netByNetRules: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-netByNetRules
-
-
-</td><td>
-
-\{ \[key: string\]: any; \}
-
-
-</td><td>
-
-网络-网络规则
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                          | 描述      |
+| ------------- | --------------------------- | ------- |
+| netByNetRules | \{ \[key: string\]: any; \} | 网络-网络规则 |
 
 
 
@@ -2674,39 +1052,9 @@ overwriteNetRules(netRules: Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-netRules
-
-
-</td><td>
-
-Array&lt;{ \[key: string\]: any; }&gt;
-
-
-</td><td>
-
-网络规则
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                     | 描述   |
+| -------- | -------------------------------------- | ---- |
+| netRules | Array&lt;{ \[key: string\]: any; }&gt; | 网络规则 |
 
 
 
@@ -2738,39 +1086,9 @@ overwriteRegionRules(regionRules: Array<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-regionRules
-
-
-</td><td>
-
-Array&lt;{ \[key: string\]: any; }&gt;
-
-
-</td><td>
-
-区域规则
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                     | 描述   |
+| ----------- | -------------------------------------- | ---- |
+| regionRules | Array&lt;{ \[key: string\]: any; }&gt; | 区域规则 |
 
 
 
@@ -2800,55 +1118,10 @@ removeNetFromEqualLengthNetGroup(equalLengthNetGroupName: string, net: string | 
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-equalLengthNetGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-等长网络组名称
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                      | 类型                            | 描述      |
+| ----------------------- | ----------------------------- | ------- |
+| equalLengthNetGroupName | string                        | 等长网络组名称 |
+| net                     | string \| Array&lt;string&gt; | 网络名称    |
 
 
 
@@ -2874,55 +1147,10 @@ removeNetFromNetClass(netClassName: string, net: string | Array<string>): Promis
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-netClassName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络类名称
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string \| Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                            | 描述    |
+| ------------ | ----------------------------- | ----- |
+| netClassName | string                        | 网络类名称 |
+| net          | string \| Array&lt;string&gt; | 网络名称  |
 
 
 
@@ -2948,55 +1176,10 @@ removePadPairFromPadPairGroup(padPairGroupName: string, padPair: [string, string
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-padPairGroupName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-焊盘对组名称
-
-
-</td></tr>
-<tr><td>
-
-padPair
-
-
-</td><td>
-
-\[string, string\] \| Array&lt;\[string, string\]&gt;
-
-
-</td><td>
-
-焊盘对
-
-
-</td></tr>
-</tbody></table>
+| 参数               | 类型                                                    | 描述     |
+| ---------------- | ----------------------------------------------------- | ------ |
+| padPairGroupName | string                                                | 焊盘对组名称 |
+| padPair          | \[string, string\] \| Array&lt;\[string, string\]&gt; | 焊盘对    |
 
 
 
@@ -3026,55 +1209,10 @@ renameRuleConfiguration(originalConfigurationName: string, configurationName: st
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-originalConfigurationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原设计规则配置名称
-
-
-</td></tr>
-<tr><td>
-
-configurationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-新设计规则配置名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                        | 类型     | 描述        |
+| ------------------------- | ------ | --------- |
+| originalConfigurationName | string | 原设计规则配置名称 |
+| configurationName         | string | 新设计规则配置名称 |
 
 
 
@@ -3106,71 +1244,11 @@ saveRuleConfiguration(ruleConfiguration: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-ruleConfiguration
-
-
-</td><td>
-
-\{ \[key: string\]: any; \}
-
-
-</td><td>
-
-设计规则配置
-
-
-</td></tr>
-<tr><td>
-
-configurationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-配置名称
-
-
-</td></tr>
-<tr><td>
-
-allowOverwrite
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否允许覆写同名设计规则配置，`false` 则将在遇到同名设计规则配置时返回 `false`<!-- -->，请注意可能的数据丢失风险
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型                          | 描述                                                                  |
+| ----------------- | --------------------------- | ------------------------------------------------------------------- |
+| ruleConfiguration | \{ \[key: string\]: any; \} | 设计规则配置                                                              |
+| configurationName | string                      | 配置名称                                                                |
+| allowOverwrite    | boolean                     | _（可选）_ 是否允许覆写同名设计规则配置，`false` 则将在遇到同名设计规则配置时返回 `false`，请注意可能的数据丢失风险 |
 
 
 
@@ -3200,39 +1278,9 @@ setAsDefaultRuleConfiguration(configurationName: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-configurationName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-配置名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述   |
+| ----------------- | ------ | ---- |
+| configurationName | string | 配置名称 |
 
 
 

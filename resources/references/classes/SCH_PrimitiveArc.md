@@ -5,127 +5,21 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitiveArc implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitiveArc implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(startX, startY, referenceX, referenceY, endX, endY, color, fillColor, lineWidth, lineType)](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建圆弧
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除圆弧
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取圆弧
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取圆弧
-
-
-</td></tr>
-<tr><td>
-
-[getAll()](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有圆弧
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId()](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有圆弧的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改圆弧
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                        | 修饰符 | 描述                        |
+| -------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------- |
+| [create(startX, startY, referenceX, referenceY, endX, endY, color, fillColor, lineWidth, lineType)](./SCH_PrimitiveArc.md) |     | **_(BETA)_** 创建圆弧         |
+| [delete(primitiveIds)](./SCH_PrimitiveArc.md)                                                                              |     | **_(BETA)_** 删除圆弧         |
+| [get(primitiveIds)](./SCH_PrimitiveArc.md)                                                                                 |     | **_(BETA)_** 获取圆弧         |
+| [get(primitiveIds)](./SCH_PrimitiveArc.md)                                                                                 |     | **_(BETA)_** 获取圆弧         |
+| [getAll()](./SCH_PrimitiveArc.md)                                                                                          |     | **_(BETA)_** 获取所有圆弧       |
+| [getAllPrimitiveId()](./SCH_PrimitiveArc.md)                                                                               |     | **_(BETA)_** 获取所有圆弧的图元 ID |
+| [modify(primitiveId, property)](./SCH_PrimitiveArc.md)                                                                     |     | **_(BETA)_** 修改圆弧         |
 
 ---
 
@@ -147,183 +41,18 @@ create(startX: number, startY: number, referenceX: number, referenceY: number, e
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-startX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始点 X
-
-
-</td></tr>
-<tr><td>
-
-startY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始点 Y
-
-
-</td></tr>
-<tr><td>
-
-referenceX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-参考点 X
-
-
-</td></tr>
-<tr><td>
-
-referenceY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-参考点 Y
-
-
-</td></tr>
-<tr><td>
-
-endX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止点 X
-
-
-</td></tr>
-<tr><td>
-
-endY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止点 Y
-
-
-</td></tr>
-<tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 颜色，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 填充颜色，`none` 表示无填充，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-_（可选）_ 线宽，范围 `1-10`<!-- -->，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-_（可选）_ 线型，`null` 表示默认
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                                                                    | 描述                                   |
+| ---------- | --------------------------------------------------------------------- | ------------------------------------ |
+| startX     | number                                                                | 起始点 X                                |
+| startY     | number                                                                | 起始点 Y                                |
+| referenceX | number                                                                | 参考点 X                                |
+| referenceY | number                                                                | 参考点 Y                                |
+| endX       | number                                                                | 终止点 X                                |
+| endY       | number                                                                | 终止点 Y                                |
+| color      | string \| null                                                        | _（可选）_ 颜色，`null` 表示默认                |
+| fillColor  | string \| null                                                        | _（可选）_ 填充颜色，`none` 表示无填充，`null` 表示默认 |
+| lineWidth  | number \| null                                                        | _（可选）_ 线宽，范围 `1-10`，`null` 表示默认      |
+| lineType   | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | _（可选）_ 线型，`null` 表示默认                |
 
 
 
@@ -349,39 +78,9 @@ delete(primitiveIds: string | ISCH_PrimitiveArc | Array<string> | Array<ISCH_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)<!-- -->&gt;
-
-
-</td><td>
-
-圆弧的图元 ID 或圆弧图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                         | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| [ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)&gt; | 圆弧的图元 ID 或圆弧图元对象 |
 
 
 
@@ -407,39 +106,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitiveArc | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-圆弧的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 圆弧的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -465,45 +134,15 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveArc>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-圆弧的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 圆弧的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)&gt;&gt;
 
 圆弧图元对象，空数组表示获取失败
 
@@ -528,7 +167,7 @@ getAll(): Promise<Array<ISCH_PrimitiveArc>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)&gt;&gt;
 
 圆弧图元对象数组
 
@@ -580,55 +219,10 @@ modify(primitiveId: string | ISCH_PrimitiveArc, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ startX?: number; startY?: number; referenceX?: number; referenceY?: number; endX?: number; endY?: number; color?: string \| null; fillColor?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                              | 描述    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [ISCH\_PrimitiveArc](./ISCH_PrimitiveArc.md)                                                                                                                                                                                                                          | 图元 ID |
+| property    | { startX?: number; startY?: number; referenceX?: number; referenceY?: number; endX?: number; endY?: number; color?: string \| null; fillColor?: string \| null; lineWidth?: number \| null; lineType?: [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null; } | 修改参数  |
 
 
 

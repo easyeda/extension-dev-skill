@@ -5,90 +5,16 @@
 ## 签名
 
 ```typescript
-interface IPCB_DifferentialPairItem 
+interface IPCB_DifferentialPairItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[name](./IPCB_DifferentialPairItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-差分对名称
-
-
-</td></tr>
-<tr><td>
-
-[negativeNet](./IPCB_DifferentialPairItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-负网络
-
-
-</td></tr>
-<tr><td>
-
-[positiveNet](./IPCB_DifferentialPairItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-正网络
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                           | 修饰符 | 类型     | 描述    |
+| --------------------------------------------- | --- | ------ | ----- |
+| [name](./IPCB_DifferentialPairItem.md)        |     | string | 差分对名称 |
+| [negativeNet](./IPCB_DifferentialPairItem.md) |     | string | 负网络   |
+| [positiveNet](./IPCB_DifferentialPairItem.md) |     | string | 正网络   |
 
 ---
 

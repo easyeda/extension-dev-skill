@@ -5,90 +5,16 @@
 ## 签名
 
 ```typescript
-interface ISYS_LogLine 
+interface ISYS_LogLine
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[message](./ISYS_LogLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-日志内容
-
-
-</td></tr>
-<tr><td>
-
-[timestamp](./ISYS_LogLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-时间戳
-
-
-</td></tr>
-<tr><td>
-
-[type](./ISYS_LogLine.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[ESYS\_LogType](../enums/ESYS_LogType.md)
-
-
-</td><td>
-
-日志类型
-
-
-</td></tr>
-</tbody></table>
+| 属性名                            | 修饰符 | 类型                                        | 描述   |
+| ------------------------------ | --- | ----------------------------------------- | ---- |
+| [message](./ISYS_LogLine.md)   |     | string                                    | 日志内容 |
+| [timestamp](./ISYS_LogLine.md) |     | number                                    | 时间戳  |
+| [type](./ISYS_LogLine.md)      |     | [ESYS\_LogType](../enums/ESYS_LogType.md) | 日志类型 |
 
 ---
 

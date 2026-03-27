@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_ComplexPolygon 
+declare class IPCB_ComplexPolygon
 ```
 
 ## 备注
@@ -15,65 +15,11 @@ declare class IPCB_ComplexPolygon
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addSource(complexPolygon)](./IPCB_ComplexPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-添加多边形数据
-
-
-</td></tr>
-<tr><td>
-
-[getSource()](./IPCB_ComplexPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取多边形数据
-
-
-</td></tr>
-<tr><td>
-
-[getSourceStrictComplex()](./IPCB_ComplexPolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取复杂多边形数据
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                   | 修饰符 | 描述        |
+| ----------------------------------------------------- | --- | --------- |
+| [addSource(complexPolygon)](./IPCB_ComplexPolygon.md) |     | 添加多边形数据   |
+| [getSource()](./IPCB_ComplexPolygon.md)               |     | 获取多边形数据   |
+| [getSourceStrictComplex()](./IPCB_ComplexPolygon.md)  |     | 获取复杂多边形数据 |
 
 ---
 
@@ -93,39 +39,9 @@ addSource(complexPolygon: TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArra
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt; \| [IPCB\_Polygon](./IPCB_Polygon.md) \| Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->&gt;
-
-
-</td><td>
-
-复杂多边形数据
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                                                                                                                                                                       | 描述      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| complexPolygon | [TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt; \| [IPCB\_Polygon](./IPCB_Polygon.md) \| Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)&gt; | 复杂多边形数据 |
 
 
 
@@ -150,7 +66,7 @@ getSource(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>;
 
 ## 返回值
 
-[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt;
+[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt;
 
 单多边形或复杂多边形数据
 
@@ -173,7 +89,7 @@ getSourceStrictComplex(): Array<TPCB_PolygonSourceArray>;
 
 ## 返回值
 
-Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt;
+Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)&gt;
 
 复杂多边形数据
 

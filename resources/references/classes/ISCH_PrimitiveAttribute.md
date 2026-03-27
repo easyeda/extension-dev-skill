@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitiveAttribute implements ISCH_Primitive 
+declare class ISCH_PrimitiveAttribute implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -14,555 +14,46 @@ declare class ISCH_PrimitiveAttribute implements ISCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_AlignMode()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：对齐模式
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Bold()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否加粗
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Color()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：文本颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillColor()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FontName()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：字体名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FontSize()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：字体大小
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Italic()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否斜体
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Key()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：键
-
-
-</td></tr>
-<tr><td>
-
-[getState\_KeyVisible()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：键是否显示
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ParentPrimitiveId()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：父图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Rotation()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_UnderLine()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否加下划线
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Value()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：值
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ValueVisible()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：值是否显示
-
-
-</td></tr>
-<tr><td>
-
-[getState\_X()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Y()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_AlignMode(alignMode)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：对齐模式
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Bold(bold)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否加粗
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Color(color)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：文本颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillColor(fillColor)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FontName(fontName)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：字体名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FontSize(fontSize)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：字体大小
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Italic(italic)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否斜体
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Key(key)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：键
-
-
-</td></tr>
-<tr><td>
-
-[setState\_KeyVisible(keyVisible)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：键是否显示
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Rotation(rotation)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_UnderLine(underLine)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否加下划线
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Value(value)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：值
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ValueVisible(valueVisible)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：值是否显示
-
-
-</td></tr>
-<tr><td>
-
-[setState\_X(x)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Y(y)](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                  | 修饰符 | 描述                          |
+| -------------------------------------------------------------------- | --- | --------------------------- |
+| [done()](./ISCH_PrimitiveAttribute.md)                               |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_AlignMode()](./ISCH_PrimitiveAttribute.md)                |     | 获取属性状态：对齐模式                 |
+| [getState\_Bold()](./ISCH_PrimitiveAttribute.md)                     |     | 获取属性状态：是否加粗                 |
+| [getState\_Color()](./ISCH_PrimitiveAttribute.md)                    |     | 获取属性状态：文本颜色                 |
+| [getState\_FillColor()](./ISCH_PrimitiveAttribute.md)                |     | 获取属性状态：填充颜色                 |
+| [getState\_FontName()](./ISCH_PrimitiveAttribute.md)                 |     | 获取属性状态：字体名称                 |
+| [getState\_FontSize()](./ISCH_PrimitiveAttribute.md)                 |     | 获取属性状态：字体大小                 |
+| [getState\_Italic()](./ISCH_PrimitiveAttribute.md)                   |     | 获取属性状态：是否斜体                 |
+| [getState\_Key()](./ISCH_PrimitiveAttribute.md)                      |     | 获取属性状态：键                    |
+| [getState\_KeyVisible()](./ISCH_PrimitiveAttribute.md)               |     | 获取属性状态：键是否显示                |
+| [getState\_ParentPrimitiveId()](./ISCH_PrimitiveAttribute.md)        |     | 获取属性状态：父图元 ID               |
+| [getState\_PrimitiveId()](./ISCH_PrimitiveAttribute.md)              |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveType()](./ISCH_PrimitiveAttribute.md)            |     | 获取属性状态：图元类型                 |
+| [getState\_Rotation()](./ISCH_PrimitiveAttribute.md)                 |     | 获取属性状态：旋转角度                 |
+| [getState\_UnderLine()](./ISCH_PrimitiveAttribute.md)                |     | 获取属性状态：是否加下划线               |
+| [getState\_Value()](./ISCH_PrimitiveAttribute.md)                    |     | 获取属性状态：值                    |
+| [getState\_ValueVisible()](./ISCH_PrimitiveAttribute.md)             |     | 获取属性状态：值是否显示                |
+| [getState\_X()](./ISCH_PrimitiveAttribute.md)                        |     | 获取属性状态：坐标 X                 |
+| [getState\_Y()](./ISCH_PrimitiveAttribute.md)                        |     | 获取属性状态：坐标 Y                 |
+| [isAsync()](./ISCH_PrimitiveAttribute.md)                            |     | 查询图元是否为异步图元                 |
+| [reset()](./ISCH_PrimitiveAttribute.md)                              |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_AlignMode(alignMode)](./ISCH_PrimitiveAttribute.md)       |     | **_(BETA)_** 设置属性状态：对齐模式    |
+| [setState\_Bold(bold)](./ISCH_PrimitiveAttribute.md)                 |     | **_(BETA)_** 设置属性状态：是否加粗    |
+| [setState\_Color(color)](./ISCH_PrimitiveAttribute.md)               |     | **_(BETA)_** 设置属性状态：文本颜色    |
+| [setState\_FillColor(fillColor)](./ISCH_PrimitiveAttribute.md)       |     | **_(BETA)_** 设置属性状态：填充颜色    |
+| [setState\_FontName(fontName)](./ISCH_PrimitiveAttribute.md)         |     | **_(BETA)_** 设置属性状态：字体名称    |
+| [setState\_FontSize(fontSize)](./ISCH_PrimitiveAttribute.md)         |     | **_(BETA)_** 设置属性状态：字体大小    |
+| [setState\_Italic(italic)](./ISCH_PrimitiveAttribute.md)             |     | **_(BETA)_** 设置属性状态：是否斜体    |
+| [setState\_Key(key)](./ISCH_PrimitiveAttribute.md)                   |     | **_(BETA)_** 设置属性状态：键       |
+| [setState\_KeyVisible(keyVisible)](./ISCH_PrimitiveAttribute.md)     |     | **_(BETA)_** 设置属性状态：键是否显示   |
+| [setState\_Rotation(rotation)](./ISCH_PrimitiveAttribute.md)         |     | **_(BETA)_** 设置属性状态：旋转角度    |
+| [setState\_UnderLine(underLine)](./ISCH_PrimitiveAttribute.md)       |     | **_(BETA)_** 设置属性状态：是否加下划线  |
+| [setState\_Value(value)](./ISCH_PrimitiveAttribute.md)               |     | **_(BETA)_** 设置属性状态：值       |
+| [setState\_ValueVisible(valueVisible)](./ISCH_PrimitiveAttribute.md) |     | **_(BETA)_** 设置属性状态：值是否显示   |
+| [setState\_X(x)](./ISCH_PrimitiveAttribute.md)                       |     | **_(BETA)_** 设置属性状态：坐标 X    |
+| [setState\_Y(y)](./ISCH_PrimitiveAttribute.md)                       |     | **_(BETA)_** 设置属性状态：坐标 Y    |
+| [toAsync()](./ISCH_PrimitiveAttribute.md)                            |     | 将图元转换为异步图元                  |
+| [toSync()](./ISCH_PrimitiveAttribute.md)                             |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -585,7 +76,7 @@ done(): Promise<ISCH_PrimitiveAttribute>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)&gt;
 
 属性图元对象
 
@@ -967,7 +458,7 @@ reset(): Promise<ISCH_PrimitiveAttribute>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)&gt;
 
 属性图元对象
 
@@ -987,39 +478,9 @@ setState_AlignMode(alignMode: ESCH_PrimitiveTextAlignMode | null): ISCH_Primitiv
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-alignMode
-
-
-</td><td>
-
-[ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md) \| null
-
-
-</td><td>
-
-对齐模式
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                              | 描述   |
+| --------- | ------------------------------------------------------------------------------- | ---- |
+| alignMode | [ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md) \| null | 对齐模式 |
 
 
 
@@ -1045,39 +506,9 @@ setState_Bold(bold: boolean | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-bold
-
-
-</td><td>
-
-boolean \| null
-
-
-</td><td>
-
-是否加粗
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型              | 描述   |
+| ---- | --------------- | ---- |
+| bold | boolean \| null | 是否加粗 |
 
 
 
@@ -1103,37 +534,9 @@ setState_Color(color: string | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型             | 描述  |
+| ----- | -------------- | --- |
+| color | string \| null |     |
 
 
 
@@ -1159,39 +562,9 @@ setState_FillColor(fillColor: string | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-填充颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述   |
+| --------- | -------------- | ---- |
+| fillColor | string \| null | 填充颜色 |
 
 
 
@@ -1217,39 +590,9 @@ setState_FontName(fontName: string | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fontName
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-字体名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型             | 描述   |
+| -------- | -------------- | ---- |
+| fontName | string \| null | 字体名称 |
 
 
 
@@ -1275,39 +618,9 @@ setState_FontSize(fontSize: number | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fontSize
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-字体大小
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型             | 描述   |
+| -------- | -------------- | ---- |
+| fontSize | number \| null | 字体大小 |
 
 
 
@@ -1333,39 +646,9 @@ setState_Italic(italic: boolean | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-italic
-
-
-</td><td>
-
-boolean \| null
-
-
-</td><td>
-
-是否斜体
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型              | 描述   |
+| ------ | --------------- | ---- |
+| italic | boolean \| null | 是否斜体 |
 
 
 
@@ -1391,39 +674,9 @@ setState_Key(key: string): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-key
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-键
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述  |
+| --- | ------ | --- |
+| key | string | 键   |
 
 
 
@@ -1449,39 +702,9 @@ setState_KeyVisible(keyVisible: boolean | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-keyVisible
-
-
-</td><td>
-
-boolean \| null
-
-
-</td><td>
-
-键是否显示
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型              | 描述    |
+| ---------- | --------------- | ----- |
+| keyVisible | boolean \| null | 键是否显示 |
 
 
 
@@ -1507,39 +730,9 @@ setState_Rotation(rotation: number | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-rotation
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型             | 描述   |
+| -------- | -------------- | ---- |
+| rotation | number \| null | 旋转角度 |
 
 
 
@@ -1565,39 +758,9 @@ setState_UnderLine(underLine: boolean | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-underLine
-
-
-</td><td>
-
-boolean \| null
-
-
-</td><td>
-
-是否加下划线
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型              | 描述     |
+| --------- | --------------- | ------ |
+| underLine | boolean \| null | 是否加下划线 |
 
 
 
@@ -1623,39 +786,9 @@ setState_Value(value: string): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-value
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-值
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型     | 描述  |
+| ----- | ------ | --- |
+| value | string | 值   |
 
 
 
@@ -1681,39 +814,9 @@ setState_ValueVisible(valueVisible: boolean | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-valueVisible
-
-
-</td><td>
-
-boolean \| null
-
-
-</td><td>
-
-值是否显示
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型              | 描述    |
+| ------------ | --------------- | ----- |
+| valueVisible | boolean \| null | 值是否显示 |
 
 
 
@@ -1739,39 +842,9 @@ setState_X(x: number | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型             | 描述   |
+| --- | -------------- | ---- |
+| x   | number \| null | 坐标 X |
 
 
 
@@ -1797,39 +870,9 @@ setState_Y(y: number | null): ISCH_PrimitiveAttribute;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-y
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型             | 描述   |
+| --- | -------------- | ---- |
+| y   | number \| null | 坐标 Y |
 
 
 

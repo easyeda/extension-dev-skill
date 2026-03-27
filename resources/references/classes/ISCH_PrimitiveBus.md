@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitiveBus implements ISCH_Primitive 
+declare class ISCH_PrimitiveBus implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -14,247 +14,24 @@ declare class ISCH_PrimitiveBus implements ISCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_BusName()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：总线名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Color()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：总线颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Line()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：多段线坐标组
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineType()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[setState\_BusName(busName)](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：总线名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Color(color)](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：总线颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Line(line)](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：多段线坐标组
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineType(lineType)](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitiveBus.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                      | 修饰符 | 描述                         |
+| -------------------------------------------------------- | --- | -------------------------- |
+| [done()](./ISCH_PrimitiveBus.md)                         |     | **_(BETA)_** 将对图元的更改应用到画布  |
+| [getState\_BusName()](./ISCH_PrimitiveBus.md)            |     | 获取属性状态：总线名称                |
+| [getState\_Color()](./ISCH_PrimitiveBus.md)              |     | 获取属性状态：总线颜色                |
+| [getState\_Line()](./ISCH_PrimitiveBus.md)               |     | 获取属性状态：多段线坐标组              |
+| [getState\_LineType()](./ISCH_PrimitiveBus.md)           |     | 获取属性状态：线型                  |
+| [getState\_LineWidth()](./ISCH_PrimitiveBus.md)          |     | 获取属性状态：线宽                  |
+| [getState\_PrimitiveId()](./ISCH_PrimitiveBus.md)        |     | 获取属性状态：图元 ID               |
+| [getState\_PrimitiveType()](./ISCH_PrimitiveBus.md)      |     | 获取属性状态：图元类型                |
+| [isAsync()](./ISCH_PrimitiveBus.md)                      |     | 查询图元是否为异步图元                |
+| [setState\_BusName(busName)](./ISCH_PrimitiveBus.md)     |     | **_(BETA)_** 设置属性状态：总线名称   |
+| [setState\_Color(color)](./ISCH_PrimitiveBus.md)         |     | **_(BETA)_** 设置属性状态：总线颜色   |
+| [setState\_Line(line)](./ISCH_PrimitiveBus.md)           |     | **_(BETA)_** 设置属性状态：多段线坐标组 |
+| [setState\_LineType(lineType)](./ISCH_PrimitiveBus.md)   |     | **_(BETA)_** 设置属性状态：线型     |
+| [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveBus.md) |     | **_(BETA)_** 设置属性状态：线宽     |
+| [toAsync()](./ISCH_PrimitiveBus.md)                      |     | 将图元转换为异步图元                 |
+| [toSync()](./ISCH_PrimitiveBus.md)                       |     | 将图元转换为同步图元                 |
 
 ---
 
@@ -277,7 +54,7 @@ done(): Promise<ISCH_PrimitiveBus>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitiveBus](./ISCH_PrimitiveBus.md)&gt;
 
 总线图元对象
 
@@ -449,39 +226,9 @@ setState_BusName(busName: string): ISCH_PrimitiveBus;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-busName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-总线名称
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型     | 描述   |
+| ------- | ------ | ---- |
+| busName | string | 总线名称 |
 
 
 
@@ -507,39 +254,9 @@ setState_Color(color: string | null): ISCH_PrimitiveBus;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-总线颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型             | 描述   |
+| ----- | -------------- | ---- |
+| color | string \| null | 总线颜色 |
 
 
 
@@ -565,39 +282,9 @@ setState_Line(line: Array<number> | Array<Array<number>>): ISCH_PrimitiveBus;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-line
-
-
-</td><td>
-
-Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;
-
-
-</td><td>
-
-多段线坐标组
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                                                      | 描述     |
+| ---- | ------------------------------------------------------- | ------ |
+| line | Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt; | 多段线坐标组 |
 
 
 
@@ -623,39 +310,9 @@ setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveBus;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-线型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                    | 描述  |
+| -------- | --------------------------------------------------------------------- | --- |
+| lineType | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | 线型  |
 
 
 
@@ -681,39 +338,9 @@ setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveBus;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述  |
+| --------- | -------------- | --- |
+| lineWidth | number \| null | 线宽  |
 
 
 

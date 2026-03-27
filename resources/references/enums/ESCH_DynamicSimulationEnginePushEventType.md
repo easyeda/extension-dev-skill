@@ -5,105 +5,15 @@
 ## 签名
 
 ```typescript
-declare enum ESCH_DynamicSimulationEnginePushEventType 
+declare enum ESCH_DynamicSimulationEnginePushEventType
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-ENGINE\_ERROR
-
-
-</td><td>
-
-`"ENGINE_ERROR"`
-
-
-</td><td>
-
-错误
-
-
-</td></tr>
-<tr><td>
-
-ENGINE\_LOG
-
-
-</td><td>
-
-`"ENGINE_LOG"`
-
-
-</td><td>
-
-实时日志
-
-
-</td></tr>
-<tr><td>
-
-SESSION\_STATE
-
-
-</td><td>
-
-`"SESSION_STATE"`
-
-
-</td><td>
-
-状态变化（RUNNING/PAUSED/STOPPED...）
-
-
-</td></tr>
-<tr><td>
-
-STREAM\_DATA
-
-
-</td><td>
-
-`"STREAM_DATA"`
-
-
-</td><td>
-
-实时数据帧（波形点/节点电压/内部量）
-
-
-</td></tr>
-<tr><td>
-
-STREAM\_SNAPSHOT
-
-
-</td><td>
-
-`"STREAM_SNAPSHOT"`
-
-
-</td><td>
-
-一次快照（可选，用于 UI 刷新）
-
-
-</td></tr>
-</tbody></table>
+| 成员               | 值                   | 描述                              |
+| ---------------- | ------------------- | ------------------------------- |
+| ENGINE\_ERROR    | `"ENGINE_ERROR"`    | 错误                              |
+| ENGINE\_LOG      | `"ENGINE_LOG"`      | 实时日志                            |
+| SESSION\_STATE   | `"SESSION_STATE"`   | 状态变化（RUNNING/PAUSED/STOPPED...） |
+| STREAM\_DATA     | `"STREAM_DATA"`     | 实时数据帧（波形点/节点电压/内部量）             |
+| STREAM\_SNAPSHOT | `"STREAM_SNAPSHOT"` | 一次快照（可选，用于 UI 刷新）               |

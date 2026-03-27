@@ -5,57 +5,12 @@
 ## 签名
 
 ```typescript
-declare enum ESCH_MouseEventType 
+declare enum ESCH_MouseEventType
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-CLEAR\_SELECTED
-
-
-</td><td>
-
-`"clearSelected"`
-
-
-</td><td>
-
-取消选中
-
-
-</td></tr>
-<tr><td>
-
-SELECTED
-
-
-</td><td>
-
-`"selected"`
-
-
-</td><td>
-
-选中
-
-
-</td></tr>
-</tbody></table>
+| 成员              | 值                 | 描述   |
+| --------------- | ----------------- | ---- |
+| CLEAR\_SELECTED | `"clearSelected"` | 取消选中 |
+| SELECTED        | `"selected"`      | 选中   |

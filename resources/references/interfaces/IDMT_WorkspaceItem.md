@@ -5,92 +5,16 @@
 ## 签名
 
 ```typescript
-interface IDMT_WorkspaceItem 
+interface IDMT_WorkspaceItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[itemType](./IDMT_WorkspaceItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.WORKSPACE](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_WorkspaceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工作区名称
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_WorkspaceItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-工作区 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                 | 修饰符        | 类型                                                    | 描述       |
+| ----------------------------------- | ---------- | ----------------------------------------------------- | -------- |
+| [itemType](./IDMT_WorkspaceItem.md) | `readonly` | [EDMT\_ItemType.WORKSPACE](../enums/EDMT_ItemType.md) | 项目类型     |
+| [name](./IDMT_WorkspaceItem.md)     |            | string                                                | 工作区名称    |
+| [uuid](./IDMT_WorkspaceItem.md)     |            | string                                                | 工作区 UUID |
 
 ---
 

@@ -1,3 +1,8 @@
+# 1.3.3
+## 优化
+- 将 references 下所有文档的 HTML 表格转为 Markdown 语法，移除多余空行
+- 移除 api-reference.md，改用 _quick-reference.md 作为快速签名查找入口
+
 # 1.3.2
 ## 优化
 - 将原有index.d.ts索引改用easyeda-api-skill所使用的结构化 API 文档

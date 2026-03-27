@@ -5,109 +5,17 @@
 ## 签名
 
 ```typescript
-interface IDMT_EditorTabItem 
+interface IDMT_EditorTabItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[draggable](./IDMT_EditorTabItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-标签页是否可拖动
-
-
-</td></tr>
-<tr><td>
-
-[isAbleDelete](./IDMT_EditorTabItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-标签页是否可关闭
-
-
-</td></tr>
-<tr><td>
-
-[tabId](./IDMT_EditorTabItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页 ID
-
-
-</td></tr>
-<tr><td>
-
-[title](./IDMT_EditorTabItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-标签页标题
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                     | 修饰符 | 类型      | 描述       |
+| --------------------------------------- | --- | ------- | -------- |
+| [draggable](./IDMT_EditorTabItem.md)    |     | boolean | 标签页是否可拖动 |
+| [isAbleDelete](./IDMT_EditorTabItem.md) |     | boolean | 标签页是否可关闭 |
+| [tabId](./IDMT_EditorTabItem.md)        |     | string  | 标签页 ID   |
+| [title](./IDMT_EditorTabItem.md)        |     | string  | 标签页标题    |
 
 ---
 

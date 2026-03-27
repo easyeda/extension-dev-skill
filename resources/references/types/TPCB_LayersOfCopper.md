@@ -10,7 +10,7 @@ type TPCB_LayersOfCopper = TPCB_LayersOfInner | EPCB_LayerId.TOP | EPCB_LayerId.
 ## 引用
 
 
-[TPCB\_LayersOfInner](./TPCB_LayersOfInner.md)<!-- -->, [EPCB\_LayerId.TOP](../enums/EPCB_LayerId.md)<!-- -->, [EPCB\_LayerId.BOTTOM](../enums/EPCB_LayerId.md)
+[TPCB\_LayersOfInner](./TPCB_LayersOfInner.md), [EPCB\_LayerId.TOP](../enums/EPCB_LayerId.md), [EPCB\_LayerId.BOTTOM](../enums/EPCB_LayerId.md)
 
 ## 备注
 

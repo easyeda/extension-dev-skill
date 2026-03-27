@@ -5,127 +5,21 @@ PCB &amp; 封装 / 填充图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitiveFill implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitiveFill implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(layer, complexPolygon, net, fillMode, lineWidth, primitiveLock)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建填充
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除填充
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取填充
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取填充
-
-
-</td></tr>
-<tr><td>
-
-[getAll(layer, net, primitiveLock)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有填充
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(layer, net, primitiveLock)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有填充的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitiveFill.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改填充
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                              | 修饰符 | 描述                        |
+| ------------------------------------------------------------------------------------------------ | --- | ------------------------- |
+| [create(layer, complexPolygon, net, fillMode, lineWidth, primitiveLock)](./PCB_PrimitiveFill.md) |     | **_(BETA)_** 创建填充         |
+| [delete(primitiveIds)](./PCB_PrimitiveFill.md)                                                   |     | **_(BETA)_** 删除填充         |
+| [get(primitiveIds)](./PCB_PrimitiveFill.md)                                                      |     | **_(BETA)_** 获取填充         |
+| [get(primitiveIds)](./PCB_PrimitiveFill.md)                                                      |     | **_(BETA)_** 获取填充         |
+| [getAll(layer, net, primitiveLock)](./PCB_PrimitiveFill.md)                                      |     | **_(BETA)_** 获取所有填充       |
+| [getAllPrimitiveId(layer, net, primitiveLock)](./PCB_PrimitiveFill.md)                           |     | **_(BETA)_** 获取所有填充的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitiveFill.md)                                          |     | **_(BETA)_** 修改填充         |
 
 ---
 
@@ -147,119 +41,14 @@ create(layer: TPCB_LayersOfFill, complexPolygon: IPCB_Polygon, net?: string, fil
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-复杂多边形对象
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-fillMode
-
-
-</td><td>
-
-[EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md)
-
-
-</td><td>
-
-_（可选）_ 填充模式
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                            | 描述          |
+| -------------- | ------------------------------------------------------------- | ----------- |
+| layer          | [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)           | 层           |
+| complexPolygon | [IPCB\_Polygon](./IPCB_Polygon.md)                            | 复杂多边形对象     |
+| net            | string                                                        | _（可选）_ 网络名称 |
+| fillMode       | [EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md) | _（可选）_ 填充模式 |
+| lineWidth      | number                                                        | _（可选）_ 线宽   |
+| primitiveLock  | boolean                                                       | _（可选）_ 是否锁定 |
 
 
 
@@ -285,39 +74,9 @@ delete(primitiveIds: string | IPCB_PrimitiveFill | Array<string> | Array<IPCB_Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
-
-
-</td><td>
-
-填充的图元 ID 或填充图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                             | 描述               |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| primitiveIds | string \| [IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt; | 填充的图元 ID 或填充图元对象 |
 
 
 
@@ -343,39 +102,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitiveFill | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -401,45 +130,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveFill>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 填充的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt;&gt;
 
 填充图元对象，空数组表示获取失败
 
@@ -463,77 +162,17 @@ getAll(layer?: TPCB_LayersOfFill, net?: string, primitiveLock?: boolean): Promis
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| layer         | [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md) | _（可选）_ 层    |
+| net           | string                                              | _（可选）_ 网络名称 |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt;&gt;
 
 填充图元对象数组
 
@@ -553,71 +192,11 @@ getAllPrimitiveId(layer?: TPCB_LayersOfFill, net?: string, primitiveLock?: boole
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| layer         | [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md) | _（可选）_ 层    |
+| net           | string                                              | _（可选）_ 网络名称 |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
@@ -650,55 +229,10 @@ modify(primitiveId: string | IPCB_PrimitiveFill, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ layer?: [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)<!-- -->; complexPolygon?: [IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->; net?: string; fillMode?: [EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md)<!-- -->; lineWidth?: number; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                         | 描述    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)                                                                                                                                                                                                   | 图元 ID |
+| property    | { layer?: [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md); complexPolygon?: [IPCB\_Polygon](./IPCB_Polygon.md); net?: string; fillMode?: [EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md); lineWidth?: number; primitiveLock?: boolean; } | 修改参数  |
 
 
 

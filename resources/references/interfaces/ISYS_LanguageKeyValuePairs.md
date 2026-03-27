@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface ISYS_LanguageKeyValuePairs 
+interface ISYS_LanguageKeyValuePairs
 ```
 
 ## 备注

@@ -5,169 +5,21 @@ PCB 图元
 ## 签名
 
 ```typescript
-interface IPCB_Primitive 
+interface IPCB_Primitive
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; [IPCB\_Primitive](./IPCB_Primitive.md) \| Promise&lt;[IPCB\_Primitive](./IPCB_Primitive.md)<!-- -->&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[done](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; [IPCB\_Primitive](./IPCB_Primitive.md) \| Promise&lt;[IPCB\_Primitive](./IPCB_Primitive.md)<!-- -->&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; string
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[isAsync](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[reset](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; [IPCB\_Primitive](./IPCB_Primitive.md) \| Promise&lt;[IPCB\_Primitive](./IPCB_Primitive.md)<!-- -->&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[toAsync](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; [IPCB\_Primitive](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[toSync](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-() =&gt; [IPCB\_Primitive](./IPCB_Primitive.md)
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                            | 修饰符 | 类型                                                                                                       | 描述  |
+| ---------------------------------------------- | --- | -------------------------------------------------------------------------------------------------------- | --- |
+| [create](./IPCB_Primitive.md)                  |     | () =&gt; [IPCB\_Primitive](./IPCB_Primitive.md) \| Promise&lt;[IPCB\_Primitive](./IPCB_Primitive.md)&gt; |     |
+| [done](./IPCB_Primitive.md)                    |     | () =&gt; [IPCB\_Primitive](./IPCB_Primitive.md) \| Promise&lt;[IPCB\_Primitive](./IPCB_Primitive.md)&gt; |     |
+| [getState\_PrimitiveId](./IPCB_Primitive.md)   |     | () =&gt; string                                                                                          |     |
+| [getState\_PrimitiveType](./IPCB_Primitive.md) |     | () =&gt; [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)                                           |     |
+| [isAsync](./IPCB_Primitive.md)                 |     | () =&gt; boolean                                                                                         |     |
+| [reset](./IPCB_Primitive.md)                   |     | () =&gt; [IPCB\_Primitive](./IPCB_Primitive.md) \| Promise&lt;[IPCB\_Primitive](./IPCB_Primitive.md)&gt; |     |
+| [toAsync](./IPCB_Primitive.md)                 |     | () =&gt; [IPCB\_Primitive](./IPCB_Primitive.md)                                                          |     |
+| [toSync](./IPCB_Primitive.md)                  |     | () =&gt; [IPCB\_Primitive](./IPCB_Primitive.md)                                                          |     |
 
 ---
 

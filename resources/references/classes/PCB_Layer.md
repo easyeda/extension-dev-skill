@@ -5,224 +5,27 @@ PCB &amp; 封装 / 图层操作类
 ## 签名
 
 ```typescript
-declare class PCB_Layer 
+declare class PCB_Layer
 ```
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addCustomLayer()](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 新增自定义层
-
-
-</td></tr>
-<tr><td>
-
-[getAllLayers()](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有图层的详细属性
-
-
-</td></tr>
-<tr><td>
-
-[lockLayer(layer)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 锁定层
-
-
-</td></tr>
-<tr><td>
-
-[modifyLayer(layer, property)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改图层属性
-
-
-</td></tr>
-<tr><td>
-
-[removeLayer(layer)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 移除层
-
-
-</td></tr>
-<tr><td>
-
-[selectLayer(layer)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-选中图层
-
-
-</td></tr>
-<tr><td>
-
-[setInactiveLayerDisplayMode(displayMode)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置非激活层展示模式
-
-
-</td></tr>
-<tr><td>
-
-[setInactiveLayerTransparency(transparency)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置非激活层透明度
-
-
-</td></tr>
-<tr><td>
-
-[setLayerColorConfiguration(colorConfiguration)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置层颜色配置
-
-
-</td></tr>
-<tr><td>
-
-[setLayerInvisible(layer, setOtherLayerVisible)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将层设置为不可见
-
-
-</td></tr>
-<tr><td>
-
-[setLayerVisible(layer, setOtherLayerInvisible)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将层设置为可见
-
-
-</td></tr>
-<tr><td>
-
-[setPcbType(pcbType)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置 PCB 类型
-
-
-</td></tr>
-<tr><td>
-
-[setTheNumberOfCopperLayers(numberOfLayers)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置铜箔层数
-
-
-</td></tr>
-<tr><td>
-
-[unlockLayer(layer)](./PCB_Layer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 取消锁定层
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                              | 修饰符 | 描述                       |
+| ---------------------------------------------------------------- | --- | ------------------------ |
+| [addCustomLayer()](./PCB_Layer.md)                               |     | **_(BETA)_** 新增自定义层      |
+| [getAllLayers()](./PCB_Layer.md)                                 |     | **_(BETA)_** 获取所有图层的详细属性 |
+| [lockLayer(layer)](./PCB_Layer.md)                               |     | **_(BETA)_** 锁定层         |
+| [modifyLayer(layer, property)](./PCB_Layer.md)                   |     | **_(BETA)_** 修改图层属性      |
+| [removeLayer(layer)](./PCB_Layer.md)                             |     | **_(BETA)_** 移除层         |
+| [selectLayer(layer)](./PCB_Layer.md)                             |     | 选中图层                     |
+| [setInactiveLayerDisplayMode(displayMode)](./PCB_Layer.md)       |     | **_(BETA)_** 设置非激活层展示模式  |
+| [setInactiveLayerTransparency(transparency)](./PCB_Layer.md)     |     | **_(BETA)_** 设置非激活层透明度   |
+| [setLayerColorConfiguration(colorConfiguration)](./PCB_Layer.md) |     | **_(BETA)_** 设置层颜色配置     |
+| [setLayerInvisible(layer, setOtherLayerVisible)](./PCB_Layer.md) |     | **_(BETA)_** 将层设置为不可见    |
+| [setLayerVisible(layer, setOtherLayerInvisible)](./PCB_Layer.md) |     | **_(BETA)_** 将层设置为可见     |
+| [setPcbType(pcbType)](./PCB_Layer.md)                            |     | **_(BETA)_** 设置 PCB 类型   |
+| [setTheNumberOfCopperLayers(numberOfLayers)](./PCB_Layer.md)     |     | **_(BETA)_** 设置铜箔层数      |
+| [unlockLayer(layer)](./PCB_Layer.md)                             |     | **_(BETA)_** 取消锁定层       |
 
 ---
 
@@ -266,7 +69,7 @@ getAllLayers(): Promise<Array<IPCB_LayerItem>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_LayerItem](../interfaces/IPCB_LayerItem.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_LayerItem](../interfaces/IPCB_LayerItem.md)&gt;&gt;
 
 所有图层的详细属性
 
@@ -286,39 +89,9 @@ lockLayer(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 层，如若不指定任何层则默认为所有层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                                                                                                          | 描述                       |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| layer | [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)&gt; | _（可选）_ 层，如若不指定任何层则默认为所有层 |
 
 
 
@@ -349,55 +122,10 @@ modifyLayer(layer: TPCB_LayersInTheSelectable, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ name?: string; type?: [TPCB\_LayerTypesOfInnerLayer](../types/TPCB_LayerTypesOfInnerLayer.md)<!-- -->; color?: string; transparency?: number; }
-
-
-</td><td>
-
-属性
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                                                                                        | 描述  |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| layer    | [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)                                                                     | 层   |
+| property | { name?: string; type?: [TPCB\_LayerTypesOfInnerLayer](../types/TPCB_LayerTypesOfInnerLayer.md); color?: string; transparency?: number; } | 属性  |
 
 
 
@@ -427,39 +155,9 @@ removeLayer(layer: TPCB_LayersOfCustom): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfCustom](../types/TPCB_LayersOfCustom.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                      | 描述  |
+| ----- | ------------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfCustom](../types/TPCB_LayersOfCustom.md) | 层   |
 
 
 
@@ -487,39 +185,9 @@ selectLayer(layer: TPCB_LayersInTheSelectable): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                    | 描述  |
+| ----- | --------------------------------------------------------------------- | --- |
+| layer | [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) | 层   |
 
 
 
@@ -545,39 +213,9 @@ setInactiveLayerDisplayMode(displayMode?: EPCB_InactiveLayerDisplayMode): Promis
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-displayMode
-
-
-</td><td>
-
-[EPCB\_InactiveLayerDisplayMode](../enums/EPCB_InactiveLayerDisplayMode.md)
-
-
-</td><td>
-
-_（可选）_ 展示模式
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                          | 描述          |
+| ----------- | --------------------------------------------------------------------------- | ----------- |
+| displayMode | [EPCB\_InactiveLayerDisplayMode](../enums/EPCB_InactiveLayerDisplayMode.md) | _（可选）_ 展示模式 |
 
 
 
@@ -603,39 +241,9 @@ setInactiveLayerTransparency(transparency: number): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-transparency
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-透明度，范围 `0-100`
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述             |
+| ------------ | ------ | -------------- |
+| transparency | number | 透明度，范围 `0-100` |
 
 
 
@@ -661,39 +269,9 @@ setLayerColorConfiguration(colorConfiguration: EPCB_LayerColorConfiguration): Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-colorConfiguration
-
-
-</td><td>
-
-[EPCB\_LayerColorConfiguration](../enums/EPCB_LayerColorConfiguration.md)
-
-
-</td><td>
-
-颜色配置
-
-
-</td></tr>
-</tbody></table>
+| 参数                 | 类型                                                                        | 描述   |
+| ------------------ | ------------------------------------------------------------------------- | ---- |
+| colorConfiguration | [EPCB\_LayerColorConfiguration](../enums/EPCB_LayerColorConfiguration.md) | 颜色配置 |
 
 
 
@@ -719,55 +297,10 @@ setLayerInvisible(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSel
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 层，如若不指定任何层则默认为所有层
-
-
-</td></tr>
-<tr><td>
-
-setOtherLayerVisible
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否将其它层设置为可见
-
-
-</td></tr>
-</tbody></table>
+| 参数                   | 类型                                                                                                                                                          | 描述                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| layer                | [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)&gt; | _（可选）_ 层，如若不指定任何层则默认为所有层 |
+| setOtherLayerVisible | boolean                                                                                                                                                     | _（可选）_ 是否将其它层设置为可见       |
 
 
 
@@ -793,55 +326,10 @@ setLayerVisible(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelec
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 层，如若不指定任何层则默认为所有层
-
-
-</td></tr>
-<tr><td>
-
-setOtherLayerInvisible
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否将其它层设置为不可见
-
-
-</td></tr>
-</tbody></table>
+| 参数                     | 类型                                                                                                                                                          | 描述                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| layer                  | [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)&gt; | _（可选）_ 层，如若不指定任何层则默认为所有层 |
+| setOtherLayerInvisible | boolean                                                                                                                                                     | _（可选）_ 是否将其它层设置为不可见      |
 
 
 
@@ -867,39 +355,9 @@ setPcbType(pcbType: EPCB_PcbPlateType): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pcbType
-
-
-</td><td>
-
-[EPCB\_PcbPlateType](../enums/EPCB_PcbPlateType.md)
-
-
-</td><td>
-
-PCB 类型
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型                                                  | 描述     |
+| ------- | --------------------------------------------------- | ------ |
+| pcbType | [EPCB\_PcbPlateType](../enums/EPCB_PcbPlateType.md) | PCB 类型 |
 
 
 
@@ -935,39 +393,9 @@ setTheNumberOfCopperLayers(numberOfLayers: 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 1
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-numberOfLayers
-
-
-</td><td>
-
-2 \| 4 \| 6 \| 8 \| 10 \| 12 \| 14 \| 16 \| 18 \| 20 \| 22 \| 24 \| 26 \| 28 \| 30 \| 32
-
-
-</td><td>
-
-层数
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                                       | 描述  |
+| -------------- | ---------------------------------------------------------------------------------------- | --- |
+| numberOfLayers | 2 \| 4 \| 6 \| 8 \| 10 \| 12 \| 14 \| 16 \| 18 \| 20 \| 22 \| 24 \| 26 \| 28 \| 30 \| 32 | 层数  |
 
 
 
@@ -997,39 +425,9 @@ unlockLayer(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectabl
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
-
-
-</td><td>
-
-_（可选）_ 层，如若不指定任何层则默认为所有层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                                                                                                          | 描述                       |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| layer | [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)&gt; | _（可选）_ 层，如若不指定任何层则默认为所有层 |
 
 
 

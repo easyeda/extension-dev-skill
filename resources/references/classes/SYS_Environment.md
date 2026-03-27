@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_Environment 
+declare class SYS_Environment
 ```
 
 ## 备注
@@ -14,177 +14,19 @@ declare class SYS_Environment
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getEditorCompliedDate()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取编辑器编译日期
-
-
-</td></tr>
-<tr><td>
-
-[getEditorCurrentVersion()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取编辑器当前版本
-
-
-</td></tr>
-<tr><td>
-
-[getUserInfo()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取用户信息
-
-
-</td></tr>
-<tr><td>
-
-[isClient()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否处于客户端环境
-
-
-</td></tr>
-<tr><td>
-
-[isEasyEDAProEdition()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否为 EasyEDA Pro 版本
-
-
-</td></tr>
-<tr><td>
-
-[isHalfOfflineMode()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否为半离线模式
-
-
-</td></tr>
-<tr><td>
-
-[isJLCEDAProEdition()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否为 嘉立创EDA 专业版本
-
-
-</td></tr>
-<tr><td>
-
-[isOfflineMode()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否为全离线模式
-
-
-</td></tr>
-<tr><td>
-
-[isOnlineMode()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否为在线模式
-
-
-</td></tr>
-<tr><td>
-
-[isProPrivateEdition()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否为私有化部署版本
-
-
-</td></tr>
-<tr><td>
-
-[isWeb()](./SYS_Environment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-是否处于浏览器环境
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                               | 修饰符 | 描述                 |
+| ------------------------------------------------- | --- | ------------------ |
+| [getEditorCompliedDate()](./SYS_Environment.md)   |     | 获取编辑器编译日期          |
+| [getEditorCurrentVersion()](./SYS_Environment.md) |     | 获取编辑器当前版本          |
+| [getUserInfo()](./SYS_Environment.md)             |     | 获取用户信息             |
+| [isClient()](./SYS_Environment.md)                |     | 是否处于客户端环境          |
+| [isEasyEDAProEdition()](./SYS_Environment.md)     |     | 是否为 EasyEDA Pro 版本 |
+| [isHalfOfflineMode()](./SYS_Environment.md)       |     | 是否为半离线模式           |
+| [isJLCEDAProEdition()](./SYS_Environment.md)      |     | 是否为 嘉立创EDA 专业版本    |
+| [isOfflineMode()](./SYS_Environment.md)           |     | 是否为全离线模式           |
+| [isOnlineMode()](./SYS_Environment.md)            |     | 是否为在线模式            |
+| [isProPrivateEdition()](./SYS_Environment.md)     |     | 是否为私有化部署版本         |
+| [isWeb()](./SYS_Environment.md)                   |     | 是否处于浏览器环境          |
 
 ---
 

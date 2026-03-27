@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitiveComponent implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitiveComponent implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
@@ -14,303 +14,28 @@ declare class SCH_PrimitiveComponent implements ISCH_PrimitiveAPI
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(component, x, y, subPartName, rotation, mirror, addIntoBom, addIntoPcb)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建器件
-
-
-</td></tr>
-<tr><td>
-
-[createNetFlag(identification, net, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建网络标识
-
-
-</td></tr>
-<tr><td>
-
-[createNetPort(direction, net, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建网络端口
-
-
-</td></tr>
-<tr><td>
-
-[createShortCircuitFlag(x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建短接标识
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除器件
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取器件
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取器件
-
-
-</td></tr>
-<tr><td>
-
-[getAll(componentType, allSchematicPages)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有器件
-
-
-</td></tr>
-<tr><td>
-
-[getAllPinsByPrimitiveId(primitiveId)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取器件关联的所有引脚
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(componentType, allSchematicPages)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有器件的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getAllPropertyNames()](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有器件的所有属性名称集合
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改器件
-
-
-</td></tr>
-<tr><td>
-
-[placeComponentWithMouse(component, subPartName)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 使用鼠标放置器件
-
-
-</td></tr>
-<tr><td>
-
-[setNetFlagComponentUuid\_AnalogGround(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 AnalogGround 网络标识关联的器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-[setNetFlagComponentUuid\_Ground(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 Ground 网络标识关联的器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-[setNetFlagComponentUuid\_Power(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 Power 网络标识关联的器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-[setNetFlagComponentUuid\_ProtectGround(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 ProtectGround 网络标识关联的器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-[setNetPortComponentUuid\_BI(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 BI 网络端口关联的器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-[setNetPortComponentUuid\_IN(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 IN 网络端口关联的器件 UUID
-
-
-</td></tr>
-<tr><td>
-
-[setNetPortComponentUuid\_OUT(component)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置在扩展 API 中 OUT 网络端口关联的器件 UUID
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                           | 修饰符 | 描述                                                    |
+| ------------------------------------------------------------------------------------------------------------- | --- | ----------------------------------------------------- |
+| [create(component, x, y, subPartName, rotation, mirror, addIntoBom, addIntoPcb)](./SCH_PrimitiveComponent.md) |     | **_(BETA)_** 创建器件                                     |
+| [createNetFlag(identification, net, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)                     |     | **_(BETA)_** 创建网络标识                                   |
+| [createNetPort(direction, net, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)                          |     | **_(BETA)_** 创建网络端口                                   |
+| [createShortCircuitFlag(x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)                                 |     | **_(BETA)_** 创建短接标识                                   |
+| [delete(primitiveIds)](./SCH_PrimitiveComponent.md)                                                           |     | **_(BETA)_** 删除器件                                     |
+| [get(primitiveIds)](./SCH_PrimitiveComponent.md)                                                              |     | **_(BETA)_** 获取器件                                     |
+| [get(primitiveIds)](./SCH_PrimitiveComponent.md)                                                              |     | **_(BETA)_** 获取器件                                     |
+| [getAll(componentType, allSchematicPages)](./SCH_PrimitiveComponent.md)                                       |     | **_(BETA)_** 获取所有器件                                   |
+| [getAllPinsByPrimitiveId(primitiveId)](./SCH_PrimitiveComponent.md)                                           |     | **_(BETA)_** 获取器件关联的所有引脚                              |
+| [getAllPrimitiveId(componentType, allSchematicPages)](./SCH_PrimitiveComponent.md)                            |     | **_(BETA)_** 获取所有器件的图元 ID                             |
+| [getAllPropertyNames()](./SCH_PrimitiveComponent.md)                                                          |     | **_(BETA)_** 获取所有器件的所有属性名称集合                          |
+| [modify(primitiveId, property)](./SCH_PrimitiveComponent.md)                                                  |     | **_(BETA)_** 修改器件                                     |
+| [placeComponentWithMouse(component, subPartName)](./SCH_PrimitiveComponent.md)                                |     | **_(BETA)_** 使用鼠标放置器件                                 |
+| [setNetFlagComponentUuid\_AnalogGround(component)](./SCH_PrimitiveComponent.md)                               |     | **_(BETA)_** 设置在扩展 API 中 AnalogGround 网络标识关联的器件 UUID  |
+| [setNetFlagComponentUuid\_Ground(component)](./SCH_PrimitiveComponent.md)                                     |     | **_(BETA)_** 设置在扩展 API 中 Ground 网络标识关联的器件 UUID        |
+| [setNetFlagComponentUuid\_Power(component)](./SCH_PrimitiveComponent.md)                                      |     | **_(BETA)_** 设置在扩展 API 中 Power 网络标识关联的器件 UUID         |
+| [setNetFlagComponentUuid\_ProtectGround(component)](./SCH_PrimitiveComponent.md)                              |     | **_(BETA)_** 设置在扩展 API 中 ProtectGround 网络标识关联的器件 UUID |
+| [setNetPortComponentUuid\_BI(component)](./SCH_PrimitiveComponent.md)                                         |     | **_(BETA)_** 设置在扩展 API 中 BI 网络端口关联的器件 UUID            |
+| [setNetPortComponentUuid\_IN(component)](./SCH_PrimitiveComponent.md)                                         |     | **_(BETA)_** 设置在扩展 API 中 IN 网络端口关联的器件 UUID            |
+| [setNetPortComponentUuid\_OUT(component)](./SCH_PrimitiveComponent.md)                                        |     | **_(BETA)_** 设置在扩展 API 中 OUT 网络端口关联的器件 UUID           |
 
 ---
 
@@ -335,151 +60,16 @@ create(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-<tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-subPartName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 子图块名称
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度
-
-
-</td></tr>
-<tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否镜像
-
-
-</td></tr>
-<tr><td>
-
-addIntoBom
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否加入 BOM
-
-
-</td></tr>
-<tr><td>
-
-addIntoPcb
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否转到 PCB
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                 | 描述              |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- |
+| component   | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件           |
+| x           | number                                                                                                                                                             | 坐标 X            |
+| y           | number                                                                                                                                                             | 坐标 Y            |
+| subPartName | string                                                                                                                                                             | _（可选）_ 子图块名称    |
+| rotation    | number                                                                                                                                                             | _（可选）_ 旋转角度     |
+| mirror      | boolean                                                                                                                                                            | _（可选）_ 是否镜像     |
+| addIntoBom  | boolean                                                                                                                                                            | _（可选）_ 是否加入 BOM |
+| addIntoPcb  | boolean                                                                                                                                                            | _（可选）_ 是否转到 PCB |
 
 
 
@@ -505,119 +95,14 @@ createNetFlag(identification: 'Power' | 'Ground' | 'AnalogGround' | 'ProtectGrou
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-identification
-
-
-</td><td>
-
-'Power' \| 'Ground' \| 'AnalogGround' \| 'ProtectGround'
-
-
-</td><td>
-
-标识类型
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度
-
-
-</td></tr>
-<tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否镜像
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                       | 描述          |
+| -------------- | -------------------------------------------------------- | ----------- |
+| identification | 'Power' \| 'Ground' \| 'AnalogGround' \| 'ProtectGround' | 标识类型        |
+| net            | string                                                   | 网络名称        |
+| x              | number                                                   | 坐标 X        |
+| y              | number                                                   | 坐标 Y        |
+| rotation       | number                                                   | _（可选）_ 旋转角度 |
+| mirror         | boolean                                                  | _（可选）_ 是否镜像 |
 
 
 
@@ -643,119 +128,14 @@ createNetPort(direction: 'IN' | 'OUT' | 'BI', net: string, x: number, y: number,
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-direction
-
-
-</td><td>
-
-'IN' \| 'OUT' \| 'BI'
-
-
-</td><td>
-
-端口方向
-
-
-</td></tr>
-<tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度
-
-
-</td></tr>
-<tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否镜像
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                    | 描述          |
+| --------- | --------------------- | ----------- |
+| direction | 'IN' \| 'OUT' \| 'BI' | 端口方向        |
+| net       | string                | 网络名称        |
+| x         | number                | 坐标 X        |
+| y         | number                | 坐标 Y        |
+| rotation  | number                | _（可选）_ 旋转角度 |
+| mirror    | boolean               | _（可选）_ 是否镜像 |
 
 
 
@@ -781,87 +161,12 @@ createShortCircuitFlag(x: number, y: number, rotation?: number, mirror?: boolean
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度
-
-
-</td></tr>
-<tr><td>
-
-mirror
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否镜像
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型      | 描述          |
+| -------- | ------- | ----------- |
+| x        | number  | 坐标 X        |
+| y        | number  | 坐标 Y        |
+| rotation | number  | _（可选）_ 旋转角度 |
+| mirror   | boolean | _（可选）_ 是否镜像 |
 
 
 
@@ -887,39 +192,9 @@ delete(primitiveIds: string | ISCH_PrimitiveComponent$1 | Array<string> | Array<
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| ISCH\_PrimitiveComponent$1 \| Array&lt;string&gt; \| Array&lt;ISCH\_PrimitiveComponent$1&gt;
-
-
-</td><td>
-
-器件的图元 ID 或器件图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                     | 描述               |
+| ------------ | ------------------------------------------------------------------------------------------------------ | ---------------- |
+| primitiveIds | string \| ISCH\_PrimitiveComponent$1 \| Array&lt;string&gt; \| Array&lt;ISCH\_PrimitiveComponent$1&gt; | 器件的图元 ID 或器件图元对象 |
 
 
 
@@ -945,39 +220,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitiveComponent$1 | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 器件的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -1003,39 +248,9 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveComponent$1>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-器件的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 器件的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -1065,55 +280,10 @@ getAll(componentType?: ESCH_PrimitiveComponentType$1, allSchematicPages?: boolea
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-componentType
-
-
-</td><td>
-
-[ESCH\_PrimitiveComponentType$1](../enums/ESCH_PrimitiveComponentType.md)
-
-
-</td><td>
-
-_（可选）_ 器件类型
-
-
-</td></tr>
-<tr><td>
-
-allSchematicPages
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否获取所有原理图图页的器件
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型                                                                        | 描述                    |
+| ----------------- | ------------------------------------------------------------------------- | --------------------- |
+| componentType     | [ESCH\_PrimitiveComponentType$1](../enums/ESCH_PrimitiveComponentType.md) | _（可选）_ 器件类型           |
+| allSchematicPages | boolean                                                                   | _（可选）_ 是否获取所有原理图图页的器件 |
 
 
 
@@ -1139,45 +309,15 @@ getAllPinsByPrimitiveId(primitiveId: string): Promise<Array<ISCH_PrimitiveCompon
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-器件图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型     | 描述      |
+| ----------- | ------ | ------- |
+| primitiveId | string | 器件图元 ID |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveComponentPin](./ISCH_PrimitiveComponentPin.md)<!-- -->&gt; \| undefined&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveComponentPin](./ISCH_PrimitiveComponentPin.md)&gt; \| undefined&gt;
 
 器件引脚图元数组
 
@@ -1197,55 +337,10 @@ getAllPrimitiveId(componentType?: ESCH_PrimitiveComponentType$1, allSchematicPag
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-componentType
-
-
-</td><td>
-
-[ESCH\_PrimitiveComponentType$1](../enums/ESCH_PrimitiveComponentType.md)
-
-
-</td><td>
-
-_（可选）_ 器件类型
-
-
-</td></tr>
-<tr><td>
-
-allSchematicPages
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否获取所有原理图图页的器件
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型                                                                        | 描述                    |
+| ----------------- | ------------------------------------------------------------------------- | --------------------- |
+| componentType     | [ESCH\_PrimitiveComponentType$1](../enums/ESCH_PrimitiveComponentType.md) | _（可选）_ 器件类型           |
+| allSchematicPages | boolean                                                                   | _（可选）_ 是否获取所有原理图图页的器件 |
 
 
 
@@ -1309,53 +404,10 @@ modify(primitiveId: string | ISCH_PrimitiveComponent$1, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| ISCH\_PrimitiveComponent$1
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-\{ x?: number; y?: number; rotation?: number; mirror?: boolean; addIntoBom?: boolean; addIntoPcb?: boolean; designator?: string \| null; name?: string \| null; uniqueId?: string \| null; manufacturer?: string \| null; manufacturerId?: string \| null; supplier?: string \| null; supplierId?: string \| null; otherProperty?: \{ \[key: string\]: string \| number \| boolean; \}; \}
-
-
-</td><td>
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                                                         | 描述    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| primitiveId | string \| ISCH\_PrimitiveComponent$1                                                                                                                                                                                                                                                                                                                                                       | 图元 ID |
+| property    | \{ x?: number; y?: number; rotation?: number; mirror?: boolean; addIntoBom?: boolean; addIntoPcb?: boolean; designator?: string \| null; name?: string \| null; uniqueId?: string \| null; manufacturer?: string \| null; manufacturerId?: string \| null; supplier?: string \| null; supplierId?: string \| null; otherProperty?: \{ \[key: string\]: string \| number \| boolean; \}; \} |       |
 
 
 
@@ -1388,55 +440,10 @@ placeComponentWithMouse(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-<tr><td>
-
-subPartName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                             | 描述           |
+| ----------- | ---------------------------------------------------------------------------------------------- | ------------ |
+| component   | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) | 关联库器件        |
+| subPartName | string                                                                                         | _(Optional)_ |
 
 
 
@@ -1471,39 +478,9 @@ setNetFlagComponentUuid_AnalogGround(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 
@@ -1532,39 +509,9 @@ setNetFlagComponentUuid_Ground(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 
@@ -1593,39 +540,9 @@ setNetFlagComponentUuid_Power(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 
@@ -1654,39 +571,9 @@ setNetFlagComponentUuid_ProtectGround(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 
@@ -1715,39 +602,9 @@ setNetPortComponentUuid_BI(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 
@@ -1776,39 +633,9 @@ setNetPortComponentUuid_IN(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 
@@ -1837,39 +664,9 @@ setNetPortComponentUuid_OUT(component: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-component
-
-
-</td><td>
-
-{ libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
-
-</td><td>
-
-关联库器件
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                 | 描述    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| component | { libraryUuid: string; uuid: string; } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) | 关联库器件 |
 
 
 

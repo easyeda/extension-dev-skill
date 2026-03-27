@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveComponent implements IPCB_Primitive 
+declare class IPCB_PrimitiveComponent implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,583 +14,48 @@ declare class IPCB_PrimitiveComponent implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getAllPins()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取器件关联的所有焊盘
-
-
-</td></tr>
-<tr><td>
-
-[getState\_AddIntoBom()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否加入 BOM
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Component()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：关联库器件
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Designator()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：位号
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Footprint()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：关联库封装
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Manufacturer()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：制造商
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ManufacturerId()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：制造商编号
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Model3D()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：关联库 3D 模型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Name()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_OtherProperty()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：其它参数
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Pads()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：焊盘
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Rotation()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Supplier()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：供应商
-
-
-</td></tr>
-<tr><td>
-
-[getState\_SupplierId()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：供应商编号
-
-
-</td></tr>
-<tr><td>
-
-[getState\_UniqueId()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：唯一 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_X()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Y()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_AddIntoBom(addIntoBom)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否加入 BOM
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Designator(designator)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：位号
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Manufacturer(manufacturer)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：制造商
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ManufacturerId(manufacturerId)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：制造商编号
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Name(name)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_OtherProperty(otherProperty)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：其它参数
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Rotation(rotation)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：旋转角度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Supplier(supplier)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：供应商
-
-
-</td></tr>
-<tr><td>
-
-[setState\_SupplierId(supplierId)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：供应商编号
-
-
-</td></tr>
-<tr><td>
-
-[setState\_UniqueId(uniqueId)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：唯一 ID
-
-
-</td></tr>
-<tr><td>
-
-[setState\_X(x)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Y(y)](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                      | 修饰符 | 描述                           |
+| ------------------------------------------------------------------------ | --- | ---------------------------- |
+| [done()](./IPCB_PrimitiveComponent.md)                                   |     | **_(BETA)_** 将对图元的更改应用到画布    |
+| [getAllPins()](./IPCB_PrimitiveComponent.md)                             |     | **_(BETA)_** 获取器件关联的所有焊盘     |
+| [getState\_AddIntoBom()](./IPCB_PrimitiveComponent.md)                   |     | 获取属性状态：是否加入 BOM              |
+| [getState\_Component()](./IPCB_PrimitiveComponent.md)                    |     | 获取属性状态：关联库器件                 |
+| [getState\_Designator()](./IPCB_PrimitiveComponent.md)                   |     | 获取属性状态：位号                    |
+| [getState\_Footprint()](./IPCB_PrimitiveComponent.md)                    |     | 获取属性状态：关联库封装                 |
+| [getState\_Layer()](./IPCB_PrimitiveComponent.md)                        |     | 获取属性状态：层                     |
+| [getState\_Manufacturer()](./IPCB_PrimitiveComponent.md)                 |     | 获取属性状态：制造商                   |
+| [getState\_ManufacturerId()](./IPCB_PrimitiveComponent.md)               |     | 获取属性状态：制造商编号                 |
+| [getState\_Model3D()](./IPCB_PrimitiveComponent.md)                      |     | 获取属性状态：关联库 3D 模型             |
+| [getState\_Name()](./IPCB_PrimitiveComponent.md)                         |     | 获取属性状态：名称                    |
+| [getState\_OtherProperty()](./IPCB_PrimitiveComponent.md)                |     | 获取属性状态：其它参数                  |
+| [getState\_Pads()](./IPCB_PrimitiveComponent.md)                         |     | 获取属性状态：焊盘                    |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveComponent.md)                  |     | 获取属性状态：图元 ID                 |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveComponent.md)                |     | 获取属性状态：是否锁定                  |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveComponent.md)                |     | 获取属性状态：图元类型                  |
+| [getState\_Rotation()](./IPCB_PrimitiveComponent.md)                     |     | 获取属性状态：旋转角度                  |
+| [getState\_Supplier()](./IPCB_PrimitiveComponent.md)                     |     | 获取属性状态：供应商                   |
+| [getState\_SupplierId()](./IPCB_PrimitiveComponent.md)                   |     | 获取属性状态：供应商编号                 |
+| [getState\_UniqueId()](./IPCB_PrimitiveComponent.md)                     |     | 获取属性状态：唯一 ID                 |
+| [getState\_X()](./IPCB_PrimitiveComponent.md)                            |     | 获取属性状态：坐标 X                  |
+| [getState\_Y()](./IPCB_PrimitiveComponent.md)                            |     | 获取属性状态：坐标 Y                  |
+| [isAsync()](./IPCB_PrimitiveComponent.md)                                |     | 查询图元是否为异步图元                  |
+| [reset()](./IPCB_PrimitiveComponent.md)                                  |     | **_(BETA)_** 将异步图元重置为当前画布状态  |
+| [setState\_AddIntoBom(addIntoBom)](./IPCB_PrimitiveComponent.md)         |     | **_(BETA)_** 设置属性状态：是否加入 BOM |
+| [setState\_Designator(designator)](./IPCB_PrimitiveComponent.md)         |     | **_(BETA)_** 设置属性状态：位号       |
+| [setState\_Layer(layer)](./IPCB_PrimitiveComponent.md)                   |     | **_(BETA)_** 设置属性状态：层        |
+| [setState\_Manufacturer(manufacturer)](./IPCB_PrimitiveComponent.md)     |     | **_(BETA)_** 设置属性状态：制造商      |
+| [setState\_ManufacturerId(manufacturerId)](./IPCB_PrimitiveComponent.md) |     | **_(BETA)_** 设置属性状态：制造商编号    |
+| [setState\_Name(name)](./IPCB_PrimitiveComponent.md)                     |     | **_(BETA)_** 设置属性状态：名称       |
+| [setState\_OtherProperty(otherProperty)](./IPCB_PrimitiveComponent.md)   |     | **_(BETA)_** 设置属性状态：其它参数     |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveComponent.md)   |     | **_(BETA)_** 设置属性状态：是否锁定     |
+| [setState\_Rotation(rotation)](./IPCB_PrimitiveComponent.md)             |     | **_(BETA)_** 设置属性状态：旋转角度     |
+| [setState\_Supplier(supplier)](./IPCB_PrimitiveComponent.md)             |     | **_(BETA)_** 设置属性状态：供应商      |
+| [setState\_SupplierId(supplierId)](./IPCB_PrimitiveComponent.md)         |     | **_(BETA)_** 设置属性状态：供应商编号    |
+| [setState\_UniqueId(uniqueId)](./IPCB_PrimitiveComponent.md)             |     | **_(BETA)_** 设置属性状态：唯一 ID    |
+| [setState\_X(x)](./IPCB_PrimitiveComponent.md)                           |     | **_(BETA)_** 设置属性状态：坐标 X     |
+| [setState\_Y(y)](./IPCB_PrimitiveComponent.md)                           |     | **_(BETA)_** 设置属性状态：坐标 Y     |
+| [toAsync()](./IPCB_PrimitiveComponent.md)                                |     | 将图元转换为异步图元                   |
+| [toSync()](./IPCB_PrimitiveComponent.md)                                 |     | 将图元转换为同步图元                   |
 
 ---
 
@@ -613,7 +78,7 @@ done(): Promise<IPCB_PrimitiveComponent>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)&gt;
 
 器件图元对象
 
@@ -634,7 +99,7 @@ getAllPins(): Promise<Array<IPCB_PrimitiveComponentPad>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveComponentPad](./IPCB_PrimitiveComponentPad.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveComponentPad](./IPCB_PrimitiveComponentPad.md)&gt;&gt;
 
 器件焊盘图元数组
 
@@ -1069,7 +534,7 @@ reset(): Promise<IPCB_PrimitiveComponent>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)&gt;
 
 器件图元对象
 
@@ -1089,39 +554,9 @@ setState_AddIntoBom(addIntoBom: boolean): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-addIntoBom
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否加入 BOM
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型      | 描述       |
+| ---------- | ------- | -------- |
+| addIntoBom | boolean | 是否加入 BOM |
 
 
 
@@ -1147,39 +582,9 @@ setState_Designator(designator: string | undefined): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-designator
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-位号
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                  | 描述  |
+| ---------- | ------------------- | --- |
+| designator | string \| undefined | 位号  |
 
 
 
@@ -1205,39 +610,9 @@ setState_Layer(layer: TPCB_LayersOfComponent): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfComponent](../types/TPCB_LayersOfComponent.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                            | 描述  |
+| ----- | ------------------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfComponent](../types/TPCB_LayersOfComponent.md) | 层   |
 
 
 
@@ -1263,39 +638,9 @@ setState_Manufacturer(manufacturer: string | undefined): IPCB_PrimitiveComponent
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-manufacturer
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-制造商
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述  |
+| ------------ | ------------------- | --- |
+| manufacturer | string \| undefined | 制造商 |
 
 
 
@@ -1321,39 +666,9 @@ setState_ManufacturerId(manufacturerId: string | undefined): IPCB_PrimitiveCompo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-manufacturerId
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-制造商编号
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                  | 描述    |
+| -------------- | ------------------- | ----- |
+| manufacturerId | string \| undefined | 制造商编号 |
 
 
 
@@ -1379,39 +694,9 @@ setState_Name(name: string | undefined): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-name
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-名称
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                  | 描述  |
+| ---- | ------------------- | --- |
+| name | string \| undefined | 名称  |
 
 
 
@@ -1439,39 +724,9 @@ setState_OtherProperty(otherProperty: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-otherProperty
-
-
-</td><td>
-
-\{ \[key: string\]: string \| number \| boolean; \}
-
-
-</td><td>
-
-其它参数
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述   |
+| ------------- | --------------------------------------------------- | ---- |
+| otherProperty | \{ \[key: string\]: string \| number \| boolean; \} | 其它参数 |
 
 
 
@@ -1497,39 +752,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -1555,39 +780,9 @@ setState_Rotation(rotation: number): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-旋转角度
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述   |
+| -------- | ------ | ---- |
+| rotation | number | 旋转角度 |
 
 
 
@@ -1613,39 +808,9 @@ setState_Supplier(supplier: string | undefined): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-supplier
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-供应商
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                  | 描述  |
+| -------- | ------------------- | --- |
+| supplier | string \| undefined | 供应商 |
 
 
 
@@ -1671,39 +836,9 @@ setState_SupplierId(supplierId: string | undefined): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-supplierId
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-供应商编号
-
-
-</td></tr>
-</tbody></table>
+| 参数         | 类型                  | 描述    |
+| ---------- | ------------------- | ----- |
+| supplierId | string \| undefined | 供应商编号 |
 
 
 
@@ -1729,39 +864,9 @@ setState_UniqueId(uniqueId: string | undefined): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-uniqueId
-
-
-</td><td>
-
-string \| undefined
-
-
-</td><td>
-
-唯一 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                  | 描述    |
+| -------- | ------------------- | ----- |
+| uniqueId | string \| undefined | 唯一 ID |
 
 
 
@@ -1787,39 +892,9 @@ setState_X(x: number): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| x   | number | 坐标 X |
 
 
 
@@ -1845,39 +920,9 @@ setState_Y(y: number): IPCB_PrimitiveComponent;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| y   | number | 坐标 Y |
 
 
 

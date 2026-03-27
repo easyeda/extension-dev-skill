@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class DMT_SelectControl 
+declare class DMT_SelectControl
 ```
 
 ## 备注
@@ -14,37 +14,9 @@ declare class DMT_SelectControl
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getCurrentDocumentInfo()](./DMT_SelectControl.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取当前文档的属性
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                | 修饰符 | 描述                     |
+| -------------------------------------------------- | --- | ---------------------- |
+| [getCurrentDocumentInfo()](./DMT_SelectControl.md) |     | **_(BETA)_** 获取当前文档的属性 |
 
 ---
 

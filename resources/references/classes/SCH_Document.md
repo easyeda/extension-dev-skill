@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_Document 
+declare class SCH_Document
 ```
 
 ## 备注
@@ -14,79 +14,12 @@ declare class SCH_Document
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[autoLayout(props)](./SCH_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 自动布局
-
-
-</td></tr>
-<tr><td>
-
-[autoRouting(props)](./SCH_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 自动布线
-
-
-</td></tr>
-<tr><td>
-
-[importChanges()](./SCH_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-从 PCB 导入变更
-
-
-</td></tr>
-<tr><td>
-
-[save()](./SCH_Document.md)
-
-
-</td><td>
-
-
-</td><td>
-
-保存文档
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                     | 修饰符 | 描述                |
+| --------------------------------------- | --- | ----------------- |
+| [autoLayout(props)](./SCH_Document.md)  |     | **_(BETA)_** 自动布局 |
+| [autoRouting(props)](./SCH_Document.md) |     | **_(BETA)_** 自动布线 |
+| [importChanges()](./SCH_Document.md)    |     | 从 PCB 导入变更        |
+| [save()](./SCH_Document.md)             |     | 保存文档              |
 
 ---
 
@@ -129,39 +62,9 @@ autoLayout(props?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-props
-
-
-</td><td>
-
-{ uuids?: Array&lt;string&gt;; netlist?: { component: { \[uniqueId: string\]: { pinInfoMap: { \[key: string\]: { name: string; number: string; net: string; props: { 'Pin Number': string; }; }; }; }; }; }; designatorDeviceTypeMap?: { \[designator: string\]: 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'; }; }
-
-
-</td><td>
-
-_（可选）_ 自动布局参数
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                                                                                                                                                                                                                                                                                                                                | 描述            |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| props | { uuids?: Array&lt;string&gt;; netlist?: { component: { \[uniqueId: string\]: { pinInfoMap: { \[key: string\]: { name: string; number: string; net: string; props: { 'Pin Number': string; }; }; }; }; }; }; designatorDeviceTypeMap?: { \[designator: string\]: 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'; }; } | _（可选）_ 自动布局参数 |
 
 
 
@@ -208,39 +111,9 @@ autoRouting(props?: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-props
-
-
-</td><td>
-
-{ uuids?: Array&lt;string&gt;; netlist?: { component: { \[uniqueId: string\]: { pinInfoMap: { \[key: string\]: { name: string; number: string; net: string; props: { 'Pin Number': string; }; }; }; }; }; }; designatorDeviceTypeMap?: { \[designator: string\]: 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'; }; }
-
-
-</td><td>
-
-_（可选）_ 自动布线参数
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                                                                                                                                                                                                                                                                                                                                                | 描述            |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| props | { uuids?: Array&lt;string&gt;; netlist?: { component: { \[uniqueId: string\]: { pinInfoMap: { \[key: string\]: { name: string; number: string; net: string; props: { 'Pin Number': string; }; }; }; }; }; }; designatorDeviceTypeMap?: { \[designator: string\]: 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'; }; } | _（可选）_ 自动布线参数 |
 
 
 

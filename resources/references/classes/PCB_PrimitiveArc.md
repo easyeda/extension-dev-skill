@@ -5,7 +5,7 @@ PCB &amp; 封装 / 圆弧线图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitiveArc implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitiveArc implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
@@ -15,121 +15,15 @@ declare class PCB_PrimitiveArc implements IPCB_PrimitiveAPI
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(net, layer, startX, startY, endX, endY, arcAngle, lineWidth, interactiveMode, primitiveLock)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建圆弧线
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除圆弧线
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取圆弧线
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取圆弧线
-
-
-</td></tr>
-<tr><td>
-
-[getAll(net, layer, primitiveLock)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有圆弧线
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(net, layer, primitiveLock)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有圆弧线的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitiveArc.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改圆弧线
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                          | 修饰符 | 描述                         |
+| ---------------------------------------------------------------------------------------------------------------------------- | --- | -------------------------- |
+| [create(net, layer, startX, startY, endX, endY, arcAngle, lineWidth, interactiveMode, primitiveLock)](./PCB_PrimitiveArc.md) |     | **_(BETA)_** 创建圆弧线         |
+| [delete(primitiveIds)](./PCB_PrimitiveArc.md)                                                                                |     | **_(BETA)_** 删除圆弧线         |
+| [get(primitiveIds)](./PCB_PrimitiveArc.md)                                                                                   |     | **_(BETA)_** 获取圆弧线         |
+| [get(primitiveIds)](./PCB_PrimitiveArc.md)                                                                                   |     | **_(BETA)_** 获取圆弧线         |
+| [getAll(net, layer, primitiveLock)](./PCB_PrimitiveArc.md)                                                                   |     | **_(BETA)_** 获取所有圆弧线       |
+| [getAllPrimitiveId(net, layer, primitiveLock)](./PCB_PrimitiveArc.md)                                                        |     | **_(BETA)_** 获取所有圆弧线的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitiveArc.md)                                                                       |     | **_(BETA)_** 修改圆弧线         |
 
 ---
 
@@ -151,183 +45,18 @@ create(net: string, layer: TPCB_LayersOfLine, startX: number, startY: number, en
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-<tr><td>
-
-startX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始位置 X
-
-
-</td></tr>
-<tr><td>
-
-startY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-起始位置 Y
-
-
-</td></tr>
-<tr><td>
-
-endX
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止位置 X
-
-
-</td></tr>
-<tr><td>
-
-endY
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-终止位置 Y
-
-
-</td></tr>
-<tr><td>
-
-arcAngle
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-圆弧角度
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-interactiveMode
-
-
-</td><td>
-
-[EPCB\_PrimitiveArcInteractiveMode](../enums/EPCB_PrimitiveArcInteractiveMode.md)
-
-
-</td><td>
-
-_（可选）_ 交互模式
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数              | 类型                                                                                | 描述          |
+| --------------- | --------------------------------------------------------------------------------- | ----------- |
+| net             | string                                                                            | 网络名称        |
+| layer           | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)                               | 层           |
+| startX          | number                                                                            | 起始位置 X      |
+| startY          | number                                                                            | 起始位置 Y      |
+| endX            | number                                                                            | 终止位置 X      |
+| endY            | number                                                                            | 终止位置 Y      |
+| arcAngle        | number                                                                            | 圆弧角度        |
+| lineWidth       | number                                                                            | _（可选）_ 线宽   |
+| interactiveMode | [EPCB\_PrimitiveArcInteractiveMode](../enums/EPCB_PrimitiveArcInteractiveMode.md) | _（可选）_ 交互模式 |
+| primitiveLock   | boolean                                                                           | _（可选）_ 是否锁定 |
 
 
 
@@ -353,39 +82,9 @@ delete(primitiveIds: string | IPCB_PrimitiveArc | Array<string> | Array<IPCB_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;
-
-
-</td><td>
-
-圆弧线的图元 ID 或圆弧线图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                         | 描述                 |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| primitiveIds | string \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)&gt; | 圆弧线的图元 ID 或圆弧线图元对象 |
 
 
 
@@ -411,39 +110,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitiveArc | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-圆弧线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                    |
+| ------------ | ------ | ------------------------------------- |
+| primitiveIds | string | 圆弧线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -469,45 +138,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveArc>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-圆弧线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                    |
+| ------------ | ------------------- | ------------------------------------- |
+| primitiveIds | Array&lt;string&gt; | 圆弧线的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)&gt;&gt;
 
 圆弧线图元对象，空数组表示获取失败
 
@@ -531,77 +170,17 @@ getAll(net?: string, layer?: TPCB_LayersOfLine, primitiveLock?: boolean): Promis
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| net           | string                                              | _（可选）_ 网络名称 |
+| layer         | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)&gt;&gt;
 
 圆弧线图元对象数组
 
@@ -621,71 +200,11 @@ getAllPrimitiveId(net?: string, layer?: TPCB_LayersOfLine, primitiveLock?: boole
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 网络名称
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                  | 描述          |
+| ------------- | --------------------------------------------------- | ----------- |
+| net           | string                                              | _（可选）_ 网络名称 |
+| layer         | [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                             | _（可选）_ 是否锁定 |
 
 
 
@@ -722,55 +241,10 @@ modify(primitiveId: string | IPCB_PrimitiveArc, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ net?: string; layer?: [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)<!-- -->; startX?: number; startY?: number; endX?: number; endY?: number; arcAngle?: number; lineWidth?: number; interactiveMode?: [EPCB\_PrimitiveArcInteractiveMode](../enums/EPCB_PrimitiveArcInteractiveMode.md)<!-- -->; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                  | 描述    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)                                                                                                                                                                                                                                                              | 图元 ID |
+| property    | { net?: string; layer?: [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md); startX?: number; startY?: number; endX?: number; endY?: number; arcAngle?: number; lineWidth?: number; interactiveMode?: [EPCB\_PrimitiveArcInteractiveMode](../enums/EPCB_PrimitiveArcInteractiveMode.md); primitiveLock?: boolean; } | 修改参数  |
 
 
 

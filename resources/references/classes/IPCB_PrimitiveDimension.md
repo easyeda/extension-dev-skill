@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveDimension implements IPCB_Primitive 
+declare class IPCB_PrimitiveDimension implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,331 +14,30 @@ declare class IPCB_PrimitiveDimension implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_CoordinateSet()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标集
-
-
-</td></tr>
-<tr><td>
-
-[getState\_DimensionType()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：尺寸标注类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Precision()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：精度
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_TextFollow()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：文字跟随
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Unit()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：单位
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_CoordinateSet(coordinateSet)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标集
-
-
-</td></tr>
-<tr><td>
-
-[setState\_DimensionType(dimensionType)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：尺寸标注类型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Precision(precision)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：精度
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Unit(unit)](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：单位
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                    | 修饰符 | 描述                          |
+| ---------------------------------------------------------------------- | --- | --------------------------- |
+| [done()](./IPCB_PrimitiveDimension.md)                                 |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_CoordinateSet()](./IPCB_PrimitiveDimension.md)              |     | 获取属性状态：坐标集                  |
+| [getState\_DimensionType()](./IPCB_PrimitiveDimension.md)              |     | 获取属性状态：尺寸标注类型               |
+| [getState\_Layer()](./IPCB_PrimitiveDimension.md)                      |     | 获取属性状态：层                    |
+| [getState\_LineWidth()](./IPCB_PrimitiveDimension.md)                  |     | 获取属性状态：线宽                   |
+| [getState\_Precision()](./IPCB_PrimitiveDimension.md)                  |     | 获取属性状态：精度                   |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveDimension.md)                |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveDimension.md)              |     | 获取属性状态：是否锁定                 |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveDimension.md)              |     | 获取属性状态：图元类型                 |
+| [getState\_TextFollow()](./IPCB_PrimitiveDimension.md)                 |     | 获取属性状态：文字跟随                 |
+| [getState\_Unit()](./IPCB_PrimitiveDimension.md)                       |     | 获取属性状态：单位                   |
+| [isAsync()](./IPCB_PrimitiveDimension.md)                              |     | 查询图元是否为异步图元                 |
+| [reset()](./IPCB_PrimitiveDimension.md)                                |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_CoordinateSet(coordinateSet)](./IPCB_PrimitiveDimension.md) |     | **_(BETA)_** 设置属性状态：坐标集     |
+| [setState\_DimensionType(dimensionType)](./IPCB_PrimitiveDimension.md) |     | **_(BETA)_** 设置属性状态：尺寸标注类型  |
+| [setState\_Layer(layer)](./IPCB_PrimitiveDimension.md)                 |     | **_(BETA)_** 设置属性状态：层       |
+| [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveDimension.md)         |     | **_(BETA)_** 设置属性状态：线宽      |
+| [setState\_Precision(precision)](./IPCB_PrimitiveDimension.md)         |     | **_(BETA)_** 设置属性状态：精度      |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveDimension.md) |     | **_(BETA)_** 设置属性状态：是否锁定    |
+| [setState\_Unit(unit)](./IPCB_PrimitiveDimension.md)                   |     | **_(BETA)_** 设置属性状态：单位      |
+| [toAsync()](./IPCB_PrimitiveDimension.md)                              |     | 将图元转换为异步图元                  |
+| [toSync()](./IPCB_PrimitiveDimension.md)                               |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -361,7 +60,7 @@ done(): Promise<IPCB_PrimitiveDimension>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)&gt;
 
 尺寸标注图元对象
 
@@ -591,7 +290,7 @@ reset(): Promise<IPCB_PrimitiveDimension>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)&gt;
 
 尺寸标注图元对象
 
@@ -611,39 +310,9 @@ setState_CoordinateSet(coordinateSet: TPCB_PrimitiveDimensionCoordinateSet): IPC
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-coordinateSet
-
-
-</td><td>
-
-[TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md)
-
-
-</td><td>
-
-坐标集
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                        | 描述  |
+| ------------- | ----------------------------------------------------------------------------------------- | --- |
+| coordinateSet | [TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md) | 坐标集 |
 
 
 
@@ -669,39 +338,9 @@ setState_DimensionType(dimensionType: EPCB_PrimitiveDimensionType): IPCB_Primiti
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-dimensionType
-
-
-</td><td>
-
-[EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md)
-
-
-</td><td>
-
-尺寸标注类型
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                      | 描述     |
+| ------------- | ----------------------------------------------------------------------- | ------ |
+| dimensionType | [EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md) | 尺寸标注类型 |
 
 
 
@@ -727,39 +366,9 @@ setState_Layer(layer: TPCB_LayersOfDimension): IPCB_PrimitiveDimension;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                            | 描述  |
+| ----- | ------------------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md) | 层   |
 
 
 
@@ -785,39 +394,9 @@ setState_LineWidth(lineWidth: number): IPCB_PrimitiveDimension;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| lineWidth | number | 线宽  |
 
 
 
@@ -843,39 +422,9 @@ setState_Precision(precision: number): IPCB_PrimitiveDimension;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-precision
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-精度
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| precision | number | 精度  |
 
 
 
@@ -901,39 +450,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveDimension;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -959,39 +478,9 @@ setState_Unit(unit: ESYS_Unit.MILLIMETER | ESYS_Unit.CENTIMETER | ESYS_Unit.INCH
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-unit
-
-
-</td><td>
-
-[ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md)
-
-
-</td><td>
-
-单位
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                                                                                                                                                                                      | 描述  |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| unit | [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md) | 单位  |
 
 
 

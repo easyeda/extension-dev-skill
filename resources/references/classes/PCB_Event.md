@@ -5,7 +5,7 @@ PCB &amp; 封装 / 事件类
 ## 签名
 
 ```typescript
-declare class PCB_Event 
+declare class PCB_Event
 ```
 
 ## 备注
@@ -15,107 +15,14 @@ declare class PCB_Event
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addCrossProbeSelectEventListener(id, callFn)](./PCB_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 新增交叉选择事件监听
-
-
-</td></tr>
-<tr><td>
-
-[addMouseEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 新增鼠标事件监听
-
-
-</td></tr>
-<tr><td>
-
-[addNetEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 新增网络事件监听
-
-
-</td></tr>
-<tr><td>
-
-[addPrimitiveEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 新增图元事件监听
-
-
-</td></tr>
-<tr><td>
-
-[isEventListenerAlreadyExist(id)](./PCB_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询事件监听是否存在
-
-
-</td></tr>
-<tr><td>
-
-[removeEventListener(id)](./PCB_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移除事件监听
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                          | 修饰符 | 描述                      |
+| ---------------------------------------------------------------------------- | --- | ----------------------- |
+| [addCrossProbeSelectEventListener(id, callFn)](./PCB_Event.md)               |     | **_(BETA)_** 新增交叉选择事件监听 |
+| [addMouseEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)     |     | **_(BETA)_** 新增鼠标事件监听   |
+| [addNetEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)       |     | **_(BETA)_** 新增网络事件监听   |
+| [addPrimitiveEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md) |     | **_(BETA)_** 新增图元事件监听   |
+| [isEventListenerAlreadyExist(id)](./PCB_Event.md)                            |     | 查询事件监听是否存在              |
+| [removeEventListener(id)](./PCB_Event.md)                                    |     | 移除事件监听                  |
 
 ---
 
@@ -137,55 +44,10 @@ addCrossProbeSelectEventListener(id: string, callFn: (props: any) => void | Prom
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(props: any) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-</tbody></table>
+| 参数     | 类型                                             | 描述               |
+| ------ | ---------------------------------------------- | ---------------- |
+| id     | string                                         | 事件 ID，用以防止重复注册事件 |
+| callFn | (props: any) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
 
 
 
@@ -222,87 +84,12 @@ addMouseEventListener(id: string, eventType: 'all' | EPCB_MouseEventType, callFn
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-eventType
-
-
-</td><td>
-
-'all' \| EPCB\_MouseEventType
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(eventType: EPCB\_MouseEventType, props: \[ { primitiveId: string; primitiveType: [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)<!-- -->; net?: string; designator?: string; parentComponentPrimitiveId?: string; parentComponentDesignator?: string; } \]) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-onlyOnce
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否仅监听一次
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                                                                                                                                           | 描述               |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| id        | string                                                                                                                                                                                                                                                                                       | 事件 ID，用以防止重复注册事件 |
+| eventType | 'all' \| EPCB\_MouseEventType                                                                                                                                                                                                                                                                | 事件类型             |
+| callFn    | (eventType: EPCB\_MouseEventType, props: \[ { primitiveId: string; primitiveType: [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md); net?: string; designator?: string; parentComponentPrimitiveId?: string; parentComponentDesignator?: string; } \]) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
+| onlyOnce  | boolean                                                                                                                                                                                                                                                                                      | _（可选）_ 是否仅监听一次   |
 
 
 
@@ -332,87 +119,12 @@ addNetEventListener(id: string, eventType: 'all' | EPCB_NetEventType, callFn: (e
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-eventType
-
-
-</td><td>
-
-'all' \| EPCB\_NetEventType
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(eventType: EPCB\_NetEventType, props: \[{ net: string; }\]) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-onlyOnce
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否仅监听一次
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                             | 描述               |
+| --------- | ---------------------------------------------------------------------------------------------- | ---------------- |
+| id        | string                                                                                         | 事件 ID，用以防止重复注册事件 |
+| eventType | 'all' \| EPCB\_NetEventType                                                                    | 事件类型             |
+| callFn    | (eventType: EPCB\_NetEventType, props: \[{ net: string; }\]) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
+| onlyOnce  | boolean                                                                                        | _（可选）_ 是否仅监听一次   |
 
 
 
@@ -426,7 +138,7 @@ void
 
 ①在过滤面板选中网络选项并在画布选中网络时
 
-②在工程设计 -<!-- -->&gt; 网络内选中网络时
+②在工程设计 -&gt; 网络内选中网络时
 
 会被触发
 
@@ -457,87 +169,12 @@ addPrimitiveEventListener(id: string, eventType: 'all' | EPCB_PrimitiveEventType
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-eventType
-
-
-</td><td>
-
-'all' \| EPCB\_PrimitiveEventType
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(eventType: EPCB\_PrimitiveEventType, props: \[ { primitiveId: string; primitiveType: [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)<!-- -->; net?: string; designator?: string; parentComponentPrimitiveId?: string; parentComponentDesignator?: string; } \]) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-onlyOnce
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否仅监听一次
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                                                                                                                                               | 描述               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| id        | string                                                                                                                                                                                                                                                                                           | 事件 ID，用以防止重复注册事件 |
+| eventType | 'all' \| EPCB\_PrimitiveEventType                                                                                                                                                                                                                                                                | 事件类型             |
+| callFn    | (eventType: EPCB\_PrimitiveEventType, props: \[ { primitiveId: string; primitiveType: [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md); net?: string; designator?: string; parentComponentPrimitiveId?: string; parentComponentDesignator?: string; } \]) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
+| onlyOnce  | boolean                                                                                                                                                                                                                                                                                          | _（可选）_ 是否仅监听一次   |
 
 
 
@@ -563,39 +200,9 @@ isEventListenerAlreadyExist(id: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 事件 ID |
 
 
 
@@ -619,39 +226,9 @@ removeEventListener(id: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 事件 ID |
 
 
 

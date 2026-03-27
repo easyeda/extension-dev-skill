@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface IPCB_PrimitiveSolderMaskAndPasteMaskExpansion 
+interface IPCB_PrimitiveSolderMaskAndPasteMaskExpansion
 ```
 
 ## 备注
@@ -22,104 +22,12 @@ interface IPCB_PrimitiveSolderMaskAndPasteMaskExpansion
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[bottomPasteMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 底层助焊扩展
-
-
-</td></tr>
-<tr><td>
-
-[bottomSolderMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 底层阻焊扩展
-
-
-</td></tr>
-<tr><td>
-
-[topPasteMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 顶层助焊扩展
-
-
-</td></tr>
-<tr><td>
-
-[topSolderMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 顶层阻焊扩展
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                                     | 修饰符 | 类型     | 描述            |
+| ----------------------------------------------------------------------- | --- | ------ | ------------- |
+| [bottomPasteMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)  |     | number | _（可选）_ 底层助焊扩展 |
+| [bottomSolderMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) |     | number | _（可选）_ 底层阻焊扩展 |
+| [topPasteMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)     |     | number | _（可选）_ 顶层助焊扩展 |
+| [topSolderMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)    |     | number | _（可选）_ 顶层阻焊扩展 |
 
 ---
 

@@ -5,109 +5,17 @@
 ## 签名
 
 ```typescript
-interface ISYS_HeaderMenuTopMenuItem 
+interface ISYS_HeaderMenuTopMenuItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[id](./ISYS_HeaderMenuTopMenuItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-菜单项 ID，不可重复
-
-
-</td></tr>
-<tr><td>
-
-[menuItems?](./ISYS_HeaderMenuTopMenuItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;[ISYS\_HeaderMenuSub1MenuItem](./ISYS_HeaderMenuSub1MenuItem.md) \| null&gt;
-
-
-</td><td>
-
-_（可选）_ 子菜单项
-
-
-</td></tr>
-<tr><td>
-
-[registerFn?](./ISYS_HeaderMenuTopMenuItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 注册方法名称（需要在扩展入口文件导出该方法）
-
-
-</td></tr>
-<tr><td>
-
-[title](./ISYS_HeaderMenuTopMenuItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-菜单项标题
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                            | 修饰符 | 类型                                                                                    | 描述                            |
+| ---------------------------------------------- | --- | ------------------------------------------------------------------------------------- | ----------------------------- |
+| [id](./ISYS_HeaderMenuTopMenuItem.md)          |     | string                                                                                | 菜单项 ID，不可重复                   |
+| [menuItems?](./ISYS_HeaderMenuTopMenuItem.md)  |     | Array&lt;[ISYS\_HeaderMenuSub1MenuItem](./ISYS_HeaderMenuSub1MenuItem.md) \| null&gt; | _（可选）_ 子菜单项                   |
+| [registerFn?](./ISYS_HeaderMenuTopMenuItem.md) |     | string                                                                                | _（可选）_ 注册方法名称（需要在扩展入口文件导出该方法） |
+| [title](./ISYS_HeaderMenuTopMenuItem.md)       |     | string                                                                                | 菜单项标题                         |
 
 ---
 

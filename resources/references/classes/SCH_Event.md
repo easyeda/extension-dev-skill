@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_Event 
+declare class SCH_Event
 ```
 
 ## 备注
@@ -15,93 +15,13 @@ declare class SCH_Event
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[addMouseEventListener(id, eventType, callFn, onlyOnce)](./SCH_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-新增鼠标事件监听
-
-
-</td></tr>
-<tr><td>
-
-[addPrimitiveEventListener(id, eventType, callFn, onlyOnce)](./SCH_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 新增图元事件监听
-
-
-</td></tr>
-<tr><td>
-
-[addSimulationEnginePullEventListener(id, eventType, callFn)](./SCH_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 注册仿真引擎拉取事件监听
-
-
-</td></tr>
-<tr><td>
-
-[isEventListenerAlreadyExist(id)](./SCH_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询事件监听是否存在
-
-
-</td></tr>
-<tr><td>
-
-[removeEventListener(id)](./SCH_Event.md)
-
-
-</td><td>
-
-
-</td><td>
-
-移除事件监听
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                           | 修饰符 | 描述                        |
+| ----------------------------------------------------------------------------- | --- | ------------------------- |
+| [addMouseEventListener(id, eventType, callFn, onlyOnce)](./SCH_Event.md)      |     | 新增鼠标事件监听                  |
+| [addPrimitiveEventListener(id, eventType, callFn, onlyOnce)](./SCH_Event.md)  |     | **_(BETA)_** 新增图元事件监听     |
+| [addSimulationEnginePullEventListener(id, eventType, callFn)](./SCH_Event.md) |     | **_(BETA)_** 注册仿真引擎拉取事件监听 |
+| [isEventListenerAlreadyExist(id)](./SCH_Event.md)                             |     | 查询事件监听是否存在                |
+| [removeEventListener(id)](./SCH_Event.md)                                     |     | 移除事件监听                    |
 
 ---
 
@@ -121,87 +41,12 @@ addMouseEventListener(id: string, eventType: 'all' | ESCH_MouseEventType, callFn
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-eventType
-
-
-</td><td>
-
-'all' \| [ESCH\_MouseEventType](../enums/ESCH_MouseEventType.md)
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(eventType: [ESCH\_MouseEventType](../enums/ESCH_MouseEventType.md)<!-- -->) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-onlyOnce
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否仅监听一次
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                     | 描述               |
+| --------- | ------------------------------------------------------------------------------------------------------ | ---------------- |
+| id        | string                                                                                                 | 事件 ID，用以防止重复注册事件 |
+| eventType | 'all' \| [ESCH\_MouseEventType](../enums/ESCH_MouseEventType.md)                                       | 事件类型             |
+| callFn    | (eventType: [ESCH\_MouseEventType](../enums/ESCH_MouseEventType.md)) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
+| onlyOnce  | boolean                                                                                                | _（可选）_ 是否仅监听一次   |
 
 
 
@@ -231,87 +76,12 @@ addPrimitiveEventListener(id: string, eventType: 'all' | ESCH_PrimitiveEventType
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-eventType
-
-
-</td><td>
-
-'all' \| [ESCH\_PrimitiveEventType](../enums/ESCH_PrimitiveEventType.md)
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(eventType: [ESCH\_PrimitiveEventType](../enums/ESCH_PrimitiveEventType.md)<!-- -->, props: { primitiveIds: Array&lt;string&gt;; }) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-<tr><td>
-
-onlyOnce
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否仅监听一次
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                            | 描述               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| id        | string                                                                                                                                                        | 事件 ID，用以防止重复注册事件 |
+| eventType | 'all' \| [ESCH\_PrimitiveEventType](../enums/ESCH_PrimitiveEventType.md)                                                                                      | 事件类型             |
+| callFn    | (eventType: [ESCH\_PrimitiveEventType](../enums/ESCH_PrimitiveEventType.md), props: { primitiveIds: Array&lt;string&gt;; }) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
+| onlyOnce  | boolean                                                                                                                                                       | _（可选）_ 是否仅监听一次   |
 
 
 
@@ -341,71 +111,11 @@ addSimulationEnginePullEventListener(id: string, eventType: 'all', callFn: (even
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID，用以防止重复注册事件
-
-
-</td></tr>
-<tr><td>
-
-eventType
-
-
-</td><td>
-
-'all'
-
-
-</td><td>
-
-事件类型
-
-
-</td></tr>
-<tr><td>
-
-callFn
-
-
-</td><td>
-
-(eventType: [ESCH\_DynamicSimulationEnginePullEventType](../enums/ESCH_DynamicSimulationEnginePullEventType.md) \| [ESCH\_SpiceSimulationEnginePullEventType](../enums/ESCH_SpiceSimulationEnginePullEventType.md)<!-- -->, props: { \[key: string\]: any; }) =&gt; void \| Promise&lt;void&gt;
-
-
-</td><td>
-
-事件触发时的回调函数
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                                                                                                                                                                                                                                      | 描述               |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| id        | string                                                                                                                                                                                                                                                                                  | 事件 ID，用以防止重复注册事件 |
+| eventType | 'all'                                                                                                                                                                                                                                                                                   | 事件类型             |
+| callFn    | (eventType: [ESCH\_DynamicSimulationEnginePullEventType](../enums/ESCH_DynamicSimulationEnginePullEventType.md) \| [ESCH\_SpiceSimulationEnginePullEventType](../enums/ESCH_SpiceSimulationEnginePullEventType.md), props: { \[key: string\]: any; }) =&gt; void \| Promise&lt;void&gt; | 事件触发时的回调函数       |
 
 
 
@@ -431,39 +141,9 @@ isEventListenerAlreadyExist(id: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 事件 ID |
 
 
 
@@ -487,39 +167,9 @@ removeEventListener(id: string): boolean;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-事件 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 事件 ID |
 
 
 

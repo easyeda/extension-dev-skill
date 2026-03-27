@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitivePolygon implements ISCH_Primitive 
+declare class ISCH_PrimitivePolygon implements ISCH_Primitive
 ```
 **实现自：**[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -14,261 +14,25 @@ declare class ISCH_PrimitivePolygon implements ISCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Color()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_FillColor()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Line()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标组
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineType()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Color(color)](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_FillColor(fillColor)](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：填充颜色
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Line(line)](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标组
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineType(lineType)](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./ISCH_PrimitivePolygon.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                          | 修饰符 | 描述                          |
+| ------------------------------------------------------------ | --- | --------------------------- |
+| [done()](./ISCH_PrimitivePolygon.md)                         |     | **_(BETA)_** 将对图元的更改应用到画布   |
+| [getState\_Color()](./ISCH_PrimitivePolygon.md)              |     | 获取属性状态：颜色                   |
+| [getState\_FillColor()](./ISCH_PrimitivePolygon.md)          |     | 获取属性状态：填充颜色                 |
+| [getState\_Line()](./ISCH_PrimitivePolygon.md)               |     | 获取属性状态：坐标组                  |
+| [getState\_LineType()](./ISCH_PrimitivePolygon.md)           |     | 获取属性状态：线型                   |
+| [getState\_LineWidth()](./ISCH_PrimitivePolygon.md)          |     | 获取属性状态：线宽                   |
+| [getState\_PrimitiveId()](./ISCH_PrimitivePolygon.md)        |     | 获取属性状态：图元 ID                |
+| [getState\_PrimitiveType()](./ISCH_PrimitivePolygon.md)      |     | 获取属性状态：图元类型                 |
+| [isAsync()](./ISCH_PrimitivePolygon.md)                      |     | 查询图元是否为异步图元                 |
+| [reset()](./ISCH_PrimitivePolygon.md)                        |     | **_(BETA)_** 将异步图元重置为当前画布状态 |
+| [setState\_Color(color)](./ISCH_PrimitivePolygon.md)         |     | **_(BETA)_** 设置属性状态：颜色      |
+| [setState\_FillColor(fillColor)](./ISCH_PrimitivePolygon.md) |     | **_(BETA)_** 设置属性状态：填充颜色    |
+| [setState\_Line(line)](./ISCH_PrimitivePolygon.md)           |     | **_(BETA)_** 设置属性状态：坐标组     |
+| [setState\_LineType(lineType)](./ISCH_PrimitivePolygon.md)   |     | **_(BETA)_** 设置属性状态：线型      |
+| [setState\_LineWidth(lineWidth)](./ISCH_PrimitivePolygon.md) |     | **_(BETA)_** 设置属性状态：线宽      |
+| [toAsync()](./ISCH_PrimitivePolygon.md)                      |     | 将图元转换为异步图元                  |
+| [toSync()](./ISCH_PrimitivePolygon.md)                       |     | 将图元转换为同步图元                  |
 
 ---
 
@@ -464,7 +228,7 @@ reset(): Promise<ISCH_PrimitivePolygon>;
 
 ## 返回值
 
-Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;
+Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)&gt;
 
 多边形图元对象
 
@@ -484,39 +248,9 @@ setState_Color(color: string | null): ISCH_PrimitivePolygon;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-color
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型             | 描述  |
+| ----- | -------------- | --- |
+| color | string \| null | 颜色  |
 
 
 
@@ -542,39 +276,9 @@ setState_FillColor(fillColor: string | null): ISCH_PrimitivePolygon;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-fillColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-填充颜色
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述   |
+| --------- | -------------- | ---- |
+| fillColor | string \| null | 填充颜色 |
 
 
 
@@ -600,39 +304,9 @@ setState_Line(line: Array<number>): ISCH_PrimitivePolygon;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-line
-
-
-</td><td>
-
-Array&lt;number&gt;
-
-
-</td><td>
-
-坐标组
-
-
-</td></tr>
-</tbody></table>
+| 参数   | 类型                  | 描述  |
+| ---- | ------------------- | --- |
+| line | Array&lt;number&gt; | 坐标组 |
 
 
 
@@ -658,39 +332,9 @@ setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitivePolygo
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineType
-
-
-</td><td>
-
-[ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
-
-</td><td>
-
-线型
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型                                                                    | 描述  |
+| -------- | --------------------------------------------------------------------- | --- |
+| lineType | [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null | 线型  |
 
 
 
@@ -716,39 +360,9 @@ setState_LineWidth(lineWidth: number | null): ISCH_PrimitivePolygon;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型             | 描述  |
+| --------- | -------------- | --- |
+| lineWidth | number \| null | 线宽  |
 
 
 

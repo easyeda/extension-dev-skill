@@ -5,105 +5,15 @@
 ## 签名
 
 ```typescript
-declare enum ESYS_LeftPanelTab 
+declare enum ESYS_LeftPanelTab
 ```
 
 ## 枚举成员
 
-<table><thead><tr><th>
-
-成员
-
-
-</th><th>
-
-值
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-BASIC\_LIBRARY
-
-
-</td><td>
-
-`"basicLibrary"`
-
-
-</td><td>
-
-常用库
-
-
-</td></tr>
-<tr><td>
-
-DEVICE\_STANDARDIZATION
-
-
-</td><td>
-
-`"device-standardization"`
-
-
-</td><td>
-
-器件标准化
-
-
-</td></tr>
-<tr><td>
-
-LIB\_DESIGN
-
-
-</td><td>
-
-`"libDesign"`
-
-
-</td><td>
-
-库设计
-
-
-</td></tr>
-<tr><td>
-
-PROJECT\_DESIGN
-
-
-</td><td>
-
-`"projectDesign"`
-
-
-</td><td>
-
-工程设计
-
-
-</td></tr>
-<tr><td>
-
-PROJECT\_LIST
-
-
-</td><td>
-
-`"project_list"`
-
-
-</td><td>
-
-工程
-
-
-</td></tr>
-</tbody></table>
+| 成员                      | 值                          | 描述    |
+| ----------------------- | -------------------------- | ----- |
+| BASIC\_LIBRARY          | `"basicLibrary"`           | 常用库   |
+| DEVICE\_STANDARDIZATION | `"device-standardization"` | 器件标准化 |
+| LIB\_DESIGN             | `"libDesign"`              | 库设计   |
+| PROJECT\_DESIGN         | `"projectDesign"`          | 工程设计  |
+| PROJECT\_LIST           | `"project_list"`           | 工程    |

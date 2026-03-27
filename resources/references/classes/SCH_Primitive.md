@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SCH_Primitive 
+declare class SCH_Primitive
 ```
 
 ## 备注
@@ -14,65 +14,11 @@ declare class SCH_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getPrimitiveByPrimitiveId(id)](./SCH_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取指定 ID 的图元的所有属性
-
-
-</td></tr>
-<tr><td>
-
-[getPrimitivesBBox(primitiveIds)](./SCH_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取图元的 BBox
-
-
-</td></tr>
-<tr><td>
-
-[getPrimitiveTypeByPrimitiveId(id)](./SCH_Primitive.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取指定 ID 的图元的图元类型
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                     | 修饰符 | 描述                            |
+| ------------------------------------------------------- | --- | ----------------------------- |
+| [getPrimitiveByPrimitiveId(id)](./SCH_Primitive.md)     |     | 获取指定 ID 的图元的所有属性              |
+| [getPrimitivesBBox(primitiveIds)](./SCH_Primitive.md)   |     | **_(BETA)_** 获取图元的 BBox       |
+| [getPrimitiveTypeByPrimitiveId(id)](./SCH_Primitive.md) |     | **_(BETA)_** 获取指定 ID 的图元的图元类型 |
 
 ---
 
@@ -92,39 +38,9 @@ getPrimitiveByPrimitiveId(id: string): Promise<ISCH_Primitive | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 图元 ID |
 
 
 
@@ -155,39 +71,9 @@ getPrimitivesBBox(primitiveIds: Array<string | ISCH_Primitive>): Promise<{
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string \| [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)<!-- -->&gt;
-
-
-</td><td>
-
-图元 ID 数组或图元对象数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                        | 描述              |
+| ------------ | ------------------------------------------------------------------------- | --------------- |
+| primitiveIds | Array&lt;string \| [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)&gt; | 图元 ID 数组或图元对象数组 |
 
 
 
@@ -213,39 +99,9 @@ getPrimitiveTypeByPrimitiveId(id: string): Promise<ESCH_PrimitiveType | undefine
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述    |
+| --- | ------ | ----- |
+| id  | string | 图元 ID |
 
 
 

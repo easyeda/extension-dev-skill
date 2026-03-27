@@ -5,127 +5,21 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitiveText implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitiveText implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(x, y, content, rotation, textColor, fontName, fontSize, bold, italic, underLine, alignMode)](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 创建文本
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除文本
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取文本
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取文本
-
-
-</td></tr>
-<tr><td>
-
-[getAll()](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有文本
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId()](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有文本的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitiveText.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改文本
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                          | 修饰符 | 描述                        |
+| ---------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------- |
+| [create(x, y, content, rotation, textColor, fontName, fontSize, bold, italic, underLine, alignMode)](./SCH_PrimitiveText.md) |     | **_(BETA)_** 创建文本         |
+| [delete(primitiveIds)](./SCH_PrimitiveText.md)                                                                               |     | **_(BETA)_** 删除文本         |
+| [get(primitiveIds)](./SCH_PrimitiveText.md)                                                                                  |     | **_(BETA)_** 获取文本         |
+| [get(primitiveIds)](./SCH_PrimitiveText.md)                                                                                  |     | **_(BETA)_** 获取文本         |
+| [getAll()](./SCH_PrimitiveText.md)                                                                                           |     | **_(BETA)_** 获取所有文本       |
+| [getAllPrimitiveId()](./SCH_PrimitiveText.md)                                                                                |     | **_(BETA)_** 获取所有文本的图元 ID |
+| [modify(primitiveId, property)](./SCH_PrimitiveText.md)                                                                      |     | **_(BETA)_** 修改文本         |
 
 ---
 
@@ -147,199 +41,19 @@ create(x: number, y: number, content: string, rotation?: number, textColor?: str
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-<tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-content
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文本内容
-
-
-</td></tr>
-<tr><td>
-
-rotation
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 旋转角度，可选 `0` `90` `180` `270`
-
-
-</td></tr>
-<tr><td>
-
-textColor
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 文本颜色，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-fontName
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-_（可选）_ 字体名称，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-fontSize
-
-
-</td><td>
-
-number \| null
-
-
-</td><td>
-
-_（可选）_ 字体大小，`null` 表示默认
-
-
-</td></tr>
-<tr><td>
-
-bold
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否加粗
-
-
-</td></tr>
-<tr><td>
-
-italic
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否斜体
-
-
-</td></tr>
-<tr><td>
-
-underLine
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否加下划线
-
-
-</td></tr>
-<tr><td>
-
-alignMode
-
-
-</td><td>
-
-[ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md)
-
-
-</td><td>
-
-_（可选）_ 对齐模式，`0` 左顶，`1` 中顶，`2` 右顶，`3` 左中，`4` 中中，`5` 右中，`6` 左底，`7` 中底，`8` 右底
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型                                                                      | 描述                                                                         |
+| --------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| x         | number                                                                  | 坐标 X                                                                       |
+| y         | number                                                                  | 坐标 Y                                                                       |
+| content   | string                                                                  | 文本内容                                                                       |
+| rotation  | number                                                                  | _（可选）_ 旋转角度，可选 `0` `90` `180` `270`                                        |
+| textColor | string \| null                                                          | _（可选）_ 文本颜色，`null` 表示默认                                                    |
+| fontName  | string \| null                                                          | _（可选）_ 字体名称，`null` 表示默认                                                    |
+| fontSize  | number \| null                                                          | _（可选）_ 字体大小，`null` 表示默认                                                    |
+| bold      | boolean                                                                 | _（可选）_ 是否加粗                                                                |
+| italic    | boolean                                                                 | _（可选）_ 是否斜体                                                                |
+| underLine | boolean                                                                 | _（可选）_ 是否加下划线                                                              |
+| alignMode | [ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md) | _（可选）_ 对齐模式，`0` 左顶，`1` 中顶，`2` 右顶，`3` 左中，`4` 中中，`5` 右中，`6` 左底，`7` 中底，`8` 右底 |
 
 
 
@@ -365,39 +79,9 @@ delete(primitiveIds: string | ISCH_PrimitiveText | Array<string> | Array<ISCH_Pr
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveText](./ISCH_PrimitiveText.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)<!-- -->&gt;
-
-
-</td><td>
-
-文本的图元 ID 或文本图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                             | 描述               |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| primitiveIds | string \| [ISCH\_PrimitiveText](./ISCH_PrimitiveText.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)&gt; | 文本的图元 ID 或文本图元对象 |
 
 
 
@@ -423,39 +107,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitiveText | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文本的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 文本的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -481,45 +135,15 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveText>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-文本的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 文本的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)&gt;&gt;
 
 文本图元对象，空数组表示获取失败
 
@@ -544,7 +168,7 @@ getAll(): Promise<Array<ISCH_PrimitiveText>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)&gt;&gt;
 
 文本图元对象数组
 
@@ -597,55 +221,10 @@ modify(primitiveId: string | ISCH_PrimitiveText, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ x?: number; y?: number; content?: string; rotation?: number; textColor?: string \| null; fontName?: string \| null; fontSize?: number \| null; bold?: boolean; italic?: boolean; underLine?: boolean; alignMode?: [ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md)<!-- -->; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                             | 描述    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [ISCH\_PrimitiveText](./ISCH_PrimitiveText.md)                                                                                                                                                                                                                                       | 图元 ID |
+| property    | { x?: number; y?: number; content?: string; rotation?: number; textColor?: string \| null; fontName?: string \| null; fontSize?: number \| null; bold?: boolean; italic?: boolean; underLine?: boolean; alignMode?: [ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md); } | 修改参数  |
 
 
 

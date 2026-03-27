@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitivePour implements IPCB_Primitive 
+declare class IPCB_PrimitivePour implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,415 +14,36 @@ declare class IPCB_PrimitivePour implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[convertToFill()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：填充图元(默认是填充区域)
-
-
-</td></tr>
-<tr><td>
-
-[convertToPolyline()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：折线图元(默认是线条)
-
-
-</td></tr>
-<tr><td>
-
-[convertToRegion()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 转换到：区域图元(默认是禁止区域)
-
-
-</td></tr>
-<tr><td>
-
-[done()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ComplexPolygon()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Layer()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[getState\_LineWidth()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Net()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PourFillMethod()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：覆铜填充方法
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PourName()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：覆铜边框名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PourPriority()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：覆铜优先级
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PreserveSilos()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否保留孤岛
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：复杂多边形
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Layer(layer)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：层
-
-
-</td></tr>
-<tr><td>
-
-[setState\_LineWidth(lineWidth)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：线宽
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Net(net)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PourFillMethod(pourFillMethod)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：覆铜填充方法
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PourName(pourName)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：覆铜边框名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PourPriority(pourPriority)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：覆铜优先级
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PreserveSilos(preserveSilos)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否保留孤岛
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitivePour.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                 | 修饰符 | 描述                             |
+| ------------------------------------------------------------------- | --- | ------------------------------ |
+| [convertToFill()](./IPCB_PrimitivePour.md)                          |     | **_(BETA)_** 转换到：填充图元(默认是填充区域) |
+| [convertToPolyline()](./IPCB_PrimitivePour.md)                      |     | **_(BETA)_** 转换到：折线图元(默认是线条)   |
+| [convertToRegion()](./IPCB_PrimitivePour.md)                        |     | **_(BETA)_** 转换到：区域图元(默认是禁止区域) |
+| [done()](./IPCB_PrimitivePour.md)                                   |     | **_(BETA)_** 将对图元的更改应用到画布      |
+| [getState\_ComplexPolygon()](./IPCB_PrimitivePour.md)               |     | 获取属性状态：复杂多边形                   |
+| [getState\_Layer()](./IPCB_PrimitivePour.md)                        |     | 获取属性状态：层                       |
+| [getState\_LineWidth()](./IPCB_PrimitivePour.md)                    |     | 获取属性状态：线宽                      |
+| [getState\_Net()](./IPCB_PrimitivePour.md)                          |     | 获取属性状态：网络名称                    |
+| [getState\_PourFillMethod()](./IPCB_PrimitivePour.md)               |     | 获取属性状态：覆铜填充方法                  |
+| [getState\_PourName()](./IPCB_PrimitivePour.md)                     |     | 获取属性状态：覆铜边框名称                  |
+| [getState\_PourPriority()](./IPCB_PrimitivePour.md)                 |     | 获取属性状态：覆铜优先级                   |
+| [getState\_PreserveSilos()](./IPCB_PrimitivePour.md)                |     | 获取属性状态：是否保留孤岛                  |
+| [getState\_PrimitiveId()](./IPCB_PrimitivePour.md)                  |     | 获取属性状态：图元 ID                   |
+| [getState\_PrimitiveLock()](./IPCB_PrimitivePour.md)                |     | 获取属性状态：是否锁定                    |
+| [getState\_PrimitiveType()](./IPCB_PrimitivePour.md)                |     | 获取属性状态：图元类型                    |
+| [isAsync()](./IPCB_PrimitivePour.md)                                |     | 查询图元是否为异步图元                    |
+| [reset()](./IPCB_PrimitivePour.md)                                  |     | **_(BETA)_** 将异步图元重置为当前画布状态    |
+| [setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitivePour.md) |     | **_(BETA)_** 设置属性状态：复杂多边形      |
+| [setState\_Layer(layer)](./IPCB_PrimitivePour.md)                   |     | **_(BETA)_** 设置属性状态：层          |
+| [setState\_LineWidth(lineWidth)](./IPCB_PrimitivePour.md)           |     | **_(BETA)_** 设置属性状态：线宽         |
+| [setState\_Net(net)](./IPCB_PrimitivePour.md)                       |     | **_(BETA)_** 设置属性状态：网络名称       |
+| [setState\_PourFillMethod(pourFillMethod)](./IPCB_PrimitivePour.md) |     | **_(BETA)_** 设置属性状态：覆铜填充方法     |
+| [setState\_PourName(pourName)](./IPCB_PrimitivePour.md)             |     | **_(BETA)_** 设置属性状态：覆铜边框名称     |
+| [setState\_PourPriority(pourPriority)](./IPCB_PrimitivePour.md)     |     | **_(BETA)_** 设置属性状态：覆铜优先级      |
+| [setState\_PreserveSilos(preserveSilos)](./IPCB_PrimitivePour.md)   |     | **_(BETA)_** 设置属性状态：是否保留孤岛     |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitivePour.md)   |     | **_(BETA)_** 设置属性状态：是否锁定       |
+| [toAsync()](./IPCB_PrimitivePour.md)                                |     | 将图元转换为异步图元                     |
+| [toSync()](./IPCB_PrimitivePour.md)                                 |     | 将图元转换为同步图元                     |
 
 ---
 
@@ -445,7 +66,7 @@ convertToFill(): Promise<IPCB_PrimitiveFill>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)&gt;
 
 填充图元对象
 
@@ -466,7 +87,7 @@ convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)&gt;
 
 折线图元对象
 
@@ -487,7 +108,7 @@ convertToRegion(): Promise<IPCB_PrimitiveRegion>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)&gt;
 
 区域图元对象
 
@@ -508,7 +129,7 @@ done(): Promise<IPCB_PrimitivePour>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt;
 
 覆铜边框图元对象
 
@@ -757,7 +378,7 @@ reset(): Promise<IPCB_PrimitivePour>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)&gt;
 
 覆铜边框图元对象
 
@@ -777,39 +398,9 @@ setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-complexPolygon
-
-
-</td><td>
-
-[IPCB\_Polygon](./IPCB_Polygon.md)
-
-
-</td><td>
-
-复杂多边形
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                 | 描述    |
+| -------------- | ---------------------------------- | ----- |
+| complexPolygon | [IPCB\_Polygon](./IPCB_Polygon.md) | 复杂多边形 |
 
 
 
@@ -835,39 +426,9 @@ setState_Layer(layer: TPCB_LayersOfCopper): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md)
-
-
-</td><td>
-
-层
-
-
-</td></tr>
-</tbody></table>
+| 参数    | 类型                                                      | 描述  |
+| ----- | ------------------------------------------------------- | --- |
+| layer | [TPCB\_LayersOfCopper](../types/TPCB_LayersOfCopper.md) | 层   |
 
 
 
@@ -893,39 +454,9 @@ setState_LineWidth(lineWidth: number): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-线宽
-
-
-</td></tr>
-</tbody></table>
+| 参数        | 类型     | 描述  |
+| --------- | ------ | --- |
+| lineWidth | number | 线宽  |
 
 
 
@@ -951,39 +482,9 @@ setState_Net(net: string): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -1009,39 +510,9 @@ setState_PourFillMethod(pourFillMethod: EPCB_PrimitivePourFillMethod): IPCB_Prim
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pourFillMethod
-
-
-</td><td>
-
-[EPCB\_PrimitivePourFillMethod](../enums/EPCB_PrimitivePourFillMethod.md)
-
-
-</td><td>
-
-覆铜填充方法
-
-
-</td></tr>
-</tbody></table>
+| 参数             | 类型                                                                        | 描述     |
+| -------------- | ------------------------------------------------------------------------- | ------ |
+| pourFillMethod | [EPCB\_PrimitivePourFillMethod](../enums/EPCB_PrimitivePourFillMethod.md) | 覆铜填充方法 |
 
 
 
@@ -1067,39 +538,9 @@ setState_PourName(pourName: string): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pourName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-覆铜边框名称
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述     |
+| -------- | ------ | ------ |
+| pourName | string | 覆铜边框名称 |
 
 
 
@@ -1125,39 +566,9 @@ setState_PourPriority(pourPriority: number): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-pourPriority
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-覆铜优先级
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述    |
+| ------------ | ------ | ----- |
+| pourPriority | number | 覆铜优先级 |
 
 
 
@@ -1183,39 +594,9 @@ setState_PreserveSilos(preserveSilos: boolean): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-preserveSilos
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否保留孤岛
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述     |
+| ------------- | ------- | ------ |
+| preserveSilos | boolean | 是否保留孤岛 |
 
 
 
@@ -1241,39 +622,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitivePour;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 

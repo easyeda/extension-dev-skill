@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class IPCB_PrimitiveVia implements IPCB_Primitive 
+declare class IPCB_PrimitiveVia implements IPCB_Primitive
 ```
 **实现自：**[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -14,387 +14,34 @@ declare class IPCB_PrimitiveVia implements IPCB_Primitive
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[done()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将对图元的更改应用到画布
-
-
-</td></tr>
-<tr><td>
-
-[getAdjacentPrimitives()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取相邻的图元对象
-
-
-</td></tr>
-<tr><td>
-
-[getState\_DesignRuleBlindViaName()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：盲埋孔设计规则项名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Diameter()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：外径
-
-
-</td></tr>
-<tr><td>
-
-[getState\_HoleDiameter()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：孔径
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Net()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveId()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveLock()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[getState\_PrimitiveType()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：图元类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_SolderMaskExpansion()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：阻焊/助焊扩展
-
-
-</td></tr>
-<tr><td>
-
-[getState\_ViaType()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：过孔类型
-
-
-</td></tr>
-<tr><td>
-
-[getState\_X()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[getState\_Y()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[isAsync()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-查询图元是否为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[reset()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 将异步图元重置为当前画布状态
-
-
-</td></tr>
-<tr><td>
-
-[setState\_DesignRuleBlindViaName(designRuleBlindViaName)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：盲埋孔设计规则项名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Diameter(diameter)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：外径
-
-
-</td></tr>
-<tr><td>
-
-[setState\_HoleDiameter(holeDiameter)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：孔径
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Net(net)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：网络名称
-
-
-</td></tr>
-<tr><td>
-
-[setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：是否锁定
-
-
-</td></tr>
-<tr><td>
-
-[setState\_SolderMaskExpansion(solderMaskExpansion)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：阻焊/助焊扩展
-
-
-</td></tr>
-<tr><td>
-
-[setState\_ViaType(viaType)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：过孔类型
-
-
-</td></tr>
-<tr><td>
-
-[setState\_X(x)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 X
-
-
-</td></tr>
-<tr><td>
-
-[setState\_Y(y)](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 设置属性状态：坐标 Y
-
-
-</td></tr>
-<tr><td>
-
-[toAsync()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为异步图元
-
-
-</td></tr>
-<tr><td>
-
-[toSync()](./IPCB_PrimitiveVia.md)
-
-
-</td><td>
-
-
-</td><td>
-
-将图元转换为同步图元
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                | 修饰符 | 描述                             |
+| ---------------------------------------------------------------------------------- | --- | ------------------------------ |
+| [done()](./IPCB_PrimitiveVia.md)                                                   |     | **_(BETA)_** 将对图元的更改应用到画布      |
+| [getAdjacentPrimitives()](./IPCB_PrimitiveVia.md)                                  |     | **_(BETA)_** 获取相邻的图元对象         |
+| [getState\_DesignRuleBlindViaName()](./IPCB_PrimitiveVia.md)                       |     | 获取属性状态：盲埋孔设计规则项名称              |
+| [getState\_Diameter()](./IPCB_PrimitiveVia.md)                                     |     | 获取属性状态：外径                      |
+| [getState\_HoleDiameter()](./IPCB_PrimitiveVia.md)                                 |     | 获取属性状态：孔径                      |
+| [getState\_Net()](./IPCB_PrimitiveVia.md)                                          |     | 获取属性状态：网络名称                    |
+| [getState\_PrimitiveId()](./IPCB_PrimitiveVia.md)                                  |     | 获取属性状态：图元 ID                   |
+| [getState\_PrimitiveLock()](./IPCB_PrimitiveVia.md)                                |     | 获取属性状态：是否锁定                    |
+| [getState\_PrimitiveType()](./IPCB_PrimitiveVia.md)                                |     | 获取属性状态：图元类型                    |
+| [getState\_SolderMaskExpansion()](./IPCB_PrimitiveVia.md)                          |     | 获取属性状态：阻焊/助焊扩展                 |
+| [getState\_ViaType()](./IPCB_PrimitiveVia.md)                                      |     | 获取属性状态：过孔类型                    |
+| [getState\_X()](./IPCB_PrimitiveVia.md)                                            |     | 获取属性状态：坐标 X                    |
+| [getState\_Y()](./IPCB_PrimitiveVia.md)                                            |     | 获取属性状态：坐标 Y                    |
+| [isAsync()](./IPCB_PrimitiveVia.md)                                                |     | 查询图元是否为异步图元                    |
+| [reset()](./IPCB_PrimitiveVia.md)                                                  |     | **_(BETA)_** 将异步图元重置为当前画布状态    |
+| [setState\_DesignRuleBlindViaName(designRuleBlindViaName)](./IPCB_PrimitiveVia.md) |     | **_(BETA)_** 设置属性状态：盲埋孔设计规则项名称 |
+| [setState\_Diameter(diameter)](./IPCB_PrimitiveVia.md)                             |     | **_(BETA)_** 设置属性状态：外径         |
+| [setState\_HoleDiameter(holeDiameter)](./IPCB_PrimitiveVia.md)                     |     | **_(BETA)_** 设置属性状态：孔径         |
+| [setState\_Net(net)](./IPCB_PrimitiveVia.md)                                       |     | **_(BETA)_** 设置属性状态：网络名称       |
+| [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveVia.md)                   |     | **_(BETA)_** 设置属性状态：是否锁定       |
+| [setState\_SolderMaskExpansion(solderMaskExpansion)](./IPCB_PrimitiveVia.md)       |     | **_(BETA)_** 设置属性状态：阻焊/助焊扩展    |
+| [setState\_ViaType(viaType)](./IPCB_PrimitiveVia.md)                               |     | **_(BETA)_** 设置属性状态：过孔类型       |
+| [setState\_X(x)](./IPCB_PrimitiveVia.md)                                           |     | **_(BETA)_** 设置属性状态：坐标 X       |
+| [setState\_Y(y)](./IPCB_PrimitiveVia.md)                                           |     | **_(BETA)_** 设置属性状态：坐标 Y       |
+| [toAsync()](./IPCB_PrimitiveVia.md)                                                |     | 将图元转换为异步图元                     |
+| [toSync()](./IPCB_PrimitiveVia.md)                                                 |     | 将图元转换为同步图元                     |
 
 ---
 
@@ -417,7 +64,7 @@ done(): Promise<IPCB_PrimitiveVia>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)&gt;
 
 过孔图元对象
 
@@ -438,7 +85,7 @@ getAdjacentPrimitives(): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)&gt;&gt;
 
 相邻的导线、圆弧线图元对象
 
@@ -691,7 +338,7 @@ reset(): Promise<IPCB_PrimitiveVia>;
 
 ## 返回值
 
-Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;
+Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)&gt;
 
 过孔图元对象
 
@@ -711,39 +358,9 @@ setState_DesignRuleBlindViaName(designRuleBlindViaName: string | null): IPCB_Pri
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-designRuleBlindViaName
-
-
-</td><td>
-
-string \| null
-
-
-</td><td>
-
-盲埋孔设计规则项名称
-
-
-</td></tr>
-</tbody></table>
+| 参数                     | 类型             | 描述         |
+| ---------------------- | -------------- | ---------- |
+| designRuleBlindViaName | string \| null | 盲埋孔设计规则项名称 |
 
 
 
@@ -769,39 +386,9 @@ setState_Diameter(diameter: number): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-diameter
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-外径
-
-
-</td></tr>
-</tbody></table>
+| 参数       | 类型     | 描述  |
+| -------- | ------ | --- |
+| diameter | number | 外径  |
 
 
 
@@ -827,39 +414,9 @@ setState_HoleDiameter(holeDiameter: number): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-holeDiameter
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-孔径
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述  |
+| ------------ | ------ | --- |
+| holeDiameter | number | 孔径  |
 
 
 
@@ -885,39 +442,9 @@ setState_Net(net: string): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-net
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络名称
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| net | string | 网络名称 |
 
 
 
@@ -943,39 +470,9 @@ setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型      | 描述   |
+| ------------- | ------- | ---- |
+| primitiveLock | boolean | 是否锁定 |
 
 
 
@@ -1001,39 +498,9 @@ setState_SolderMaskExpansion(solderMaskExpansion: IPCB_PrimitiveSolderMaskAndPas
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-solderMaskExpansion
-
-
-</td><td>
-
-[IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
-
-
-</td><td>
-
-阻焊/助焊扩展
-
-
-</td></tr>
-</tbody></table>
+| 参数                  | 类型                                                                                                                       | 描述      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------- |
+| solderMaskExpansion | [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null | 阻焊/助焊扩展 |
 
 
 
@@ -1059,39 +526,9 @@ setState_ViaType(viaType: EPCB_PrimitiveViaType): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-viaType
-
-
-</td><td>
-
-[EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md)
-
-
-</td><td>
-
-过孔类型
-
-
-</td></tr>
-</tbody></table>
+| 参数      | 类型                                                          | 描述   |
+| ------- | ----------------------------------------------------------- | ---- |
+| viaType | [EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md) | 过孔类型 |
 
 
 
@@ -1117,39 +554,9 @@ setState_X(x: number): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-x
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 X
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| x   | number | 坐标 X |
 
 
 
@@ -1175,39 +582,9 @@ setState_Y(y: number): IPCB_PrimitiveVia;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-y
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-坐标 Y
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述   |
+| --- | ------ | ---- |
+| y   | number | 坐标 Y |
 
 
 

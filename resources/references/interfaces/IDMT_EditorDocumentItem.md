@@ -5,128 +5,18 @@
 ## 签名
 
 ```typescript
-interface IDMT_EditorDocumentItem 
+interface IDMT_EditorDocumentItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[documentType](./IDMT_EditorDocumentItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[EDMT\_EditorDocumentType](../enums/EDMT_EditorDocumentType.md)
-
-
-</td><td>
-
-文档类型
-
-
-</td></tr>
-<tr><td>
-
-[parentLibraryUuid?](./IDMT_EditorDocumentItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 库文档所属库 UUID
-
-
-</td></tr>
-<tr><td>
-
-[parentProjectUuid?](./IDMT_EditorDocumentItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 文档所属工程 UUID
-
-
-</td></tr>
-<tr><td>
-
-[tabId](./IDMT_EditorDocumentItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文档的标签页 ID
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_EditorDocumentItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-文档 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                | 修饰符 | 类型                                                              | 描述                 |
+| -------------------------------------------------- | --- | --------------------------------------------------------------- | ------------------ |
+| [documentType](./IDMT_EditorDocumentItem.md)       |     | [EDMT\_EditorDocumentType](../enums/EDMT_EditorDocumentType.md) | 文档类型               |
+| [parentLibraryUuid?](./IDMT_EditorDocumentItem.md) |     | string                                                          | _（可选）_ 库文档所属库 UUID |
+| [parentProjectUuid?](./IDMT_EditorDocumentItem.md) |     | string                                                          | _（可选）_ 文档所属工程 UUID |
+| [tabId](./IDMT_EditorDocumentItem.md)              |     | string                                                          | 文档的标签页 ID          |
+| [uuid](./IDMT_EditorDocumentItem.md)               |     | string                                                          | 文档 UUID            |
 
 ---
 

@@ -10,11 +10,11 @@ type TPCB_PrimitivePadShape = [EPCB_PrimitivePadShapeType.ELLIPSE | EPCB_Primiti
 ## 引用
 
 
-[EPCB\_PrimitivePadShapeType.ELLIPSE](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.OBLONG](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.REGULAR\_POLYGON](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.RECTANGLE](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.POLYLINE\_COMPLEX\_POLYGON](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [TPCB\_PolygonSourceArray](./TPCB_PolygonSourceArray.md)
+[EPCB\_PrimitivePadShapeType.ELLIPSE](../enums/EPCB_PrimitivePadShapeType.md), [EPCB\_PrimitivePadShapeType.OBLONG](../enums/EPCB_PrimitivePadShapeType.md), [EPCB\_PrimitivePadShapeType.REGULAR\_POLYGON](../enums/EPCB_PrimitivePadShapeType.md), [EPCB\_PrimitivePadShapeType.RECTANGLE](../enums/EPCB_PrimitivePadShapeType.md), [EPCB\_PrimitivePadShapeType.POLYLINE\_COMPLEX\_POLYGON](../enums/EPCB_PrimitivePadShapeType.md), [TPCB\_PolygonSourceArray](./TPCB_PolygonSourceArray.md)
 
 ## 备注
 
-焊盘当前存在以下四种 [外形种类](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->：
+焊盘当前存在以下四种 [外形种类](../enums/EPCB_PrimitivePadShapeType.md)：
 
 ① 圆形
 

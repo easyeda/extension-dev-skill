@@ -5,90 +5,16 @@
 ## 签名
 
 ```typescript
-interface IPCB_NetClassItem 
+interface IPCB_NetClassItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[color](./IPCB_NetClassItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-{ r: number; g: number; b: number; alpha: number; } \| null
-
-
-</td><td>
-
-网络类颜色
-
-
-</td></tr>
-<tr><td>
-
-[name](./IPCB_NetClassItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-网络类名称
-
-
-</td></tr>
-<tr><td>
-
-[nets](./IPCB_NetClassItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-网络名称数组
-
-
-</td></tr>
-</tbody></table>
+| 属性名                             | 修饰符 | 类型                                                          | 描述     |
+| ------------------------------- | --- | ----------------------------------------------------------- | ------ |
+| [color](./IPCB_NetClassItem.md) |     | { r: number; g: number; b: number; alpha: number; } \| null | 网络类颜色  |
+| [name](./IPCB_NetClassItem.md)  |     | string                                                      | 网络类名称  |
+| [nets](./IPCB_NetClassItem.md)  |     | Array&lt;string&gt;                                         | 网络名称数组 |
 
 ---
 

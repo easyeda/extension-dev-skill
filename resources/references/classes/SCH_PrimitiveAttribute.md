@@ -5,99 +5,19 @@
 ## 签名
 
 ```typescript
-declare class SCH_PrimitiveAttribute implements ISCH_PrimitiveAPI 
+declare class SCH_PrimitiveAttribute implements ISCH_PrimitiveAPI
 ```
 **实现自：**[ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取属性
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取属性
-
-
-</td></tr>
-<tr><td>
-
-[getAll(parentPrimitiveId)](./SCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有属性
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(parentPrimitiveId)](./SCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有属性的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./SCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改属性
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                 | 修饰符 | 描述                        |
+| ------------------------------------------------------------------- | --- | ------------------------- |
+| [get(primitiveIds)](./SCH_PrimitiveAttribute.md)                    |     | **_(BETA)_** 获取属性         |
+| [get(primitiveIds)](./SCH_PrimitiveAttribute.md)                    |     | **_(BETA)_** 获取属性         |
+| [getAll(parentPrimitiveId)](./SCH_PrimitiveAttribute.md)            |     | **_(BETA)_** 获取所有属性       |
+| [getAllPrimitiveId(parentPrimitiveId)](./SCH_PrimitiveAttribute.md) |     | **_(BETA)_** 获取所有属性的图元 ID |
+| [modify(primitiveId, property)](./SCH_PrimitiveAttribute.md)        |     | **_(BETA)_** 修改属性         |
 
 ---
 
@@ -119,39 +39,9 @@ get(primitiveIds: string): Promise<ISCH_PrimitiveAttribute | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-属性的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                   |
+| ------------ | ------ | ------------------------------------ |
+| primitiveIds | string | 属性的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -177,45 +67,15 @@ get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveAttribute>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-属性的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                   |
+| ------------ | ------------------- | ------------------------------------ |
+| primitiveIds | Array&lt;string&gt; | 属性的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)&gt;&gt;
 
 属性图元对象，空数组表示获取失败
 
@@ -239,45 +99,15 @@ getAll(parentPrimitiveId?: string): Promise<Array<ISCH_PrimitiveAttribute>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-parentPrimitiveId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 父图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述            |
+| ----------------- | ------ | ------------- |
+| parentPrimitiveId | string | _（可选）_ 父图元 ID |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)&gt;&gt;
 
 属性图元对象数组
 
@@ -301,39 +131,9 @@ getAllPrimitiveId(parentPrimitiveId?: string): Promise<Array<string>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-parentPrimitiveId
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 父图元 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数                | 类型     | 描述            |
+| ----------------- | ------ | ------------- |
+| parentPrimitiveId | string | _（可选）_ 父图元 ID |
 
 
 
@@ -379,55 +179,10 @@ modify(primitiveId: string | ISCH_PrimitiveAttribute, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ x?: number \| null; y?: number \| null; rotation?: number \| null; color?: string \| null; fontName?: string \| null; fontSize?: number \| null; bold?: boolean \| null; italic?: boolean \| null; underLine?: boolean \| null; alignMode?: [ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md) \| null; fillColor?: string \| null; key?: string; value?: string; keyVisible?: boolean \| null; valueVisible?: boolean \| null; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 描述    |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)                                                                                                                                                                                                                                                                                                                                                                                       | 图元 ID |
+| property    | { x?: number \| null; y?: number \| null; rotation?: number \| null; color?: string \| null; fontName?: string \| null; fontSize?: number \| null; bold?: boolean \| null; italic?: boolean \| null; underLine?: boolean \| null; alignMode?: [ESCH\_PrimitiveTextAlignMode](../enums/ESCH_PrimitiveTextAlignMode.md) \| null; fillColor?: string \| null; key?: string; value?: string; keyVisible?: boolean \| null; valueVisible?: boolean \| null; } | 修改参数  |
 
 
 

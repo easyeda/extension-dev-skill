@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class SYS_IFrame 
+declare class SYS_IFrame
 ```
 
 ## 备注
@@ -13,79 +13,12 @@ declare class SYS_IFrame
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[closeIFrame(id)](./SYS_IFrame.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 关闭内联框架窗口
-
-
-</td></tr>
-<tr><td>
-
-[hideIFrame(id)](./SYS_IFrame.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 隐藏内联框架窗口
-
-
-</td></tr>
-<tr><td>
-
-[openIFrame(htmlFileName, width, height, id, props)](./SYS_IFrame.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 打开内联框架窗口
-
-
-</td></tr>
-<tr><td>
-
-[showIFrame(id)](./SYS_IFrame.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 显示内联框架窗口
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                   | 修饰符 | 描述                    |
+| --------------------------------------------------------------------- | --- | --------------------- |
+| [closeIFrame(id)](./SYS_IFrame.md)                                    |     | **_(BETA)_** 关闭内联框架窗口 |
+| [hideIFrame(id)](./SYS_IFrame.md)                                     |     | **_(BETA)_** 隐藏内联框架窗口 |
+| [openIFrame(htmlFileName, width, height, id, props)](./SYS_IFrame.md) |     | **_(BETA)_** 打开内联框架窗口 |
+| [showIFrame(id)](./SYS_IFrame.md)                                     |     | **_(BETA)_** 显示内联框架窗口 |
 
 ---
 
@@ -107,39 +40,9 @@ closeIFrame(id?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 内联框架窗口 ID，如若传入 `undefined`<!-- -->，将关闭由本扩展打开的所有内联框架窗口
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述                                                   |
+| --- | ------ | ---------------------------------------------------- |
+| id  | string | _（可选）_ 内联框架窗口 ID，如若传入 `undefined`，将关闭由本扩展打开的所有内联框架窗口 |
 
 
 
@@ -171,39 +74,9 @@ hideIFrame(id?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 内联框架窗口 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述               |
+| --- | ------ | ---------------- |
+| id  | string | _（可选）_ 内联框架窗口 ID |
 
 
 
@@ -215,7 +88,7 @@ Promise&lt;boolean&gt;
 
 ## 备注
 
-本接口为结果导向的： 如若未找到指定内联框架窗口，接口将会返回 `false`<!-- -->； 如若在执行操作前该内联框架窗口已处于隐藏状态，接口将会返回 `true`
+本接口为结果导向的： 如若未找到指定内联框架窗口，接口将会返回 `false`； 如若在执行操作前该内联框架窗口已处于隐藏状态，接口将会返回 `true`
 
 注意：本接口仅扩展有效，在独立脚本环境内调用将始终 `throw Error`
 
@@ -243,103 +116,13 @@ openIFrame(htmlFileName: string, width?: number, height?: number, id?: string, p
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-htmlFileName
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-需要加载的 HTML 文件在扩展包内的路径，从扩展根目录起始，例如 `/iframe/index.html`
-
-
-</td></tr>
-<tr><td>
-
-width
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 内联框架窗口的宽度
-
-
-</td></tr>
-<tr><td>
-
-height
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 内联框架窗口的高度
-
-
-</td></tr>
-<tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 内联框架窗口 ID，用于关闭内联框架窗口
-
-
-</td></tr>
-<tr><td>
-
-props
-
-
-</td><td>
-
-{ maximizeButton?: boolean; minimizeButton?: boolean; minimizeStyle?: 'collapsed' \| 'constricted'; buttonCallbackFn?: (button: 'close' \| 'minimize' \| 'maximize') =&gt; void \| Promise&lt;void&gt;; onBeforeCloseCallFn?: () =&gt; boolean \| undefined \| Promise&lt;boolean \| undefined&gt;; grayscaleMask?: boolean; title?: string; }
-
-
-</td><td>
-
-_（可选）_ 其它参数
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                                                                                                                                                                                                             | 描述                                                     |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| htmlFileName | string                                                                                                                                                                                                                                                                                                                                         | 需要加载的 HTML 文件在扩展包内的路径，从扩展根目录起始，例如 `/iframe/index.html` |
+| width        | number                                                                                                                                                                                                                                                                                                                                         | _（可选）_ 内联框架窗口的宽度                                       |
+| height       | number                                                                                                                                                                                                                                                                                                                                         | _（可选）_ 内联框架窗口的高度                                       |
+| id           | string                                                                                                                                                                                                                                                                                                                                         | _（可选）_ 内联框架窗口 ID，用于关闭内联框架窗口                            |
+| props        | { maximizeButton?: boolean; minimizeButton?: boolean; minimizeStyle?: 'collapsed' \| 'constricted'; buttonCallbackFn?: (button: 'close' \| 'minimize' \| 'maximize') =&gt; void \| Promise&lt;void&gt;; onBeforeCloseCallFn?: () =&gt; boolean \| undefined \| Promise&lt;boolean \| undefined&gt;; grayscaleMask?: boolean; title?: string; } | _（可选）_ 其它参数                                            |
 
 
 
@@ -353,7 +136,7 @@ Promise&lt;boolean&gt;
 
 本接口仅扩展包允许调用，用户需要在扩展包内包含用于内联的 HTML 文件；
 
-本接口调用后将会打开一个 Dialog 窗口，该 Dialog 窗口的标题为 HTML 文件的 `<title>`<!-- -->，标题栏有关闭按钮；
+本接口调用后将会打开一个 Dialog 窗口，该 Dialog 窗口的标题为 HTML 文件的 `<title>`，标题栏有关闭按钮；
 
 正文部分为内联框架，`width` 和 `height` 均为正文部分内联框架的宽高；
 
@@ -377,39 +160,9 @@ showIFrame(id?: string): Promise<boolean>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-id
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 内联框架窗口 ID
-
-
-</td></tr>
-</tbody></table>
+| 参数  | 类型     | 描述               |
+| --- | ------ | ---------------- |
+| id  | string | _（可选）_ 内联框架窗口 ID |
 
 
 
@@ -421,6 +174,6 @@ Promise&lt;boolean&gt;
 
 ## 备注
 
-本接口为结果导向的： 如若未找到指定内联框架窗口，接口将会返回 `false`<!-- -->； 如若在执行操作前该内联框架窗口已处于显示状态，接口将会返回 `true`
+本接口为结果导向的： 如若未找到指定内联框架窗口，接口将会返回 `false`； 如若在执行操作前该内联框架窗口已处于显示状态，接口将会返回 `true`
 
 注意：本接口仅扩展有效，在独立脚本环境内调用将始终 `throw Error`

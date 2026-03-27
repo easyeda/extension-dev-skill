@@ -10,4 +10,4 @@ type TPCB_LayersOfRegion = TPCB_LayersOfCopper | EPCB_LayerId.MULTI;
 ## 引用
 
 
-[TPCB\_LayersOfCopper](./TPCB_LayersOfCopper.md)<!-- -->, [EPCB\_LayerId.MULTI](../enums/EPCB_LayerId.md)
+[TPCB\_LayersOfCopper](./TPCB_LayersOfCopper.md), [EPCB\_LayerId.MULTI](../enums/EPCB_LayerId.md)

@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface ISYS_MultilingualLanguagesData 
+interface ISYS_MultilingualLanguagesData
 ```
 
 ## 备注

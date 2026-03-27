@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-interface ILIB_ExtendLibraryUserIndex 
+interface ILIB_ExtendLibraryUserIndex
 ```
 
 ## 备注
@@ -18,66 +18,10 @@ interface ILIB_ExtendLibraryUserIndex
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[name?](./ILIB_ExtendLibraryUserIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 用户名称
-
-
-</td></tr>
-<tr><td>
-
-[uuid?](./ILIB_ExtendLibraryUserIndex.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_（可选）_ 嘉立创 EDA 系统内的用户 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                       | 修饰符 | 类型     | 描述                         |
+| ----------------------------------------- | --- | ------ | -------------------------- |
+| [name?](./ILIB_ExtendLibraryUserIndex.md) |     | string | _（可选）_ 用户名称                |
+| [uuid?](./ILIB_ExtendLibraryUserIndex.md) |     | string | _（可选）_ 嘉立创 EDA 系统内的用户 UUID |
 
 ---
 

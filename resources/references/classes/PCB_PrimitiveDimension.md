@@ -5,127 +5,21 @@ PCB &amp; 封装 / 尺寸标注图元类
 ## 签名
 
 ```typescript
-declare class PCB_PrimitiveDimension implements IPCB_PrimitiveAPI 
+declare class PCB_PrimitiveDimension implements IPCB_PrimitiveAPI
 ```
 **实现自：**[IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[create(dimensionType, coordinateSet, layer, unit, lineWidth, precision, primitiveLock)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-创建尺寸标注
-
-
-</td></tr>
-<tr><td>
-
-[delete(primitiveIds)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 删除尺寸标注
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取尺寸标注
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取尺寸标注
-
-
-</td></tr>
-<tr><td>
-
-[getAll(layer, primitiveLock)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有尺寸标注
-
-
-</td></tr>
-<tr><td>
-
-[getAllPrimitiveId(layer, primitiveLock)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 获取所有尺寸标注的图元 ID
-
-
-</td></tr>
-<tr><td>
-
-[modify(primitiveId, property)](./PCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-
-</td><td>
-
-**_(BETA)_** 修改尺寸标注
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                                                                                   | 修饰符 | 描述                          |
+| --------------------------------------------------------------------------------------------------------------------- | --- | --------------------------- |
+| [create(dimensionType, coordinateSet, layer, unit, lineWidth, precision, primitiveLock)](./PCB_PrimitiveDimension.md) |     | 创建尺寸标注                      |
+| [delete(primitiveIds)](./PCB_PrimitiveDimension.md)                                                                   |     | **_(BETA)_** 删除尺寸标注         |
+| [get(primitiveIds)](./PCB_PrimitiveDimension.md)                                                                      |     | **_(BETA)_** 获取尺寸标注         |
+| [get(primitiveIds)](./PCB_PrimitiveDimension.md)                                                                      |     | **_(BETA)_** 获取尺寸标注         |
+| [getAll(layer, primitiveLock)](./PCB_PrimitiveDimension.md)                                                           |     | **_(BETA)_** 获取所有尺寸标注       |
+| [getAllPrimitiveId(layer, primitiveLock)](./PCB_PrimitiveDimension.md)                                                |     | **_(BETA)_** 获取所有尺寸标注的图元 ID |
+| [modify(primitiveId, property)](./PCB_PrimitiveDimension.md)                                                          |     | **_(BETA)_** 修改尺寸标注         |
 
 ---
 
@@ -145,135 +39,15 @@ create(dimensionType: EPCB_PrimitiveDimensionType, coordinateSet: TPCB_Primitive
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-dimensionType
-
-
-</td><td>
-
-[EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md)
-
-
-</td><td>
-
-尺寸标注类型
-
-
-</td></tr>
-<tr><td>
-
-coordinateSet
-
-
-</td><td>
-
-[TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md)
-
-
-</td><td>
-
-尺寸标注坐标集
-
-
-</td></tr>
-<tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-unit
-
-
-</td><td>
-
-[ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md)
-
-
-</td><td>
-
-_（可选）_ 单位
-
-
-</td></tr>
-<tr><td>
-
-lineWidth
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 线宽
-
-
-</td></tr>
-<tr><td>
-
-precision
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-_（可选）_ 精度，取值范围 `0`<!-- -->-`4`
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                                                                                                                                                      | 描述                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| dimensionType | [EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md)                                                                                                                 | 尺寸标注类型                 |
+| coordinateSet | [TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md)                                                                                               | 尺寸标注坐标集                |
+| layer         | [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)                                                                                                                           | _（可选）_ 层               |
+| unit          | [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md) | _（可选）_ 单位              |
+| lineWidth     | number                                                                                                                                                                                  | _（可选）_ 线宽              |
+| precision     | number                                                                                                                                                                                  | _（可选）_ 精度，取值范围 `0`-`4` |
+| primitiveLock | boolean                                                                                                                                                                                 | _（可选）_ 是否锁定            |
 
 
 
@@ -299,39 +73,9 @@ delete(primitiveIds: string | IPCB_PrimitiveDimension | Array<string> | Array<IP
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)<!-- -->&gt;
-
-
-</td><td>
-
-尺寸标注的图元 ID 或尺寸标注图元对象
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                                                                                                                                                                 | 描述                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| primitiveIds | string \| [IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)&gt; | 尺寸标注的图元 ID 或尺寸标注图元对象 |
 
 
 
@@ -357,39 +101,9 @@ get(primitiveIds: string): Promise<IPCB_PrimitiveDimension | undefined>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-尺寸标注的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型     | 描述                                     |
+| ------------ | ------ | -------------------------------------- |
+| primitiveIds | string | 尺寸标注的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
@@ -415,45 +129,15 @@ get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveDimension>>;
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveIds
-
-
-</td><td>
-
-Array&lt;string&gt;
-
-
-</td><td>
-
-尺寸标注的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组
-
-
-</td></tr>
-</tbody></table>
+| 参数           | 类型                  | 描述                                     |
+| ------------ | ------------------- | -------------------------------------- |
+| primitiveIds | Array&lt;string&gt; | 尺寸标注的图元 ID，可以为字符串或字符串数组，如若为数组，则返回的也是数组 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)&gt;&gt;
 
 尺寸标注图元对象，空数组表示获取失败
 
@@ -477,61 +161,16 @@ getAll(layer?: TPCB_LayersOfDimension, primitiveLock?: boolean): Promise<Array<I
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                            | 描述          |
+| ------------- | ------------------------------------------------------------- | ----------- |
+| layer         | [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                                       | _（可选）_ 是否锁定 |
 
 
 
 ## 返回值
 
-Promise&lt;Array&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)<!-- -->&gt;&gt;
+Promise&lt;Array&lt;[IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)&gt;&gt;
 
 尺寸标注图元对象数组
 
@@ -551,55 +190,10 @@ getAllPrimitiveId(layer?: TPCB_LayersOfDimension, primitiveLock?: boolean): Prom
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-layer
-
-
-</td><td>
-
-[TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)
-
-
-</td><td>
-
-_（可选）_ 层
-
-
-</td></tr>
-<tr><td>
-
-primitiveLock
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_（可选）_ 是否锁定
-
-
-</td></tr>
-</tbody></table>
+| 参数            | 类型                                                            | 描述          |
+| ------------- | ------------------------------------------------------------- | ----------- |
+| layer         | [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md) | _（可选）_ 层    |
+| primitiveLock | boolean                                                       | _（可选）_ 是否锁定 |
 
 
 
@@ -633,55 +227,10 @@ modify(primitiveId: string | IPCB_PrimitiveDimension, property: {
 
 ## 参数名
 
-<table><thead><tr><th>
-
-参数
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-primitiveId
-
-
-</td><td>
-
-string \| [IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)
-
-
-</td><td>
-
-图元 ID
-
-
-</td></tr>
-<tr><td>
-
-property
-
-
-</td><td>
-
-{ dimensionType?: [EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md)<!-- -->; coordinateSet?: [TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md)<!-- -->; layer?: [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)<!-- -->; unit?: [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md)<!-- -->; lineWidth?: number; precision?: number; primitiveLock?: boolean; }
-
-
-</td><td>
-
-修改参数
-
-
-</td></tr>
-</tbody></table>
+| 参数          | 类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 描述    |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| primitiveId | string \| [IPCB\_PrimitiveDimension](./IPCB_PrimitiveDimension.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 图元 ID |
+| property    | { dimensionType?: [EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md); coordinateSet?: [TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md); layer?: [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md); unit?: [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md); lineWidth?: number; precision?: number; primitiveLock?: boolean; } | 修改参数  |
 
 
 

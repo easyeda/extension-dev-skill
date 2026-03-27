@@ -5,71 +5,15 @@
 ## 签名
 
 ```typescript
-interface IPCB_PadPairMinWireLengthItem 
+interface IPCB_PadPairMinWireLengthItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[minWireLength](./IPCB_PadPairMinWireLengthItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-最短导线长度
-
-
-</td></tr>
-<tr><td>
-
-[padPair](./IPCB_PadPairMinWireLengthItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-\[string, string\]
-
-
-</td><td>
-
-焊盘对数组
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                 | 修饰符 | 类型                 | 描述     |
+| --------------------------------------------------- | --- | ------------------ | ------ |
+| [minWireLength](./IPCB_PadPairMinWireLengthItem.md) |     | number             | 最短导线长度 |
+| [padPair](./IPCB_PadPairMinWireLengthItem.md)       |     | \[string, string\] | 焊盘对数组  |
 
 ---
 

@@ -10,7 +10,7 @@ license: MIT
 compatibility: Build requires Node.js 18+; runtime is EasyEDA Pro browser sandbox
 metadata:
   author: JLCEDA
-  version: "1.3.2"
+  version: "1.3.3"
 ---
 
 # extension-dev-skill
@@ -45,7 +45,6 @@ API documentation is located in the `resources/` directory bundled with this Ski
 
 ```
 resources/
-  api-reference.md                  # API module overview, eda property list, MCP tool docs
   experience.md                     # Common pitfalls and lessons learned
   guide/                            # Developer guide (how-to, concepts, best practices)
     index.md                        # What is the Extension API
@@ -274,7 +273,7 @@ Use the plugin's display language (Chinese or English) matching the user's reque
 
 ### CHANGELOG.md
 
-Follow [Keep a Changelog](https://keepachangelog.com/) format:
+Follow [Keep a Changelog] format:
 
 ```markdown
 # Changelog
@@ -290,8 +289,8 @@ Follow [Keep a Changelog](https://keepachangelog.com/) format:
 
 ## References
 
-- Complete API module list, enum definitions → `resources/api-reference.md`
+- Quick method signature lookup → `resources/references/_quick-reference.md`
+- Master index of all API entities → `resources/references/_index.md`
 - Common pitfalls and lessons learned → `resources/experience.md`
 - Developer guide (concepts, patterns) → `resources/guide/`
 - Full API reference (classes, enums, interfaces, types) → `resources/references/`
-- MCP tool documentation → "MCP Tools" section in `resources/api-reference.md`

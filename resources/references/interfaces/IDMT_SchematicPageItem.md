@@ -5,149 +5,19 @@
 ## 签名
 
 ```typescript
-interface IDMT_SchematicPageItem 
+interface IDMT_SchematicPageItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[itemType](./IDMT_SchematicPageItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.SCHEMATIC\_PAGE](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_SchematicPageItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图图页名称
-
-
-</td></tr>
-<tr><td>
-
-[parentSchematicUuid](./IDMT_SchematicPageItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-所属原理图 UUID
-
-
-</td></tr>
-<tr><td>
-
-[showTitleBlock](./IDMT_SchematicPageItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-是否显示明细表
-
-
-</td></tr>
-<tr><td>
-
-[titleBlockData](./IDMT_SchematicPageItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-\{ \[key: string\]: \{ showTitle: boolean; showValue: boolean; value: any; \}; \}
-
-
-</td><td>
-
-明细表数据
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_SchematicPageItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-原理图图页 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                                                | 修饰符        | 类型                                                                                | 描述         |
+| -------------------------------------------------- | ---------- | --------------------------------------------------------------------------------- | ---------- |
+| [itemType](./IDMT_SchematicPageItem.md)            | `readonly` | [EDMT\_ItemType.SCHEMATIC\_PAGE](../enums/EDMT_ItemType.md)                       | 项目类型       |
+| [name](./IDMT_SchematicPageItem.md)                |            | string                                                                            | 原理图图页名称    |
+| [parentSchematicUuid](./IDMT_SchematicPageItem.md) |            | string                                                                            | 所属原理图 UUID |
+| [showTitleBlock](./IDMT_SchematicPageItem.md)      |            | boolean                                                                           | 是否显示明细表    |
+| [titleBlockData](./IDMT_SchematicPageItem.md)      |            | \{ \[key: string\]: \{ showTitle: boolean; showValue: boolean; value: any; \}; \} | 明细表数据      |
+| [uuid](./IDMT_SchematicPageItem.md)                |            | string                                                                            | 原理图图页 UUID |
 
 ---
 

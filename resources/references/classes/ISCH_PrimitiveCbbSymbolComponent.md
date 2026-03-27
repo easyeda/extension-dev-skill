@@ -5,7 +5,7 @@
 ## 签名
 
 ```typescript
-declare class ISCH_PrimitiveCbbSymbolComponent extends ISCH_PrimitiveComponent 
+declare class ISCH_PrimitiveCbbSymbolComponent extends ISCH_PrimitiveComponent
 ```
 **扩展自：**[ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md)
 
@@ -14,51 +14,10 @@ declare class ISCH_PrimitiveCbbSymbolComponent extends ISCH_PrimitiveComponent
 
 ## 方法
 
-<table><thead><tr><th>
-
-方法名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[getState\_Cbb()](./ISCH_PrimitiveCbbSymbolComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：关联复用模块
-
-
-</td></tr>
-<tr><td>
-
-[getState\_CbbSymbol()](./ISCH_PrimitiveCbbSymbolComponent.md)
-
-
-</td><td>
-
-
-</td><td>
-
-获取属性状态：关联复用模块符号
-
-
-</td></tr>
-</tbody></table>
+| 方法名                                                            | 修饰符 | 描述              |
+| -------------------------------------------------------------- | --- | --------------- |
+| [getState\_Cbb()](./ISCH_PrimitiveCbbSymbolComponent.md)       |     | 获取属性状态：关联复用模块   |
+| [getState\_CbbSymbol()](./ISCH_PrimitiveCbbSymbolComponent.md) |     | 获取属性状态：关联复用模块符号 |
 
 ---
 

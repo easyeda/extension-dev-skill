@@ -5,111 +5,17 @@
 ## 签名
 
 ```typescript
-interface IDMT_TeamItem 
+interface IDMT_TeamItem
 ```
 
 ## 属性
 
-<table><thead><tr><th>
-
-属性名
-
-
-</th><th>
-
-修饰符
-
-
-</th><th>
-
-类型
-
-
-</th><th>
-
-描述
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[identity](./IDMT_TeamItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-当前用户在团队内的身份（权限组）ID
-
-
-</td></tr>
-<tr><td>
-
-[itemType](./IDMT_TeamItem.md)
-
-
-</td><td>
-
-`readonly`
-
-
-</td><td>
-
-[EDMT\_ItemType.TEAM](../enums/EDMT_ItemType.md)
-
-
-</td><td>
-
-项目类型
-
-
-</td></tr>
-<tr><td>
-
-[name](./IDMT_TeamItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-团队名称
-
-
-</td></tr>
-<tr><td>
-
-[uuid](./IDMT_TeamItem.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-团队 UUID
-
-
-</td></tr>
-</tbody></table>
+| 属性名                            | 修饰符        | 类型                                               | 描述                 |
+| ------------------------------ | ---------- | ------------------------------------------------ | ------------------ |
+| [identity](./IDMT_TeamItem.md) |            | number                                           | 当前用户在团队内的身份（权限组）ID |
+| [itemType](./IDMT_TeamItem.md) | `readonly` | [EDMT\_ItemType.TEAM](../enums/EDMT_ItemType.md) | 项目类型               |
+| [name](./IDMT_TeamItem.md)     |            | string                                           | 团队名称               |
+| [uuid](./IDMT_TeamItem.md)     |            | string                                           | 团队 UUID            |
 
 ---
 
