@@ -82,7 +82,7 @@ class EdaApiLinter {
       this.enumMembers[name] = new Set((data.members || []).map(m => m.name));
     }
 
-    // 方法签名解析: className → { methodName(lower) → { minArgs, maxArgs, params: [{ name, type, optional, enumType? }] } }
+    // 方法签名解析: className → { methodKey → { minArgs, maxArgs, params, returnsPromise } }
     this.methodSignatures = {};
     for (const [cls, data] of Object.entries(registry.classes)) {
       const sigMap = {};
@@ -168,21 +168,20 @@ class EdaApiLinter {
 
   /** 规则1: eda.xxx 挂载路径检查 */
   _checkEdaMountAccess(line, lineNum) {
-    // 匹配 eda.someProperty (不在注释或字符串中的简单检查)
+    // 匹配 eda.someProperty
     const regex = /\beda\.(\w+)/g;
     let m;
     while ((m = regex.exec(line)) !== null) {
       const mountName = m[1];
-      const col = m.index + 5; // eda. 后的位置
+      const col = m.index + 5;
 
       if (!this.validMounts.has(mountName)) {
-        // 尝试模糊匹配
         const suggestion = this._findClosestMount(mountName);
         this.diagnostics.push(createDiagnostic(
           lineNum, col, Severity.ERROR,
-          `eda.${mountName} 不存在，EDA 类上没有 "${mountName}" 属性`,
+          `eda.${mountName} does not exist; no "${mountName}" property on EDA class`,
           'invalid-mount',
-          suggestion ? `你是否想用 eda.${suggestion}？` : null
+          suggestion ? `Did you mean eda.${suggestion}?` : null
         ));
       }
     }
@@ -190,7 +189,6 @@ class EdaApiLinter {
 
   /** 规则2: eda.xxx.method() 方法调用检查 + 传参检查 */
   _checkEdaMethodCall(line, lineNum) {
-    // 匹配 eda.mount.method( 或 eda.mount.property
     const regex = /\beda\.(\w+)\.(\w+)\s*\(/g;
     let m;
     while ((m = regex.exec(line)) !== null) {
@@ -198,7 +196,6 @@ class EdaApiLinter {
       const methodName = m[2];
       const col = m.index;
 
-      // 先检查 mount 是否合法（规则1已覆盖，这里只检查方法）
       if (!this.validMounts.has(mountName)) continue;
 
       const className = this.mountToClass[mountName];
@@ -211,12 +208,11 @@ class EdaApiLinter {
       if (!methodsLower) continue;
 
       if (!methodsLower.has(methodName.toLowerCase())) {
-        let msg = `${className} 类上不存在方法 "${methodName}"`;
+        let msg = `Method "${methodName}" does not exist on ${className}`;
         let hint = null;
-        // 仅在同类内模糊匹配，不跨类提示
         const closest = this._findClosestMethod(className, methodName);
         if (closest) {
-          hint = `你是否想用 "${closest}"？`;
+          hint = `Did you mean "${closest}"?`;
         }
         this.diagnostics.push(createDiagnostic(
           lineNum, col, Severity.ERROR, msg, 'invalid-method', hint
@@ -224,13 +220,12 @@ class EdaApiLinter {
         continue;
       }
 
-      // ── 传参检查 ──
+      // ── Param checks ──
       const sigInfo = (this.methodSignatures[className] || {})[methodName.toLowerCase()];
       if (!sigInfo) continue;
 
-      // 提取调用处的实参列表
       const argsStr = this._extractCallArgs(line, m.index + m[0].length - 1);
-      if (argsStr === null) continue; // 跨行调用，跳过
+      if (argsStr === null) continue;
 
       const argList = this._splitArgs(argsStr);
       const argCount = (argList.length === 1 && argList[0].trim() === '') ? 0 : argList.length;
@@ -240,17 +235,17 @@ class EdaApiLinter {
         const sigDisplay = sigInfo.params.map(p => p.optional ? `${p.name}?` : p.name).join(', ');
         this.diagnostics.push(createDiagnostic(
           lineNum, col, Severity.ERROR,
-          `${className}.${methodName}() 需要至少 ${sigInfo.minArgs} 个参数，实际传入 ${argCount} 个`,
+          `${className}.${methodName}() requires at least ${sigInfo.minArgs} arg(s), got ${argCount}`,
           'param-count-mismatch',
-          `签名: ${methodName}(${sigDisplay})`
+          `Signature: ${methodName}(${sigDisplay})`
         ));
       } else if (argCount > sigInfo.maxArgs) {
         const sigDisplay = sigInfo.params.map(p => p.optional ? `${p.name}?` : p.name).join(', ');
         this.diagnostics.push(createDiagnostic(
           lineNum, col, Severity.WARNING,
-          `${className}.${methodName}() 最多接受 ${sigInfo.maxArgs} 个参数，实际传入 ${argCount} 个`,
+          `${className}.${methodName}() accepts at most ${sigInfo.maxArgs} arg(s), got ${argCount}`,
           'param-count-mismatch',
-          `签名: ${methodName}(${sigDisplay})`
+          `Signature: ${methodName}(${sigDisplay})`
         ));
       }
 
@@ -269,18 +264,18 @@ class EdaApiLinter {
             if (usedEnum !== paramDef.enumType) {
               this.diagnostics.push(createDiagnostic(
                 lineNum, col, Severity.WARNING,
-                `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望枚举类型 ${paramDef.enumType}，实际传入 ${usedEnum}`,
+                `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects enum ${paramDef.enumType}, got ${usedEnum}`,
                 'param-enum-type',
-                `应使用 ${paramDef.enumType}.xxx`
+                `Use ${paramDef.enumType}.xxx`
               ));
             }
           }
           else if (/^['"]/.test(argValue) && this.validEnums.has(paramDef.enumType)) {
             this.diagnostics.push(createDiagnostic(
               lineNum, col, Severity.WARNING,
-              `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望枚举类型 ${paramDef.enumType}，不建议传入字符串字面量`,
+              `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects enum ${paramDef.enumType}, got string literal`,
               'param-enum-type',
-              `应使用 ${paramDef.enumType}.xxx 而非字符串`
+              `Use ${paramDef.enumType}.xxx instead of string`
             ));
           }
           continue;
@@ -296,67 +291,60 @@ class EdaApiLinter {
         const isBooleanLiteral = /^(true|false)$/.test(argValue);
         const isArrayLiteral = /^\[/.test(argValue);
 
-        // 期望 string，传入数字字面量
         if (baseType === 'string' && isNumberLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 string 类型，实际传入数字 ${argValue}`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects string, got number ${argValue}`,
             'param-type-mismatch',
-            `应传入字符串，如 "${argValue}"`
+            `Pass a string, e.g. "${argValue}"`
           ));
         }
-        // 期望 string，传入布尔字面量
         else if (baseType === 'string' && isBooleanLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 string 类型，实际传入 boolean ${argValue}`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects string, got boolean ${argValue}`,
             'param-type-mismatch',
-            `应传入字符串`
+            `Pass a string value`
           ));
         }
-        // 期望 number，传入字符串字面量
         else if (baseType === 'number' && isStringLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 number 类型，实际传入字符串`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects number, got string`,
             'param-type-mismatch',
-            `应传入数字`
+            `Pass a number value`
           ));
         }
-        // 期望 number，传入布尔字面量
         else if (baseType === 'number' && isBooleanLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 number 类型，实际传入 boolean ${argValue}`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects number, got boolean ${argValue}`,
             'param-type-mismatch',
-            `应传入数字`
+            `Pass a number value`
           ));
         }
-        // 期望 boolean，传入字符串字面量
         else if (baseType === 'boolean' && isStringLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 boolean 类型，实际传入字符串`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects boolean, got string`,
             'param-type-mismatch',
-            `应传入 true 或 false`
+            `Pass true or false`
           ));
         }
-        // 期望 boolean，传入数字字面量
         else if (baseType === 'boolean' && isNumberLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 boolean 类型，实际传入数字 ${argValue}`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects boolean, got number ${argValue}`,
             'param-type-mismatch',
-            `应传入 true 或 false`
+            `Pass true or false`
           ));
         }
-        // 期望 string/number/boolean 但传入数组字面量
         else if (/^(string|number|boolean)$/.test(baseType) && isArrayLiteral) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 第 ${i + 1} 个参数 "${paramDef.name}" 期望 ${paramDef.type} 类型，实际传入数组`,
+            `${className}.${methodName}() param ${i + 1} "${paramDef.name}" expects ${paramDef.type}, got array`,
             'param-type-mismatch',
-            `应传入 ${paramDef.type} 类型的值`
+            `Pass a ${paramDef.type} value`
           ));
         }
       }
@@ -371,9 +359,9 @@ class EdaApiLinter {
         if (!hasAwait && !hasThen && !isReturned) {
           this.diagnostics.push(createDiagnostic(
             lineNum, col, Severity.WARNING,
-            `${className}.${methodName}() 返回 Promise，但未使用 await 或 .then() 处理`,
+            `${className}.${methodName}() returns Promise but is not awaited or .then() handled`,
             'missing-await',
-            `添加 await 或使用 .then() 处理异步结果`
+            `Add await or use .then() to handle the async result`
           ));
         }
       }
@@ -382,7 +370,6 @@ class EdaApiLinter {
 
   /** 规则3: 枚举使用检查 */
   _checkEnumUsage(line, lineNum) {
-    // 匹配 EXXX_YyyZzz.MEMBER
     const regex = /\b(E\w+_\w+)\.(\w+)/g;
     let m;
     while ((m = regex.exec(line)) !== null) {
@@ -391,13 +378,12 @@ class EdaApiLinter {
       const col = m.index;
 
       if (!this.validEnums.has(enumName)) {
-        // 枚举名不存在
         const closest = this._findClosestEnum(enumName);
         this.diagnostics.push(createDiagnostic(
           lineNum, col, Severity.ERROR,
-          `枚举 "${enumName}" 不存在`,
+          `Enum "${enumName}" does not exist`,
           'invalid-enum',
-          closest ? `你是否想用 "${closest}"？` : null
+          closest ? `Did you mean "${closest}"?` : null
         ));
         continue;
       }
@@ -407,9 +393,9 @@ class EdaApiLinter {
         const validList = [...members].slice(0, 5).join(', ');
         this.diagnostics.push(createDiagnostic(
           lineNum, col, Severity.ERROR,
-          `枚举 ${enumName} 中不存在成员 "${memberName}"`,
+          `Enum ${enumName} has no member "${memberName}"`,
           'invalid-enum-member',
-          `可用成员: ${validList}${members.size > 5 ? '...' : ''}`
+          `Valid members: ${validList}${members.size > 5 ? '...' : ''}`
         ));
       }
     }
@@ -417,40 +403,36 @@ class EdaApiLinter {
 
   /** 规则4: SCH setState_* 误用检测 */
   _checkSchSetStateMisuse(line, lineNum, lines, idx) {
-    // 检测 SCH 图元对象直接调用 setState_* 而没有用 modify()
-    // 模式: sch 相关变量.setState_Xxx(...)
     const setStateMatch = line.match(/\.setState_(\w+)\s*\(/);
     if (!setStateMatch) return;
 
-    // 向上查找是否有 sch_ 相关的上下文
     const context = lines.slice(Math.max(0, idx - 10), idx + 1).join('\n');
     const isSchContext = /\beda\.sch_\w+/.test(context) ||
                          /\bISCH_\w+/.test(context) ||
                          /\bsch_Primitive\w+/.test(context);
 
-    // 检查是否有 .done() 调用（PCB 模式）
     const hasDone = /\.done\s*\(\s*\)/.test(line) ||
                     (idx + 1 < lines.length && /\.done\s*\(\s*\)/.test(lines[idx + 1]));
 
     if (isSchContext && !hasDone) {
       this.diagnostics.push(createDiagnostic(
         lineNum, setStateMatch.index, Severity.WARNING,
-        `SCH 图元的 setState_* 不会直接提交变更，需要使用对应类的 modify() 方法`,
+        `SCH primitive setState_* does not commit changes directly; use the modify() method instead`,
         'sch-setstate-misuse',
-        `SCH 中应使用 eda.sch_PrimitiveXxx.modify(id, { ... }) 来修改属性`
+        `Use eda.sch_PrimitiveXxx.modify(id, { ... }) to modify SCH properties`
       ));
     }
   }
 
   /** 规则5: 常见错误模式检测 */
   _checkCommonPitfalls(line, lineNum) {
-    // 5a: eda.sch_Document.getCurrentDocumentInfo() 错误
+    // 5a: getCurrentDocumentInfo 挂载在错误的类上
     if (/\beda\.sch_Document\.getCurrentDocumentInfo\b/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.ERROR,
-        `getCurrentDocumentInfo 不在 SCH_Document 上`,
+        `getCurrentDocumentInfo does not exist on SCH_Document`,
         'wrong-class-mount',
-        `应使用 eda.dmt_SelectControl.getCurrentDocumentInfo()`
+        `Use eda.dmt_SelectControl.getCurrentDocumentInfo()`
       ));
     }
 
@@ -458,9 +440,9 @@ class EdaApiLinter {
     if (/\bdocInfo\.type\b/.test(line) || /\.type\s*===?\s*EDMT_EditorDocumentType/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.WARNING,
-        `文档类型属性应使用 documentType 而非 type`,
+        `Document type property should be "documentType", not "type"`,
         'wrong-property-name',
-        `使用 docInfo.documentType`
+        `Use docInfo.documentType`
       ));
     }
 
@@ -468,9 +450,9 @@ class EdaApiLinter {
     if (/\bwindow\.(parent\.)?eda\b/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.WARNING,
-        `不支持通过 window 访问 eda，直接使用 eda 即可`,
+        `Accessing eda via window is not supported; use eda directly`,
         'unnecessary-window-eda',
-        `将 window.eda / window.parent.eda 替换为 eda`
+        `Replace window.eda / window.parent.eda with eda`
       ));
     }
 
@@ -478,9 +460,9 @@ class EdaApiLinter {
     if (/\(window\s+as\s+any\)\.__\w+/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.WARNING,
-        `主进程和 iframe 的 window 对象是隔离的，不能通过 window.__xxx 传数据`,
+        `Main process and iframe have isolated window objects; cannot pass data via window.__xxx`,
         'isolated-window',
-        `使用 eda.sys_Storage.setExtensionUserConfig() 或直接在 iframe 中调用 eda API`
+        `Use eda.sys_Storage.setExtensionUserConfig() or call eda API directly in iframe`
       ));
     }
 
@@ -488,7 +470,7 @@ class EdaApiLinter {
     if (/\bconsole\.log\s*\(/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.INFO,
-        `生产代码中不建议使用 console.log，请使用 console.warn 或 console.error`,
+        `Avoid console.log in production code; use console.warn or console.error`,
         'no-console-log',
         null
       ));
@@ -498,9 +480,9 @@ class EdaApiLinter {
     if (/openIFrame\s*\([^)]*\?[^)]*\)/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.ERROR,
-        `openIFrame 的路径不允许包含查询参数`,
+        `openIFrame path must not contain query parameters`,
         'iframe-query-params',
-        `移除 URL 中的 ? 查询参数`
+        `Remove the ? query parameters from the URL`
       ));
     }
 
@@ -508,9 +490,9 @@ class EdaApiLinter {
     if (/getExtensionUserConfig\s*\(\s*\)/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.ERROR,
-        `getExtensionUserConfig() 必须传入 key 参数，否则返回 undefined`,
+        `getExtensionUserConfig() requires a key parameter; returns undefined without one`,
         'storage-missing-key',
-        `使用 getExtensionUserConfig('yourKey')`
+        `Use getExtensionUserConfig('yourKey')`
       ));
     }
 
@@ -518,9 +500,9 @@ class EdaApiLinter {
     if (/\beda\.(sch_Primitive|pcb_Primitive)\.getAllPrimitiveId\b/.test(line)) {
       this.diagnostics.push(createDiagnostic(
         lineNum, 0, Severity.ERROR,
-        `SCH_Primitive / PCB_Primitive 是抽象类，没有 getAllPrimitiveId 方法`,
+        `SCH_Primitive / PCB_Primitive are abstract classes; getAllPrimitiveId is not available`,
         'abstract-class-method',
-        `使用具体的图元类，如 eda.sch_PrimitiveComponent.getAllPrimitiveId()`
+        `Use a concrete class, e.g. eda.sch_PrimitiveComponent.getAllPrimitiveId()`
       ));
     }
   }
@@ -528,14 +510,13 @@ class EdaApiLinter {
   /** 规则6: 未定义函数调用检测 */
   _checkUndefinedFunctions(source, lines) {
     // 收集当前文件中定义的函数名
-    const defined = new Set();
 
     // function xxx(
     const funcDeclRegex = /\bfunction\s+(\w+)\s*\(/g;
     let m;
     while ((m = funcDeclRegex.exec(source)) !== null) defined.add(m[1]);
 
-    // const/let/var xxx = (  或 const/let/var xxx = async (
+    // const/let/var xxx = ( or async (
     const arrowRegex = /\b(?:const|let|var)\s+(\w+)\s*=\s*(?:async\s*)?\(/g;
     while ((m = arrowRegex.exec(source)) !== null) defined.add(m[1]);
 
@@ -555,7 +536,6 @@ class EdaApiLinter {
       if (m[3]) defined.add(m[3]);
     }
 
-    // 方法参数中的解构和回调参数不追踪，只做顶层函数调用检测
     // 内置全局对象和常见 API 白名单
     const builtins = new Set([
       'eda', 'console', 'setTimeout', 'setInterval', 'clearTimeout', 'clearInterval',
@@ -573,10 +553,9 @@ class EdaApiLinter {
       'Intl', 'globalThis', 'atob', 'btoa',
     ]);
 
-    // 扫描独立函数调用: xxx( 但不是 .xxx( 也不是定义
+    // 扫描独立函数调用
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
-      // 跳过注释行
       if (/^\s*\/\//.test(line) || /^\s*\*/.test(line)) continue;
 
       const callRegex = /(?<![.\w])(\b[a-zA-Z_]\w*)\s*\(/g;
@@ -594,9 +573,9 @@ class EdaApiLinter {
 
         this.diagnostics.push(createDiagnostic(
           i + 1, cm.index, Severity.WARNING,
-          `"${name}" 未在当前文件中定义或导入，可能是未定义的函数调用`,
+          `"${name}" is not defined or imported in this file; possibly undefined function call`,
           'undefined-function',
-          `确认 "${name}" 是否已被删除或需要 import`
+          `Check if "${name}" was removed or needs to be imported`
         ));
       }
     }
@@ -715,14 +694,14 @@ function levenshtein(a, b) {
 
 function formatDiagnostics(diagnostics, filePath) {
   if (diagnostics.length === 0) {
-    return `[PASS] ${filePath}: 未发现 EDA API 使用问题`;
+    return `[PASS] ${filePath}: No EDA API issues found`;
   }
 
   const errors = diagnostics.filter(d => d.severity === Severity.ERROR);
   const warnings = diagnostics.filter(d => d.severity === Severity.WARNING);
   const infos = diagnostics.filter(d => d.severity === Severity.INFO);
 
-  const lines = [`\n[REPORT] ${filePath}: ${diagnostics.length} 个问题 (${errors.length} 错误, ${warnings.length} 警告, ${infos.length} 提示)\n`];
+  const lines = [`\n[REPORT] ${filePath}: ${diagnostics.length} issue(s) (${errors.length} error, ${warnings.length} warning, ${infos.length} info)\n`];
 
   const icons = { error: '[ERROR]', warning: '[WARN]', info: '[INFO]' };
 
@@ -779,9 +758,9 @@ function lintHtmlMarkup(html, filePath) {
       const fileName = relPath.split('/').pop();
       diagnostics.push(createDiagnostic(
         lineNum, relPathMatch.index, Severity.ERROR,
-        `iframe 内资源路径不能使用相对路径 "${relPath}"，应使用完整路径`,
+        `Relative path "${relPath}" is not allowed in iframe resources; use absolute path`,
         'iframe-relative-path',
-        `使用绝对路径，如 /iframe/${fileName}`
+        `Use absolute path, e.g. /iframe/${fileName}`
       ));
     }
   }
@@ -811,7 +790,7 @@ function resolveInputs(inputs) {
   const files = [];
   for (const input of inputs) {
     if (!fs.existsSync(input)) {
-      console.error(`路径不存在: ${input}`);
+      console.error(`Path not found: ${input}`);
       continue;
     }
     if (fs.statSync(input).isDirectory()) {
@@ -831,18 +810,18 @@ function main() {
   const inputs = args.filter(a => !a.startsWith('--'));
 
   if (inputs.length === 0) {
-    console.log('用法: node lint-eda-api.js <file-or-dir> [...] [--json]');
+    console.log('Usage: node lint-eda-api.js <file-or-dir> [...] [--json]');
     console.log('');
-    console.log('  传入文件: 检查指定文件');
-    console.log('  传入目录: 递归检查目录下所有 .ts / .html 文件');
+    console.log('  File: lint the specified file');
+    console.log('  Directory: recursively lint all .ts / .html files');
     console.log('');
-    console.log('首次使用前请先运行: node scripts/build-registry.js');
+    console.log('First run: node scripts/build-registry.js');
     process.exit(0);
   }
 
   const files = resolveInputs(inputs);
   if (files.length === 0) {
-    console.log('未找到 .ts / .html 文件');
+    console.log('No .ts / .html files found');
     process.exit(0);
   }
 

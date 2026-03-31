@@ -8,6 +8,7 @@ An AI Skill for [JLCEDA & EasyEDA Pro](https://pro.easyeda.com/) extension plugi
 
 - Optimized for [pro-api-sdk](https://github.com/easyeda/pro-api-sdk)
 - Documentation-driven code generation based on easyeda-api-skill
+- Built-in lint-eda-api script to check Agent generation code
 - MCP debugging toolchain support for automated build → import → log monitoring
 
 ## Installation
