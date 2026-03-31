@@ -69,6 +69,25 @@ When an API query result contains any of the following, you must continue queryi
 
 > Core rules (try/catch wrapping, browser API restrictions, error handling standards) are defined in `SKILL.md`. The following are additional conventions:
 
+### CRITICAL: Lint After Every File Write
+
+**After writing or modifying ANY `.ts`, `.js`, or `.html` file — no exceptions — you MUST immediately run:**
+
+```bash
+node <skill-path>/scripts/lint-eda-api.js <the-file-you-just-edited>
+```
+
+This applies to ALL files in the project, including but not limited to:
+- `src/index.ts` or any `.ts` file under `src/`
+- `iframe/index.html` or any `.html` file under `iframe/`
+- Any other `.ts`, `.js`, `.html` file anywhere in the project
+
+If the linter reports errors, fix them and re-run until zero errors. Do NOT proceed to the next file or task until the current file passes.
+
+If `<skill-path>/scripts/api-registry.json` does not exist, run `node <skill-path>/scripts/build-registry.js` first.
+
+### Other Conventions
+
 - npm dependencies can be imported as needed; update `package.json` accordingly
 - Use `console.error('[PluginName]', ...)` in `catch` blocks for error traceability
 - Use `console.warn('[PluginName]', ...)` for non-critical issues (fallback values, empty results, deprecated usage)
@@ -124,3 +143,36 @@ Without MCP installed, manually upload the `.zip` file in the EDA Extension Mana
 
 - `resources/guide/` and `resources/references/` — API documentation source; do not edit manually
 - `SKILL.md` front matter — Contains Skill metadata
+
+## EDA API Linter
+
+A custom linter script is available at `scripts/lint-eda-api.js` to validate EDA API usage in generated code. It checks against an API registry built from the `resources/references/` documentation.
+
+### Setup
+
+```bash
+# Build the API registry (run once, or after API docs update)
+node scripts/build-registry.js
+```
+
+### Usage
+
+```bash
+# Lint entire project (recursively scans all .ts / .html, skips node_modules/build/dist)
+node scripts/lint-eda-api.js .
+
+# Lint a single file
+node scripts/lint-eda-api.js src/index.ts
+
+# Lint a specific directory
+node scripts/lint-eda-api.js src/ iframe/
+
+# JSON output (for programmatic consumption)
+node scripts/lint-eda-api.js . --json
+```
+
+Supports `.ts`, `.js`, and `.html` files (extracts `<script>` content from HTML).
+
+### Mandatory Usage
+
+**Every time you write or modify a `.ts`, `.js`, or `.html` file, you MUST run the linter on that file immediately.** This is defined as Core Principle #7 in `SKILL.md`. See the "Mandatory: EDA API Linter" section in `SKILL.md` for full details.

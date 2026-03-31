@@ -25,6 +25,7 @@ AI Skill for EasyEDA Pro extension plugin development. Provides a complete API q
 4. **Verify return type methods** — Different methods on the same class may return completely different interface types
 5. **Browser APIs are forbidden in the main process** — Cannot use `localStorage`, `window`, `document`; allowed inside iframe
 6. **Document type values** — SCH=1, PCB=3, FOOTPRINT=4 (PCB is not 2)
+7. **Lint after every file edit** — Every time you write or modify a `.ts`, `.js`, or `.html` file, immediately run the EDA API linter on that file. Fix all errors before moving on. This is mandatory, not optional
 
 ## When to Use
 
@@ -137,7 +138,7 @@ readFile "resources/references/interfaces/IDMT_EditorDocumentItem.md"
 3. **Query** — Dynamically query required APIs (four-step method); every API must be verified against `resources/references/`
 4. **Validate** — Verify all type signatures are complete with no guesswork; if uncertain, return to Query
 5. **Confirm** — Present implementation plan to user (API list, dependencies, data flow, file changes); wait for confirmation in Supervised mode. In Autopilot mode, skip this step for straightforward changes; only pause for complex or destructive operations
-6. **Execute** — Generate code; each API call corresponds to a verified signature, wrapped in `try/catch` with proper logging
+6. **Execute** — Generate code; each API call corresponds to a verified signature, wrapped in `try/catch` with proper logging. **After writing or modifying each `.ts`/`.js`/`.html` file, immediately run `node <skill-path>/scripts/lint-eda-api.js <file>` and fix all errors before touching the next file**
 7. **Check** — Check runtime environment constraints; confirm no forbidden operations; verify all `headerMenus` IDs in `extension.json` are globally unique across all editor pages; if violations found, return to Execute to fix
 8. **Doc（文档）** — After code generation is complete, generate or update the plugin project's `README.md` and `CHANGELOG.md`; README should include feature description, usage instructions, build steps, and configuration notes; CHANGELOG should follow [Keep a Changelog](https://keepachangelog.com/) format to record changes
 9. **Deploy** — Run `npm run build`; if `eext-dev-mcp` MCP tools are available, automatically find the `.eext` file path and call `dev_plugin` to import the plugin into the browser for testing; if MCP is not installed, inform the user to manually upload the `.eext` file
@@ -155,19 +156,20 @@ readFile "resources/references/interfaces/IDMT_EditorDocumentItem.md"
 
 ## Runtime Environment Constraints
 
-| Requirement | ❌ Forbidden | ✅ Recommended |
-|-------------|-------------|----------------|
-| Get user input | - | `eda.sys_Dialog.showInputDialog()` |
-| User selection | - | `eda.sys_Dialog.showSelectDialog()` |
-| Show message | `alert()` | `eda.sys_Dialog.showInformationMessage()` |
-| Confirm action | `confirm()` | `eda.sys_Dialog.showConfirmationMessage()` |
-| Toast notification | DOM manipulation | `eda.sys_Message.showToastMessage()` |
-| Store data | `localStorage` (main process) | `eda.sys_Storage.setExtensionUserConfig(key, value)` |
-| Custom UI | Manipulate host DOM | `eda.sys_IFrame.openIFrame()` |
-| Show HTML | `showInformationMessage(html)` | Must use iframe |
-| Open link | `window.open()` | `eda.sys_Window.open()` |
-| Browser hardware API | Use in main process | Available in iframe (`navigator.serial`, etc.) |
-| IFrame data passing | `(window as any).__xxx = data` (main process and iframe window are isolated); `window.parent.eda` | ✅ Option A (recommended): Store with `eda.sys_Storage.setExtensionUserConfig(key, value)`, read in iframe with `getExtensionUserConfig(key)`; ✅ Option B: Call eda API directly from iframe (both main process and iframe can access the `eda` object; just use `eda` directly) |
+| Requirement | Recommended API |
+|-------------|----------------|
+| Get user input | `eda.sys_Dialog.showInputDialog()` |
+| User selection | `eda.sys_Dialog.showSelectDialog()` |
+| Show message | `eda.sys_Dialog.showInformationMessage()` |
+| Confirm action | `eda.sys_Dialog.showConfirmationMessage()` |
+| Toast notification | `eda.sys_Message.showToastMessage()` |
+| Store data | `eda.sys_Storage.setExtensionUserConfig(key, value)` |
+| Custom UI | `eda.sys_IFrame.openIFrame()` |
+| Open link | `eda.sys_Window.open()` |
+| Browser hardware API | Available in iframe (`navigator.serial`, etc.) |
+| IFrame data passing | Option A (recommended): Store with `eda.sys_Storage.setExtensionUserConfig(key, value)`, read in iframe with `getExtensionUserConfig(key)`; Option B: Call eda API directly from iframe (both main process and iframe can access the `eda` object; just use `eda` directly) |
+
+> Forbidden patterns (`alert()`, `confirm()`, `localStorage`, `window.open()`, `window.eda`, `window.parent.eda`, `(window as any).__xxx`, DOM manipulation, `console.log`) are automatically detected by the EDA API linter.
 
 ## Error Handling and Logging Standards
 
@@ -181,8 +183,6 @@ All generated plugin code must follow these error handling and logging conventio
 | Error | `console.error('[PluginName]', ...)` | Failures: API call failed, data missing, operation aborted |
 
 - Always prefix log messages with the plugin name in brackets for traceability: `[MyPlugin]`
-- Never use `console.log` in production code; use `console.warn` or `console.error` only
-- `console.log` is allowed only for temporary debugging during development
 
 ### try/catch Wrapping Rules
 
@@ -194,7 +194,7 @@ All generated plugin code must follow these error handling and logging conventio
 ### Code Pattern
 
 ```typescript
-// ✅ Correct: structured error handling with logging
+// [Correct]: structured error handling with logging
 const PLUGIN_TAG = '[MyPlugin]';
 
 export async function myFeature() {
@@ -209,15 +209,6 @@ export async function myFeature() {
     console.error(PLUGIN_TAG, 'Failed to execute myFeature:', err);
     await eda.sys_Dialog.showInformationMessage('Operation failed. Check console for details.');
   }
-}
-```
-
-```typescript
-// ❌ Wrong: no error handling, using console.log
-export async function myFeature() {
-  const docInfo = await eda.dmt_SelectControl.getCurrentDocumentInfo();
-  console.log('got doc info', docInfo); // Don't use console.log
-  // ...
 }
 ```
 
@@ -286,6 +277,47 @@ Follow [Keep a Changelog] format:
 - Record every user-visible change (Added / Changed / Fixed / Removed)
 - Use semantic versioning; keep the latest version at the top
 - Update CHANGELOG on every code generation or modification session
+
+## Mandatory: EDA API Linter
+
+**Every time you create, modify, or write to a `.ts`, `.js`, or `.html` file, you MUST immediately run the linter on that file before doing anything else.** This is the same level of requirement as running `npm run build` — it is not optional and must not be skipped.
+
+### Command
+
+```bash
+# After editing a single file:
+node <skill-path>/scripts/lint-eda-api.js <edited-file>
+
+# Or scan the entire project:
+node <skill-path>/scripts/lint-eda-api.js .
+```
+
+Replace `<skill-path>` with the actual path to this skill directory (e.g., `extension-dev-skill`).
+
+### First-time setup
+
+If `<skill-path>/scripts/api-registry.json` does not exist, build it first:
+
+```bash
+node <skill-path>/scripts/build-registry.js
+```
+
+### On errors
+
+If the linter reports any `error` level issues:
+1. Fix the code immediately
+2. Re-run the linter on the same file
+3. Repeat until zero errors
+4. Only then proceed with the next task
+
+### When to run
+
+| Event | Action |
+|-------|--------|
+| Created a new `.ts` / `.js` / `.html` file | Run linter on that file |
+| Modified an existing `.ts` / `.js` / `.html` file | Run linter on that file |
+| Refactored / moved / renamed code | Run linter on the entire project (`.`) |
+| Before `npm run build` | Run linter on the entire project (`.`) |
 
 ## References
 

@@ -8,6 +8,7 @@
 
 - 针对[pro-api-sdk](https://github.com/easyeda/pro-api-sdk)优化
 - 基于easyeda-api-skill文档驱动的代码生成
+- 内置lint-eda-api脚本检查Agent生成代码
 - 支持 MCP 调试工具链，实现 AI 自动构建 → 导入 → 日志监听
 
 
