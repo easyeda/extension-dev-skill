@@ -119,3 +119,24 @@ await eda.sys_Storage.getExtensionUserConfig(); // undefined
 - `showInputDialog` + callback is simpler and more stable than iframe
 - `showSelectDialog` supports single and multi-select
 - Avoid unnecessary iframe communication complexity
+
+## 16. Menu Title i18n Uses `locales/extensionJson/`, NOT `locales/`
+
+- `extension.json` menu `title` values are translated via `locales/extensionJson/en.json` and `locales/extensionJson/zh-Hans.json`
+- The title text itself is the lookup key (e.g., `"title": "About..."` → key is `"About..."`)
+- ❌ Do NOT use `%key%` syntax in menu titles — that pattern does not apply here
+- ❌ Do NOT put menu translations in `locales/en.json` — that file is for `sys_I18n.text()` code-level translations only
+- ✅ `locales/extensionJson/zh-Hans.json`: `{ "About...": "关于..." }`
+
+## 17. npm Packages Can Be Used in iframe
+
+- The `iframe/` directory runs in a standard browser context, so bundled npm packages work normally
+- Install via `npm install` and import in iframe source files; the build process handles bundling
+- This does NOT apply to `src/` main process code, which runs in the EDA sandbox with restricted APIs
+- Common use cases: chart libraries, UI frameworks, utility libraries (lodash, dayjs, etc.)
+
+## 18. Always Run Lint Before Build
+
+- The SDK includes ESLint (`npm run lint`) with `@antfu/eslint-config`
+- Run `npm run lint` before `npm run build` to catch type errors, unused imports, and style issues early
+- Use `npm run fix` to auto-fix fixable issues
