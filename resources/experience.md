@@ -137,6 +137,6 @@ await eda.sys_Storage.getExtensionUserConfig(); // undefined
 
 ## 18. Always Run Lint Before Build
 
-- The SDK includes ESLint (`npm run lint`) with `@antfu/eslint-config`
-- Run `npm run lint` before `npm run build` to catch type errors, unused imports, and style issues early
-- Use `npm run fix` to auto-fix fixable issues
+- The SDK includes a custom lint script (`node scripts/lint-eda-api.js src/`) to verify EasyEDA Pro API usage
+- Run `node scripts/lint-eda-api.js src/` before `npm run build` to catch API usage errors early
+- Use `npm run fix` to auto-fix fixable style issues

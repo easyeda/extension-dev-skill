@@ -174,7 +174,7 @@ npm run build
 | 菜单只显示一个 | 不同页面使用了相同的 ID | 所有 ID 必须全局唯一，加插件前缀 |
 | 点击菜单无反应 | `registerFn` 与导出函数名不匹配 | 确保 `src/index.ts` 中 `export` 了对应函数 |
 | 菜单标题未翻译 | 翻译文件放错目录 | 菜单标题翻译放在 `locales/extensionJson/`，不是 `locales/` 根目录 |
-| 构建失败 | TypeScript 类型错误 | 先运行 `npm run lint` 检查，再 `npm run build` |
+| 构建失败 | TypeScript 类型错误 | 先运行 `node scripts/lint-eda-api.js src/` 检查，再 `npm run build` |
 
 ## 变体
 

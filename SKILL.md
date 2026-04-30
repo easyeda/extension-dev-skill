@@ -445,7 +445,7 @@ resources/
 5. **Validate** — Verify all type signatures are complete with no guesswork; if uncertain, return to Query
 6. **Confirm** — **Always** present the implementation plan to the user before writing any code. The plan must include: API list, dependencies, data flow, and file changes. Then explicitly ask the user whether to proceed. Do not start code generation until the user confirms
 7. **Execute** — After user confirmation, generate code; each API call corresponds to a verified signature, wrapped in `try/catch` with proper logging
-8. **Lint** — Run `npm run lint` to check for syntax, type, and style issues; fix any errors before proceeding
+8. **Lint** — Run `node scripts/lint-eda-api.js src/` to verify EasyEDA Pro API usage; fix any errors before proceeding
 9. **Check** — Check runtime environment constraints; confirm no forbidden operations; verify all `headerMenus` IDs in `extension.json` are globally unique across all editor pages; verify menu title translations are in `locales/extensionJson/` (not `locales/`); if violations found, return to Execute to fix
 10. **Doc** — Generate or update `README.md` and `CHANGELOG.md`
 11. **Deploy** — Run `npm run build`; if `eext-dev-mcp` MCP tools are available, auto-import via `dev_plugin`; otherwise inform user to manually upload
@@ -460,7 +460,7 @@ resources/
 - [ ] Document type checks use correct values: SCH=1, PCB=3, FOOTPRINT=4
 - [ ] All `headerMenus` IDs are globally unique across every editor page
 - [ ] Menu title translations are in `locales/extensionJson/`, code translations in `locales/`
-- [ ] Ran `npm run lint` with no errors before building
+- [ ] Ran `node scripts/lint-eda-api.js src/` with no errors before building
 
 ---
 

@@ -90,11 +90,10 @@ npm dependencies **can** be used inside `iframe/` code. The iframe runs in a sta
 The SDK includes ESLint with `@antfu/eslint-config`. Use it to catch errors before building:
 
 ```bash
-npm run lint          # Check for issues
 npm run fix           # Auto-fix issues
 ```
 
-Add `npm run lint` as a validation step before `npm run build` in the execution workflow. The ESLint config enforces tab indentation, single quotes, semicolons, and TypeScript best practices.
+Add `node scripts/lint-eda-api.js src/` as a validation step before `npm run build` in the execution workflow.
 
 ## MCP Debugging Workflow (Optional)
 
